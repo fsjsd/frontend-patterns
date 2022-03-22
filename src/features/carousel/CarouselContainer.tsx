@@ -6,18 +6,18 @@ const CarouselContainer = () => {
   const data: CarouselSlideData[] = [
     {
       bannerText: 'Tour the Empire State Building! Buy tickets now.',
-      imgUrl: './newyork.jpg',
+      imgUrl: './images/newyork.jpg',
       imgAlt: 'New York City skyline',
     },
     {
       bannerText: 'Ride the Shinkansen!',
-      imgUrl: './tokyo.jpg',
+      imgUrl: './images/city.jpg',
       imgAlt: 'Tokyo skyline',
     },
     {
       bannerText: 'See penguins!',
-      imgUrl: './beach.jpg',
-      imgAlt: 'Beach',
+      imgUrl: './images/penguin.jpg',
+      imgAlt: 'Penguins',
     }
   ];
 
