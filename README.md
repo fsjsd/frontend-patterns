@@ -1,6 +1,6 @@
 # @fsjsd/frontend-patterns
 
-![React Adaptive List](https://fsjsd.github.io/frontend-patterns/.docs/readme-header-fepatterns.jpg)
+![Front-end patterns](https://raw.githubusercontent.com/fsjsd/frontend-patterns/main/.docs/readme-header-fepatterns.jpg)
 
 Repo of modern front end design patterns, implemented in React
 
