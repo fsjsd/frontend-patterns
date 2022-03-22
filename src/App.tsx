@@ -3,6 +3,8 @@ import './App.css';
 import DemoSiteLayoutContainer from "fsjsd-demosite";
 import CarouselContainer from './features/carousel/CarouselContainer';
 
+//https://github.com/fsjsd/frontend-patterns
+
 function App() {
   return (
     <DemoSiteLayoutContainer
