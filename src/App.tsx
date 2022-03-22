@@ -3,7 +3,9 @@ import './App.css';
 import DemoSiteLayoutContainer from "fsjsd-demosite";
 import CarouselContainer from './features/carousel/CarouselContainer';
 import LeftNavigation from './ux/LeftNavigation';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './Home';
+import InfiniteScrollContainer from './features/infinitescroll/InfiniteScrollContainer';
 
 //https://github.com/fsjsd/frontend-patterns
 
@@ -26,9 +28,11 @@ function App() {
           </div>)
         }
         renderContents={
-          () => (<>
-            <CarouselContainer />
-          </>)
+          () => (<Routes>
+            <Route path="/infinitescroll" element={<InfiniteScrollContainer />} />
+            <Route path="/carousel" element={<CarouselContainer />} />
+            <Route path="/" element={<Home />} />
+          </Routes>)
         } />
     </BrowserRouter>
   );

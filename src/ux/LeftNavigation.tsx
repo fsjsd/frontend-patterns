@@ -1,6 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import {
+  MdSettings,
+  MdDescription,
+} from "react-icons/md";
 
 const DrawerNavigationStyled = styled.div`
   width: 240px;
@@ -20,6 +24,18 @@ const DrawerWrapper = styled.div<{ isOpen: boolean }>`
       : ``}
 `;
 
+const NavGroup = styled.div`
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 16px;
+  padding: 0 20px;
+  font-size: 13px;
+
+  margin: 24px 0 10px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.66);
+`;
+
 const NavLinks = styled.ul`
   margin: 0;
   padding: 0;
@@ -29,6 +45,7 @@ const NavLinks = styled.ul`
 `;
 
 const LinkStyled = styled(Link)`
+  width: 240px;
   font-size: 15px;
   color: rgba(0, 0, 0, 0.55);
   padding: 12px 16px;
@@ -37,7 +54,6 @@ const LinkStyled = styled(Link)`
   cursor: pointer;
   transition: ease 0.5s color, ease 0.2s background-color;
   display: flex;
-  
   &.active {
     background-color: rgb(220, 240, 255);
     color: rgb(33, 111, 212);
@@ -64,7 +80,7 @@ const LinkStyled = styled(Link)`
 
   svg{
     font-size: 18px;
-    }
+  }
 
   svg:first-child {
     margin-right: 10px;
@@ -76,7 +92,13 @@ const LeftNavigation = () => {
     <DrawerNavigationStyled>
       <DrawerWrapper isOpen={false}>
         <NavLinks>
-          <LinkStyled to="/carousel">Carousel</LinkStyled>
+          <NavGroup>Features</NavGroup>
+          <li>
+            <LinkStyled to="/carousel"><MdSettings /> Carousel</LinkStyled>
+          </li>
+          <li>
+            <LinkStyled to="/infinitescroll"><MdDescription /> Infinite Scroll</LinkStyled>
+          </li>
         </NavLinks>
       </DrawerWrapper>
     </DrawerNavigationStyled>
