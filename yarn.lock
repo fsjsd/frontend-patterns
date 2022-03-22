@@ -2017,7 +2017,7 @@
   resolved "https://registry.yarnpkg.com/@types/prettier/-/prettier-2.4.4.tgz#5d9b63132df54d8909fce1c3f8ca260fdd693e17"
   integrity sha512-ReVR2rLTV1kvtlWFyuot+d1pkpG2Fw/XKE3PDAdj57rbM97ttSp9JZ2UsP+2EHTylra9cUf6JA7tGwW1INzUrA==
 
-"@types/prop-types@*":
+"@types/prop-types@*", "@types/prop-types@^15.7.3":
   version "15.7.4"
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.4.tgz#fcf7205c25dff795ee79af1e30da2c9790808f11"
   integrity sha512-rZ5drC/jWjrArrS8BR6SIr4cWpW09RNTYt9AMZo3Jwwif+iacXAqgVjm0B0Bv/S1jhDXKHqRVNCbACkJ89RAnQ==
@@ -4710,6 +4710,11 @@ fsjsd-demosite@^1.0.7:
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/fsjsd-demosite/-/fsjsd-demosite-1.0.7.tgz#eac6c8c5663433482cb7513827fd5109e3644eed"
   integrity sha512-tHJ9pIt8IsfbHK1fPtHaNrofrQ+PaxGBZNuN8O5CAATDCuS7vOslu5stlbLXQQoEAYCgr9PAqXZpd7HfDmZs1g==
+
+fsjsd-lgr@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/fsjsd-lgr/-/fsjsd-lgr-0.1.1.tgz#4601e238c8a522b812aebb85a3911087e46cb2c4"
+  integrity sha512-5NsFSTzn2RXV3H4Fl1I/5ekOPQ/uIRNUYuFnZpN7YEwRBfH33aLS62wsMUajaWT0FpPGu1nl+iboRaq/EfMxkg==
 
 function-bind@^1.1.1:
   version "1.1.1"
@@ -7561,7 +7566,7 @@ prompts@^2.4.2:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@^15.8.1:
+prop-types@^15.7.2, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -7693,6 +7698,11 @@ react-error-overlay@^6.0.10:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.10.tgz#0fe26db4fa85d9dbb8624729580e90e7159a59a6"
   integrity sha512-mKR90fX7Pm5seCOfz8q9F+66VCc1PGsWSBxKbITjfKVQHMNF2zudxHnMdJiB1fRCb+XsbQV9sO9DCkgsMQgBIA==
 
+react-icons@^4.3.1:
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-4.3.1.tgz#2fa92aebbbc71f43d2db2ed1aed07361124e91ca"
+  integrity sha512-cB10MXLTs3gVuXimblAdI71jrJx8njrJZmNMEMC+sQu5B/BIOmlsAjskdqpn81y8UBVEGuHODd7/ci5DvoSzTQ==
+
 react-is@^16.13.1, react-is@^16.7.0:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
@@ -7715,6 +7725,21 @@ react-router-dom@^6.2.2:
   dependencies:
     history "^5.2.0"
     react-router "6.2.2"
+
+react-router-prop-types@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/react-router-prop-types/-/react-router-prop-types-1.0.5.tgz#2e671d8412a793106bf70dc15c9ecc83ea4bc15b"
+  integrity sha512-q1xlFU2ol2U5zeVbA5hyBuxD3scHenqgMgCTuJQUanA2SyG8A3Fb1S6DleOo1cnGJB5Q05hnLge64kRj+xsuPA==
+  dependencies:
+    "@types/prop-types" "^15.7.3"
+    prop-types "^15.7.2"
+
+react-router-utilitybelt@^0.2.4:
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/react-router-utilitybelt/-/react-router-utilitybelt-0.2.4.tgz#0c771c3b98a083aa4cbc1979904a08040b2243ce"
+  integrity sha512-qPaxPW4HjJwESuewkk4m4pwDPk4Zn9ImJD/cjnxzgRki3y0GoRPh2f1O7z6AtPsDEX1NrfQ9BVe0TNiXrZssbg==
+  dependencies:
+    fsjsd-lgr "^0.1.1"
 
 react-router@6.2.2:
   version "6.2.2"
