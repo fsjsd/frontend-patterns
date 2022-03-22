@@ -21,11 +21,12 @@ interface CarouselProps {
 const getNewScrollPosition = (slideContainerEl: RefObject<HTMLDivElement>, slideWidth: number, arg: NAV_COMMAND, slideIndex: number = 0) => {
   const gap = 10;
   const maxScrollLeft = slideContainerEl.current!.scrollWidth - slideWidth;
+
   if (arg === NAV_COMMAND.FORWARD) {
-    const x = slideContainerEl.current!.scrollLeft + slideWidth + gap;
+    const x = slideContainerEl.current!.scrollLeft + slideWidth - gap;
     return x <= maxScrollLeft ? x : 0;
   } else if (arg === NAV_COMMAND.BACKWARD) {
-    const x = slideContainerEl.current!.scrollLeft - slideWidth - gap;
+    const x = slideContainerEl.current!.scrollLeft - slideWidth + gap;
     return x >= 0 ? x : maxScrollLeft;
   } else if (arg === NAV_COMMAND.NUMBER) {
     const x = slideIndex * (slideWidth + gap);
