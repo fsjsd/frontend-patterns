@@ -8,7 +8,7 @@ Repo of modern front end design patterns, implemented in React
 
 - clone repo and `yarn`
 - `yarn start` to launch (Create React-App implementation)
-- View [online here](https://fsjsd.github.io/frontend-patterns/build/index.html)
+- View [online here](https://fsjsd.github.io/frontend-patterns/)
 
 # Patterns
 
