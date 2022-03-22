@@ -9,8 +9,7 @@
   "homepage": "https://fsjsd.github.io/frontend-patterns",
   "scripts": {
     "start": "react-scripts start",
-    "prebuild": "rimraf build",
-    "build": "react-scripts build",
+    "build": "rimraf build && react-scripts build",
     "predeploy": "rimraf build && react-scripts build",
     "deploy": "gh-pages -d build",
     "test": "react-scripts test",
