@@ -1,13 +1,9 @@
 import React from 'react';
 import './App.css';
 import DemoSiteLayoutContainer from "fsjsd-demosite";
-import CarouselContainer from './features/carousel/CarouselContainer';
 import LeftNavigation from './ux/LeftNavigation';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Home from './Home';
-import InfiniteScrollContainer from './features/infinitescroll/InfiniteScrollContainer';
-
-//https://github.com/fsjsd/frontend-patterns
+import appRoutes from './routes';
 
 function App() {
   return (
@@ -29,9 +25,12 @@ function App() {
         }
         renderContents={
           () => (<Routes>
-            <Route path="/infinitescroll" element={<InfiniteScrollContainer />} />
-            <Route path="/carousel" element={<CarouselContainer />} />
-            <Route path="/" element={<Home />} />
+            {appRoutes.map(routeDefinition =>
+              <Route
+                path={routeDefinition.path}
+                element={<React.Suspense fallback={<>...</>}>{routeDefinition.element}</React.Suspense>}
+              />
+            )}
           </Routes>)
         } />
     </BrowserRouter>

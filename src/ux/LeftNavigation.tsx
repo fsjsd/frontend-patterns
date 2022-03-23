@@ -1,104 +1,22 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
-import styled from 'styled-components';
-import {
-  MdSettings,
-  MdDescription,
-} from "react-icons/md";
+import appRoutes from '../routes';
+import { DrawerNavigationStyled, DrawerWrapper, NavLinks, NavGroup, LinkStyled } from './LeftNavigationUI';
 
-const DrawerNavigationStyled = styled.div`
-  width: 240px;
-  overflow: hidden;
-`;
-
-const DrawerWrapper = styled.div<{ isOpen: boolean }>`
-  position: relative;
-  width: 480px;
-  left: 0;
-  display: flex;
-  transition: ease 0.3s left;
-  ${props =>
-    props.isOpen
-      ? `
-    left: -240px;`
-      : ``}
-`;
-
-const NavGroup = styled.div`
-  font-weight: 400;
-  letter-spacing: normal;
-  line-height: 16px;
-  padding: 0 20px;
-  font-size: 13px;
-
-  margin: 24px 0 10px;
-  text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.66);
-`;
-
-const NavLinks = styled.ul`
-  margin: 0;
-  padding: 0;
-  li {
-    list-style: none;
-  }
-`;
-
-const LinkStyled = styled(Link)`
-  width: 240px;
-  font-size: 15px;
-  color: rgba(0, 0, 0, 0.55);
-  padding: 12px 16px;
-  outline: none;
-  text-decoration: none;
-  cursor: pointer;
-  transition: ease 0.5s color, ease 0.2s background-color;
-  display: flex;
-  &.active {
-    background-color: rgb(220, 240, 255);
-    color: rgb(33, 111, 212);
-    span,
-    label {
-      color: rgb(33, 111, 212);
-    }
-  }
-
-  &:hover, &.active:hover {
-    background-color: rgb(242, 249, 255);
-    color: rgb(33, 111, 212);
-    span,
-    label {
-      color: rgb(33, 111, 212);
-    }
-  }
-
-  label {
-    color: rgba(0, 0, 0, 0.75);
-    flex-grow: 2;
-    cursor: pointer;
-  }
-
-  svg{
-    font-size: 18px;
-  }
-
-  svg:first-child {
-    margin-right: 10px;
-  }
-`;
+const groups = Array.from(new Set(appRoutes.filter(route => !!route.group).map(route => route.group!)));
 
 const LeftNavigation = () => {
   return (
     <DrawerNavigationStyled>
       <DrawerWrapper isOpen={false}>
         <NavLinks>
-          <NavGroup>Features</NavGroup>
-          <li>
-            <LinkStyled to="/carousel"><MdSettings /> Carousel</LinkStyled>
-          </li>
-          <li>
-            <LinkStyled to="/infinitescroll"><MdDescription /> Infinite Scroll</LinkStyled>
-          </li>
+          {groups.map(group => <>
+            <NavGroup>{group}</NavGroup>
+            {appRoutes.filter(r => r.group === group).map(routeDefinition =>
+              <li>
+                <LinkStyled to={routeDefinition.path}>{routeDefinition.icon} {routeDefinition.title}</LinkStyled>
+              </li>
+            )}
+          </>)}
         </NavLinks>
       </DrawerWrapper>
     </DrawerNavigationStyled>

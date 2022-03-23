@@ -1,5 +1,5 @@
 import React, { RefObject, useLayoutEffect, useRef, useState } from 'react'
-import { CarouselWrapper, Slide, SlideBanner, SlideButton, SlideContainer, SlideIndicator, SlideIndicators } from './CarouselUx';
+import { CarouselWrapper, Slide, SlideBanner, SlideButton, SlideContainer, SlideIndicator, SlideIndicators } from './CarouselUI';
 
 export interface CarouselSlideData {
   bannerText: string;
