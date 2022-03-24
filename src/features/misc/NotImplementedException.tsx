@@ -1,11 +1,19 @@
 import React from 'react'
+import ContentHeader, { ContentHeaderLabel } from '../../ux/ContentHeader'
+import { ContentWrapper } from '../../ux/ContentWrapper'
+import Loading from '../../ux/Loading'
 
 const NotImplementedException = () => {
   return (
-    <div>
-      <h1>throw new NotImplementedException()</h1>
-      <p>Coming Soon!</p>
-    </div>
+    <>
+      <ContentHeader>
+        <ContentHeaderLabel>throw new NotImplementedException()</ContentHeaderLabel>
+      </ContentHeader>
+      <ContentWrapper>
+        <p>Coming Soon!</p>
+        <Loading />
+      </ContentWrapper>
+    </>
   )
 }
 

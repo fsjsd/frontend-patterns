@@ -16,3 +16,8 @@ code {
 #root{
   height:100vh;
 }
+
+h1{
+  margin-top: 0;
+  color:rgb(33 83 122);
+}

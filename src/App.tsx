@@ -4,6 +4,7 @@ import DemoSiteLayoutContainer from "fsjsd-demosite";
 import LeftNavigation from './ux/LeftNavigation';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import appRoutes from './routes';
+import Loading from './ux/Loading';
 
 function App() {
   return (
@@ -28,7 +29,7 @@ function App() {
             {appRoutes.map(routeDefinition =>
               <Route
                 path={routeDefinition.path}
-                element={<React.Suspense fallback={<>...</>}>{routeDefinition.element}</React.Suspense>}
+                element={<React.Suspense fallback={<Loading />}>{routeDefinition.element}</React.Suspense>}
               />
             )}
           </Routes>)
