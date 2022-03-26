@@ -98,15 +98,21 @@ exports[`WebVitals render matches snapshot 1`] = `
         1
         ms
         <br />
-        connect: 
+        fetch: 
         <br />
         domain_lookup: 
         <br />
-        fetch: 
+        connect: 
         <br />
         request:
         <br />
         response: 
+        <br />
+        DOM Content loaded: 
+        <br />
+        DOM complete:
+        <br />
+        load start: 
       </div>
       TTFB: 
       <div
@@ -231,14 +237,20 @@ exports[`WebVitals shows tooltip on mouseover 'TTFB' 1`] = `
   1
   ms
   <br />
-  connect: 
+  fetch: 
   <br />
   domain_lookup: 
   <br />
-  fetch: 
+  connect: 
   <br />
   request:
   <br />
   response: 
+  <br />
+  DOM Content loaded: 
+  <br />
+  DOM complete:
+  <br />
+  load start: 
 </div>
 `;
