@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InfiniteScrollContainer render matches snapshot 1`] = `
+<div>
+  <div
+    class="sc-bczRLJ dtMXGe"
+  >
+    <div
+      class="sc-gsnTZi dkPlsI"
+    >
+      Infinite Scroll
+    </div>
+  </div>
+  <div
+    class="sc-dkzDqf eGEKCX"
+  >
+    <div
+      class="sc-hKMtZM hbOElo"
+    >
+      <div />
+      <div />
+    </div>
+  </div>
+</div>
+`;
