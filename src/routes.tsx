@@ -90,9 +90,12 @@ const appRoutes = [
     title: 'Pinterest',
     group: NAV_GROUPS.FEATURES,
   },
-
   {
     path: `${urlRoot}/`,
+    element: <Home />,
+  },
+  {
+    path: `/`,
     element: <Home />,
   },
 ]
