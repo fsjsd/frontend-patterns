@@ -33,6 +33,16 @@
       "prettier --write"
     ]
   },
+  "jest": {
+    "coveragePathIgnorePatterns": [
+      "useEffectAsync",
+      "useRepeatingEffect",
+      "webVitalsUtils",
+      "src\\index.tsx",
+      "src\\reportWebVitals.ts",
+      "src\\features\\carousel\\_source\\index.js"
+    ]
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
