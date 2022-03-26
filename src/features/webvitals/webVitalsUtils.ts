@@ -21,7 +21,7 @@ type WebVitalPerfEntries = (
   | NavigationTimingPolyfillEntry
 )[]
 
-interface RegisterWebVitalsListenersProps {
+export interface RegisterWebVitalsListenersProps {
   onCls: (m: MetricInfo) => void
   onFcp: (m: MetricInfo) => void
   onFid: (m: MetricInfo) => void
