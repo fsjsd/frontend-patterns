@@ -1,6 +1,7 @@
 # @fsjsd/frontend-patterns
 
 [![codecov](https://codecov.io/gh/fsjsd/frontend-patterns/branch/main/graph/badge.svg?token=80RFETMF8Z)](https://codecov.io/gh/fsjsd/frontend-patterns)
+![build](https://github.com/fsjsd/frontend-patterns/actions/workflows/coverage.yaml/badge.svg)
 
 ![Front-end patterns](https://raw.githubusercontent.com/fsjsd/frontend-patterns/main/.docs/readme-header-fepatterns.jpg)
 
