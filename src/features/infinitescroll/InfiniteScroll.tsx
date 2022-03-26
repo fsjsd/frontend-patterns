@@ -81,12 +81,13 @@ const InfiniteScroll = <T,>({ data, renderData, onLoadMore }: InfiniteScrollProp
   }, [onLoadMore, hasMoreData]);
 
   return (
-    <InfiniteScrollWrapper ref={containerEl}>
+    <InfiniteScrollWrapper ref={containerEl} role={'list'}>
       <Sentinel ref={sentinelEl} />
       {displayedItems.map((item, index) => <Item key={index}>
         {renderData(item)}
       </Item>)}
       {hasMoreData && <InfiniteScrollButton
+        aria-label={'Load more'}
         id="infinite-scroll-button"
         disabled={requestPending}
         ref={loadingButtonEl}
