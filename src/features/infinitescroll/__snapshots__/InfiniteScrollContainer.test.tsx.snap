@@ -15,6 +15,9 @@ exports[`InfiniteScrollContainer render matches snapshot 1`] = `
     class="sc-dkzDqf eGEKCX"
   >
     <div
+      style="width: 300px; height: 500px; overflow-y: scroll; display: none;"
+    />
+    <div
       class="sc-hKMtZM hbOElo"
     >
       <div />
