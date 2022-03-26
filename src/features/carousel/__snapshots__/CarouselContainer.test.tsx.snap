@@ -1,14 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CarouselContainer tests forward advances slide 1`] = `
-<div
-  aria-label="slide 1"
-  aria-selected="true"
-  class="sc-eCImPb ePbVds"
-  role="tab"
-/>
-`;
-
 exports[`CarouselContainer tests renders Carousel 1`] = `
 <div>
   <div>
@@ -24,6 +15,7 @@ exports[`CarouselContainer tests renders Carousel 1`] = `
           aria-label="slide"
           class="sc-jRQBWg bXrUzc"
           data-slideindex="0"
+          role="tabpanel"
         >
           <div
             class="sc-gKclnd iZYBQa"
@@ -41,6 +33,7 @@ exports[`CarouselContainer tests renders Carousel 1`] = `
           aria-label="slide"
           class="sc-jRQBWg bXrUzc"
           data-slideindex="1"
+          role="tabpanel"
         >
           <div
             class="sc-gKclnd iZYBQa"
@@ -58,6 +51,7 @@ exports[`CarouselContainer tests renders Carousel 1`] = `
           aria-label="slide"
           class="sc-jRQBWg bXrUzc"
           data-slideindex="2"
+          role="tabpanel"
         >
           <div
             class="sc-gKclnd iZYBQa"
