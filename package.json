@@ -18,7 +18,7 @@
     "eject": "react-scripts eject",
     "analyze": "source-map-explorer 'build/static/js/*.js'",
     "typescript": "tsc --project tsconfig.json --noEmit",
-    "lint": "eslint src --color",
+    "lint": "eslint src --color --fix",
     "prettier": "prettier src -check",
     "lint-staged": "lint-staged",
     "husky-install": "husky install"

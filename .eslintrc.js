@@ -1,7 +1,7 @@
 module.exports = {
   settings: {
     react: {
-      version: 'latest',
+      version: '999.9.9',
     },
   },
   env: {
