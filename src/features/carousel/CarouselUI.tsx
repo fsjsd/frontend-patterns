@@ -22,8 +22,6 @@ export const SlideContainer = styled.div`
 
 export const SlideButton = styled.div<{ isForward: boolean }>`
   color: #ffffff;
-  height: 20px;
-  width: 20px;
   background-color: #000000;
   position: absolute;
   padding: 10px;
