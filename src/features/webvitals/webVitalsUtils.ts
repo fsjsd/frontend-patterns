@@ -37,6 +37,7 @@ export interface MetricInfo {
   metric_delta: number
   metric_rating: string
   non_interaction: boolean
+  event_time?: number
   debug_target?: string
   debug_event?: string
   debug_timing?: string

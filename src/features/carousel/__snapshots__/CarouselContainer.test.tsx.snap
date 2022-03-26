@@ -68,14 +68,14 @@ exports[`CarouselContainer render matches snapshot 1`] = `
       </div>
       <div
         aria-label="back"
-        class="sc-dkzDqf gwhyYA"
+        class="sc-dkzDqf jtCkml"
         role="button"
       >
         ←
       </div>
       <div
         aria-label="forward"
-        class="sc-dkzDqf jqtibL"
+        class="sc-dkzDqf ehNlFK"
         role="button"
       >
         →
@@ -175,14 +175,14 @@ exports[`CarouselContainer window resize recalculates layout 1`] = `
       </div>
       <div
         aria-label="back"
-        class="sc-dkzDqf gwhyYA"
+        class="sc-dkzDqf jtCkml"
         role="button"
       >
         ←
       </div>
       <div
         aria-label="forward"
-        class="sc-dkzDqf jqtibL"
+        class="sc-dkzDqf ehNlFK"
         role="button"
       >
         →

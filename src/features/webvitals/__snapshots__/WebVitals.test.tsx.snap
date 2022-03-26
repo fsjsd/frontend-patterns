@@ -3,67 +3,242 @@
 exports[`WebVitals render matches snapshot 1`] = `
 <div>
   <div
-    class="sc-bczRLJ gUwqzG"
+    class="sc-bczRLJ cjGvUi"
   >
     <div
+      aria-label="LCP"
       title="Largest Contentful Paint"
     >
-      LCP:
       <div
-        class="sc-gsnTZi eVhfZt"
+        class="invisible inline-block absolute z-10 py-2 px-3 text-sm text-gray-800 bg-white rounded-lg border border-gray-200 shadow-sm tooltip"
+        id="tooltip-light"
+        role="tooltip"
+        style="bottom: 50px;"
       >
-        good
+        <b>
+          Largest Contentful Paint.
+        </b>
+        <br />
+        Poor
+        . 
+        0.001
+        s
       </div>
-      (
-      1
-      )
+      LCP: 
+      <div
+        class="sc-gsnTZi cweHYf"
+      />
     </div>
     <div
-      title="First Input Delay. Not reported if the user never interacts with the page"
+      aria-label="FID"
+      title="First Input Delay"
     >
-      FID:
       <div
-        class="sc-gsnTZi eVhfZt"
+        class="invisible inline-block absolute z-10 py-2 px-3 text-sm text-gray-800 bg-white rounded-lg border border-gray-200 shadow-sm tooltip"
+        id="tooltip-light"
+        role="tooltip"
+        style="bottom: 50px;"
       >
-        good
+        <b>
+          First Input Delay.
+        </b>
+        <br />
+        Not reported if the user never interacts with the page
+        <br />
+        unknown
+        . 
+        1
+        ms
       </div>
+      FID: 
+      <div
+        class="sc-gsnTZi dzkeJy"
+      />
     </div>
     <div
+      aria-label="CLS"
       title="Cumulative Layout Shift"
     >
-      CLS:
       <div
-        class="sc-gsnTZi eVhfZt"
+        class="invisible inline-block absolute z-10 py-2 px-3 text-sm text-gray-800 bg-white rounded-lg border border-gray-200 shadow-sm tooltip"
+        id="tooltip-light"
+        role="tooltip"
+        style="bottom: 50px;"
       >
-        good
+        <b>
+          Cumulative Layout Shift.
+        </b>
+        <br />
+        Good
+        . 
+         (
+        ). time: 
       </div>
-       
-      (
-      1
-      )
+      CLS: 
+      <div
+        class="sc-gsnTZi IqDPW"
+      />
     </div>
     <div
+      aria-label="TTFB"
       title="Time to first byte"
     >
-      TTFB:
       <div
-        class="sc-gsnTZi eVhfZt"
+        class="invisible inline-block absolute z-10 py-2 px-3 text-sm text-gray-800 bg-white rounded-lg border border-gray-200 shadow-sm tooltip"
+        id="tooltip-light"
+        role="tooltip"
+        style="bottom: 50px;"
       >
-        good
+        <b>
+          Time to first byte.
+        </b>
+        <br />
+        Needs improvement
+        . 
+        1
+        ms
+        <br />
+        connect: 
+        <br />
+        domain_lookup: 
+        <br />
+        fetch: 
+        <br />
+        request:
+        <br />
+        response: 
       </div>
-       
+      TTFB: 
+      <div
+        class="sc-gsnTZi cifUEw"
+      />
     </div>
     <div
+      aria-label="FCP"
       title="First Contentful Paint"
     >
-      FCP:
       <div
-        class="sc-gsnTZi bsTnoU"
+        class="invisible inline-block absolute z-10 py-2 px-3 text-sm text-gray-800 bg-white rounded-lg border border-gray-200 shadow-sm tooltip"
+        id="tooltip-light"
+        role="tooltip"
+        style="bottom: 50px;"
       >
-        poor
+        <b>
+          First Contentful Paint
+        </b>
+        <br />
+        Poor
+        . 
+        0.001
+        s
       </div>
-       
+      FCP: 
+      <div
+        class="sc-gsnTZi cweHYf"
+      />
     </div>
   </div>
+</div>
+`;
+
+exports[`WebVitals shows tooltip on mouseover 'CLS' 1`] = `
+<div
+  class=" inline-block absolute z-10 py-2 px-3 text-sm text-gray-800 bg-white rounded-lg border border-gray-200 shadow-sm tooltip"
+  id="tooltip-light"
+  role="tooltip"
+  style="bottom: 50px;"
+>
+  <b>
+    Cumulative Layout Shift.
+  </b>
+  <br />
+  Good
+  . 
+   (
+  ). time: 
+</div>
+`;
+
+exports[`WebVitals shows tooltip on mouseover 'FCP' 1`] = `
+<div
+  class=" inline-block absolute z-10 py-2 px-3 text-sm text-gray-800 bg-white rounded-lg border border-gray-200 shadow-sm tooltip"
+  id="tooltip-light"
+  role="tooltip"
+  style="bottom: 50px;"
+>
+  <b>
+    First Contentful Paint
+  </b>
+  <br />
+  Poor
+  . 
+  0.001
+  s
+</div>
+`;
+
+exports[`WebVitals shows tooltip on mouseover 'FID' 1`] = `
+<div
+  class=" inline-block absolute z-10 py-2 px-3 text-sm text-gray-800 bg-white rounded-lg border border-gray-200 shadow-sm tooltip"
+  id="tooltip-light"
+  role="tooltip"
+  style="bottom: 50px;"
+>
+  <b>
+    First Input Delay.
+  </b>
+  <br />
+  Not reported if the user never interacts with the page
+  <br />
+  unknown
+  . 
+  1
+  ms
+</div>
+`;
+
+exports[`WebVitals shows tooltip on mouseover 'LCP' 1`] = `
+<div
+  class=" inline-block absolute z-10 py-2 px-3 text-sm text-gray-800 bg-white rounded-lg border border-gray-200 shadow-sm tooltip"
+  id="tooltip-light"
+  role="tooltip"
+  style="bottom: 50px;"
+>
+  <b>
+    Largest Contentful Paint.
+  </b>
+  <br />
+  Poor
+  . 
+  0.001
+  s
+</div>
+`;
+
+exports[`WebVitals shows tooltip on mouseover 'TTFB' 1`] = `
+<div
+  class=" inline-block absolute z-10 py-2 px-3 text-sm text-gray-800 bg-white rounded-lg border border-gray-200 shadow-sm tooltip"
+  id="tooltip-light"
+  role="tooltip"
+  style="bottom: 50px;"
+>
+  <b>
+    Time to first byte.
+  </b>
+  <br />
+  Needs improvement
+  . 
+  1
+  ms
+  <br />
+  connect: 
+  <br />
+  domain_lookup: 
+  <br />
+  fetch: 
+  <br />
+  request:
+  <br />
+  response: 
 </div>
 `;
