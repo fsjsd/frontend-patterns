@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CarouselContainer tests forward advances slide 1`] = `
+<div
+  aria-label="slide 1"
+  aria-selected="true"
+  class="sc-eCImPb ePbVds"
+  role="tab"
+/>
+`;
+
+exports[`CarouselContainer tests renders Carousel 1`] = `
+<div>
+  <div>
+    <div
+      class="sc-bdvvtL cPqwtb"
+      width="1200"
+    >
+      <div
+        class="sc-gsDKAQ gBTdBw"
+        data-testid="slidecontainer"
+      >
+        <div
+          aria-label="slide"
+          class="sc-jRQBWg bXrUzc"
+          data-slideindex="0"
+        >
+          <div
+            class="sc-gKclnd iZYBQa"
+          >
+            Tour the Empire State Building! Buy tickets now.
+          </div>
+          <img
+            alt="New York City skyline"
+            height="600"
+            src="/frontend-patterns/images/newyork.jpg"
+            width="1200"
+          />
+        </div>
+        <div
+          aria-label="slide"
+          class="sc-jRQBWg bXrUzc"
+          data-slideindex="1"
+        >
+          <div
+            class="sc-gKclnd iZYBQa"
+          >
+            Ride the Shinkansen!
+          </div>
+          <img
+            alt="Tokyo skyline"
+            height="600"
+            src="/frontend-patterns/frontend-patterns/images/city.jpg"
+            width="1200"
+          />
+        </div>
+        <div
+          aria-label="slide"
+          class="sc-jRQBWg bXrUzc"
+          data-slideindex="2"
+        >
+          <div
+            class="sc-gKclnd iZYBQa"
+          >
+            See penguins!
+          </div>
+          <img
+            alt="Penguins"
+            height="600"
+            src="/frontend-patterns/images/penguin.jpg"
+            width="1200"
+          />
+        </div>
+      </div>
+      <div
+        aria-label="back"
+        class="sc-dkPtRN iynlET"
+        role="button"
+      >
+        ←
+      </div>
+      <div
+        aria-label="forward"
+        class="sc-dkPtRN jpBcBY"
+        role="button"
+      >
+        →
+      </div>
+      <div
+        class="sc-hKwDye jSmFYF"
+      >
+        <div
+          aria-label="slide 1"
+          aria-selected="true"
+          class="sc-eCImPb ePbVds"
+          role="tab"
+        />
+        <div
+          aria-label="slide 2"
+          aria-selected="false"
+          class="sc-eCImPb cJGTRq"
+          role="tab"
+        />
+        <div
+          aria-label="slide 3"
+          aria-selected="false"
+          class="sc-eCImPb cJGTRq"
+          role="tab"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

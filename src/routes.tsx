@@ -1,7 +1,7 @@
 // single source of truth for routes used in this app, to prevent repeating
 // this data in multiple places
 
-import { MdAssessment, MdChat, MdDashboard, MdFlip, MdListAlt, MdQuestionAnswer, MdReceiptLong, MdRecentActors, MdSettings, MdTableView, MdTheaters } from "react-icons/md";
+import { MdAssessment, MdChat, MdDashboard, MdFlip, MdListAlt, MdReceiptLong, MdRecentActors, MdTableView, MdTheaters } from "react-icons/md";
 import CarouselContainer from "./features/carousel/CarouselContainer";
 import InfiniteScrollContainer from "./features/infinitescroll/InfiniteScrollContainer";
 import NotImplementedException from "./features/misc/NotImplementedException";

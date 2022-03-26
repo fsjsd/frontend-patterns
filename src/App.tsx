@@ -5,6 +5,8 @@ import LeftNavigation from './ux/LeftNavigation';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import appRoutes from './routes';
 import Loading from './ux/Loading';
+import WebVitals from './features/webvitals/WebVitals';
+import ContentFooter from './ux/ContentFooter';
 
 function App() {
   return (
@@ -25,14 +27,22 @@ function App() {
           </div>)
         }
         renderContents={
-          () => (<Routes>
-            {appRoutes.map(routeDefinition =>
-              <Route
-                path={routeDefinition.path}
-                element={<React.Suspense fallback={<Loading />}>{routeDefinition.element}</React.Suspense>}
-              />
-            )}
-          </Routes>)
+          () => {
+            return (<>
+              <div style={{ flexGrow: 2 }}>
+                <Routes>
+                  {appRoutes.map(routeDefinition => <Route
+                    key={routeDefinition.path}
+                    path={routeDefinition.path}
+                    element={<React.Suspense fallback={<Loading />}>{routeDefinition.element}</React.Suspense>} />
+                  )}
+                </Routes>
+              </div>
+              <ContentFooter>
+                <WebVitals />
+              </ContentFooter>
+            </>);
+          }
         } />
     </BrowserRouter>
   );

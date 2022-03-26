@@ -90,22 +90,26 @@ const Carousel = ({ data, width }: CarouselProps) => {
 
   return (
     <CarouselWrapper width={width}>
-      <SlideContainer ref={slideContainerEl}>
+      <SlideContainer ref={slideContainerEl} data-testid="slidecontainer">
         {data.map((slideData, i) =>
           <Slide key={i}
             data-slideindex={i}
+            role="tabpanel"
             aria-label='slide'>
             <SlideBanner>{slideData.bannerText}</SlideBanner>
             <img src={slideData.imgUrl} alt={slideData.imgAlt} width={width} height={imgHeight} />
           </Slide>
         )}
       </SlideContainer>
-      <SlideButton isForward={false} onClick={() => handleSlideNavClick(NAV_COMMAND.BACKWARD)}>←</SlideButton>
-      <SlideButton isForward={true} onClick={() => handleSlideNavClick(NAV_COMMAND.FORWARD)}>→</SlideButton>
+      <SlideButton role={"button"} aria-label="back" isForward={false} onClick={() => handleSlideNavClick(NAV_COMMAND.BACKWARD)}>←</SlideButton>
+      <SlideButton role={"button"} aria-label="forward" isForward={true} onClick={() => handleSlideNavClick(NAV_COMMAND.FORWARD)}>→</SlideButton>
       <SlideIndicators>
         {data.map((_, i) => <SlideIndicator
           key={i}
           active={i === currentSlide}
+          role={"tab"}
+          aria-label={`slide ${i + 1}`}
+          aria-selected={i === currentSlide}
           onClick={() => handleSlideNavClick(NAV_COMMAND.NUMBER, i)}
         />)}
       </SlideIndicators>
