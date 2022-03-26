@@ -1,3 +1,6 @@
+# https://about.codecov.io/blog/javascript-code-coverage-using-github-actions-and-codecov/
+# https://github.com/marketplace/actions/codecov
+
 name: Running Code Coverage
 
 on: [push, pull_request]
