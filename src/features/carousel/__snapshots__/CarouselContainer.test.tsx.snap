@@ -2,11 +2,12 @@
 
 exports[`CarouselContainer render matches snapshot 1`] = `
 <div>
-  <div
-    class="sc-bczRLJ hLuJXo"
+  <header
+    class="sc-bczRLJ dmSzxI"
   >
     <div
       class="sc-gsnTZi fwTuqs"
+      role="heading"
     >
       Carousel
     </div>
@@ -89,9 +90,10 @@ exports[`CarouselContainer render matches snapshot 1`] = `
         </a>
       </div>
     </div>
-  </div>
-  <div
-    class="sc-jSMfEi eEGgWx"
+  </header>
+  <section
+    class="sc-jSMfEi foNrii"
+    role="main"
   >
     <div
       class="sc-iBkjds kWaVEW"
@@ -193,17 +195,18 @@ exports[`CarouselContainer render matches snapshot 1`] = `
         />
       </div>
     </div>
-  </div>
+  </section>
 </div>
 `;
 
 exports[`CarouselContainer views markdown article 1`] = `
 <div>
-  <div
-    class="sc-bczRLJ hLuJXo"
+  <header
+    class="sc-bczRLJ dmSzxI"
   >
     <div
       class="sc-gsnTZi fwTuqs"
+      role="heading"
     >
       Carousel
     </div>
@@ -286,15 +289,11 @@ exports[`CarouselContainer views markdown article 1`] = `
         </a>
       </div>
     </div>
-  </div>
+  </header>
   <div
-    class="sc-jSMfEi eEGgWx"
+    class="sc-gKXOVf hpxnPL"
+    role="main"
   >
-    <div
-      class="sc-gKXOVf ilvEdf"
-      role="article"
-      style="display: none;"
-    />
     <div
       class="sc-eCYdqJ hqWDMF"
     >
@@ -307,11 +306,12 @@ exports[`CarouselContainer views markdown article 1`] = `
 
 exports[`CarouselContainer window resize recalculates layout 1`] = `
 <div>
-  <div
-    class="sc-bczRLJ hLuJXo"
+  <header
+    class="sc-bczRLJ dmSzxI"
   >
     <div
       class="sc-gsnTZi fwTuqs"
+      role="heading"
     >
       Carousel
     </div>
@@ -394,9 +394,10 @@ exports[`CarouselContainer window resize recalculates layout 1`] = `
         </a>
       </div>
     </div>
-  </div>
-  <div
-    class="sc-jSMfEi eEGgWx"
+  </header>
+  <section
+    class="sc-jSMfEi foNrii"
+    role="main"
   >
     <div
       class="sc-iBkjds kWaVEW"
@@ -498,6 +499,6 @@ exports[`CarouselContainer window resize recalculates layout 1`] = `
         />
       </div>
     </div>
-  </div>
+  </section>
 </div>
 `;

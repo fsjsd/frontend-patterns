@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const ContentFooter = styled.div`
+const ContentFooter = styled.section`
   border-top: solid 1px #ccc;
   background-color: white;
   padding: 10px;

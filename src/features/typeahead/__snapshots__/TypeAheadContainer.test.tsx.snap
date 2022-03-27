@@ -2,11 +2,12 @@
 
 exports[`TypeAhead renders and matches snapshot 1`] = `
 <div>
-  <div
-    class="sc-bczRLJ hLuJXo"
+  <header
+    class="sc-bczRLJ dmSzxI"
   >
     <div
       class="sc-gsnTZi fwTuqs"
+      role="heading"
     >
       Type-ahead
     </div>
@@ -89,20 +90,21 @@ exports[`TypeAhead renders and matches snapshot 1`] = `
         </a>
       </div>
     </div>
-  </div>
-  <div
-    class="sc-jSMfEi eEGgWx"
+  </header>
+  <section
+    class="sc-jSMfEi foNrii"
+    role="main"
   >
     <div
       role="main"
-      style=""
+      style="display: none;"
+    />
+    <div
+      class="sc-eCYdqJ hqWDMF"
     >
-      <div
-        class="sc-iBkjds fPMrdA"
-      >
-        Coming soon
-      </div>
+      <div />
+      <div />
     </div>
-  </div>
+  </section>
 </div>
 `;

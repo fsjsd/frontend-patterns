@@ -1,11 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Header = styled.div`
+const Header = styled.header`
   background-color: white;
   border-bottom: solid 1px #e0e0e0;
   box-shadow: 0 -6px 15px 0px rgb(0 0 0 / 10%);
   display:flex;
+  flex-grow:0;
 `;
 
 export const ContentHeaderLabel = styled.div`

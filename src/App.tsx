@@ -36,7 +36,7 @@ function App() {
                   element={<React.Suspense fallback={<Loading />}>{routeDefinition.element}</React.Suspense>} />
                 )}
               </Routes>
-              <ContentFooter>
+              <ContentFooter role="contentinfo" aria-label='Web vitals information'>
                 <WebVitals />
               </ContentFooter>
             </>);

@@ -2,11 +2,12 @@
 
 exports[`InfiniteScrollContainer render matches snapshot 1`] = `
 <div>
-  <div
-    class="sc-bczRLJ hLuJXo"
+  <header
+    class="sc-bczRLJ dmSzxI"
   >
     <div
       class="sc-gsnTZi fwTuqs"
+      role="heading"
     >
       Infinite Scroll
     </div>
@@ -89,9 +90,10 @@ exports[`InfiniteScrollContainer render matches snapshot 1`] = `
         </a>
       </div>
     </div>
-  </div>
-  <div
-    class="sc-jSMfEi eEGgWx"
+  </header>
+  <section
+    class="sc-jSMfEi foNrii"
+    role="main"
   >
     <div
       style="width: 300px; height: 500px; overflow-y: scroll;"
@@ -166,6 +168,6 @@ exports[`InfiniteScrollContainer render matches snapshot 1`] = `
         </button>
       </div>
     </div>
-  </div>
+  </section>
 </div>
 `;

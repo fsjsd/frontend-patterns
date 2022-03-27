@@ -6,13 +6,17 @@ import ContentHeader, { ContentHeaderIcon, ContentHeaderLabel, ContentHeaderRigh
 import Loading from "./Loading";
 const ReactMarkdown = React.lazy(() => import('react-markdown'))
 
-export const ContentWrapperStyled = styled.div`
+export const ContentWrapperStyled = styled.section`
   padding: 15px;
-  flex-grow: 2;
+  flex-grow: 1;
+  overflow-y: auto;
 `;
 
-const MarkdownStyles = styled.div`
+const ContentWrapperArticle = styled.div`
+  overflow-y: auto;
+  flex-grow: 1;
   font-size:0.85em;
+  padding: 15px;
   h1{
     font-weight:700;
     font-size:1.25em;
@@ -26,6 +30,13 @@ const MarkdownStyles = styled.div`
   }
   p{
     margin-bottom:0.75em;
+  }
+  ul {
+    padding-left: 1.5em;
+    margin-bottom:0.75em;
+  }
+  li{
+    list-style:disc;
   }
 `;
 
@@ -53,7 +64,7 @@ export const ContentWrapper: React.FC<ContentWrapperProps> = ({ children, title,
   }, [viewNotes])
   return <>
     <ContentHeader>
-      <ContentHeaderLabel>{title}</ContentHeaderLabel>
+      <ContentHeaderLabel role="heading">{title}</ContentHeaderLabel>
       <ContentHeaderRight>
         <ContentHeaderIcon role="button" selected={!viewNotes} title="Run demo" onClick={() => setViewNotes(false)}>
           <MdOutlinePlayCircleOutline />
@@ -66,13 +77,15 @@ export const ContentWrapper: React.FC<ContentWrapperProps> = ({ children, title,
         </ContentHeaderIcon>}
       </ContentHeaderRight>
     </ContentHeader>
-    <ContentWrapperStyled>
-      {viewNotes && <Suspense fallback={<Loading />}>
-        <MarkdownStyles role="article">
-          <ReactMarkdown>{markdown}</ReactMarkdown>
-        </MarkdownStyles>
-      </Suspense>}
-      {!viewNotes && children}
-    </ContentWrapperStyled>
+    <>
+      {viewNotes &&
+        <ContentWrapperArticle role="main">
+          <Suspense fallback={<Loading />}>
+            <ReactMarkdown>{markdown}</ReactMarkdown>
+          </Suspense>
+        </ContentWrapperArticle>}
+      {!viewNotes &&
+        <ContentWrapperStyled role="main">{children}</ContentWrapperStyled>}
+    </>
   </>
-}
+};
