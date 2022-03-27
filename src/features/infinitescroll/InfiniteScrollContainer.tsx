@@ -12,7 +12,7 @@ const InfiniteScrollContainer = () => {
       markDownPromise={import('./requirements.md')}
     >
       <Suspense fallback={<Loading />}>
-        <div style={{ width: 300, height: 500, overflowY: "scroll" }}>
+        <div role="main" style={{ width: 300, height: 500, overflowY: "scroll" }}>
           <InfiniteScroll />
         </div>
       </Suspense>

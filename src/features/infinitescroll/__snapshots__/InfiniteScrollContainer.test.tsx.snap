@@ -93,16 +93,15 @@ exports[`InfiniteScrollContainer render matches snapshot 1`] = `
   </header>
   <section
     class="sc-jSMfEi foNrii"
-    role="main"
+    role="document"
   >
     <div
-      style="width: 300px; height: 500px; overflow-y: scroll; display: none;"
-    />
-    <div
-      class="sc-eCYdqJ hqWDMF"
+      role="main"
+      style="width: 300px; height: 500px; overflow-y: scroll;"
     >
-      <div />
-      <div />
+      <div>
+        Infinite scroll Coming soon
+      </div>
     </div>
   </section>
 </div>
