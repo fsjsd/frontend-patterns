@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AutoCompleteContainer render matches snapshot 1`] = `
+exports[`Messenger renders and matches snapshot 1`] = `
 <div>
   <div
     class="sc-bczRLJ dtMXGe"
@@ -8,7 +8,7 @@ exports[`AutoCompleteContainer render matches snapshot 1`] = `
     <div
       class="sc-gsnTZi dkPlsI"
     >
-      Auto-complete
+      Messenger
     </div>
   </div>
   <div
@@ -16,9 +16,12 @@ exports[`AutoCompleteContainer render matches snapshot 1`] = `
   >
     <div
       role="main"
+      style=""
     >
-      <div>
-        AutoComplete
+      <div
+        class="sc-eCYdqJ jGnNot"
+      >
+        Coming soon
       </div>
     </div>
   </div>

@@ -1,4 +1,7 @@
-import React from 'react'
+import React, { Suspense } from 'react'
+import ContentHeader, { ContentHeaderLabel } from '../../ux/ContentHeader'
+import { ContentWrapper } from '../../ux/ContentWrapper'
+import Loading from '../../ux/Loading'
 import AutoComplete from './AutoComplete'
 
 // UX design guidelines:
@@ -6,9 +9,18 @@ import AutoComplete from './AutoComplete'
 
 const AutoCompleteContainer = () => {
   return (
-    <div>
-      <AutoComplete />
-    </div>
+    <>
+      <ContentHeader>
+        <ContentHeaderLabel>Auto-complete</ContentHeaderLabel>
+      </ContentHeader>
+      <ContentWrapper>
+        <Suspense fallback={<Loading />}>
+          <div role="main">
+            <AutoComplete />
+          </div>
+        </Suspense>
+      </ContentWrapper>
+    </>
   )
 }
 

@@ -13,8 +13,14 @@ import {
   MdTheaters,
 } from 'react-icons/md'
 import CarouselContainer from './features/carousel/CarouselContainer'
+import DataTableContainer from './features/datatable/DataTableContainer'
 import InfiniteScrollContainer from './features/infinitescroll/InfiniteScrollContainer'
-import NotImplementedException from './features/misc/NotImplementedException'
+import MessengerContainer from './features/messenger/MessengerContainer'
+import NetflixContainer from './features/netflix/NetflixContainer'
+import NewsFeedContainer from './features/newsfeed/NewsFeedContainer'
+import PinterestContainer from './features/pinterest/PinterestContainer'
+import PollContainer from './features/poll/PollContainer'
+import TypeAheadContainer from './features/typeahead/TypeAheadContainer'
 import Home from './Home'
 
 const urlRoot = process.env.REACT_APP_ROOT_URL
@@ -43,49 +49,49 @@ const appRoutes = [
   },
   {
     path: `${urlRoot}/typeahead`,
-    element: <NotImplementedException />,
+    element: <TypeAheadContainer />,
     icon: <MdFlip />,
     title: 'Typeahead',
     group: NAV_GROUPS.COMPONENTS,
   },
   {
     path: `${urlRoot}/newsfeed`,
-    element: <NotImplementedException />,
+    element: <NewsFeedContainer />,
     icon: <MdListAlt />,
     title: 'Newsfeed',
     group: NAV_GROUPS.COMPONENTS,
   },
   {
     path: `${urlRoot}/datatable`,
-    element: <NotImplementedException />,
+    element: <DataTableContainer />,
     icon: <MdTableView />,
     title: 'Data table',
     group: NAV_GROUPS.COMPONENTS,
   },
   {
     path: `${urlRoot}/poll`,
-    element: <NotImplementedException />,
+    element: <PollContainer />,
     icon: <MdAssessment />,
     title: 'Poll',
     group: NAV_GROUPS.COMPONENTS,
   },
   {
     path: `${urlRoot}/messenger`,
-    element: <NotImplementedException />,
+    element: <MessengerContainer />,
     icon: <MdChat />,
     title: 'Messenger',
     group: NAV_GROUPS.FEATURES,
   },
   {
     path: `${urlRoot}/netflix`,
-    element: <NotImplementedException />,
+    element: <NetflixContainer />,
     icon: <MdTheaters />,
     title: 'Netflix',
     group: NAV_GROUPS.FEATURES,
   },
   {
     path: `${urlRoot}/pinterest`,
-    element: <NotImplementedException />,
+    element: <PinterestContainer />,
     icon: <MdDashboard />,
     title: 'Pinterest',
     group: NAV_GROUPS.FEATURES,
