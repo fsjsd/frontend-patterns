@@ -1,11 +1,10 @@
 import React, { Suspense, useCallback } from 'react'
-import ContentHeader, { ContentHeaderLabel } from '../../ux/ContentHeader'
 import { ContentWrapper } from '../../ux/ContentWrapper'
 import Loading from '../../ux/Loading'
-
 const InfiniteScroll = React.lazy(() => import('./InfiniteScroll'))
-// const ReactMarkdown = React.lazy(() => import('react-markdown'))
-
+//const requirementsMarkDownPromise = import('./requirements.md')
+//import mdFile from "./requirements.md";
+//console.log(requirementsMarkDown)
 interface ScrollItemData {
   id: number
 }
@@ -36,25 +35,22 @@ const InfiniteScrollContainer = () => {
   }, []);
 
   return (
-    <>
-      <ContentHeader>
-        <ContentHeaderLabel>Infinite Scroll</ContentHeaderLabel>
-      </ContentHeader>
-      <ContentWrapper>
-        <Suspense fallback={<Loading />}>
-          <div style={{ width: 300, height: 500, overflowY: "scroll" }}>
-            <InfiniteScroll
-              data={initialData}
-              renderData={mapItemComponent}
-              onLoadMore={getMore}
-            />
-          </div>
-        </Suspense>
-      </ContentWrapper>
-    </>
+    <ContentWrapper
+      title="Infinite Scroll"
+      codeLink="/features/infinitescroll"
+      markDownPromise={import('./requirements.md')}
+    >
+      <Suspense fallback={<Loading />}>
+        <div style={{ width: 300, height: 500, overflowY: "scroll" }}>
+          <InfiniteScroll
+            data={initialData}
+            renderData={mapItemComponent}
+            onLoadMore={getMore}
+          />
+        </div>
+      </Suspense>
+    </ContentWrapper>
   )
 }
-
-//<ReactMarkdown># Hello, *world*!</ReactMarkdown>
 
 export default InfiniteScrollContainer

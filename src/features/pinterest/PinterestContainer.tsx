@@ -1,22 +1,21 @@
 import React, { Suspense } from 'react'
-import ContentHeader, { ContentHeaderLabel } from '../../ux/ContentHeader'
 import { ContentWrapper } from '../../ux/ContentWrapper'
 import Loading from '../../ux/Loading'
 const Pinterest = React.lazy(() => import('./Pinterest'))
 
 const PinterestContainer = () => {
-  return (<>
-    <ContentHeader>
-      <ContentHeaderLabel>Pinterest</ContentHeaderLabel>
-    </ContentHeader>
-    <ContentWrapper>
+  return (
+    <ContentWrapper
+      title='Pinterest'
+      codeLink="/features/pinterest"
+      markDownPromise={import('./requirements.md')}
+    >
       <Suspense fallback={<Loading />}>
         <div role="main">
           <Pinterest />
         </div>
       </Suspense>
     </ContentWrapper>
-  </>
   )
 }
 

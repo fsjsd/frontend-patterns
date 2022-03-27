@@ -29,15 +29,13 @@ function App() {
         renderContents={
           () => {
             return (<>
-              <div style={{ flexGrow: 2 }}>
-                <Routes>
-                  {appRoutes.map(routeDefinition => <Route
-                    key={routeDefinition.path}
-                    path={routeDefinition.path}
-                    element={<React.Suspense fallback={<Loading />}>{routeDefinition.element}</React.Suspense>} />
-                  )}
-                </Routes>
-              </div>
+              <Routes>
+                {appRoutes.map(routeDefinition => <Route
+                  key={routeDefinition.path}
+                  path={routeDefinition.path}
+                  element={<React.Suspense fallback={<Loading />}>{routeDefinition.element}</React.Suspense>} />
+                )}
+              </Routes>
               <ContentFooter>
                 <WebVitals />
               </ContentFooter>

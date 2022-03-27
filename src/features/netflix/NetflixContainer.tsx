@@ -1,22 +1,21 @@
 import React, { Suspense } from 'react'
-import ContentHeader, { ContentHeaderLabel } from '../../ux/ContentHeader'
 import { ContentWrapper } from '../../ux/ContentWrapper'
 import Loading from '../../ux/Loading'
 const Netflix = React.lazy(() => import('./Netflix'))
 
 const NetflixContainer = () => {
-  return (<>
-    <ContentHeader>
-      <ContentHeaderLabel>Netflix</ContentHeaderLabel>
-    </ContentHeader>
-    <ContentWrapper>
+  return (
+    <ContentWrapper
+      title="Netflix"
+      codeLink="/features/netflix"
+      markDownPromise={import('./requirements.md')}
+    >
       <Suspense fallback={<Loading />}>
         <div role="main">
           <Netflix />
         </div>
       </Suspense>
     </ContentWrapper>
-  </>
   )
 }
 

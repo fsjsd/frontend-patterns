@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { Suspense } from 'react'
+import { ContentWrapper } from '../../ux/ContentWrapper'
+import Loading from '../../ux/Loading'
 import Carousel, { CarouselSlideData } from './Carousel'
 
 const urlRoot = process.env.REACT_APP_ROOT_URL
@@ -23,9 +25,14 @@ const CarouselContainer = () => {
   ]
 
   return (
-    <div>
-      <Carousel data={data} width={'1200'} />
-    </div>
+    <ContentWrapper
+      title="Carousel"
+      codeLink="/features/carousel"
+      markDownPromise={import('./requirements.md')}>
+      <Suspense fallback={<Loading />}>
+        <Carousel data={data} width={'1200'} />
+      </Suspense>
+    </ContentWrapper>
   )
 }
 

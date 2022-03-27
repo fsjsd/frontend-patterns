@@ -24,6 +24,7 @@ module.exports = {
   },
   plugins: ['react', '@typescript-eslint'],
   rules: {
-    "no-debugger": "off"
+    "no-debugger": "off",
+    "react/prop-types": "off", // use TypeScript
   },
 }

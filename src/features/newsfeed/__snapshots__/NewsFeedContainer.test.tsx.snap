@@ -3,23 +3,102 @@
 exports[`NewsFeed renders and matches snapshot 1`] = `
 <div>
   <div
-    class="sc-bczRLJ dtMXGe"
+    class="sc-bczRLJ hLuJXo"
   >
     <div
-      class="sc-gsnTZi dkPlsI"
+      class="sc-gsnTZi fwTuqs"
     >
       News feed
     </div>
+    <div
+      class="sc-dkzDqf cTAAYl"
+    >
+      <div
+        class="sc-hKMtZM cSsmCU"
+        role="button"
+        title="Run demo"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0V0z"
+            fill="none"
+          />
+          <path
+            d="M10 16.5l6-4.5-6-4.5zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+          />
+        </svg>
+      </div>
+      <div
+        class="sc-hKMtZM gStOfT"
+        role="button"
+        title="View notes"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0V0z"
+            fill="none"
+          />
+          <path
+            d="M3 18h12v-2H3v2zM3 6v2h18V6H3zm0 7h18v-2H3v2z"
+          />
+        </svg>
+      </div>
+      <div
+        class="sc-hKMtZM gStOfT"
+        role="button"
+        title="View code on github"
+      >
+        <a
+          href="https://github.com/fsjsd/frontend-patterns/tree/main/src/features/newsfeed"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0V0z"
+              fill="none"
+            />
+            <path
+              d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
   </div>
   <div
-    class="sc-dkzDqf eGEKCX"
+    class="sc-jSMfEi eEGgWx"
   >
     <div
       role="main"
       style=""
     >
       <div
-        class="sc-eCYdqJ jGnNot"
+        class="sc-iBkjds fPMrdA"
       >
         Coming soon
       </div>

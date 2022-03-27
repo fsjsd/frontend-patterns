@@ -1,22 +1,21 @@
 import React, { Suspense } from 'react'
-import ContentHeader, { ContentHeaderLabel } from '../../ux/ContentHeader'
 import { ContentWrapper } from '../../ux/ContentWrapper'
 import Loading from '../../ux/Loading'
 const NewsFeed = React.lazy(() => import('./NewsFeed'))
 
 const NewsFeedContainer = () => {
-  return (<>
-    <ContentHeader>
-      <ContentHeaderLabel>News feed</ContentHeaderLabel>
-    </ContentHeader>
-    <ContentWrapper>
+  return (
+    <ContentWrapper
+      title='News feed'
+      codeLink="/features/newsfeed"
+      markDownPromise={import('./requirements.md')}
+    >
       <Suspense fallback={<Loading />}>
         <div role="main">
           <NewsFeed />
         </div>
       </Suspense>
     </ContentWrapper>
-  </>
   )
 }
 
