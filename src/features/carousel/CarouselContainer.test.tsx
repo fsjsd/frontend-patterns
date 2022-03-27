@@ -54,13 +54,17 @@ describe('CarouselContainer', () => {
     fireEvent.click(firstTab)
   });
 
-  test('render matches snapshot', () => {
+  test('views markdown article', () => {
+    jest.mock("./requirements.md", () => "# Markdown test");
+    // TODO setup jest-fetch-mock in __mocks__
     const { container } = render(<CarouselContainer />)
     const notesButton = screen.getByRole('button', { name: 'View notes' })
     fireEvent.click(notesButton);
     waitFor(() => expect(screen.getByRole('article')).toBeInTheDocument());
-
-    expect(container).toMatchSnapshot()
+    expect(container).toMatchSnapshot();
+    const runButton = screen.getByRole('button', { name: 'Run demo' })
+    fireEvent.click(runButton);
+    expect(screen.queryByRole('article')).not.toBeInTheDocument()
   })
 
 });

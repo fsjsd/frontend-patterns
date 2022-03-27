@@ -197,7 +197,7 @@ exports[`CarouselContainer render matches snapshot 1`] = `
 </div>
 `;
 
-exports[`CarouselContainer render matches snapshot 2`] = `
+exports[`CarouselContainer views markdown article 1`] = `
 <div>
   <div
     class="sc-bczRLJ hLuJXo"
