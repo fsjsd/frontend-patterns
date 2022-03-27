@@ -21,7 +21,8 @@
     "lint": "eslint src --color --fix",
     "prettier": "prettier src -check",
     "lint-staged": "lint-staged",
-    "husky-install": "husky install"
+    "husky-install": "husky install",
+    "nuke": "rimraf node_modules && yarn"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
