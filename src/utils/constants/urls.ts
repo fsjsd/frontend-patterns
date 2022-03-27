@@ -1,0 +1,1 @@
+export const GITHUB_ROOT = "https://github.com/fsjsd/frontend-patterns/tree/main/src"

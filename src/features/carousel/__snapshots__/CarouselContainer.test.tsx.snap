@@ -2,23 +2,115 @@
 
 exports[`CarouselContainer render matches snapshot 1`] = `
 <div>
-  <div>
+  <header
+    class="sc-bczRLJ dmSzxI"
+  >
     <div
-      class="sc-bczRLJ gAMQQc"
+      class="sc-gsnTZi fwTuqs"
+      role="heading"
+    >
+      Carousel
+    </div>
+    <div
+      class="sc-dkzDqf cTAAYl"
+    >
+      <div
+        class="sc-hKMtZM cSsmCU"
+        role="button"
+        title="Run demo"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0V0z"
+            fill="none"
+          />
+          <path
+            d="M10 16.5l6-4.5-6-4.5zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+          />
+        </svg>
+      </div>
+      <div
+        class="sc-hKMtZM gStOfT"
+        role="button"
+        title="View notes"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0V0z"
+            fill="none"
+          />
+          <path
+            d="M3 18h12v-2H3v2zM3 6v2h18V6H3zm0 7h18v-2H3v2z"
+          />
+        </svg>
+      </div>
+      <div
+        class="sc-hKMtZM gStOfT"
+        role="button"
+        title="View code on github"
+      >
+        <a
+          href="https://github.com/fsjsd/frontend-patterns/tree/main/src/features/carousel"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0V0z"
+              fill="none"
+            />
+            <path
+              d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+  <section
+    class="sc-jSMfEi foNrii"
+    role="document"
+  >
+    <div
+      class="sc-iBkjds kWaVEW"
       width="1200"
     >
       <div
-        class="sc-gsnTZi gTMrvE"
+        class="sc-ftvSup koFvnP"
         data-testid="slidecontainer"
       >
         <div
           aria-label="slide"
-          class="sc-jSMfEi VJILX"
+          class="sc-iqcoie hDFtQB"
           data-slideindex="0"
           role="tabpanel"
         >
           <div
-            class="sc-gKXOVf cbzbJq"
+            class="sc-crXcEl TSSBy"
           >
             Tour the Empire State Building! Buy tickets now.
           </div>
@@ -31,12 +123,12 @@ exports[`CarouselContainer render matches snapshot 1`] = `
         </div>
         <div
           aria-label="slide"
-          class="sc-jSMfEi VJILX"
+          class="sc-iqcoie hDFtQB"
           data-slideindex="1"
           role="tabpanel"
         >
           <div
-            class="sc-gKXOVf cbzbJq"
+            class="sc-crXcEl TSSBy"
           >
             Ride the Shinkansen!
           </div>
@@ -49,12 +141,12 @@ exports[`CarouselContainer render matches snapshot 1`] = `
         </div>
         <div
           aria-label="slide"
-          class="sc-jSMfEi VJILX"
+          class="sc-iqcoie hDFtQB"
           data-slideindex="2"
           role="tabpanel"
         >
           <div
-            class="sc-gKXOVf cbzbJq"
+            class="sc-crXcEl TSSBy"
           >
             See penguins!
           </div>
@@ -68,40 +160,145 @@ exports[`CarouselContainer render matches snapshot 1`] = `
       </div>
       <div
         aria-label="back"
-        class="sc-dkzDqf jtCkml"
+        class="sc-papXJ eysntI"
         role="button"
       >
         ←
       </div>
       <div
         aria-label="forward"
-        class="sc-dkzDqf ehNlFK"
+        class="sc-papXJ kULIhj"
         role="button"
       >
         →
       </div>
       <div
-        class="sc-hKMtZM kWebxu"
+        class="sc-jqUVSM gfvXqR"
       >
         <div
           aria-label="slide 1"
           aria-selected="true"
-          class="sc-eCYdqJ kSRWIa"
+          class="sc-kDDrLX bczsGL"
           role="tab"
         />
         <div
           aria-label="slide 2"
           aria-selected="false"
-          class="sc-eCYdqJ gxiJdE"
+          class="sc-kDDrLX jjgnGx"
           role="tab"
         />
         <div
           aria-label="slide 3"
           aria-selected="false"
-          class="sc-eCYdqJ gxiJdE"
+          class="sc-kDDrLX jjgnGx"
           role="tab"
         />
       </div>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`CarouselContainer views markdown article 1`] = `
+<div>
+  <header
+    class="sc-bczRLJ dmSzxI"
+  >
+    <div
+      class="sc-gsnTZi fwTuqs"
+      role="heading"
+    >
+      Carousel
+    </div>
+    <div
+      class="sc-dkzDqf cTAAYl"
+    >
+      <div
+        class="sc-hKMtZM gStOfT"
+        role="button"
+        title="Run demo"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0V0z"
+            fill="none"
+          />
+          <path
+            d="M10 16.5l6-4.5-6-4.5zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+          />
+        </svg>
+      </div>
+      <div
+        class="sc-hKMtZM cSsmCU"
+        role="button"
+        title="View notes"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0V0z"
+            fill="none"
+          />
+          <path
+            d="M3 18h12v-2H3v2zM3 6v2h18V6H3zm0 7h18v-2H3v2z"
+          />
+        </svg>
+      </div>
+      <div
+        class="sc-hKMtZM gStOfT"
+        role="button"
+        title="View code on github"
+      >
+        <a
+          href="https://github.com/fsjsd/frontend-patterns/tree/main/src/features/carousel"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0V0z"
+              fill="none"
+            />
+            <path
+              d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+  <div
+    class="sc-gKXOVf hpxnPL"
+    role="article"
+  >
+    <div
+      class="sc-eCYdqJ hqWDMF"
+    >
+      <div />
+      <div />
     </div>
   </div>
 </div>
@@ -109,23 +306,115 @@ exports[`CarouselContainer render matches snapshot 1`] = `
 
 exports[`CarouselContainer window resize recalculates layout 1`] = `
 <div>
-  <div>
+  <header
+    class="sc-bczRLJ dmSzxI"
+  >
     <div
-      class="sc-bczRLJ gAMQQc"
+      class="sc-gsnTZi fwTuqs"
+      role="heading"
+    >
+      Carousel
+    </div>
+    <div
+      class="sc-dkzDqf cTAAYl"
+    >
+      <div
+        class="sc-hKMtZM cSsmCU"
+        role="button"
+        title="Run demo"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0V0z"
+            fill="none"
+          />
+          <path
+            d="M10 16.5l6-4.5-6-4.5zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+          />
+        </svg>
+      </div>
+      <div
+        class="sc-hKMtZM gStOfT"
+        role="button"
+        title="View notes"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0V0z"
+            fill="none"
+          />
+          <path
+            d="M3 18h12v-2H3v2zM3 6v2h18V6H3zm0 7h18v-2H3v2z"
+          />
+        </svg>
+      </div>
+      <div
+        class="sc-hKMtZM gStOfT"
+        role="button"
+        title="View code on github"
+      >
+        <a
+          href="https://github.com/fsjsd/frontend-patterns/tree/main/src/features/carousel"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0V0z"
+              fill="none"
+            />
+            <path
+              d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+  <section
+    class="sc-jSMfEi foNrii"
+    role="document"
+  >
+    <div
+      class="sc-iBkjds kWaVEW"
       width="1200"
     >
       <div
-        class="sc-gsnTZi gTMrvE"
+        class="sc-ftvSup koFvnP"
         data-testid="slidecontainer"
       >
         <div
           aria-label="slide"
-          class="sc-jSMfEi VJILX"
+          class="sc-iqcoie hDFtQB"
           data-slideindex="0"
           role="tabpanel"
         >
           <div
-            class="sc-gKXOVf cbzbJq"
+            class="sc-crXcEl TSSBy"
           >
             Tour the Empire State Building! Buy tickets now.
           </div>
@@ -138,12 +427,12 @@ exports[`CarouselContainer window resize recalculates layout 1`] = `
         </div>
         <div
           aria-label="slide"
-          class="sc-jSMfEi VJILX"
+          class="sc-iqcoie hDFtQB"
           data-slideindex="1"
           role="tabpanel"
         >
           <div
-            class="sc-gKXOVf cbzbJq"
+            class="sc-crXcEl TSSBy"
           >
             Ride the Shinkansen!
           </div>
@@ -156,12 +445,12 @@ exports[`CarouselContainer window resize recalculates layout 1`] = `
         </div>
         <div
           aria-label="slide"
-          class="sc-jSMfEi VJILX"
+          class="sc-iqcoie hDFtQB"
           data-slideindex="2"
           role="tabpanel"
         >
           <div
-            class="sc-gKXOVf cbzbJq"
+            class="sc-crXcEl TSSBy"
           >
             See penguins!
           </div>
@@ -175,41 +464,41 @@ exports[`CarouselContainer window resize recalculates layout 1`] = `
       </div>
       <div
         aria-label="back"
-        class="sc-dkzDqf jtCkml"
+        class="sc-papXJ eysntI"
         role="button"
       >
         ←
       </div>
       <div
         aria-label="forward"
-        class="sc-dkzDqf ehNlFK"
+        class="sc-papXJ kULIhj"
         role="button"
       >
         →
       </div>
       <div
-        class="sc-hKMtZM kWebxu"
+        class="sc-jqUVSM gfvXqR"
       >
         <div
           aria-label="slide 1"
           aria-selected="true"
-          class="sc-eCYdqJ kSRWIa"
+          class="sc-kDDrLX bczsGL"
           role="tab"
         />
         <div
           aria-label="slide 2"
           aria-selected="false"
-          class="sc-eCYdqJ gxiJdE"
+          class="sc-kDDrLX jjgnGx"
           role="tab"
         />
         <div
           aria-label="slide 3"
           aria-selected="false"
-          class="sc-eCYdqJ gxiJdE"
+          class="sc-kDDrLX jjgnGx"
           role="tab"
         />
       </div>
     </div>
-  </div>
+  </section>
 </div>
 `;

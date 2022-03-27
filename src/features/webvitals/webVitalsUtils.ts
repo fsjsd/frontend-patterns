@@ -15,6 +15,8 @@ import {
 // adapted from:
 // https://github.com/GoogleChromeLabs/web-vitals-report/blob/main/src/js/analytics.js
 
+const enableLogging = false;
+
 type WebVitalPerfEntries = (
   | PerformanceEntry
   | FirstInputPolyfillEntry
@@ -46,6 +48,10 @@ export interface MetricInfo {
   connect_start?: number
   request_start?: number
   response_start?: number
+  domcontent_loaded_start?: number
+  dom_complete?: number
+  load_start?: number
+
 }
 
 const thresholds: Record<string, any> = {
@@ -158,16 +164,20 @@ const mapMetric = (metric: Metric) => {
 
   if (name === 'TTFB' && entries.length) {
     const navEntry = entries[0] as any
+    enableLogging && console.log(navEntry)
     Object.assign(params, {
       fetch_start: navEntry.fetchStart,
       domain_lookup_start: navEntry.domainLookupStart,
+      domcontent_loaded_start: navEntry.domContentLoadedEventStart,
+      dom_complete: navEntry.domComplete,
+      load_start: navEntry.loadEventStart,
       connect_start: navEntry.connectStart,
       request_start: navEntry.requestStart,
       response_start: navEntry.responseStart,
     })
   }
 
-  console.log(`[${name}]`, params)
+  enableLogging && console.log(`[${name}]`, params)
 
   return params
 }
@@ -185,37 +195,3 @@ export const registerWebVitalsListeners = ({
   getLCP(m => onLcp(mapMetric(m)))
   getTTFB(m => onTtfb(mapMetric(m)))
 }
-/*
-const getWebVitalAsync = async (getWebVitalFn: (onReport: ReportHandler, reportAllChanges?: boolean | undefined) => void) => {
-  return new Promise((resolve, reject) => {
-    getWebVitalFn((metric) => {
-      resolve(handleMetric(metric));
-    })  
-  });
-};
-
-export async function cls() {
-  const result = await getWebVitalAsync(getCLS);
-  return result;
-}
-
-export async function fcp() {
-  const result = await getWebVitalAsync(getFCP);
-  return result;
-}
-
-export async function fid() {
-  const result = await getWebVitalAsync(getFID);
-  return result;
-}
-
-export async function lcp() {
-  const result = await getWebVitalAsync(getLCP);
-  return result;
-}
-
-export async function ttfb() {
-  const result = await getWebVitalAsync(getTTFB);
-  return result;
-}
-*/

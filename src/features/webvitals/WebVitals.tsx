@@ -132,11 +132,14 @@ const WebVitals = () => {
             <br />
             {mapMetricRating(wvTtfb.metric_rating)}. {wvTtfb.value}ms
             <br />
-            connect: {wvTtfb.connect_start}<br />
-            domain_lookup: {wvTtfb.domain_lookup_start}<br />
-            fetch: {wvTtfb.fetch_start}<br />
-            request:{wvTtfb.request_start}<br />
-            response: {wvTtfb.response_start}
+            fetch: {wvTtfb.fetch_start?.toFixed(4)}<br />
+            domain_lookup: {wvTtfb.domain_lookup_start?.toFixed(2)}<br />
+            connect: {wvTtfb.connect_start?.toFixed(2)}<br />
+            request:{wvTtfb.request_start?.toFixed(2)}<br />
+            response: {wvTtfb.response_start?.toFixed(2)}<br />
+            DOM Content loaded: {wvTtfb.domcontent_loaded_start?.toFixed(2)}<br />
+            DOM complete:{wvTtfb.dom_complete?.toFixed(2)}<br />
+            load start: {wvTtfb.load_start?.toFixed(2)}
           </ToolTip>
           TTFB: <MetricRating rating={wvTtfb.metric_rating} />
         </div>
