@@ -96,77 +96,13 @@ exports[`InfiniteScrollContainer render matches snapshot 1`] = `
     role="main"
   >
     <div
-      style="width: 300px; height: 500px; overflow-y: scroll;"
+      style="width: 300px; height: 500px; overflow-y: scroll; display: none;"
+    />
+    <div
+      class="sc-eCYdqJ hqWDMF"
     >
-      <div
-        class="sc-iBkjds ePIvQn"
-        role="list"
-      >
-        <div
-          class="sc-ftvSup gvVQpC"
-        />
-        <div
-          class="sc-papXJ cwJMzS"
-        >
-          <div
-            role="listitem"
-          >
-            1
-          </div>
-        </div>
-        <div
-          class="sc-papXJ cwJMzS"
-        >
-          <div
-            role="listitem"
-          >
-            2
-          </div>
-        </div>
-        <div
-          class="sc-papXJ cwJMzS"
-        >
-          <div
-            role="listitem"
-          >
-            3
-          </div>
-        </div>
-        <div
-          class="sc-papXJ cwJMzS"
-        >
-          <div
-            role="listitem"
-          >
-            4
-          </div>
-        </div>
-        <div
-          class="sc-papXJ cwJMzS"
-        >
-          <div
-            role="listitem"
-          >
-            5
-          </div>
-        </div>
-        <button
-          aria-label="Load more"
-          class="sc-jqUVSM gFUDBA"
-          id="infinite-scroll-button"
-        >
-          <span
-            class="disabled-text"
-          >
-            Loading more items...
-          </span>
-          <span
-            class="active-text"
-          >
-            Show more
-          </span>
-        </button>
-      </div>
+      <div />
+      <div />
     </div>
   </section>
 </div>
