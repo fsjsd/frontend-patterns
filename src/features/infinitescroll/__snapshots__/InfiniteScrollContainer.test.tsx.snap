@@ -6,16 +6,16 @@ exports[`InfiniteScrollContainer render matches snapshot 1`] = `
     class="sc-bczRLJ dmSzxI"
   >
     <div
-      class="sc-gsnTZi fwTuqs"
+      class="sc-gsnTZi hCGKc"
       role="heading"
     >
       Infinite Scroll
     </div>
     <div
-      class="sc-dkzDqf cTAAYl"
+      class="sc-dkzDqf gedmVz"
     >
       <div
-        class="sc-hKMtZM cSsmCU"
+        class="sc-hKMtZM dNwpDv"
         role="button"
         title="Run demo"
       >
@@ -38,7 +38,7 @@ exports[`InfiniteScrollContainer render matches snapshot 1`] = `
         </svg>
       </div>
       <div
-        class="sc-hKMtZM gStOfT"
+        class="sc-hKMtZM itnQjY"
         role="button"
         title="View notes"
       >
@@ -61,7 +61,7 @@ exports[`InfiniteScrollContainer render matches snapshot 1`] = `
         </svg>
       </div>
       <div
-        class="sc-hKMtZM gStOfT"
+        class="sc-hKMtZM itnQjY"
         role="button"
         title="View code on github"
       >

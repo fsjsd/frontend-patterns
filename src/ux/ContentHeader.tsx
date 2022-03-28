@@ -12,6 +12,8 @@ const Header = styled.header`
 export const ContentHeaderLabel = styled.div`
   padding: 13px;
   flex-grow: 2;
+  display:flex;
+  align-items:center;
 `
 export const ContentHeaderRight = styled.div`
   display: flex;
@@ -24,12 +26,7 @@ export const ContentHeaderRight = styled.div`
     line-height:normal;
     color: rgb(0 100 176);
     text-decoration: underline;
-    opacity:0.7;
     transition: opacity 0.2s ease-in-out;
-    &:hover{
-      color:rgb(0, 145, 255);
-      opacity:1;
-    }
   }
 `
 export const ContentHeaderIcon = styled.div<{ selected: boolean }>`
@@ -38,6 +35,11 @@ export const ContentHeaderIcon = styled.div<{ selected: boolean }>`
   padding:15px 15px 12px 15px;
   border-bottom: solid 3px transparent;
   ${props => props.selected && 'border-bottom: solid 3px rgb(0, 127, 224);'}
+  opacity:0.6;
+  &:hover{
+      color:rgb(0, 145, 255);
+      opacity:1;
+    }
 `;
 
 const ContentHeader: React.FC = ({ children }) => {
