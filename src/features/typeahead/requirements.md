@@ -14,8 +14,105 @@ Don't forget to estimate the data size both through the network or in local cach
 
 Your are supposed to mainly talk about FrontEnd, but knowing the server side doesn't harm, so following video might be worth watching
 
+## Design
+
+### Functional Requirements
+
+- Component provides search results based on query user types
+- Component appearance can be customised
+- Search results can be customised
+- Component can work with any data format (static or async)
+
+### Non-functional Requirements
+
+- Network efficient
+- Cache results
+- Configurable
+  - cacheSize
+  - filter function
+  - result component representation
+  - minimum query length
+- Work on wide range of devices
+- Accessible from keyboard
+- Performance optimised
+
+### Component Architecture
+
+- TypeAhead
+  - TypeAheadInput
+  - TypeAheadResults
+    - TypeAheadResult (via render prop)
+
+TypeAhead props
+
+```typescript
+interface TypeAheadProps<T> {
+  getResults: (query: string) => Promise<T[]>
+  minQueryLength: number;
+  renderResult: (datum: T) => React.ReactNode
+  cacheSize: number
+  cacheSlidingExpiryMs: number
+}
+```
+
+Component state
+
+```
+interface TypeAheadState<T> {
+  query: string
+  results: T[]
+  cacheSize: number
+  resultsCache: FixedMap<string, T[]>
+}
+```
+
+### API Design
+
+
+
+### Store Design
+
+
+### Optimization
+
+Network
+
+- debounce user input, respect minQueryLength
+- leverage server cache architecture
+- leverage browser cache 
+- leverage component resultsCache (especially relevant on backspace)
+  - clear on timeout
+
+Rendering
+
+- DOM
+  - Virtualization for search results
+  - Update nodes, not insert/delete
+- CSS
+  - use animations
+  - avoid reflows
+  - flat css selectors 
+- Perception
+  - skeleton
+  - loading
+  - placeholders
+
+### Accessibility
+
+Keyboard navigation 
+  - quick access
+  - close
+  - Tabable results
+
+Visual Optimisation
+
+- apply rem's
+- aria-live on appearance
+- aria roles
+
+## References
+
 https://www.youtube.com/watch?v=us0qySiUsGU
 
-
-// UX design guidelines:
-// https://baymard.com/blog/autocomplete-design
+UX design guidelines:
+https://baymard.com/blog/autocomplete-design
