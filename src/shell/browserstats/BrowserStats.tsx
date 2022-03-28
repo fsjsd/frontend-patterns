@@ -1,6 +1,17 @@
 import React, { useEffect, useReducer, useRef } from 'react'
+import { TRAFFIC_LIGHTS } from '../../utils/constants/colors';
 
 // adapted from : https://github.com/tibotiber/react-fps-stats/blob/development/src/index.js
+
+export function fpsRating(currentFps: number): import("csstype").Property.Color {
+  if (currentFps >= 60) {
+    return TRAFFIC_LIGHTS.GREEN;
+  }
+  if (currentFps >= 50) {
+    return TRAFFIC_LIGHTS.AMBER;
+  }
+  return TRAFFIC_LIGHTS.RED;
+}
 
 const BrowserStats = () => {
   const graphWidth = 70;
@@ -56,19 +67,10 @@ const BrowserStats = () => {
 
   return (
     <div>
-      {currentFps && <b style={{ color: fpsRating(currentFps) }}>{currentFps}fps</b>}
+      {currentFps && <b aria-label='FPS' style={{ color: fpsRating(currentFps) }}>{currentFps}fps</b>}
     </div>
   )
 }
 
 export default BrowserStats
 
-function fpsRating(currentFps: number): import("csstype").Property.Color {
-  if (currentFps == 60) {
-    return "#2daf2d";
-  }
-  if (currentFps > 50) {
-    return "#a86323";
-  }
-  return "#972020";
-}

@@ -2,6 +2,14 @@
 
 exports[`BrowserStats renders and matches snapshot 1`] = `
 <div>
-  <div />
+  <div>
+    <b
+      aria-label="FPS"
+      style="color: rgb(151, 32, 32);"
+    >
+      1
+      fps
+    </b>
+  </div>
 </div>
 `;

@@ -1,5 +1,6 @@
 import React, { Suspense, useEffect, useState } from "react";
-import { MdCode, MdNotes, MdOutlinePlayCircleOutline } from "react-icons/md";
+import { MdNotes, MdOutlinePlayCircleOutline } from "react-icons/md";
+import { GoMarkGithub } from "react-icons/go";
 import styled from "styled-components";
 import { GITHUB_ROOT } from "../utils/constants/urls";
 import ContentHeader, { ContentHeaderIcon, ContentHeaderLabel, ContentHeaderRight } from "./ContentHeader";
@@ -72,7 +73,7 @@ export const ContentWrapper: React.FC<ContentWrapperProps> = ({ children, title,
           <MdNotes />
         </ContentHeaderIcon>}
         {codeLink && <ContentHeaderIcon role="button" selected={false} title="View code on github">
-          <a href={`${GITHUB_ROOT}${codeLink}`} target="_blank" rel="noopener noreferrer"><MdCode /></a>
+          <a href={`${GITHUB_ROOT}${codeLink}`} target="_blank" rel="noopener noreferrer"><GoMarkGithub /></a>
         </ContentHeaderIcon>}
       </ContentHeaderRight>
     </ContentHeader>
