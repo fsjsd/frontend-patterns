@@ -55,7 +55,6 @@ export const ContentWrapper: React.FC<ContentWrapperProps> = ({ children, title,
     (async () => {
       if (viewNotes && markDownPromise !== undefined) {
         const markdownModule = await markDownPromise;
-        console.log(markdownModule.default)
         const markdownResponse = await fetch(markdownModule.default)
         const markdown = await markdownResponse.text()
         setMarkdown(markdown);

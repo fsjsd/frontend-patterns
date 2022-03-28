@@ -78,50 +78,6 @@ const WebVitals = () => {
 
   return (
     <ClsWrapper>
-      {wvLcp && (
-        <div
-          aria-label='LCP'
-          title="Largest Contentful Paint"
-          onMouseEnter={() => setLcpTooltipVisible(true)}
-          onMouseLeave={() => setLcpTooltipVisible(false)}
-        >
-          <ToolTip isVisible={lcpTooltipVisible}>
-            <b>Largest Contentful Paint.</b>
-            <br />
-            {mapMetricRating(wvLcp.metric_rating)}. {wvLcp.value / 1000}s
-          </ToolTip>
-          LCP: <MetricRating rating={wvLcp.metric_rating} />
-        </div>
-      )}
-      {wvFid && (
-        <div
-          title="First Input Delay"
-          aria-label='FID'
-          onMouseEnter={() => setFidTooltipVisible(true)}
-          onMouseLeave={() => setFidTooltipVisible(false)}>
-          <ToolTip isVisible={fidTooltipVisible}>
-            <b>First Input Delay.</b>
-            <br />
-            Not reported if the user never interacts with the page
-            <br />
-            {mapMetricRating(wvFid.metric_rating)}. {wvFid.value}ms
-          </ToolTip>
-          FID: <MetricRating rating={wvFid.metric_rating} />
-        </div>
-      )}
-      {wvCls && (
-        <div title="Cumulative Layout Shift"
-          aria-label='CLS'
-          onMouseEnter={() => setClsTooltipVisible(true)}
-          onMouseLeave={() => setClsTooltipVisible(false)}>
-          <ToolTip isVisible={clsTooltipVisible}>
-            <b>Cumulative Layout Shift.</b>
-            <br />
-            {mapMetricRating(wvCls.metric_rating)}. {wvCls.metric_value?.toFixed(4)} ({wvCls.metric_delta?.toFixed(4)}). time: {wvCls.event_time?.toFixed(4)}
-          </ToolTip>
-          CLS: <MetricRating rating={wvCls.metric_rating} />
-        </div>
-      )}
       {wvTtfb && (
         <div title="Time to first byte"
           aria-label='TTFB'
@@ -129,6 +85,10 @@ const WebVitals = () => {
           onMouseLeave={() => setTtfbTooltipVisible(false)}>
           <ToolTip isVisible={ttfbTooltipVisible}>
             <b>Time to first byte.</b>
+            <br />
+            <small>
+              <i>The time between the request for a resource and when the first byte of a response begins to arrive</i>
+            </small>
             <br />
             {mapMetricRating(wvTtfb.metric_rating)}. {wvTtfb.value}ms
             <br />
@@ -141,7 +101,7 @@ const WebVitals = () => {
             DOM complete:{wvTtfb.dom_complete?.toFixed(2)}<br />
             load start: {wvTtfb.load_start?.toFixed(2)}
           </ToolTip>
-          TTFB: <MetricRating rating={wvTtfb.metric_rating} />
+          TTFB <MetricRating rating={wvTtfb.metric_rating} />
         </div>
       )}
       {wvFcp && (
@@ -152,9 +112,71 @@ const WebVitals = () => {
           <ToolTip isVisible={fcpTooltipVisible}>
             <b>First Contentful Paint</b>
             <br />
+            <small>
+              <i>The time from when the page starts loading to when any part of the page&apos;s content is rendered on the screen</i>
+            </small>
+            <br />
             {mapMetricRating(wvFcp.metric_rating)}. {wvFcp.value / 1000}s
           </ToolTip>
-          FCP: <MetricRating rating={wvFcp.metric_rating} />
+          FCP <MetricRating rating={wvFcp.metric_rating} />
+        </div>
+      )}
+      {wvLcp && (
+        <div
+          aria-label='LCP'
+          title="Largest Contentful Paint"
+          onMouseEnter={() => setLcpTooltipVisible(true)}
+          onMouseLeave={() => setLcpTooltipVisible(false)}
+        >
+          <ToolTip isVisible={lcpTooltipVisible}>
+            <b>Largest Contentful Paint.</b>
+            <br />
+            <small>
+              <i>The render time of the largest image or text block visible within the viewport, relative to when the page first started loading.</i>
+            </small>
+            <br />
+            {mapMetricRating(wvLcp.metric_rating)}. {wvLcp.value / 1000}s
+          </ToolTip>
+          LCP <MetricRating rating={wvLcp.metric_rating} />
+        </div>
+      )}
+      {wvFid && (
+        <div
+          title="First Input Delay"
+          aria-label='FID'
+          onMouseEnter={() => setFidTooltipVisible(true)}
+          onMouseLeave={() => setFidTooltipVisible(false)}>
+          <ToolTip isVisible={fidTooltipVisible}>
+            <b>First Input Delay.</b>
+            <br />
+            <small>
+              <i>The time from when a user first interacts with a page to the time when the browser is actually able to begin processing event handlers in response to that interaction.</i>
+            </small>
+            <br />
+            <small>
+              * Not reported if the user never interacts with the page
+            </small>
+            <br />
+            {mapMetricRating(wvFid.metric_rating)}. {wvFid.value}ms
+          </ToolTip>
+          FID <MetricRating rating={wvFid.metric_rating} />
+        </div>
+      )}
+      {wvCls && (
+        <div title="Cumulative Layout Shift"
+          aria-label='CLS'
+          onMouseEnter={() => setClsTooltipVisible(true)}
+          onMouseLeave={() => setClsTooltipVisible(false)}>
+          <ToolTip isVisible={clsTooltipVisible}>
+            <b>Cumulative Layout Shift.</b>
+            <br />
+            <small>
+              <i>Measure of the largest burst of layout shift scores for every unexpected layout shift that occurs during the entire lifespan of a page.</i>
+            </small>
+            <br />
+            {mapMetricRating(wvCls.metric_rating)}. {wvCls.metric_value?.toFixed(4)} timestamp: {wvCls.event_time?.toFixed(4)}
+          </ToolTip>
+          CLS <MetricRating rating={wvCls.metric_rating} />
         </div>
       )}
     </ClsWrapper>

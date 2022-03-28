@@ -31,11 +31,11 @@ describe('WebVitals', () => {
     expect(container).toMatchSnapshot()
   });
   test.each([
-    ["LCP", 0, "Largest Contentful Paint"],
-    ["FID", 1, "First Input Delay"],
-    ["CLS", 2, "Cumulative Layout Shift"],
-    ["TTFB", 3, "Time to first byte"],
-    ["FCP", 4, "First Contentful Paint"],
+    ["TTFB", 0, "Time to first byte"],
+    ["FCP", 1, "First Contentful Paint"],
+    ["LCP", 2, "Largest Contentful Paint"],
+    ["FID", 3, "First Input Delay"],
+    ["CLS", 4, "Cumulative Layout Shift"],
   ])('shows tooltip on mouseover %o', (ariaLabel, position, tooltipText) => {
     render(<WebVitals />);
     const fidLabel = screen.getAllByLabelText(ariaLabel);
