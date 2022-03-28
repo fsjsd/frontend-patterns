@@ -1,0 +1,318 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WebVitals render matches snapshot 1`] = `
+<div>
+  <div
+    class="sc-bczRLJ cjGvUi"
+  >
+    <div
+      aria-label="TTFB"
+      title="Time to first byte"
+    >
+      <div
+        class="invisible inline-block absolute z-10 py-2 px-3 text-sm text-gray-800 bg-white rounded-lg border border-gray-200 shadow-sm tooltip"
+        id="tooltip-light"
+        role="tooltip"
+        style="bottom: 50px; max-width: 300px;"
+      >
+        <b>
+          Time to first byte.
+        </b>
+        <br />
+        <small>
+          <i>
+            The time between the request for a resource and when the first byte of a response begins to arrive
+          </i>
+        </small>
+        <br />
+        Needs improvement
+        . 
+        1
+        ms
+        <br />
+        fetch: 
+        <br />
+        domain_lookup: 
+        <br />
+        connect: 
+        <br />
+        request:
+        <br />
+        response: 
+        <br />
+        DOM Content loaded: 
+        <br />
+        DOM complete:
+        <br />
+        load start: 
+      </div>
+      TTFB 
+      <div
+        class="sc-gsnTZi cifUEw"
+      />
+    </div>
+    <div
+      aria-label="FCP"
+      title="First Contentful Paint"
+    >
+      <div
+        class="invisible inline-block absolute z-10 py-2 px-3 text-sm text-gray-800 bg-white rounded-lg border border-gray-200 shadow-sm tooltip"
+        id="tooltip-light"
+        role="tooltip"
+        style="bottom: 50px; max-width: 300px;"
+      >
+        <b>
+          First Contentful Paint
+        </b>
+        <br />
+        <small>
+          <i>
+            The time from when the page starts loading to when any part of the page's content is rendered on the screen
+          </i>
+        </small>
+        <br />
+        Poor
+        . 
+        0.001
+        s
+      </div>
+      FCP 
+      <div
+        class="sc-gsnTZi cweHYf"
+      />
+    </div>
+    <div
+      aria-label="LCP"
+      title="Largest Contentful Paint"
+    >
+      <div
+        class="invisible inline-block absolute z-10 py-2 px-3 text-sm text-gray-800 bg-white rounded-lg border border-gray-200 shadow-sm tooltip"
+        id="tooltip-light"
+        role="tooltip"
+        style="bottom: 50px; max-width: 300px;"
+      >
+        <b>
+          Largest Contentful Paint.
+        </b>
+        <br />
+        <small>
+          <i>
+            The render time of the largest image or text block visible within the viewport, relative to when the page first started loading.
+          </i>
+        </small>
+        <br />
+        Poor
+        . 
+        0.001
+        s
+      </div>
+      LCP 
+      <div
+        class="sc-gsnTZi cweHYf"
+      />
+    </div>
+    <div
+      aria-label="FID"
+      title="First Input Delay"
+    >
+      <div
+        class="invisible inline-block absolute z-10 py-2 px-3 text-sm text-gray-800 bg-white rounded-lg border border-gray-200 shadow-sm tooltip"
+        id="tooltip-light"
+        role="tooltip"
+        style="bottom: 50px; max-width: 300px;"
+      >
+        <b>
+          First Input Delay.
+        </b>
+        <br />
+        <small>
+          <i>
+            The time from when a user first interacts with a page to the time when the browser is actually able to begin processing event handlers in response to that interaction.
+          </i>
+        </small>
+        <br />
+        <small>
+          * Not reported if the user never interacts with the page
+        </small>
+        <br />
+        unknown
+        . 
+        1
+        ms
+      </div>
+      FID 
+      <div
+        class="sc-gsnTZi dzkeJy"
+      />
+    </div>
+    <div
+      aria-label="CLS"
+      title="Cumulative Layout Shift"
+    >
+      <div
+        class="invisible inline-block absolute z-10 py-2 px-3 text-sm text-gray-800 bg-white rounded-lg border border-gray-200 shadow-sm tooltip"
+        id="tooltip-light"
+        role="tooltip"
+        style="bottom: 50px; max-width: 300px;"
+      >
+        <b>
+          Cumulative Layout Shift.
+        </b>
+        <br />
+        <small>
+          <i>
+            Measure of the largest burst of layout shift scores for every unexpected layout shift that occurs during the entire lifespan of a page.
+          </i>
+        </small>
+        <br />
+        Good
+        . 
+         timestamp: 
+      </div>
+      CLS 
+      <div
+        class="sc-gsnTZi IqDPW"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WebVitals shows tooltip on mouseover 'CLS' 1`] = `
+<div
+  class=" inline-block absolute z-10 py-2 px-3 text-sm text-gray-800 bg-white rounded-lg border border-gray-200 shadow-sm tooltip"
+  id="tooltip-light"
+  role="tooltip"
+  style="bottom: 50px; max-width: 300px;"
+>
+  <b>
+    Cumulative Layout Shift.
+  </b>
+  <br />
+  <small>
+    <i>
+      Measure of the largest burst of layout shift scores for every unexpected layout shift that occurs during the entire lifespan of a page.
+    </i>
+  </small>
+  <br />
+  Good
+  . 
+   timestamp: 
+</div>
+`;
+
+exports[`WebVitals shows tooltip on mouseover 'FCP' 1`] = `
+<div
+  class=" inline-block absolute z-10 py-2 px-3 text-sm text-gray-800 bg-white rounded-lg border border-gray-200 shadow-sm tooltip"
+  id="tooltip-light"
+  role="tooltip"
+  style="bottom: 50px; max-width: 300px;"
+>
+  <b>
+    First Contentful Paint
+  </b>
+  <br />
+  <small>
+    <i>
+      The time from when the page starts loading to when any part of the page's content is rendered on the screen
+    </i>
+  </small>
+  <br />
+  Poor
+  . 
+  0.001
+  s
+</div>
+`;
+
+exports[`WebVitals shows tooltip on mouseover 'FID' 1`] = `
+<div
+  class=" inline-block absolute z-10 py-2 px-3 text-sm text-gray-800 bg-white rounded-lg border border-gray-200 shadow-sm tooltip"
+  id="tooltip-light"
+  role="tooltip"
+  style="bottom: 50px; max-width: 300px;"
+>
+  <b>
+    First Input Delay.
+  </b>
+  <br />
+  <small>
+    <i>
+      The time from when a user first interacts with a page to the time when the browser is actually able to begin processing event handlers in response to that interaction.
+    </i>
+  </small>
+  <br />
+  <small>
+    * Not reported if the user never interacts with the page
+  </small>
+  <br />
+  unknown
+  . 
+  1
+  ms
+</div>
+`;
+
+exports[`WebVitals shows tooltip on mouseover 'LCP' 1`] = `
+<div
+  class=" inline-block absolute z-10 py-2 px-3 text-sm text-gray-800 bg-white rounded-lg border border-gray-200 shadow-sm tooltip"
+  id="tooltip-light"
+  role="tooltip"
+  style="bottom: 50px; max-width: 300px;"
+>
+  <b>
+    Largest Contentful Paint.
+  </b>
+  <br />
+  <small>
+    <i>
+      The render time of the largest image or text block visible within the viewport, relative to when the page first started loading.
+    </i>
+  </small>
+  <br />
+  Poor
+  . 
+  0.001
+  s
+</div>
+`;
+
+exports[`WebVitals shows tooltip on mouseover 'TTFB' 1`] = `
+<div
+  class=" inline-block absolute z-10 py-2 px-3 text-sm text-gray-800 bg-white rounded-lg border border-gray-200 shadow-sm tooltip"
+  id="tooltip-light"
+  role="tooltip"
+  style="bottom: 50px; max-width: 300px;"
+>
+  <b>
+    Time to first byte.
+  </b>
+  <br />
+  <small>
+    <i>
+      The time between the request for a resource and when the first byte of a response begins to arrive
+    </i>
+  </small>
+  <br />
+  Needs improvement
+  . 
+  1
+  ms
+  <br />
+  fetch: 
+  <br />
+  domain_lookup: 
+  <br />
+  connect: 
+  <br />
+  request:
+  <br />
+  response: 
+  <br />
+  DOM Content loaded: 
+  <br />
+  DOM complete:
+  <br />
+  load start: 
+</div>
+`;

@@ -5,7 +5,15 @@
 
 ![Front-end patterns](https://raw.githubusercontent.com/fsjsd/frontend-patterns/main/.docs/readme-header-fepatterns.jpg)
 
-Repo of modern front end design patterns, implemented in React
+Repo of modern front end design patterns, implemented in React. See the list below
+
+# Tech
+
+* Create React App w/ TypeScript
+* Comprehensive Unit Test coverage via Jest
+* CI pipeline through GitHub Actions to automate tests/coveerage thresholds
+  * GitHub Pages deployment on master merge
+* local husky/lint-staged to enforce lint / test coverage standards
 
 # Setup
 
@@ -20,3 +28,10 @@ Repo of modern front end design patterns, implemented in React
 ### [Carousel](src/features/carousel/)
 
 React implementation of web.dev's performant [Carousel demo](https://web.dev/patterns/web-vitals-patterns/)
+
+# References
+
+Refer to [this gist](https://gist.github.com/fsjsd/149bdb13fb644849a519ad779a1e0e60) for a list of articles 
+and resources
+
+

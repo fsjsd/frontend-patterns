@@ -5,8 +5,9 @@ import LeftNavigation from './ux/LeftNavigation';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import appRoutes from './routes';
 import Loading from './ux/Loading';
-import WebVitals from './features/webvitals/WebVitals';
+import WebVitals from './shell/webvitals/WebVitals';
 import ContentFooter from './ux/ContentFooter';
+import BrowserStats from './shell/browserstats/BrowserStats';
 
 function App() {
   return (
@@ -37,7 +38,12 @@ function App() {
                 )}
               </Routes>
               <ContentFooter role="contentinfo" aria-label='Web vitals information'>
-                <WebVitals />
+                <div style={{ flexGrow: 1 }}>
+                  <WebVitals />
+                </div>
+                <div style={{ flexGrow: 0 }}>
+                  <BrowserStats />
+                </div>
               </ContentFooter>
             </>);
           }
