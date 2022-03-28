@@ -55,9 +55,15 @@ interface TypeAheadProps<T> {
 }
 ```
 
+### API Design
+
+
+
+### Store Design
+
 Component state
 
-```
+```typescript
 interface TypeAheadState<T> {
   query: string
   results: T[]
@@ -65,13 +71,6 @@ interface TypeAheadState<T> {
   resultsCache: FixedMap<string, T[]>
 }
 ```
-
-### API Design
-
-
-
-### Store Design
-
 
 ### Optimization
 
@@ -86,8 +85,10 @@ Network
 Rendering
 
 - DOM
+  - semantic elements
   - Virtualization for search results
   - Update nodes, not insert/delete
+  - no layout thrashing
 - CSS
   - use animations
   - avoid reflows
