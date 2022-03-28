@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BrowserStats renders and matches snapshot 1`] = `
+<div>
+  <div />
+</div>
+`;
