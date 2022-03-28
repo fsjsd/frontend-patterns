@@ -11,10 +11,41 @@ Technical goals of infinite / virtual scroll
 - Reduce battery consumption
 - Improve user experience
 
+## Design
+
+### Functional Requirements
+
+
+### Non-functional Requirements
+
+### Component Architecture
+
+
+```typescript
+interface RecyclingVirtualList<T> {
+  
+}
+```
+
+### API Design
+## Design
+
+### Store Design
+
+```typescript
+interface CompState {
+
+}
+```
+
+### Optimization
 
 
 
-## Background reading
+### Accessibility
+
+
+## References
 
 https://developer.chrome.com/blog/infinite-scroller/
 
