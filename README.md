@@ -11,7 +11,7 @@ Repo of modern front end design patterns, implemented in React. See the list bel
 
 * Create React App w/ TypeScript
 * Comprehensive Unit Test coverage via Jest
-* CI pipeline through GitHub Actions to automate tests/coveerage thresholds
+* CI pipeline through GitHub Actions to automate tests/coverage thresholds
   * GitHub Pages deployment on master merge
 * local husky/lint-staged to enforce lint / test coverage standards
 
