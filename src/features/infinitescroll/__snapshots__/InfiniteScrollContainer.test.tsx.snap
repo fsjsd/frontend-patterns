@@ -97,7 +97,14 @@ exports[`InfiniteScrollContainer render matches snapshot 1`] = `
       style="width: 300px; height: 500px; overflow-y: scroll;"
     >
       <div>
-        Infinite scroll Coming soon
+        <div
+          aria-hidden="true"
+          class="sc-iBkjds egZOMt"
+        />
+        <div
+          aria-hidden="true"
+          class="sc-iBkjds egZOMt"
+        />
       </div>
     </div>
   </section>

@@ -52,3 +52,5 @@ https://developer.chrome.com/blog/infinite-scroller/
 https://medium.com/@moshe_31114/building-our-recycle-list-solution-in-react-17a21a9605a0
 
 https://evgeniiray.medium.com/infinite-scrolling-in-web-ultimate-guide-b698124b3172
+
+https://medium.com/@paularmstrong/twitter-lite-and-high-performance-react-progressive-web-apps-at-scale-d28a00e780a3
