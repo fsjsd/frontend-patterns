@@ -40,15 +40,15 @@ describe('WebVitals', () => {
     render(<WebVitals />);
     const fidLabel = screen.getAllByLabelText(ariaLabel);
     expect(fidLabel).toHaveLength(1);
-    const tooltips = screen.getAllByRole("tooltip");
+    const tooltips = screen.getAllByRole("tooltip", { hidden: true });
     expect(tooltips).toHaveLength(5);
     expect(tooltips[position]).toHaveTextContent(tooltipText);
-    expect(tooltips[position].className).toContain("invisible");
+    expect(tooltips[position].getAttribute("aria-hidden")).toBe("true");
     fireEvent.mouseOver(fidLabel[0]);
-    expect(tooltips[position].className).not.toContain("invisible")
+    expect(tooltips[position].getAttribute("aria-hidden")).toBe("false");
     expect(tooltips[position]).toMatchSnapshot();
     fireEvent.mouseLeave(fidLabel[0]);
-    expect(tooltips[position].className).toContain("invisible");
+    expect(tooltips[position].getAttribute("aria-hidden")).toBe("true");
   });
 
 });
