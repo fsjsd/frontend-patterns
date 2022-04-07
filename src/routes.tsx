@@ -11,6 +11,7 @@ import {
   MdRecentActors,
   MdTableView,
   MdTheaters,
+  MdTask
 } from 'react-icons/md'
 import CarouselContainer from './features/carousel/CarouselContainer'
 import DataTableContainer from './features/datatable/DataTableContainer'
@@ -21,6 +22,7 @@ import NewsFeedContainer from './features/newsfeed/NewsFeedContainer'
 import PinterestContainer from './features/pinterest/PinterestContainer'
 import PollContainer from './features/poll/PollContainer'
 import TypeAheadContainer from './features/typeahead/TypeAheadContainer'
+import ToDoContainer from './features/todo/ToDoContainer'
 import Home from './Home'
 
 const urlRoot = process.env.REACT_APP_ROOT_URL
@@ -96,6 +98,14 @@ const appRoutes = [
     title: 'Pinterest',
     group: NAV_GROUPS.FEATURES,
   },
+  {
+    path: `${urlRoot}/todo`,
+    element: <ToDoContainer />,
+    icon: <MdTask />,
+    title: 'To-do',
+    group: NAV_GROUPS.FEATURES,
+  },
+
   {
     path: `${urlRoot}/`,
     element: <Home />,
