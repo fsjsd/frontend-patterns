@@ -3,6 +3,7 @@
 [![codecov](https://codecov.io/gh/fsjsd/frontend-patterns/branch/main/graph/badge.svg?token=80RFETMF8Z)](https://codecov.io/gh/fsjsd/frontend-patterns)
 ![build](https://github.com/fsjsd/frontend-patterns/actions/workflows/coverage.yaml/badge.svg)
 ![Known Vulnerabilities](https://snyk.io/test/github/fsjsd/frontend-patterns/badge.svg)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/fsjsd/frontend-patterns.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/fsjsd/frontend-patterns/context:javascript)
 
 ![Front-end patterns](https://raw.githubusercontent.com/fsjsd/frontend-patterns/main/.docs/readme-header-fepatterns.jpg)
 
