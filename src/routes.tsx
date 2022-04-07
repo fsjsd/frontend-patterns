@@ -24,6 +24,7 @@ import PollContainer from './features/poll/PollContainer'
 import TypeAheadContainer from './features/typeahead/TypeAheadContainer'
 import ToDoContainer from './features/todo/ToDoContainer'
 import Home from './Home'
+import Index from './features/reactdemos/Index'
 
 const urlRoot = process.env.REACT_APP_ROOT_URL
 
@@ -103,6 +104,13 @@ const appRoutes = [
     element: <ToDoContainer />,
     icon: <MdTask />,
     title: 'To-do',
+    group: NAV_GROUPS.FEATURES,
+  },
+  {
+    path: `${urlRoot}/reactdemos`,
+    element: <Index />,
+    icon: <MdTask />,
+    title: 'React demos',
     group: NAV_GROUPS.FEATURES,
   },
 
