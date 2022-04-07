@@ -4,9 +4,12 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById("root")
-);
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+(window as any).fsjsdevboot = ({ hostContext }: { hostContext: string }) => {
+  ReactDOM.render(
+    <React.StrictMode>
+      <App hostContext={hostContext} />
+    </React.StrictMode>,
+    document.getElementById("root")
+  );
+}

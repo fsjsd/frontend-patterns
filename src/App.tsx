@@ -9,7 +9,7 @@ import WebVitals from './shell/webvitals/WebVitals';
 import ContentFooter from './ux/ContentFooter';
 import BrowserStats from './shell/browserstats/BrowserStats';
 
-function App() {
+function App({ hostContext }: { hostContext: string }) {
   return (
     <BrowserRouter>
       <DemoSiteLayoutContainer
@@ -37,7 +37,7 @@ function App() {
                   element={<React.Suspense fallback={<Loading />}>{routeDefinition.element}</React.Suspense>} />
                 )}
               </Routes>
-              <ContentFooter role="contentinfo" aria-label='Web vitals information'>
+              <ContentFooter role="contentinfo" aria-label='Web vitals information' title={hostContext}>
                 <div style={{ flexGrow: 1 }}>
                   <WebVitals />
                 </div>
