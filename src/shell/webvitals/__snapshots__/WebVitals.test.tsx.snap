@@ -3,17 +3,17 @@
 exports[`WebVitals render matches snapshot 1`] = `
 <div>
   <div
-    class="sc-bczRLJ cjGvUi"
+    class="sc-gsnTZi viDgA"
   >
     <div
       aria-label="TTFB"
       title="Time to first byte"
     >
       <div
-        class="invisible inline-block absolute z-10 py-2 px-3 text-sm text-gray-800 bg-white rounded-lg border border-gray-200 shadow-sm tooltip"
+        aria-hidden="true"
+        class="sc-bczRLJ escZhQ"
         id="tooltip-light"
         role="tooltip"
-        style="bottom: 50px; max-width: 300px;"
       >
         <b>
           Time to first byte.
@@ -48,7 +48,7 @@ exports[`WebVitals render matches snapshot 1`] = `
       </div>
       TTFB 
       <div
-        class="sc-gsnTZi cifUEw"
+        class="sc-dkzDqf hIlCzH"
       />
     </div>
     <div
@@ -56,10 +56,10 @@ exports[`WebVitals render matches snapshot 1`] = `
       title="First Contentful Paint"
     >
       <div
-        class="invisible inline-block absolute z-10 py-2 px-3 text-sm text-gray-800 bg-white rounded-lg border border-gray-200 shadow-sm tooltip"
+        aria-hidden="true"
+        class="sc-bczRLJ escZhQ"
         id="tooltip-light"
         role="tooltip"
-        style="bottom: 50px; max-width: 300px;"
       >
         <b>
           First Contentful Paint
@@ -78,7 +78,7 @@ exports[`WebVitals render matches snapshot 1`] = `
       </div>
       FCP 
       <div
-        class="sc-gsnTZi cweHYf"
+        class="sc-dkzDqf kMUnSg"
       />
     </div>
     <div
@@ -86,10 +86,10 @@ exports[`WebVitals render matches snapshot 1`] = `
       title="Largest Contentful Paint"
     >
       <div
-        class="invisible inline-block absolute z-10 py-2 px-3 text-sm text-gray-800 bg-white rounded-lg border border-gray-200 shadow-sm tooltip"
+        aria-hidden="true"
+        class="sc-bczRLJ escZhQ"
         id="tooltip-light"
         role="tooltip"
-        style="bottom: 50px; max-width: 300px;"
       >
         <b>
           Largest Contentful Paint.
@@ -108,7 +108,7 @@ exports[`WebVitals render matches snapshot 1`] = `
       </div>
       LCP 
       <div
-        class="sc-gsnTZi cweHYf"
+        class="sc-dkzDqf kMUnSg"
       />
     </div>
     <div
@@ -116,10 +116,10 @@ exports[`WebVitals render matches snapshot 1`] = `
       title="First Input Delay"
     >
       <div
-        class="invisible inline-block absolute z-10 py-2 px-3 text-sm text-gray-800 bg-white rounded-lg border border-gray-200 shadow-sm tooltip"
+        aria-hidden="true"
+        class="sc-bczRLJ escZhQ"
         id="tooltip-light"
         role="tooltip"
-        style="bottom: 50px; max-width: 300px;"
       >
         <b>
           First Input Delay.
@@ -142,7 +142,7 @@ exports[`WebVitals render matches snapshot 1`] = `
       </div>
       FID 
       <div
-        class="sc-gsnTZi dzkeJy"
+        class="sc-dkzDqf bHgFrR"
       />
     </div>
     <div
@@ -150,10 +150,10 @@ exports[`WebVitals render matches snapshot 1`] = `
       title="Cumulative Layout Shift"
     >
       <div
-        class="invisible inline-block absolute z-10 py-2 px-3 text-sm text-gray-800 bg-white rounded-lg border border-gray-200 shadow-sm tooltip"
+        aria-hidden="true"
+        class="sc-bczRLJ escZhQ"
         id="tooltip-light"
         role="tooltip"
-        style="bottom: 50px; max-width: 300px;"
       >
         <b>
           Cumulative Layout Shift.
@@ -171,7 +171,7 @@ exports[`WebVitals render matches snapshot 1`] = `
       </div>
       CLS 
       <div
-        class="sc-gsnTZi IqDPW"
+        class="sc-dkzDqf cstiIh"
       />
     </div>
   </div>
@@ -180,10 +180,10 @@ exports[`WebVitals render matches snapshot 1`] = `
 
 exports[`WebVitals shows tooltip on mouseover 'CLS' 1`] = `
 <div
-  class=" inline-block absolute z-10 py-2 px-3 text-sm text-gray-800 bg-white rounded-lg border border-gray-200 shadow-sm tooltip"
+  aria-hidden="false"
+  class="sc-bczRLJ bJBHNL"
   id="tooltip-light"
   role="tooltip"
-  style="bottom: 50px; max-width: 300px;"
 >
   <b>
     Cumulative Layout Shift.
@@ -203,10 +203,10 @@ exports[`WebVitals shows tooltip on mouseover 'CLS' 1`] = `
 
 exports[`WebVitals shows tooltip on mouseover 'FCP' 1`] = `
 <div
-  class=" inline-block absolute z-10 py-2 px-3 text-sm text-gray-800 bg-white rounded-lg border border-gray-200 shadow-sm tooltip"
+  aria-hidden="false"
+  class="sc-bczRLJ bJBHNL"
   id="tooltip-light"
   role="tooltip"
-  style="bottom: 50px; max-width: 300px;"
 >
   <b>
     First Contentful Paint
@@ -227,10 +227,10 @@ exports[`WebVitals shows tooltip on mouseover 'FCP' 1`] = `
 
 exports[`WebVitals shows tooltip on mouseover 'FID' 1`] = `
 <div
-  class=" inline-block absolute z-10 py-2 px-3 text-sm text-gray-800 bg-white rounded-lg border border-gray-200 shadow-sm tooltip"
+  aria-hidden="false"
+  class="sc-bczRLJ bJBHNL"
   id="tooltip-light"
   role="tooltip"
-  style="bottom: 50px; max-width: 300px;"
 >
   <b>
     First Input Delay.
@@ -255,10 +255,10 @@ exports[`WebVitals shows tooltip on mouseover 'FID' 1`] = `
 
 exports[`WebVitals shows tooltip on mouseover 'LCP' 1`] = `
 <div
-  class=" inline-block absolute z-10 py-2 px-3 text-sm text-gray-800 bg-white rounded-lg border border-gray-200 shadow-sm tooltip"
+  aria-hidden="false"
+  class="sc-bczRLJ bJBHNL"
   id="tooltip-light"
   role="tooltip"
-  style="bottom: 50px; max-width: 300px;"
 >
   <b>
     Largest Contentful Paint.
@@ -279,10 +279,10 @@ exports[`WebVitals shows tooltip on mouseover 'LCP' 1`] = `
 
 exports[`WebVitals shows tooltip on mouseover 'TTFB' 1`] = `
 <div
-  class=" inline-block absolute z-10 py-2 px-3 text-sm text-gray-800 bg-white rounded-lg border border-gray-200 shadow-sm tooltip"
+  aria-hidden="false"
+  class="sc-bczRLJ bJBHNL"
   id="tooltip-light"
   role="tooltip"
-  style="bottom: 50px; max-width: 300px;"
 >
   <b>
     Time to first byte.
