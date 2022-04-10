@@ -30,6 +30,18 @@ Repo of modern front end design patterns, implemented in React. See the list bel
 
 React implementation of web.dev's performant [Carousel demo](https://web.dev/patterns/web-vitals-patterns/)
 
+![carousel](https://user-images.githubusercontent.com/30638950/162620275-5eb59fca-fed7-455b-8e83-6f8de411ccdf.gif)
+
+
+# Features
+
+### [Snake Pattern](src/features/snakegame/)
+
+React based Snake game with three different view implementations (HTML, Canvas and raw text)
+
+![snake](https://user-images.githubusercontent.com/30638950/162620411-7b697099-0088-468f-a5b5-9f68d756f187.gif)
+
+
 # References
 
 Refer to [this gist](https://gist.github.com/fsjsd/149bdb13fb644849a519ad779a1e0e60) for a list of articles 
