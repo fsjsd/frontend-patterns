@@ -37,7 +37,7 @@
       "webVitalsUtils",
       "src\\index.tsx",
       "src\\reportWebVitals.ts",
-      "src\\features\\carousel\\_source\\index.js"
+      "src\\components\\carousel\\_source\\index.js"
     ],
     "coverageThreshold": {
       "global": {

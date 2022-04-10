@@ -16,15 +16,15 @@ import {
 import { GiSandSnake } from "react-icons/gi";
 import { FaReact } from "react-icons/fa";
 
-import CarouselContainer from './features/carousel/CarouselContainer'
-import DataTableContainer from './features/datatable/DataTableContainer'
+import CarouselContainer from './components/carousel/CarouselContainer'
+import DataTableContainer from './components/datatable/DataTableContainer'
 import InfiniteScrollContainer from './features/infinitescroll/InfiniteScrollContainer'
 import MessengerContainer from './features/messenger/MessengerContainer'
 import NetflixContainer from './features/netflix/NetflixContainer'
 import NewsFeedContainer from './features/newsfeed/NewsFeedContainer'
 import PinterestContainer from './features/pinterest/PinterestContainer'
-import PollContainer from './features/poll/PollContainer'
-import TypeAheadContainer from './features/typeahead/TypeAheadContainer'
+import PollContainer from './components/poll/PollContainer'
+import TypeAheadContainer from './components/typeahead/TypeAheadContainer'
 import ToDoContainer from './features/todo/ToDoContainer'
 import Home from './Home'
 import Index from './features/reactdemos/Index'

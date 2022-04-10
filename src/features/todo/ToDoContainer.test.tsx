@@ -7,6 +7,5 @@ describe("ToDo", () => {
     const { container, queryByRole } = render(<ToDoContainer />)
     await waitFor(() => expect(queryByRole("main")).toBeInTheDocument());
     expect(container).toMatchSnapshot();
-
   })
 })

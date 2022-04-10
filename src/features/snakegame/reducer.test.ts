@@ -17,6 +17,7 @@ describe("snakeGameReducer", () => {
       snakeGameReducer(state, { type: SnakeGameOperation.Start }).speedMs
     ).toEqual(INITIAL_SNAKE_SPEED);
   });
+  
   test("should return the initial state", () => {
     expect(
       snakeGameReducer(initialState(), { type: SnakeGameOperation.Reset })

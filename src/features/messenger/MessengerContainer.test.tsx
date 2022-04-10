@@ -7,6 +7,5 @@ describe("Messenger", () => {
     const { container, queryByRole } = render(<MessengerContainer />)
     await waitFor(() => expect(queryByRole("main")).toBeInTheDocument());
     expect(container).toMatchSnapshot();
-
   })
 })
