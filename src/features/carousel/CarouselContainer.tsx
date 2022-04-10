@@ -28,7 +28,8 @@ const CarouselContainer = () => {
     <ContentWrapper
       title="Carousel"
       codeLink="/features/carousel"
-      markDownPromise={import('./requirements.md')}>
+      markDownPromise={import('./requirements.md')}
+      noPadding={true}>
       <Suspense fallback={<Loading />}>
         <Carousel data={data} width={'1200'} />
       </Suspense>

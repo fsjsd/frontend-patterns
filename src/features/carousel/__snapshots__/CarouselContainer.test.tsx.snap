@@ -89,7 +89,7 @@ exports[`CarouselContainer render matches snapshot 1`] = `
     </div>
   </header>
   <section
-    class="sc-jSMfEi foNrii"
+    class="sc-jSMfEi hWeUXt"
     role="document"
   >
     <div
@@ -387,7 +387,7 @@ exports[`CarouselContainer window resize recalculates layout 1`] = `
     </div>
   </header>
   <section
-    class="sc-jSMfEi foNrii"
+    class="sc-jSMfEi hWeUXt"
     role="document"
   >
     <div
