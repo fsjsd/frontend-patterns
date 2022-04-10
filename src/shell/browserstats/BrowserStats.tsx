@@ -15,12 +15,6 @@ export function fpsRating(currentFps: number): import("csstype").Property.Color 
 
 const BrowserStats = () => {
   const graphWidth = 70;
-  /*top = 0,
-    right = 'auto',
-    bottom = 'auto',
-    left = 0,
-    graphHeight = 29,
-    1;*/
 
   const [state, dispatch] = useReducer(
     state => {
