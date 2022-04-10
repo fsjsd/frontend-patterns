@@ -13,6 +13,9 @@ import {
   MdTheaters,
   MdTask
 } from 'react-icons/md'
+import { GiSandSnake } from "react-icons/gi";
+import { FaReact } from "react-icons/fa";
+
 import CarouselContainer from './features/carousel/CarouselContainer'
 import DataTableContainer from './features/datatable/DataTableContainer'
 import InfiniteScrollContainer from './features/infinitescroll/InfiniteScrollContainer'
@@ -24,6 +27,8 @@ import PollContainer from './features/poll/PollContainer'
 import TypeAheadContainer from './features/typeahead/TypeAheadContainer'
 import ToDoContainer from './features/todo/ToDoContainer'
 import Home from './Home'
+import Index from './features/reactdemos/Index'
+import SnakeGameContainer from './features/snakegame/SnakeGameContainer'
 
 const urlRoot = process.env.REACT_APP_ROOT_URL
 
@@ -103,6 +108,20 @@ const appRoutes = [
     element: <ToDoContainer />,
     icon: <MdTask />,
     title: 'To-do',
+    group: NAV_GROUPS.FEATURES,
+  },
+  {
+    path: `${urlRoot}/reactdemos`,
+    element: <Index />,
+    icon: <FaReact />,
+    title: 'React demos',
+    group: NAV_GROUPS.FEATURES,
+  },
+  {
+    path: `${urlRoot}/snakegame`,
+    element: <SnakeGameContainer />,
+    icon: <GiSandSnake />,
+    title: 'Snake game',
     group: NAV_GROUPS.FEATURES,
   },
 

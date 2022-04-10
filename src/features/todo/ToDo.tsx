@@ -1,8 +1,9 @@
 import React from 'react'
+import { ToDoWrapper } from './ToDoUx'
 
 const ToDo = () => {
   return (
-    <div>ToDo</div>
+    <ToDoWrapper>ToDo</ToDoWrapper>
   )
 }
 

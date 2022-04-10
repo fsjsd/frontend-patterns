@@ -96,7 +96,9 @@ exports[`ToDo renders and matches snapshot 1`] = `
       role="main"
       style=""
     >
-      <div>
+      <div
+        class="sc-iBkjds fPMrdA"
+      >
         ToDo
       </div>
     </div>

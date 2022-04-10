@@ -1,7 +1,14 @@
 import React, { Suspense } from 'react'
 import { ContentWrapper } from '../../ux/ContentWrapper'
 import Loading from '../../ux/Loading'
-const InfiniteScroll = React.lazy(() => import('./InfiniteScroll'))
+import { FeedItem, getItem } from './utils/data';
+import { db } from "./utils/db";
+
+// import RecyclingVirtualList from './recyclingvirtuallist/RecyclingVirtualList'
+const RecyclingVirtualList = React.lazy(() => import('./recyclingvirtuallist/RecyclingVirtualList'))
+//const InfiniteScroll = React.lazy(() => import('./InfiniteScroll'))
+
+const DB = db(1000, 1000, getItem);
 
 const InfiniteScrollContainer = () => {
 
@@ -13,7 +20,11 @@ const InfiniteScrollContainer = () => {
     >
       <Suspense fallback={<Loading />}>
         <div role="main" style={{ width: 300, height: 500, overflowY: "scroll" }}>
-          <InfiniteScroll />
+          <RecyclingVirtualList
+            pageSize={10}
+            load={(start, limit) => DB.load(start, limit).then((cursor) => cursor.chunk) as Promise<FeedItem[]>}
+            itemFullComponent={(item: FeedItem) => <div>{item.name}</div>}
+          />
         </div>
       </Suspense>
     </ContentWrapper>
