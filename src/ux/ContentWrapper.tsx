@@ -7,8 +7,8 @@ import ContentHeader, { ContentHeaderIcon, ContentHeaderLabel, ContentHeaderRigh
 import Loading from "./Loading";
 const ReactMarkdown = React.lazy(() => import('react-markdown'))
 
-export const ContentWrapperStyled = styled.section`
-  padding: 15px;
+export const ContentWrapperStyled = styled.section<{ noPadding: boolean }>`
+  ${props => props.noPadding ? '' : 'padding: 15px;'}
   flex-grow: 1;
   overflow-y: auto;
 `;
@@ -46,9 +46,10 @@ interface ContentWrapperProps {
   codeLink?: string;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   markDownPromise?: Promise<any>;
+  noPadding?: boolean;
 }
 
-export const ContentWrapper: React.FC<ContentWrapperProps> = ({ children, title, markDownPromise, codeLink }) => {
+export const ContentWrapper: React.FC<ContentWrapperProps> = ({ children, title, markDownPromise, codeLink, noPadding }) => {
   const [viewNotes, setViewNotes] = useState(false);
   const [markdown, setMarkdown] = useState("");
 
@@ -85,7 +86,7 @@ export const ContentWrapper: React.FC<ContentWrapperProps> = ({ children, title,
           </Suspense>
         </ContentWrapperArticle>}
       {!viewNotes &&
-        <ContentWrapperStyled role="document">{children}</ContentWrapperStyled>}
+        <ContentWrapperStyled role="document" noPadding={!!noPadding}>{children}</ContentWrapperStyled>}
     </>
   </>
 };
