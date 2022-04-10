@@ -91,7 +91,7 @@ const SnakeGame = ({ viewMode }: { viewMode: ViewMode }) => {
 
     </GameWrapper>
     <Section>
-      Press &apos;t&apos; to toggle view modes in game play (current mode: ${viewType})
+      Press &apos;t&apos; to toggle view modes in game play (current mode: {viewType})
     </Section>
   </div >
   )

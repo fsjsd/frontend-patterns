@@ -70,7 +70,7 @@ exports[`SnakeGame 'ascii' mode renders and matches snapshot 1`] = `
     <section
       class="sc-hKMtZM khkJCp"
     >
-      Press 't' to toggle view modes in game play (current mode: $
+      Press 't' to toggle view modes in game play (current mode: 
       ascii
       )
     </section>
@@ -109,7 +109,7 @@ exports[`SnakeGame 'canvas' mode renders and matches snapshot 1`] = `
     <section
       class="sc-hKMtZM khkJCp"
     >
-      Press 't' to toggle view modes in game play (current mode: $
+      Press 't' to toggle view modes in game play (current mode: 
       canvas
       )
     </section>
@@ -2351,7 +2351,7 @@ exports[`SnakeGame 'html' mode renders and matches snapshot 1`] = `
     <section
       class="sc-hKMtZM khkJCp"
     >
-      Press 't' to toggle view modes in game play (current mode: $
+      Press 't' to toggle view modes in game play (current mode: 
       html
       )
     </section>
@@ -4593,7 +4593,7 @@ exports[`SnakeGame clicking game resets game 1`] = `
     <section
       class="sc-hKMtZM khkJCp"
     >
-      Press 't' to toggle view modes in game play (current mode: $
+      Press 't' to toggle view modes in game play (current mode: 
       html
       )
     </section>

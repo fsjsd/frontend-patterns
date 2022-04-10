@@ -9,7 +9,7 @@ exports[`SnakeGameContainer renders and matches snapshot 1`] = `
       class="sc-gsnTZi hCGKc"
       role="heading"
     >
-      SnakeGame
+      Snake Game
     </div>
     <div
       class="sc-dkzDqf gedmVz"
@@ -125,7 +125,7 @@ exports[`SnakeGameContainer renders and matches snapshot 1`] = `
         <section
           class="sc-jqUVSM kzRGDG"
         >
-          Press 't' to toggle view modes in game play (current mode: $
+          Press 't' to toggle view modes in game play (current mode: 
           canvas
           )
         </section>

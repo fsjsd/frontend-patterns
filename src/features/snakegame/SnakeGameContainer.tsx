@@ -7,7 +7,7 @@ const SnakeGame = React.lazy(() => import('./SnakeGame'))
 const SnakeGameContainer = () => {
   return (<>
     <ContentWrapper
-      title='SnakeGame'
+      title='Snake Game'
       codeLink="/features/snakegame"
       markDownPromise={import('./requirements.md')}
     >
