@@ -79,7 +79,7 @@ export const ContentWrapper: React.FC<ContentWrapperProps> = ({ children, title,
     </ContentHeader>
     <>
       {viewNotes &&
-        <ContentWrapperArticle role="article" >
+        <ContentWrapperArticle role="article">
           <Suspense fallback={<Loading />}>
             <ReactMarkdown>{markdown}</ReactMarkdown>
           </Suspense>

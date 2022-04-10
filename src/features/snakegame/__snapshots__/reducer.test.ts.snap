@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snakeGameReducer direction change moves snake - 'ArrowLeft' -> 'ArrowDown' 1`] = `
+Array [
+  Object {
+    "x": 9,
+    "y": 10,
+  },
+  Object {
+    "x": 10,
+    "y": 10,
+  },
+  Object {
+    "x": 10,
+    "y": 11,
+  },
+]
+`;
+
+exports[`snakeGameReducer direction change moves snake - 'ArrowLeft' -> 'ArrowUp' 1`] = `
+Array [
+  Object {
+    "x": 9,
+    "y": 10,
+  },
+  Object {
+    "x": 10,
+    "y": 10,
+  },
+  Object {
+    "x": 10,
+    "y": 11,
+  },
+]
+`;
+
+exports[`snakeGameReducer direction change moves snake - 'ArrowUp' -> 'ArrowLeft' 1`] = `
+Array [
+  Object {
+    "x": 10,
+    "y": 9,
+  },
+  Object {
+    "x": 10,
+    "y": 10,
+  },
+  Object {
+    "x": 10,
+    "y": 11,
+  },
+]
+`;
+
+exports[`snakeGameReducer direction change moves snake - 'ArrowUp' -> 'ArrowRight' 1`] = `
+Array [
+  Object {
+    "x": 10,
+    "y": 9,
+  },
+  Object {
+    "x": 10,
+    "y": 10,
+  },
+  Object {
+    "x": 10,
+    "y": 11,
+  },
+]
+`;
