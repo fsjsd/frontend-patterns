@@ -5,8 +5,8 @@ import { useMemo } from 'react';
 
 // eslint-disable-next-line react/display-name
 const CounterAMemo: React.VFC<{ a: number }> = React.memo(({ a }) => {
-  console.count("CounterAMemo")
-  console.log("CounterAMemo", { a })
+  // console.count("CounterAMemo")
+  // console.log("CounterAMemo", { a })
   return (
     <div>
       <p>CounterAMemo a={a}</p>
@@ -15,8 +15,8 @@ const CounterAMemo: React.VFC<{ a: number }> = React.memo(({ a }) => {
 })
 
 const CounterABMemo: React.VFC<{ myObj: { a: number, b: number } }> = React.memo(({ myObj }) => {
-  console.count("CounterABMemo")
-  console.log("CounterABMemo", { ...myObj });
+  // console.count("CounterABMemo")
+  // console.log("CounterABMemo", { ...myObj });
   return (
     <div>
       <p>CounterABMemo a={myObj.a} b={myObj.b}</p>
@@ -27,8 +27,8 @@ const CounterABMemo: React.VFC<{ myObj: { a: number, b: number } }> = React.memo
 const CounterABUseMemo: React.VFC<{ myObj: { a: number, b: number } }> = ({ myObj }) => {
   // this is neat but still executes js in component
   return useMemo(() => {
-    console.count("CounterABUseMemo")
-    console.log("CounterABUseMemo", { ...myObj })
+    // console.count("CounterABUseMemo")
+    // console.log("CounterABUseMemo", { ...myObj })
     return (
       <div>
         <p>CounterABUseMemo a={myObj.a} b={myObj.b}</p>
@@ -52,15 +52,17 @@ const deepMemoComparator = <T,>(prev: Readonly<React.PropsWithChildren<T>>, next
   return areEqual;
 }
 
+/*
 const shallowMemoComparator = <T,>(prev: Readonly<React.PropsWithChildren<T>>, next: Readonly<React.PropsWithChildren<T>>) => {
   const areEqual = Object.keys(prev).filter(key => key !== "children").every((key) => prev[key as keyof T] === next[key as keyof T]);
-  console.log(Object.keys(prev), prev, next, areEqual)
+  // console.log(Object.keys(prev), prev, next, areEqual)
   return areEqual;
 }
+*/
 
 const CounterABShallowMemo: React.FC<{ myObj: { a: number, b: number } }> = React.memo(({ myObj, children }) => {
-  console.count("CounterABShallowMemo")
-  console.log("CounterABShallowMemo", { ...myObj });
+  // console.count("CounterABShallowMemo")
+  // console.log("CounterABShallowMemo", { ...myObj });
   return (
     <div>
       <p>CounterABShallowMemo a={myObj.a} b={myObj.b}</p>
@@ -90,7 +92,7 @@ const ReactMemo = () => {
 
 
   return (
-    <div style={{ padding: "10px" }}>
+    <div role="main" style={{ padding: "10px" }}>
       <CounterAMemo a={countObj.a} />
       {/* immutable objects re-created through react state will cause full re-render */}
       <CounterABMemo myObj={countObj} />

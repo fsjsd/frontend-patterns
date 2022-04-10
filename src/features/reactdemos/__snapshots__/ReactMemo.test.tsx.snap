@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReactMemo renders and matches snapshot 1`] = `
+<div>
+  <div
+    role="main"
+    style="padding: 10px;"
+  >
+    <div>
+      <p>
+        CounterAMemo a=
+        0
+      </p>
+    </div>
+    <div>
+      <p>
+        CounterABMemo a=
+        0
+         b=
+        0
+      </p>
+    </div>
+    <div>
+      <p>
+        CounterABUseMemo a=
+        0
+         b=
+        0
+      </p>
+    </div>
+    <div>
+      <p>
+        CounterABShallowMemo a=
+        0
+         b=
+        0
+      </p>
+      children!
+    </div>
+    <p>
+      Container state: 
+      0
+    </p>
+    <button
+      class="bg-gray"
+    >
+      Inc A
+    </button>
+    <button
+      class="bg-gray"
+    >
+      Inc B
+    </button>
+    <button
+      class="bg-gray"
+    >
+      Null state change
+    </button>
+  </div>
+</div>
+`;
