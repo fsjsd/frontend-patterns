@@ -39,8 +39,11 @@ export const NavLinks = styled.ul`
   }
 `;
 
-export const LinkStyled = styled(Link) <{ wip: boolean }>`
-  ${props => props.wip ? 'opacity:0.4;' : ''}
+/**
+ * $wip is a transient prop: https://styled-components.com/docs/api#transient-props
+ */
+export const LinkStyled = styled(Link) <{ $wip: boolean }>`
+  ${props => props.$wip ? 'opacity:0.4;' : ''}
   width: 240px;
   font-size: 15px;
   color: rgba(0, 0, 0, 0.55);
