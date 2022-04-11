@@ -45,17 +45,17 @@ exports[`ReactMemo changes state after increments 1`] = `
       class="sc-gsnTZi jwMZeR"
     >
       <button
-        class="sc-bczRLJ lmyYfG bg-gray"
+        class="sc-bczRLJ daJtMB bg-gray"
       >
         Inc A
       </button>
       <button
-        class="sc-bczRLJ lmyYfG bg-gray"
+        class="sc-bczRLJ daJtMB bg-gray"
       >
         Inc B
       </button>
       <button
-        class="sc-bczRLJ lmyYfG bg-gray"
+        class="sc-bczRLJ daJtMB bg-gray"
       >
         Null state change
       </button>
@@ -109,17 +109,17 @@ exports[`ReactMemo changes state after increments 2`] = `
       class="sc-gsnTZi jwMZeR"
     >
       <button
-        class="sc-bczRLJ lmyYfG bg-gray"
+        class="sc-bczRLJ daJtMB bg-gray"
       >
         Inc A
       </button>
       <button
-        class="sc-bczRLJ lmyYfG bg-gray"
+        class="sc-bczRLJ daJtMB bg-gray"
       >
         Inc B
       </button>
       <button
-        class="sc-bczRLJ lmyYfG bg-gray"
+        class="sc-bczRLJ daJtMB bg-gray"
       >
         Null state change
       </button>
@@ -173,17 +173,17 @@ exports[`ReactMemo changes state after increments 3`] = `
       class="sc-gsnTZi jwMZeR"
     >
       <button
-        class="sc-bczRLJ lmyYfG bg-gray"
+        class="sc-bczRLJ daJtMB bg-gray"
       >
         Inc A
       </button>
       <button
-        class="sc-bczRLJ lmyYfG bg-gray"
+        class="sc-bczRLJ daJtMB bg-gray"
       >
         Inc B
       </button>
       <button
-        class="sc-bczRLJ lmyYfG bg-gray"
+        class="sc-bczRLJ daJtMB bg-gray"
       >
         Null state change
       </button>
@@ -237,17 +237,17 @@ exports[`ReactMemo changes state after increments 4`] = `
       class="sc-gsnTZi jwMZeR"
     >
       <button
-        class="sc-bczRLJ lmyYfG bg-gray"
+        class="sc-bczRLJ daJtMB bg-gray"
       >
         Inc A
       </button>
       <button
-        class="sc-bczRLJ lmyYfG bg-gray"
+        class="sc-bczRLJ daJtMB bg-gray"
       >
         Inc B
       </button>
       <button
-        class="sc-bczRLJ lmyYfG bg-gray"
+        class="sc-bczRLJ daJtMB bg-gray"
       >
         Null state change
       </button>
@@ -301,17 +301,17 @@ exports[`ReactMemo renders and matches snapshot 1`] = `
       class="sc-gsnTZi jwMZeR"
     >
       <button
-        class="sc-bczRLJ lmyYfG bg-gray"
+        class="sc-bczRLJ daJtMB bg-gray"
       >
         Inc A
       </button>
       <button
-        class="sc-bczRLJ lmyYfG bg-gray"
+        class="sc-bczRLJ daJtMB bg-gray"
       >
         Inc B
       </button>
       <button
-        class="sc-bczRLJ lmyYfG bg-gray"
+        class="sc-bczRLJ daJtMB bg-gray"
       >
         Null state change
       </button>

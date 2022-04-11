@@ -6,6 +6,7 @@ exports[`Pinterest renders and matches snapshot 1`] = `
     class="sc-bczRLJ dmSzxI"
   >
     <div
+      aria-level="1"
       class="sc-gsnTZi hCGKc"
       role="heading"
     >
@@ -60,15 +61,16 @@ exports[`Pinterest renders and matches snapshot 1`] = `
           />
         </svg>
       </div>
-      <div
-        class="sc-hKMtZM itnQjY"
+      <a
+        aria-label="View source code on GitHub"
+        href="https://github.com/fsjsd/frontend-patterns/tree/main/src/features/pinterest"
+        rel="noopener noreferrer"
         role="button"
-        title="View code on github"
+        target="_blank"
       >
-        <a
-          href="https://github.com/fsjsd/frontend-patterns/tree/main/src/features/pinterest"
-          rel="noopener noreferrer"
-          target="_blank"
+        <div
+          class="sc-hKMtZM itnQjY"
+          title="View code on github"
         >
           <svg
             fill="currentColor"
@@ -84,8 +86,8 @@ exports[`Pinterest renders and matches snapshot 1`] = `
               fill-rule="evenodd"
             />
           </svg>
-        </a>
-      </div>
+        </div>
+      </a>
     </div>
   </header>
   <section

@@ -40,12 +40,19 @@ export const PageHeader = () => {
         Design Patterns
       </HeaderPageTitle>
       <Links>
-        <a href="https://github.com/fsjsd/frontend-patterns" target="_blank" rel="noreferrer">
+        <a
+          href="https://github.com/fsjsd/frontend-patterns"
+          aria-label="View fsjs.dev on GitHub"
+          target="_blank"
+          rel="noreferrer"
+        >
           <LogoGithub style={externalLinkIcon} />
         </a>
         <a
           href="https://www.youtube.com/channel/UC6ndgitE_bgJ02nyrrue-1A"
-          target="_blank" rel="noreferrer"
+          aria-label="View videos on Youtube"
+          target="_blank"
+          rel="noreferrer"
         >
           <LogoYoutube style={externalLinkIcon} />
         </a>
