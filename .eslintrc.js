@@ -11,6 +11,7 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
+    'plugin:jsx-a11y/recommended',
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
     "plugin:cypress/recommended"
