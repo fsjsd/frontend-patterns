@@ -14,4 +14,15 @@ export const TypeAheadInput = styled.input`
   border:solid 1px #ccc;
 `;
 
+export const TypeAheadResultItem = styled.button`
+  padding: 0.5rem;
+  background-color:transparent;
+  border:none;
+  width:100%;
+  text-align:left;
+  :active{
+    background-color: #ccc;
+  }
+`;
+
 export default {};

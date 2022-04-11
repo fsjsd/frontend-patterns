@@ -1,7 +1,7 @@
 import React, { Suspense, useCallback } from 'react'
 import { ContentWrapper } from '../../ux/ContentWrapper'
 import Loading from '../../ux/Loading'
-import { TypeAheadInput, TypeAheadWrapper } from './TypeAheadStyles'
+import { TypeAheadInput, TypeAheadResultItem, TypeAheadWrapper } from './TypeAheadStyles'
 const TypeAhead = React.lazy(() => import('./TypeAhead'))
 
 const TypeAheadContainer = () => {
@@ -11,7 +11,7 @@ const TypeAheadContainer = () => {
       console.log(query)
       setTimeout(() => {
         resolve(['result1', 'result2', 'result3'])
-      }, 1000)
+      }, 100)
     })
   }, []);
 
@@ -26,8 +26,8 @@ const TypeAheadContainer = () => {
           <TypeAhead
             wrapperComponent={TypeAheadWrapper}
             inputComponent={TypeAheadInput}
-            getResults={handleGetResults}
-            renderResult={(result) => <div>{result}</div>}
+            getResults={(query) => handleGetResults(query) as Promise<string[]>}
+            renderResult={(result, i, handleClick) => <TypeAheadResultItem onClick={() => handleClick(result)}>{result as string}</TypeAheadResultItem>}
           />
         </div>
       </Suspense>

@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect } from 'react'
+import React, { useCallback } from 'react'
 
 const debounce = (fn, time) => {
   let timeoutId
@@ -12,7 +12,7 @@ const debounce = (fn, time) => {
 interface TypeAheadProps<T> {
   initialText?: string;
   getResults: (text: string) => Promise<T[]>;
-  renderResult: (result: T) => React.ReactNode
+  renderResult: (result: T, num: number, handleClick: (item: T) => void) => React.ReactNode
   wrapperComponent: React.ComponentType
   inputComponent: React.ComponentType<React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>>
 }
@@ -23,28 +23,34 @@ const TypeAhead = <T,>({ initialText, getResults, renderResult, ...props }: Type
 
   const [inputText, setInputText] = React.useState(initialText ?? '');
   const [results, setResults] = React.useState<T[]>([]);
+  const [showResults, setShowResults] = React.useState(false);
 
-  useEffect(() => {
+  const getResultsDebounced = useCallback(debounce(async (inputText) => {
     if (inputText.length > 0) {
-      debounce(async () => {
-        const results = await getResults(inputText);
-        setResults(results);
-      }, 200);
+      const results = await getResults(inputText);
+      setResults(results);
+      setShowResults(true);
     }
-  }, [inputText])
+  }, 200), [getResults]);
 
   const handleInputChange = useCallback(
     (e) => {
       setInputText(e.target.value);
+      getResultsDebounced(e.target.value);
     },
-    [setInputText],
+    []
   );
+
+  const handleResultClicked = useCallback((result: T) => {
+    console.log(result);
+    setShowResults(false);
+  }, []);
 
   return (
     <Wrapper>
       <Input value={inputText} onChange={handleInputChange} />
-      {results.length > 0 && <div>
-        {results.map((result, i) => <React.Fragment key={i}>{renderResult(result)}</React.Fragment>)}
+      {showResults && <div>
+        {results.map((result: T, i) => <React.Fragment key={i}>{renderResult(result, i, handleResultClicked)}</React.Fragment>)}
       </div>}
     </Wrapper>
   )
