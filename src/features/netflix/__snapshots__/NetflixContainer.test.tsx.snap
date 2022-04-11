@@ -7,7 +7,7 @@ exports[`Netflix renders and matches snapshot 1`] = `
   >
     <div
       class="sc-gsnTZi hCGKc"
-      role="heading"
+      role="complementary"
     >
       Netflix
     </div>
@@ -60,15 +60,16 @@ exports[`Netflix renders and matches snapshot 1`] = `
           />
         </svg>
       </div>
-      <div
-        class="sc-hKMtZM itnQjY"
+      <a
+        aria-label="View source code on GitHub"
+        href="https://github.com/fsjsd/frontend-patterns/tree/main/src/features/netflix"
+        rel="noopener noreferrer"
         role="button"
-        title="View code on github"
+        target="_blank"
       >
-        <a
-          href="https://github.com/fsjsd/frontend-patterns/tree/main/src/features/netflix"
-          rel="noopener noreferrer"
-          target="_blank"
+        <div
+          class="sc-hKMtZM itnQjY"
+          title="View code on github"
         >
           <svg
             fill="currentColor"
@@ -84,8 +85,8 @@ exports[`Netflix renders and matches snapshot 1`] = `
               fill-rule="evenodd"
             />
           </svg>
-        </a>
-      </div>
+        </div>
+      </a>
     </div>
   </header>
   <section

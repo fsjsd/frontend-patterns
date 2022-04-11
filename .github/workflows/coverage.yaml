@@ -1,37 +1,93 @@
 # https://about.codecov.io/blog/javascript-code-coverage-using-github-actions-and-codecov/
 # https://github.com/marketplace/actions/codecov
 
-name: Build
+name: CI
 
-on: [push, pull_request]
+on: 
+  push:
+    # only trigger on branches, not on tags
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
-  build:
 
+  lint:
     runs-on: ubuntu-latest
-
+    name: eslint
     strategy:
       matrix:
         node-version: [16]
-
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
       with:
         fetch-depth: 2 
-
     - name: Set up Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+    - run: yarn
+    - run: yarn lint
 
+  unit-test:
+    runs-on: ubuntu-latest
+    name: Unit test
+    strategy:
+      matrix:
+        node-version: [16]
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 2 
+    - name: Set up Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
     - name: Install dependencies
       run: yarn install
-
     - name: Run the tests
       run: yarn test
       env:
         REACT_APP_ROOT_URL: /frontend-patterns
-
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v2
+
+  lighthouseci:
+    runs-on: ubuntu-latest
+    name: Lighthouse
+    strategy:
+      matrix:
+        node-version: [16]
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Set up Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: yarn && yarn global add @lhci/cli@0.8.x
+      - run: yarn run build
+      - run: lhci autorun
+
+  e2e-test:
+    runs-on: ubuntu-latest
+    name: Cypress (Chrome)
+    strategy:
+      matrix:
+        node-version: [16]
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Set up Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: yarn
+      - name: Cypress
+        uses: cypress-io/github-action@v2
+        with:
+          browser: chrome
+          start: yarn start
+          wait-on: 'http://localhost:3000'

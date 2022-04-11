@@ -30,7 +30,7 @@ function App({ hostContext }: { hostContext: string }) {
               width: "100px",
             }} />
           </HeaderBrand>
-          <div className="navigation">
+          <div role="navigation">
             {/* Filter control for nav */}
             <LeftNavigation />
           </div>

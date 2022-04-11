@@ -16,10 +16,10 @@ const LeftNavigation = () => {
   return (
     <DrawerNavigation>
       <DrawerWrapper isOpen={false}>
-        <NavLinks>
-          {groups.map(group => (
-            <Fragment key={group}>
-              <NavGroup>{group}</NavGroup>
+        {groups.map(group => (
+          <Fragment key={group}>
+            <NavGroup>{group}</NavGroup>
+            <NavLinks>
               {appRoutes
                 .filter(r => r.title && r.icon && r.group === group)
                 .map(routeDefinition => (
@@ -29,9 +29,9 @@ const LeftNavigation = () => {
                     </LinkStyled>
                   </li>
                 ))}
-            </Fragment>
-          ))}
-        </NavLinks>
+            </NavLinks>
+          </Fragment>
+        ))}
       </DrawerWrapper>
     </DrawerNavigation>
   )

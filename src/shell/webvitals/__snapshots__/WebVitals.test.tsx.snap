@@ -12,7 +12,6 @@ exports[`WebVitals render matches snapshot 1`] = `
       <div
         aria-hidden="true"
         class="sc-bczRLJ escZhQ"
-        id="tooltip-light"
         role="tooltip"
       >
         <b>
@@ -58,7 +57,6 @@ exports[`WebVitals render matches snapshot 1`] = `
       <div
         aria-hidden="true"
         class="sc-bczRLJ escZhQ"
-        id="tooltip-light"
         role="tooltip"
       >
         <b>
@@ -88,7 +86,6 @@ exports[`WebVitals render matches snapshot 1`] = `
       <div
         aria-hidden="true"
         class="sc-bczRLJ escZhQ"
-        id="tooltip-light"
         role="tooltip"
       >
         <b>
@@ -118,7 +115,6 @@ exports[`WebVitals render matches snapshot 1`] = `
       <div
         aria-hidden="true"
         class="sc-bczRLJ escZhQ"
-        id="tooltip-light"
         role="tooltip"
       >
         <b>
@@ -152,7 +148,6 @@ exports[`WebVitals render matches snapshot 1`] = `
       <div
         aria-hidden="true"
         class="sc-bczRLJ escZhQ"
-        id="tooltip-light"
         role="tooltip"
       >
         <b>
@@ -182,7 +177,6 @@ exports[`WebVitals shows tooltip on mouseover 'CLS' 1`] = `
 <div
   aria-hidden="false"
   class="sc-bczRLJ bJBHNL"
-  id="tooltip-light"
   role="tooltip"
 >
   <b>
@@ -205,7 +199,6 @@ exports[`WebVitals shows tooltip on mouseover 'FCP' 1`] = `
 <div
   aria-hidden="false"
   class="sc-bczRLJ bJBHNL"
-  id="tooltip-light"
   role="tooltip"
 >
   <b>
@@ -229,7 +222,6 @@ exports[`WebVitals shows tooltip on mouseover 'FID' 1`] = `
 <div
   aria-hidden="false"
   class="sc-bczRLJ bJBHNL"
-  id="tooltip-light"
   role="tooltip"
 >
   <b>
@@ -257,7 +249,6 @@ exports[`WebVitals shows tooltip on mouseover 'LCP' 1`] = `
 <div
   aria-hidden="false"
   class="sc-bczRLJ bJBHNL"
-  id="tooltip-light"
   role="tooltip"
 >
   <b>
@@ -281,7 +272,6 @@ exports[`WebVitals shows tooltip on mouseover 'TTFB' 1`] = `
 <div
   aria-hidden="false"
   class="sc-bczRLJ bJBHNL"
-  id="tooltip-light"
   role="tooltip"
 >
   <b>

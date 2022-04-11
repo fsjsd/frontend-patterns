@@ -5,16 +5,18 @@ import { ReactComponent as LogoYoutube } from "./icons/Youtube.svg";
 
 const Header = styled.header`
   padding: 1rem;
-  background-color: #0091ff;
+  background-color: #0076D1;
   display: flex;
   flex-direction: row;
   color: white;
 `;
 
-const HeaderPageTitle = styled.div`
+const HeaderPageTitle = styled.h1`
   font-weight: 400;
   font-size: 20px;
   flex-grow: 2;
+  color:inherit;
+  margin:0;
 `;
 
 const Links = styled.div`
@@ -31,7 +33,7 @@ const externalLinkIcon = {
 
 export const PageHeader = () => {
   return (
-    <Header>
+    <Header role="banner">
       <HeaderPageTitle>
         <b>
           Front-End
@@ -40,12 +42,19 @@ export const PageHeader = () => {
         Design Patterns
       </HeaderPageTitle>
       <Links>
-        <a href="https://github.com/fsjsd/frontend-patterns" target="_blank" rel="noreferrer">
+        <a
+          href="https://github.com/fsjsd/frontend-patterns"
+          aria-label="View fsjs.dev on GitHub"
+          target="_blank"
+          rel="noreferrer"
+        >
           <LogoGithub style={externalLinkIcon} />
         </a>
         <a
           href="https://www.youtube.com/channel/UC6ndgitE_bgJ02nyrrue-1A"
-          target="_blank" rel="noreferrer"
+          aria-label="View videos on Youtube"
+          target="_blank"
+          rel="noreferrer"
         >
           <LogoYoutube style={externalLinkIcon} />
         </a>

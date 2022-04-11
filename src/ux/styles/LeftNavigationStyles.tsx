@@ -7,10 +7,11 @@ export const DrawerNavigation = styled.div`
 `;
 
 export const DrawerWrapper = styled.div<{ isOpen: boolean }>`
+  display: flex;
+  flex-direction: column;
   position: relative;
   width: 480px;
   left: 0;
-  display: flex;
   transition: ease 0.3s left;
   ${props =>
     props.isOpen

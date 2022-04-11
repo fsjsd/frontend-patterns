@@ -152,7 +152,7 @@ const Carousel = ({ data, width }: CarouselProps) => {
       >
         →
       </SlideButton>
-      <SlideIndicators>
+      <SlideIndicators role={"tablist"}>
         {data.map((_, i) => (
           <SlideIndicator
             key={i}

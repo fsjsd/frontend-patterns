@@ -65,7 +65,7 @@ export const ContentWrapper: React.FC<ContentWrapperProps> = ({ children, title,
   }, [viewNotes])
   return <>
     <ContentHeader>
-      <ContentHeaderLabel role="heading">{title}</ContentHeaderLabel>
+      <ContentHeaderLabel role="complementary">{title}</ContentHeaderLabel>
       <ContentHeaderRight>
         <ContentHeaderIcon role="button" selected={!viewNotes} title="Run demo" onClick={() => setViewNotes(false)}>
           <MdOutlinePlayCircleOutline />
@@ -73,9 +73,17 @@ export const ContentWrapper: React.FC<ContentWrapperProps> = ({ children, title,
         {markDownPromise !== undefined && <ContentHeaderIcon role="button" selected={viewNotes} title="View notes" onClick={() => setViewNotes(true)}>
           <MdNotes />
         </ContentHeaderIcon>}
-        {codeLink && <ContentHeaderIcon role="button" selected={false} title="View code on github">
-          <a href={`${GITHUB_ROOT}${codeLink}`} target="_blank" rel="noopener noreferrer"><GoMarkGithub /></a>
-        </ContentHeaderIcon>}
+        {codeLink &&
+          <a
+            href={`${GITHUB_ROOT}${codeLink}`}
+            role="button"
+            aria-label="View source code on GitHub"
+            target="_blank"
+            rel="noopener noreferrer">
+            <ContentHeaderIcon selected={false} title="View code on github">
+              <GoMarkGithub />
+            </ContentHeaderIcon>
+          </a>}
       </ContentHeaderRight>
     </ContentHeader>
     <>
