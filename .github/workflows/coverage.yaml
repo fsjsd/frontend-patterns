@@ -1,12 +1,16 @@
 # https://about.codecov.io/blog/javascript-code-coverage-using-github-actions-and-codecov/
 # https://github.com/marketplace/actions/codecov
 
-name: Build
+name: CI
 
-on: [push, pull_request]
+on: 
+  push:
+    # only trigger on branches, not on tags
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
-
   build:
     runs-on: ubuntu-latest
     strategy:
