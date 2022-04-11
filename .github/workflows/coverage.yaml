@@ -11,7 +11,26 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+
+  lint:
+    runs-on: ubuntu-latest
+    name: Run eslint
+    strategy:
+      matrix:
+        node-version: [16]
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 2 
+    - name: Set up Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - run: yarn
+    - run: yarn lint
+
+  unit-test:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -45,13 +64,17 @@ jobs:
       - run: yarn run build
       - run: lhci autorun
 
- # e2e-test:
- #   runs-on: ubuntu-latest
- #   name: Run E2E tests on Chrome
- #   steps:
- #     - uses: actions/checkout@v2
- #     - uses: cypress-io/github-action@v2
- #       with:
- #         browser: chrome
- #         start: yarn start
- #         wait-on: 'http://localhost:3000'
+  e2e-test:
+    runs-on: ubuntu-latest
+    name: Run E2E tests on Chrome
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14
+      - uses: cypress-io/github-action@v2
+      - run: yarn
+        with:
+          browser: chrome
+          start: yarn start
+          wait-on: 'http://localhost:3000'
