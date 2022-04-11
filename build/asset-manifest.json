@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/frontend-patterns/static/css/main.fc6d5b3d.css",
-    "main.js": "/frontend-patterns/static/js/main.c273146b.js",
+    "main.js": "/frontend-patterns/static/js/main.af61a904.js",
     "static/js/279.4869f510.chunk.js": "/frontend-patterns/static/js/279.4869f510.chunk.js",
     "static/js/380.cef2f83d.chunk.js": "/frontend-patterns/static/js/380.cef2f83d.chunk.js",
     "static/js/708.4f6ca9bd.chunk.js": "/frontend-patterns/static/js/708.4f6ca9bd.chunk.js",
     "static/js/250.f09d8b8c.chunk.js": "/frontend-patterns/static/js/250.f09d8b8c.chunk.js",
-    "static/js/754.9105c35a.chunk.js": "/frontend-patterns/static/js/754.9105c35a.chunk.js",
+    "static/js/42.d154b320.chunk.js": "/frontend-patterns/static/js/42.d154b320.chunk.js",
     "static/js/578.a02d4659.chunk.js": "/frontend-patterns/static/js/578.a02d4659.chunk.js",
     "static/js/684.9bd26aaa.chunk.js": "/frontend-patterns/static/js/684.9bd26aaa.chunk.js",
     "static/js/191.aa0b316d.chunk.js": "/frontend-patterns/static/js/191.aa0b316d.chunk.js",
@@ -30,10 +30,10 @@
     "index.html": "/frontend-patterns/index.html",
     "static/media/Youtube.svg": "/frontend-patterns/static/media/Youtube.5acb0872756358576a1b671414354d36.svg",
     "main.fc6d5b3d.css.map": "/frontend-patterns/static/css/main.fc6d5b3d.css.map",
-    "main.c273146b.js.map": "/frontend-patterns/static/js/main.c273146b.js.map",
+    "main.af61a904.js.map": "/frontend-patterns/static/js/main.af61a904.js.map",
     "380.cef2f83d.chunk.js.map": "/frontend-patterns/static/js/380.cef2f83d.chunk.js.map",
     "708.4f6ca9bd.chunk.js.map": "/frontend-patterns/static/js/708.4f6ca9bd.chunk.js.map",
-    "754.9105c35a.chunk.js.map": "/frontend-patterns/static/js/754.9105c35a.chunk.js.map",
+    "42.d154b320.chunk.js.map": "/frontend-patterns/static/js/42.d154b320.chunk.js.map",
     "684.9bd26aaa.chunk.js.map": "/frontend-patterns/static/js/684.9bd26aaa.chunk.js.map",
     "23.d700c980.chunk.js.map": "/frontend-patterns/static/js/23.d700c980.chunk.js.map",
     "893.c14be419.chunk.js.map": "/frontend-patterns/static/js/893.c14be419.chunk.js.map",
@@ -45,6 +45,6 @@
   },
   "entrypoints": [
     "static/css/main.fc6d5b3d.css",
-    "static/js/main.c273146b.js"
+    "static/js/main.af61a904.js"
   ]
 }
