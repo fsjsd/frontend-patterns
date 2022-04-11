@@ -10,7 +10,7 @@
   "scripts": {
     "start": "react-scripts start",
     "serve": "serve -s build",
-    "serve:prod": "NODE_ENV=production npm run serve",
+    "serve:prod": "NODE_ENV=production yarn serve",
     "serve:lhci": "yarn serve:prod",
     "build": "rimraf build && react-scripts build",
     "predeploy": "rimraf build && react-scripts build",
