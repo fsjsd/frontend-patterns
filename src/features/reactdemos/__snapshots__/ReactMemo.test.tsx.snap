@@ -41,21 +41,25 @@ exports[`ReactMemo changes state after increments 1`] = `
       Container state: 
       0
     </p>
-    <button
-      class="bg-gray"
+    <div
+      class="sc-gsnTZi jwMZeR"
     >
-      Inc A
-    </button>
-    <button
-      class="bg-gray"
-    >
-      Inc B
-    </button>
-    <button
-      class="bg-gray"
-    >
-      Null state change
-    </button>
+      <button
+        class="sc-bczRLJ lmyYfG bg-gray"
+      >
+        Inc A
+      </button>
+      <button
+        class="sc-bczRLJ lmyYfG bg-gray"
+      >
+        Inc B
+      </button>
+      <button
+        class="sc-bczRLJ lmyYfG bg-gray"
+      >
+        Null state change
+      </button>
+    </div>
   </div>
 </div>
 `;
@@ -101,21 +105,25 @@ exports[`ReactMemo changes state after increments 2`] = `
       Container state: 
       1
     </p>
-    <button
-      class="bg-gray"
+    <div
+      class="sc-gsnTZi jwMZeR"
     >
-      Inc A
-    </button>
-    <button
-      class="bg-gray"
-    >
-      Inc B
-    </button>
-    <button
-      class="bg-gray"
-    >
-      Null state change
-    </button>
+      <button
+        class="sc-bczRLJ lmyYfG bg-gray"
+      >
+        Inc A
+      </button>
+      <button
+        class="sc-bczRLJ lmyYfG bg-gray"
+      >
+        Inc B
+      </button>
+      <button
+        class="sc-bczRLJ lmyYfG bg-gray"
+      >
+        Null state change
+      </button>
+    </div>
   </div>
 </div>
 `;
@@ -161,21 +169,25 @@ exports[`ReactMemo changes state after increments 3`] = `
       Container state: 
       1
     </p>
-    <button
-      class="bg-gray"
+    <div
+      class="sc-gsnTZi jwMZeR"
     >
-      Inc A
-    </button>
-    <button
-      class="bg-gray"
-    >
-      Inc B
-    </button>
-    <button
-      class="bg-gray"
-    >
-      Null state change
-    </button>
+      <button
+        class="sc-bczRLJ lmyYfG bg-gray"
+      >
+        Inc A
+      </button>
+      <button
+        class="sc-bczRLJ lmyYfG bg-gray"
+      >
+        Inc B
+      </button>
+      <button
+        class="sc-bczRLJ lmyYfG bg-gray"
+      >
+        Null state change
+      </button>
+    </div>
   </div>
 </div>
 `;
@@ -221,21 +233,25 @@ exports[`ReactMemo changes state after increments 4`] = `
       Container state: 
       1
     </p>
-    <button
-      class="bg-gray"
+    <div
+      class="sc-gsnTZi jwMZeR"
     >
-      Inc A
-    </button>
-    <button
-      class="bg-gray"
-    >
-      Inc B
-    </button>
-    <button
-      class="bg-gray"
-    >
-      Null state change
-    </button>
+      <button
+        class="sc-bczRLJ lmyYfG bg-gray"
+      >
+        Inc A
+      </button>
+      <button
+        class="sc-bczRLJ lmyYfG bg-gray"
+      >
+        Inc B
+      </button>
+      <button
+        class="sc-bczRLJ lmyYfG bg-gray"
+      >
+        Null state change
+      </button>
+    </div>
   </div>
 </div>
 `;
@@ -281,21 +297,25 @@ exports[`ReactMemo renders and matches snapshot 1`] = `
       Container state: 
       0
     </p>
-    <button
-      class="bg-gray"
+    <div
+      class="sc-gsnTZi jwMZeR"
     >
-      Inc A
-    </button>
-    <button
-      class="bg-gray"
-    >
-      Inc B
-    </button>
-    <button
-      class="bg-gray"
-    >
-      Null state change
-    </button>
+      <button
+        class="sc-bczRLJ lmyYfG bg-gray"
+      >
+        Inc A
+      </button>
+      <button
+        class="sc-bczRLJ lmyYfG bg-gray"
+      >
+        Inc B
+      </button>
+      <button
+        class="sc-bczRLJ lmyYfG bg-gray"
+      >
+        Null state change
+      </button>
+    </div>
   </div>
 </div>
 `;
