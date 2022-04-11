@@ -34,13 +34,24 @@ jobs:
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v2
 
-  e2e-test:
+  lighthouseci:
     runs-on: ubuntu-latest
-    name: Run E2E tests on Chrome
     steps:
       - uses: actions/checkout@v2
-      - uses: cypress-io/github-action@v2
+      - uses: actions/setup-node@v1
         with:
-          browser: chrome
-          start: yarn start
-          wait-on: 'http://localhost:3000'
+          node-version: 14
+      - run: yarn install && yarn install -g @lhci/cli@0.8.x
+      - run: yarn run build
+      - run: lhci autorun
+
+ # e2e-test:
+ #   runs-on: ubuntu-latest
+ #   name: Run E2E tests on Chrome
+ #   steps:
+ #     - uses: actions/checkout@v2
+ #     - uses: cypress-io/github-action@v2
+ #       with:
+ #         browser: chrome
+ #         start: yarn start
+ #         wait-on: 'http://localhost:3000'
