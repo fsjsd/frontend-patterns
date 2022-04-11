@@ -98,9 +98,12 @@ exports[`TypeAhead renders and matches snapshot 1`] = `
       style=""
     >
       <div
-        class="sc-iBkjds fPMrdA"
+        class="sc-iBkjds hzgkNG"
       >
-        Coming soon
+        <input
+          class="sc-ftvSup iHkRon"
+          value=""
+        />
       </div>
     </div>
   </section>

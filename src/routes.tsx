@@ -71,7 +71,7 @@ const appRoutes: AppRouteInfo[] = [
     icon: <MdFlip />,
     title: 'Typeahead',
     group: NAV_GROUPS.COMPONENTS,
-    isWip: true,
+    isWip: false,
   },
   {
     path: `${urlRoot}/newsfeed`,
