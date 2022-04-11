@@ -84,9 +84,9 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
+      - run: yarn
       - name: Cypress
         uses: cypress-io/github-action@v2
-      - run: yarn
         with:
           browser: chrome
           start: yarn start
