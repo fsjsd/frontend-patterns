@@ -1,4 +1,6 @@
 {
   "video": false,
-  "screenshotOnRunFailure": false
+  "screenshotOnRunFailure": false,
+  "defaultCommandTimeout": 5000,
+  "watchForFileChanges": false
 }
