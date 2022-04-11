@@ -47,4 +47,10 @@ React based Snake game with three different view implementations (HTML, Canvas a
 Refer to [this gist](https://gist.github.com/fsjsd/149bdb13fb644849a519ad779a1e0e60) for a list of articles 
 and resources
 
+# Tips
+
+lint-staged deleting your work? Run this to recover the stash it creates:
+
+`gitk --all $( git fsck --no-reflog | awk '/dangling commit/ {print $3}' )`
+
 
