@@ -6,15 +6,21 @@
 
 ![Front-end patterns](https://raw.githubusercontent.com/fsjsd/frontend-patterns/main/.docs/readme-header-fepatterns.jpg)
 
-Repo of modern front end design patterns, implemented in React. See the list below
+Enterprise-grade repo of modern front end design patterns, implemented in React. See the feature list below
 
 # Tech
 
-* Create React App w/ TypeScript
-* Comprehensive Unit Test coverage via Jest
-* CI pipeline through GitHub Actions to automate tests/coverage thresholds
-  * GitHub Pages deployment on master merge
-* local husky/lint-staged to enforce lint / test coverage standards
+* 🌐 ***Create React App*** w/ ***TypeScript*** throughout 
+* 💪 ***>95%*** Unit Test coverage via ***Jest***
+ * 👩‍🦯 ***a11y*** test automation via ***jest-axe***
+* 🔥 Near 100% ***Lighthouse*** rating
+* 🏭 CI pipeline (GitHub Actions)
+  * 💂 High coverage thresholds
+  * 🔒 Automated ***Synk, CodeQL*** & ***LGTM*** checks
+  * ❤️ E2E tests via ***Cypress*** (basic)
+  * 🌎 ***Lighthouse***
+  * 📄 ***GitHub Pages*** deployment on master merge
+* ✋ local ***husky/lint-staged*** to enforce lint / test coverage standards
 
 # Setup
 
