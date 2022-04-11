@@ -7,6 +7,5 @@ describe("SnakeGameContainer", () => {
     const { container, queryByRole } = render(<SnakeGameContainer />)
     await waitFor(() => expect(queryByRole("main")).toBeInTheDocument());
     expect(container).toMatchSnapshot();
-
   })
 })

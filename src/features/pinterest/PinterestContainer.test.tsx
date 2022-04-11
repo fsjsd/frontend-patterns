@@ -7,6 +7,5 @@ describe("Pinterest", () => {
     const { container, queryByRole } = render(<PinterestContainer />)
     await waitFor(() => expect(queryByRole("main")).toBeInTheDocument());
     expect(container).toMatchSnapshot();
-
   })
 })

@@ -7,6 +7,5 @@ describe("Netflix", () => {
     const { container, queryByRole } = render(<NetflixContainer />)
     await waitFor(() => expect(queryByRole("main")).toBeInTheDocument());
     expect(container).toMatchSnapshot();
-
   })
 })

@@ -3,12 +3,12 @@ import { MdNotes, MdOutlinePlayCircleOutline } from "react-icons/md";
 import { GoMarkGithub } from "react-icons/go";
 import styled from "styled-components";
 import { GITHUB_ROOT } from "../utils/constants/urls";
-import ContentHeader, { ContentHeaderIcon, ContentHeaderLabel, ContentHeaderRight } from "./ContentHeader";
+import ContentHeader, { ContentHeaderIcon, ContentHeaderLabel, ContentHeaderRight } from "./styles/ContentHeader";
 import Loading from "./Loading";
 const ReactMarkdown = React.lazy(() => import('react-markdown'))
 
-export const ContentWrapperStyled = styled.section`
-  padding: 15px;
+export const ContentWrapperStyled = styled.section<{ noPadding: boolean }>`
+  ${props => props.noPadding ? '' : 'padding: 15px;'}
   flex-grow: 1;
   overflow-y: auto;
 `;
@@ -46,9 +46,10 @@ interface ContentWrapperProps {
   codeLink?: string;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   markDownPromise?: Promise<any>;
+  noPadding?: boolean;
 }
 
-export const ContentWrapper: React.FC<ContentWrapperProps> = ({ children, title, markDownPromise, codeLink }) => {
+export const ContentWrapper: React.FC<ContentWrapperProps> = ({ children, title, markDownPromise, codeLink, noPadding }) => {
   const [viewNotes, setViewNotes] = useState(false);
   const [markdown, setMarkdown] = useState("");
 
@@ -64,7 +65,7 @@ export const ContentWrapper: React.FC<ContentWrapperProps> = ({ children, title,
   }, [viewNotes])
   return <>
     <ContentHeader>
-      <ContentHeaderLabel role="heading">{title}</ContentHeaderLabel>
+      <ContentHeaderLabel role="complementary">{title}</ContentHeaderLabel>
       <ContentHeaderRight>
         <ContentHeaderIcon role="button" selected={!viewNotes} title="Run demo" onClick={() => setViewNotes(false)}>
           <MdOutlinePlayCircleOutline />
@@ -72,9 +73,17 @@ export const ContentWrapper: React.FC<ContentWrapperProps> = ({ children, title,
         {markDownPromise !== undefined && <ContentHeaderIcon role="button" selected={viewNotes} title="View notes" onClick={() => setViewNotes(true)}>
           <MdNotes />
         </ContentHeaderIcon>}
-        {codeLink && <ContentHeaderIcon role="button" selected={false} title="View code on github">
-          <a href={`${GITHUB_ROOT}${codeLink}`} target="_blank" rel="noopener noreferrer"><GoMarkGithub /></a>
-        </ContentHeaderIcon>}
+        {codeLink &&
+          <a
+            href={`${GITHUB_ROOT}${codeLink}`}
+            role="button"
+            aria-label="View source code on GitHub"
+            target="_blank"
+            rel="noopener noreferrer">
+            <ContentHeaderIcon selected={false} title="View code on github">
+              <GoMarkGithub />
+            </ContentHeaderIcon>
+          </a>}
       </ContentHeaderRight>
     </ContentHeader>
     <>
@@ -85,7 +94,7 @@ export const ContentWrapper: React.FC<ContentWrapperProps> = ({ children, title,
           </Suspense>
         </ContentWrapperArticle>}
       {!viewNotes &&
-        <ContentWrapperStyled role="document">{children}</ContentWrapperStyled>}
+        <ContentWrapperStyled role="document" noPadding={!!noPadding}>{children}</ContentWrapperStyled>}
     </>
   </>
 };

@@ -1,6 +1,5 @@
 import * as utils from "./utils"
 
-// @ponicode
 describe("utils.isCoordEqual", () => {
   test("coords match", () => {
     expect(

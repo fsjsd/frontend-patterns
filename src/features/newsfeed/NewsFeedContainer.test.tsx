@@ -7,6 +7,5 @@ describe("NewsFeed", () => {
     const { container, queryByRole } = render(<NewsFeedContainer />)
     await waitFor(() => expect(queryByRole("main")).toBeInTheDocument());
     expect(container).toMatchSnapshot();
-
   })
 })

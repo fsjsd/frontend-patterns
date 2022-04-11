@@ -7,7 +7,7 @@ exports[`SnakeGameContainer renders and matches snapshot 1`] = `
   >
     <div
       class="sc-gsnTZi hCGKc"
-      role="heading"
+      role="complementary"
     >
       Snake Game
     </div>
@@ -60,15 +60,16 @@ exports[`SnakeGameContainer renders and matches snapshot 1`] = `
           />
         </svg>
       </div>
-      <div
-        class="sc-hKMtZM itnQjY"
+      <a
+        aria-label="View source code on GitHub"
+        href="https://github.com/fsjsd/frontend-patterns/tree/main/src/features/snakegame"
+        rel="noopener noreferrer"
         role="button"
-        title="View code on github"
+        target="_blank"
       >
-        <a
-          href="https://github.com/fsjsd/frontend-patterns/tree/main/src/features/snakegame"
-          rel="noopener noreferrer"
-          target="_blank"
+        <div
+          class="sc-hKMtZM itnQjY"
+          title="View code on github"
         >
           <svg
             fill="currentColor"
@@ -84,12 +85,12 @@ exports[`SnakeGameContainer renders and matches snapshot 1`] = `
               fill-rule="evenodd"
             />
           </svg>
-        </a>
-      </div>
+        </div>
+      </a>
     </div>
   </header>
   <section
-    class="sc-jSMfEi foNrii"
+    class="sc-jSMfEi ljxiYZ"
     role="document"
   >
     <div

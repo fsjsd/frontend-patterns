@@ -80,8 +80,4 @@ describe("ReactMemo", () => {
     rerender(<CounterABDeepMemo myObj={props.myObj} render={renderCount} />);
     expect(renderCount).toBeCalledTimes(1);
   });
-
-
-
-
 });

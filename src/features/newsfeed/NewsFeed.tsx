@@ -1,5 +1,5 @@
 import React from 'react'
-import { NewsFeedWrapper } from './NewsFeedUx'
+import { NewsFeedWrapper } from './NewsFeedStyles'
 
 const NewsFeed = () => {
   return (

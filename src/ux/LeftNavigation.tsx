@@ -1,12 +1,12 @@
 import React, { Fragment } from 'react'
 import appRoutes from '../routes'
 import {
-  DrawerNavigationStyled,
+  DrawerNavigation,
   DrawerWrapper,
   NavLinks,
   NavGroup,
   LinkStyled,
-} from './LeftNavigationUI'
+} from './styles/LeftNavigationStyles'
 
 const groups = Array.from(
   new Set(appRoutes.filter(route => !!route.group).map(route => route.group)),
@@ -14,26 +14,26 @@ const groups = Array.from(
 
 const LeftNavigation = () => {
   return (
-    <DrawerNavigationStyled>
+    <DrawerNavigation>
       <DrawerWrapper isOpen={false}>
-        <NavLinks>
-          {groups.map(group => (
-            <Fragment key={group}>
-              <NavGroup>{group}</NavGroup>
+        {groups.map(group => (
+          <Fragment key={group}>
+            <NavGroup>{group}</NavGroup>
+            <NavLinks>
               {appRoutes
                 .filter(r => r.title && r.icon && r.group === group)
                 .map(routeDefinition => (
                   <li key={routeDefinition.path}>
-                    <LinkStyled role="link" to={routeDefinition.path}>
+                    <LinkStyled role="link" to={routeDefinition.path} $wip={routeDefinition.isWip}>
                       {routeDefinition.icon} {routeDefinition.title}
                     </LinkStyled>
                   </li>
                 ))}
-            </Fragment>
-          ))}
-        </NavLinks>
+            </NavLinks>
+          </Fragment>
+        ))}
       </DrawerWrapper>
-    </DrawerNavigationStyled>
+    </DrawerNavigation>
   )
 }
 

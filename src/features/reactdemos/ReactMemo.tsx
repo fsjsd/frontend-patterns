@@ -1,6 +1,8 @@
 /* eslint-disable react/display-name */
 import React, { useState } from 'react'
 import { useMemo } from 'react';
+import Button from '../../ux/designsystem/Button';
+import ButtonGroup from '../../ux/designsystem/ButtonGroup';
 
 
 // eslint-disable-next-line react/display-name
@@ -109,9 +111,11 @@ export const ReactMemo = () => {
       <CounterABDeepMemo myObj={countObj} render={render('CounterABShallowMemo')}>children!</CounterABDeepMemo>
 
       <p>Container state: {countObj.a}</p>
-      <button className='bg-gray' onClick={() => handleIncAClick()}>Inc A</button>
-      <button className='bg-gray' onClick={() => handleIncBClick()}>Inc B</button>
-      <button className='bg-gray' onClick={() => handleNoOpClick()}>Null state change</button>
+      <ButtonGroup>
+        <Button className='bg-gray' onClick={() => handleIncAClick()}>Inc A</Button>
+        <Button className='bg-gray' onClick={() => handleIncBClick()}>Inc B</Button>
+        <Button className='bg-gray' onClick={() => handleNoOpClick()}>Null state change</Button>
+      </ButtonGroup>
     </div>
   )
 }
