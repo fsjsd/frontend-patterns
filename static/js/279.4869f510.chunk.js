@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfrontend_patterns=self.webpackChunkfrontend_patterns||[]).push([[279],{4279:function(e,t,n){e.exports=n.p+"static/media/requirements.9ecd03946866159e0231.md"}}]);

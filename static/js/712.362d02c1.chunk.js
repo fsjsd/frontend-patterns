@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkfrontend_patterns=self.webpackChunkfrontend_patterns||[]).push([[712],{6712:function(n,t,e){e.r(t),e.d(t,{default:function(){return c}});e(2791);var r,u=e(168),f=e(6031).ZP.div(r||(r=(0,u.Z)(["\n  \n"]))),s=e(184),c=function(){return(0,s.jsx)(f,{children:"ToDo"})}}}]);
+//# sourceMappingURL=712.362d02c1.chunk.js.map
