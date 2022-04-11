@@ -14,7 +14,7 @@ jobs:
 
   lint:
     runs-on: ubuntu-latest
-    name: Run eslint
+    name: eslint
     strategy:
       matrix:
         node-version: [16]
@@ -32,6 +32,7 @@ jobs:
 
   unit-test:
     runs-on: ubuntu-latest
+    name: Unit test
     strategy:
       matrix:
         node-version: [16]
@@ -55,24 +56,36 @@ jobs:
 
   lighthouseci:
     runs-on: ubuntu-latest
+    name: Lighthouse
+    strategy:
+      matrix:
+        node-version: [16]
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Set up Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
         with:
-          node-version: 14
+          node-version: ${{ matrix.node-version }}
       - run: yarn && yarn global add @lhci/cli@0.8.x
       - run: yarn run build
       - run: lhci autorun
 
   e2e-test:
     runs-on: ubuntu-latest
-    name: Run E2E tests on Chrome
+    name: Cypress (Chrome)
+    strategy:
+      matrix:
+        node-version: [16]
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Set up Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
         with:
-          node-version: 14
-      - uses: cypress-io/github-action@v2
+          node-version: ${{ matrix.node-version }}
+      - name: Cypress
+        uses: cypress-io/github-action@v2
       - run: yarn
         with:
           browser: chrome
