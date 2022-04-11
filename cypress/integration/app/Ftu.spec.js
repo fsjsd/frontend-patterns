@@ -1,6 +1,6 @@
 
 beforeEach(() => {
-  cy.visit('http://localhost:3000/frontend-patterns');
+  cy.visit('http://localhost:3000/');
   cy.injectAxe();
 })
 
@@ -17,7 +17,8 @@ function terminalLog(violations) {
       id,
       impact,
       description,
-      nodes: nodes.length
+      nodes: nodes.length,
+      firstnode: nodes[0].innerHtml
     })
   )
 
@@ -26,6 +27,8 @@ function terminalLog(violations) {
 
 describe('FTU', () => {
   it('Should not violate a11y rules', () => {
-    cy.checkA11y(null, null, terminalLog)
+    cy.checkA11y(null, {
+      includedImpacts: ['critical', 'serious']
+    }, terminalLog)
   })
 })
