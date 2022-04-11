@@ -1,5 +1,5 @@
 import React from 'react'
-import { TypeAheadWrapper } from './TypeAheadUx'
+import { TypeAheadWrapper } from './TypeAheadStyles'
 
 const TypeAhead = () => {
   return (

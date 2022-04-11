@@ -3,7 +3,7 @@ import { MdNotes, MdOutlinePlayCircleOutline } from "react-icons/md";
 import { GoMarkGithub } from "react-icons/go";
 import styled from "styled-components";
 import { GITHUB_ROOT } from "../utils/constants/urls";
-import ContentHeader, { ContentHeaderIcon, ContentHeaderLabel, ContentHeaderRight } from "./ContentHeader";
+import ContentHeader, { ContentHeaderIcon, ContentHeaderLabel, ContentHeaderRight } from "./styles/ContentHeader";
 import Loading from "./Loading";
 const ReactMarkdown = React.lazy(() => import('react-markdown'))
 

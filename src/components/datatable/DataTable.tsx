@@ -1,5 +1,5 @@
 import React from 'react'
-import { DataTableWrapper } from './DataTableUx'
+import { DataTableWrapper } from './DataTableStyles'
 
 const DataTable = () => {
   return (

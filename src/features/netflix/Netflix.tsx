@@ -1,5 +1,5 @@
 import React from 'react'
-import { NetflixWrapper } from './NetflixUx'
+import { NetflixWrapper } from './NetflixStyles'
 
 const Netflix = () => {
   return (

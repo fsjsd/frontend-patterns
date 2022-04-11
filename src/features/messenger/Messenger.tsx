@@ -1,5 +1,5 @@
 import React from 'react'
-import { MessengerWrapper as MessengerWrapper } from './MessengerUx'
+import { MessengerWrapper as MessengerWrapper } from './MessengerStyles'
 
 const Messenger = () => {
   return (

@@ -7,7 +7,7 @@ import {
   SlideContainer,
   SlideIndicator,
   SlideIndicators,
-} from './CarouselUI'
+} from './CarouselStyles'
 
 export interface CarouselSlideData {
   bannerText: string

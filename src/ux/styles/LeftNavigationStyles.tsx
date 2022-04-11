@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-export const DrawerNavigationStyled = styled.div`
+export const DrawerNavigation = styled.div`
   width: 240px;
   overflow: hidden;
 `;

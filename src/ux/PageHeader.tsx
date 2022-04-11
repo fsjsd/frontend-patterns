@@ -29,10 +29,6 @@ const externalLinkIcon = {
   cursor: "pointer"
 }
 
-const appLogoLink = {
-  display: "block"
-}
-
 export const PageHeader = () => {
   return (
     <Header>
@@ -56,7 +52,7 @@ export const PageHeader = () => {
         <a
           href="https://fsjs.dev"
           target="_blank"
-          style={appLogoLink} rel="noreferrer"
+          style={{ display: "block" }} rel="noreferrer"
           title="fsjs.dev - Full Stack Javascript Development"
         >
         </a>

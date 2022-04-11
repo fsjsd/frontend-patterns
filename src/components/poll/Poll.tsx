@@ -1,5 +1,5 @@
 import React from 'react'
-import { PollWrapper } from './PollUx'
+import { PollWrapper } from './PollStyles'
 
 const Poll = () => {
   return (

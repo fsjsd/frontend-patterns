@@ -1,5 +1,5 @@
 import React from 'react'
-import { PinterestWrapper as PinterestWrapper } from './PinterestUx'
+import { PinterestWrapper as PinterestWrapper } from './PinterestStyles'
 
 const Pinterest = () => {
   return (

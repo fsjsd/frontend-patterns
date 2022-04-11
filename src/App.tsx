@@ -4,14 +4,15 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import appRoutes from './routes';
 import Loading from './ux/Loading';
 import WebVitals from './shell/webvitals/WebVitals';
-import ContentFooter from './ux/ContentFooter';
+import ContentFooter from './ux/styles/ContentFooter';
 import BrowserStats from './shell/browserstats/BrowserStats';
 import { ReactComponent as LogoFsJsDev } from "./ux/icons/LogoFsjsDev.svg";
-// import styles from "./ux/LayoutContainerUI";
-import './App.css';
 import { PageHeader } from './ux/PageHeader';
 import styled from 'styled-components';
-import { SectionMain, SiteContainer, SectionDrawer, HeaderBrand, appLogoStyle } from './ux/LayoutContainerUI';
+import { SiteContainer } from './ux/styles/SiteContainer';
+import { SectionDrawer } from './ux/styles/SectionDrawer';
+import { HeaderBrand } from './ux/styles/HeaderBrand';
+import { SectionMain } from './ux/styles/SectionMain';
 
 const PageContent = styled.div`
   flex-grow: 1;
@@ -24,7 +25,10 @@ function App({ hostContext }: { hostContext: string }) {
       <SiteContainer>
         <SectionDrawer>
           <HeaderBrand>
-            <LogoFsJsDev style={appLogoStyle} />
+            <LogoFsJsDev style={{
+              height: "24px",
+              width: "100px",
+            }} />
           </HeaderBrand>
           <div className="navigation">
             {/* Filter control for nav */}

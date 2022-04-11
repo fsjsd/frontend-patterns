@@ -1,5 +1,5 @@
 import React from 'react'
-import { ToDoWrapper } from './ToDoUx'
+import { ToDoWrapper } from './ToDoStyles'
 
 const ToDo = () => {
   return (
