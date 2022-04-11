@@ -24,7 +24,6 @@ const ToolTipStyled = styled.div<{ isVisible: boolean }>`
 const ToolTip: React.FC<{ isVisible: boolean }> = ({ isVisible, children }) => {
   return (
     <ToolTipStyled
-      id="tooltip-light"
       role="tooltip"
       isVisible={isVisible}
       aria-hidden={!isVisible}

@@ -6,9 +6,8 @@ exports[`SnakeGameContainer renders and matches snapshot 1`] = `
     class="sc-bczRLJ dmSzxI"
   >
     <div
-      aria-level="1"
       class="sc-gsnTZi hCGKc"
-      role="heading"
+      role="complementary"
     >
       Snake Game
     </div>

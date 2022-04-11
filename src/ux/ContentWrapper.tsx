@@ -65,7 +65,7 @@ export const ContentWrapper: React.FC<ContentWrapperProps> = ({ children, title,
   }, [viewNotes])
   return <>
     <ContentHeader>
-      <ContentHeaderLabel role="heading" aria-level={1}>{title}</ContentHeaderLabel>
+      <ContentHeaderLabel role="complementary">{title}</ContentHeaderLabel>
       <ContentHeaderRight>
         <ContentHeaderIcon role="button" selected={!viewNotes} title="Run demo" onClick={() => setViewNotes(false)}>
           <MdOutlinePlayCircleOutline />
