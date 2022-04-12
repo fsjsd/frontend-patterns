@@ -76,11 +76,15 @@ const TypeAhead = <T,>({ id, initialQuery, getResults, getResultText, minimumQue
   // delegate to parent component to get results
   const getResultsDebounced = useCallback(debounce(async (inputText) => {
     if (inputText.length > (minimumQueryLength ?? 2)) {
-      const results = await getResults(inputText);
-      setFtu(false);
-      setResults(results);
-      setResultsVisible(true);
-      setActiveResult(-1);
+      try {
+        const results = await getResults(inputText);
+        setFtu(false);
+        setResults(results);
+        setResultsVisible(true);
+        setActiveResult(-1);
+      } catch (e) {
+        console.error(e);
+      }
     }
   }, 200), [getResults]);
 
@@ -158,6 +162,7 @@ const TypeAhead = <T,>({ id, initialQuery, getResults, getResultText, minimumQue
       onKeyUp={e => handleKeyUp(e)}>
       <Input
         id={id}
+        role="textbox"
         ref={inputRef}
         value={query}
         onChange={handleInputChange}

@@ -26,3 +26,9 @@ code {
 #root {
   height: 100vh;
 }
+
+section[role="document"] {
+  font-size: 0.85rem;
+  line-height: 1rem;
+  font-weight: 400;
+}

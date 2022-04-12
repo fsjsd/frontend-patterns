@@ -112,7 +112,7 @@ exports[`TypeAhead renders and matches snapshot 1`] = `
         <input
           aria-autocomplete="list"
           aria-controls="typeahead-list"
-          class="sc-ftvSup sc-kDDrLX ifRdMM jmyjyM"
+          class="sc-ftvSup sc-kDDrLX ifRdMM"
           id="university-search"
           placeholder="Search..."
           value=""

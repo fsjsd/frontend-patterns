@@ -34,7 +34,6 @@ export const TypeAheadResultItem = styled.div`
   background-color:transparent;
   border:none;
   text-align:left;
-  font-size:0.85em;
   border-radius:3px;
   cursor:pointer;
   &[aria-selected="true"],

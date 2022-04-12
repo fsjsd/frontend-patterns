@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UniversitySearch renders and matches snapshot 1`] = `
+<div>
+  <label
+    for="university-search"
+  >
+    Search Australian Universities
+  </label>
+  <div
+    aria-expanded="false"
+    aria-haspopup="listbox"
+    aria-owns="university-search-list"
+    class="sc-bczRLJ hKJesX"
+    role="combobox"
+  >
+    <input
+      aria-autocomplete="list"
+      aria-controls="typeahead-list"
+      class="sc-gsnTZi sc-eCYdqJ hAsuur"
+      id="university-search"
+      placeholder="Search..."
+      role="textbox"
+      value=""
+    />
+  </div>
+</div>
+`;
+
+exports[`UniversitySearch typing less than 3 chars does nothing 1`] = `
+<div>
+  <label
+    for="university-search"
+  >
+    Search Australian Universities
+  </label>
+  <div
+    aria-expanded="false"
+    aria-haspopup="listbox"
+    aria-owns="university-search-list"
+    class="sc-bczRLJ hKJesX"
+    role="combobox"
+  >
+    <input
+      aria-autocomplete="list"
+      aria-controls="typeahead-list"
+      class="sc-gsnTZi sc-eCYdqJ hAsuur"
+      id="university-search"
+      placeholder="Search..."
+      role="textbox"
+      value="ab"
+    />
+  </div>
+</div>
+`;
+
+exports[`UniversitySearch valid query triggers result query 1`] = `
+<div>
+  <label
+    for="university-search"
+  >
+    Search Australian Universities
+  </label>
+  <div
+    aria-expanded="false"
+    aria-haspopup="listbox"
+    aria-owns="university-search-list"
+    class="sc-bczRLJ hKJesX"
+    role="combobox"
+  >
+    <input
+      aria-autocomplete="list"
+      aria-controls="typeahead-list"
+      class="sc-gsnTZi sc-eCYdqJ hAsuur"
+      id="university-search"
+      placeholder="Search..."
+      role="textbox"
+      value="University of"
+    />
+  </div>
+</div>
+`;
