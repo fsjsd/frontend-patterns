@@ -10,6 +10,7 @@ import { initialState, INITIAL_SNAKE_SPEED } from './utils';
 const GameWrapper = styled.div`
   outline:none;
   display:inline-block;
+  border:solid 1px #ccc;
 `
 
 const Section = styled.section`

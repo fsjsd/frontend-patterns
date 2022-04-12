@@ -15,7 +15,7 @@ exports[`SnakeGame 'ascii' mode renders and matches snapshot 1`] = `
       0
     </section>
     <div
-      class="sc-dkzDqf cKYejw"
+      class="sc-dkzDqf likSVD"
       role="application"
       tabindex="0"
     >
@@ -93,7 +93,7 @@ exports[`SnakeGame 'canvas' mode renders and matches snapshot 1`] = `
       0
     </section>
     <div
-      class="sc-dkzDqf cKYejw"
+      class="sc-dkzDqf likSVD"
       role="application"
       tabindex="0"
     >
@@ -132,7 +132,7 @@ exports[`SnakeGame 'html' mode renders and matches snapshot 1`] = `
       0
     </section>
     <div
-      class="sc-dkzDqf cKYejw"
+      class="sc-dkzDqf likSVD"
       role="application"
       tabindex="0"
     >
@@ -2374,7 +2374,7 @@ exports[`SnakeGame clicking game resets game 1`] = `
       0
     </section>
     <div
-      class="sc-dkzDqf cKYejw"
+      class="sc-dkzDqf likSVD"
       role="application"
       tabindex="0"
     >

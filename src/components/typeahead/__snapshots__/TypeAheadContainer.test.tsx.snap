@@ -90,21 +90,37 @@ exports[`TypeAhead renders and matches snapshot 1`] = `
     </div>
   </header>
   <section
-    class="sc-jSMfEi ljxiYZ"
+    class="sc-gKXOVf cdoXCR"
     role="document"
   >
     <div
       role="main"
       style=""
     >
+      <label
+        for="university-search"
+      >
+        Search Australian Universities
+      </label>
       <div
-        class="sc-iBkjds hzgkNG"
+        aria-expanded="false"
+        aria-haspopup="listbox"
+        aria-owns="university-search-list"
+        class="sc-iBkjds jPEvpV"
+        role="combobox"
       >
         <input
-          class="sc-ftvSup iHkRon"
+          aria-autocomplete="list"
+          aria-controls="typeahead-list"
+          class="sc-ftvSup sc-kDDrLX ifRdMM jmyjyM"
+          id="university-search"
+          placeholder="Search..."
           value=""
         />
       </div>
+      <p>
+        Content under typeahead
+      </p>
     </div>
   </section>
 </div>

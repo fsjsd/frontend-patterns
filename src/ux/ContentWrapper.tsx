@@ -5,50 +5,38 @@ import styled from "styled-components";
 import { GITHUB_ROOT } from "../utils/constants/urls";
 import ContentHeader, { ContentHeaderIcon, ContentHeaderLabel, ContentHeaderRight } from "./styles/ContentHeader";
 import Loading from "./Loading";
+import ContentArticle from "./styles/ContentWrapperArticle";
 const ReactMarkdown = React.lazy(() => import('react-markdown'))
 
+/**
+ * Content Wrapper is the central container for all screens, and scrolls within
+ * the horseshoe by default.
+ */
 export const ContentWrapperStyled = styled.section<{ noPadding: boolean }>`
   ${props => props.noPadding ? '' : 'padding: 15px;'}
   flex-grow: 1;
   overflow-y: auto;
-`;
-
-const ContentWrapperArticle = styled.div`
-  overflow-y: auto;
-  flex-grow: 1;
-  font-size:0.85em;
-  padding: 15px;
-  h1{
-    font-weight:700;
-    font-size:1.25em;
-  }
-  h2{
-    font-weight:700;
-    font-size:1em;
-  }
-  h3,h4{
-    font-weight:700;
-  }
-  p{
-    margin-bottom:0.75em;
-  }
-  ul {
-    padding-left: 1.5em;
-    margin-bottom:0.75em;
-  }
-  li{
-    list-style:disc;
-  }
+  scroll-behavior: smooth;
 `;
 
 interface ContentWrapperProps {
+  /** Screen title */
   title: string;
+  /** Optional link to source code on GitHub */
   codeLink?: string;
+  /** Optional promise to load Markdown notes */
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   markDownPromise?: Promise<any>;
+  /** Optional flag to remove padding */
   noPadding?: boolean;
 }
 
+/**
+ * Content Wrapper is the central container for all screens, and scrolls within
+ * the horseshoe by default.
+ * @param param0 props
+ * @returns 
+ */
 export const ContentWrapper: React.FC<ContentWrapperProps> = ({ children, title, markDownPromise, codeLink, noPadding }) => {
   const [viewNotes, setViewNotes] = useState(false);
   const [markdown, setMarkdown] = useState("");
@@ -88,11 +76,11 @@ export const ContentWrapper: React.FC<ContentWrapperProps> = ({ children, title,
     </ContentHeader>
     <>
       {viewNotes &&
-        <ContentWrapperArticle role="article">
+        <ContentArticle role="article">
           <Suspense fallback={<Loading />}>
             <ReactMarkdown>{markdown}</ReactMarkdown>
           </Suspense>
-        </ContentWrapperArticle>}
+        </ContentArticle>}
       {!viewNotes &&
         <ContentWrapperStyled role="document" noPadding={!!noPadding}>{children}</ContentWrapperStyled>}
     </>

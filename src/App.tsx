@@ -8,37 +8,33 @@ import ContentFooter from './ux/styles/ContentFooter';
 import BrowserStats from './shell/browserstats/BrowserStats';
 import { ReactComponent as LogoFsJsDev } from "./ux/icons/LogoFsjsDev.svg";
 import { PageHeader } from './ux/PageHeader';
-import styled from 'styled-components';
 import { SiteContainer } from './ux/styles/SiteContainer';
 import { SectionDrawer } from './ux/styles/SectionDrawer';
 import { HeaderBrand } from './ux/styles/HeaderBrand';
 import { SectionMain } from './ux/styles/SectionMain';
-
-const PageContent = styled.div`
-  flex-grow: 1;
-  overflow-y: "auto";
-`;
+import { ThemeProvider } from 'styled-components';
+import theme from './ux/theme';
 
 function App({ hostContext }: { hostContext: string }) {
   return (
-    <BrowserRouter>
-      <SiteContainer>
-        <SectionDrawer>
-          <HeaderBrand>
-            <LogoFsJsDev style={{
-              height: "24px",
-              width: "100px",
-            }} />
-          </HeaderBrand>
-          <div role="navigation">
-            {/* Filter control for nav */}
-            <LeftNavigation />
-          </div>
-        </SectionDrawer>
+    <ThemeProvider theme={theme}>
+      <BrowserRouter>
+        <SiteContainer>
+          <SectionDrawer>
+            <HeaderBrand>
+              <LogoFsJsDev style={{
+                height: "24px",
+                width: "100px",
+              }} />
+            </HeaderBrand>
+            <div role="navigation">
+              {/* Filter control for nav */}
+              <LeftNavigation />
+            </div>
+          </SectionDrawer>
 
-        <SectionMain>
-          <PageHeader />
-          <PageContent>
+          <SectionMain>
+            <PageHeader />
             <Routes>
               {appRoutes.map(routeDefinition => <Route
                 key={routeDefinition.path}
@@ -46,18 +42,18 @@ function App({ hostContext }: { hostContext: string }) {
                 element={<React.Suspense fallback={<Loading />}>{routeDefinition.element}</React.Suspense>} />
               )}
             </Routes>
-          </PageContent>
-          <ContentFooter role="contentinfo" aria-label='Web vitals information' title={hostContext}>
-            <div style={{ flexGrow: 1 }}>
-              <WebVitals />
-            </div>
-            <div style={{ flexGrow: 0 }}>
-              <BrowserStats />
-            </div>
-          </ContentFooter>
-        </SectionMain>
-      </SiteContainer>
-    </BrowserRouter >
+            <ContentFooter role="contentinfo" aria-label='Web vitals information' title={hostContext}>
+              <div style={{ flexGrow: 1 }}>
+                <WebVitals />
+              </div>
+              <div style={{ flexGrow: 0 }}>
+                <BrowserStats />
+              </div>
+            </ContentFooter>
+          </SectionMain>
+        </SiteContainer>
+      </BrowserRouter >
+    </ThemeProvider>
   );
 }
 
