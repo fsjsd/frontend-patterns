@@ -41,7 +41,7 @@ React implementation of web.dev's performant [Carousel demo](https://web.dev/pat
 
 # Features
 
-### [Snake Pattern](src/features/snakegame/)
+### [Snake Game](src/features/snakegame/)
 
 React based Snake game with three different view implementations (HTML, Canvas and raw text)
 
