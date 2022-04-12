@@ -82,7 +82,11 @@ const TypeAhead = <T,>({
 
   useEffect(() => {
     if (activeResult != -1) {
-      document.querySelector(`#ta-${activeResult}`)?.scrollIntoView();
+      const result = document.querySelector(`#${id}-option-${activeResult}`);
+      const parent = result?.parentElement;
+      if (result && parent) {
+        result.scrollIntoView({ block: 'nearest' });
+      }
     }
   }, [activeResult])
 
