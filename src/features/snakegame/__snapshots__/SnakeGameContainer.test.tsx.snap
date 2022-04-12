@@ -7,7 +7,6 @@ exports[`SnakeGameContainer renders and matches snapshot 1`] = `
   >
     <div
       class="sc-gsnTZi hCGKc"
-      role="complementary"
     >
       Snake Game
     </div>
@@ -90,7 +89,7 @@ exports[`SnakeGameContainer renders and matches snapshot 1`] = `
     </div>
   </header>
   <section
-    class="sc-jSMfEi ljxiYZ"
+    class="sc-gKXOVf cdoXCR"
     role="document"
   >
     <div
@@ -98,10 +97,10 @@ exports[`SnakeGameContainer renders and matches snapshot 1`] = `
       style=""
     >
       <div
-        style="flex-grow: 2; padding: 10px;"
+        style="flex-grow: 2;"
       >
         <section
-          class="sc-jqUVSM kzRGDG"
+          class="sc-jqUVSM ggMPJO"
           role="note"
         >
           Score: 
@@ -110,7 +109,7 @@ exports[`SnakeGameContainer renders and matches snapshot 1`] = `
           0
         </section>
         <div
-          class="sc-papXJ lcOgnB"
+          class="sc-papXJ ieNmjO"
           role="application"
           tabindex="0"
         >
@@ -124,7 +123,7 @@ exports[`SnakeGameContainer renders and matches snapshot 1`] = `
           </div>
         </div>
         <section
-          class="sc-jqUVSM kzRGDG"
+          class="sc-jqUVSM ggMPJO"
         >
           Press 't' to toggle view modes in game play (current mode: 
           canvas

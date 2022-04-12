@@ -1,11 +1,15 @@
 import React from 'react'
+import { ContentWrapper } from '../../ux/ContentWrapper'
 import ReactMemo from './ReactMemo'
 
 const Index = () => {
   return (
-    <div>
+    <ContentWrapper
+      title='React Demos'
+      codeLink="/features/reactdemos"
+    >
       <ReactMemo />
-    </div>
+    </ContentWrapper>
   )
 }
 

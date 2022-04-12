@@ -1,9 +1,18 @@
 import React, { Suspense } from 'react'
 import { ContentWrapper } from '../../ux/ContentWrapper'
+import FieldSet from '../../ux/designsystem/FieldSet'
+import InputText from '../../ux/designsystem/InputText'
+import Label from '../../ux/designsystem/Label'
 import Loading from '../../ux/Loading'
-const TypeAhead = React.lazy(() => import('./TypeAhead'))
+import DemoError from './DemoError'
+import DemoUniversitySearch from './DemoUniversitySearch'
 
+/**
+ * Container for the Typeahead component
+ * @returns JSX
+ */
 const TypeAheadContainer = () => {
+
   return (
     <ContentWrapper
       title='Type-ahead'
@@ -12,7 +21,12 @@ const TypeAheadContainer = () => {
     >
       <Suspense fallback={<Loading />}>
         <div role="main">
-          <TypeAhead />
+          <DemoUniversitySearch />
+          <DemoError />
+          <FieldSet>
+            <Label htmlFor="error">Tab demo</Label>
+            <InputText placeholder='Press tab' />
+          </FieldSet>
         </div>
       </Suspense>
     </ContentWrapper>

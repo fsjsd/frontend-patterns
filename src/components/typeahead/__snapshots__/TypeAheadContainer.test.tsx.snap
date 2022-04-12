@@ -7,7 +7,6 @@ exports[`TypeAhead renders and matches snapshot 1`] = `
   >
     <div
       class="sc-gsnTZi hCGKc"
-      role="complementary"
     >
       Type-ahead
     </div>
@@ -90,18 +89,79 @@ exports[`TypeAhead renders and matches snapshot 1`] = `
     </div>
   </header>
   <section
-    class="sc-jSMfEi ljxiYZ"
+    class="sc-gKXOVf cdoXCR"
     role="document"
   >
     <div
       role="main"
-      style=""
     >
-      <div
-        class="sc-iBkjds fPMrdA"
+      <fieldset
+        class="sc-iBkjds deraKR"
       >
-        Coming soon
-      </div>
+        <label
+          class="sc-papXJ hnyONj"
+          for="university-search"
+        >
+          Search Australian Universities
+        </label>
+        <div
+          aria-expanded="false"
+          aria-haspopup="listbox"
+          aria-owns="university-search-list"
+          class="sc-jqUVSM cFYEyq"
+          role="combobox"
+        >
+          <input
+            aria-autocomplete="list"
+            aria-controls="typeahead-list"
+            class="sc-ftvSup sc-evZas gpyVpQ"
+            id="university-search"
+            placeholder="Search..."
+            role="textbox"
+            value=""
+          />
+        </div>
+      </fieldset>
+      <fieldset
+        class="sc-iBkjds deraKR"
+      >
+        <label
+          class="sc-papXJ hnyONj"
+          for="error"
+        >
+          Error demo
+        </label>
+        <div
+          aria-expanded="false"
+          aria-haspopup="listbox"
+          aria-owns="error-list"
+          class="sc-jqUVSM cFYEyq"
+          role="combobox"
+        >
+          <input
+            aria-autocomplete="list"
+            aria-controls="typeahead-list"
+            class="sc-ftvSup gpyVpQ"
+            id="error"
+            role="textbox"
+            value=""
+          />
+        </div>
+      </fieldset>
+      <fieldset
+        class="sc-iBkjds deraKR"
+      >
+        <label
+          class="sc-papXJ hnyONj"
+          for="error"
+        >
+          Tab demo
+        </label>
+        <input
+          class="sc-ftvSup gpyVpQ"
+          placeholder="Press tab"
+        />
+      </fieldset>
     </div>
   </section>
 </div>

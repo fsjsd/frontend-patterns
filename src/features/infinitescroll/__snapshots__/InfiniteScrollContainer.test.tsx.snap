@@ -7,7 +7,6 @@ exports[`InfiniteScrollContainer render matches snapshot 1`] = `
   >
     <div
       class="sc-gsnTZi hCGKc"
-      role="complementary"
     >
       Infinite Scroll
     </div>
@@ -90,7 +89,7 @@ exports[`InfiniteScrollContainer render matches snapshot 1`] = `
     </div>
   </header>
   <section
-    class="sc-jSMfEi ljxiYZ"
+    class="sc-gKXOVf cdoXCR"
     role="document"
   >
     <div

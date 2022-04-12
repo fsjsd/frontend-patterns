@@ -22,3 +22,5 @@ Object.defineProperty(global, 'IntersectionObserver', {
   configurable: true,
   value: IntersectionObserver,
 })
+
+window.HTMLElement.prototype.scrollIntoView = jest.fn()
