@@ -30,8 +30,7 @@ const UniversitySearchInput = styled(InputText).attrs(() => ({
  */
 const UniversityResultItem = ({ datum, query, ...props }: { datum: UniversitySearchResult, query: string }) => {
 
-  const queryLocation = datum.name.toLowerCase().indexOf(query);
-
+  const queryLocation = datum.name.toLowerCase().indexOf(query.toLowerCase());
   if (queryLocation !== -1) {
     const startText = datum.name.slice(0, queryLocation);
     const queryText = datum.name.slice(queryLocation, query.length + queryLocation);

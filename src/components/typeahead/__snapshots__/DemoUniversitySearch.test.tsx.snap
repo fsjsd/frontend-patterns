@@ -55,7 +55,9 @@ exports[`UniversitySearch arrow down has no effect at end 1`] = `
           id="university-search-option-2"
           role="option"
         >
+          <b />
           University of Southern Queensland
+          <b />
         </div>
       </div>
     </div>
@@ -102,7 +104,9 @@ exports[`UniversitySearch arrow up selects first result 1`] = `
           id="university-search-option-0"
           role="option"
         >
+          <b />
           University of Sydney
+          <b />
         </div>
         <div
           aria-selected="false"
@@ -181,7 +185,9 @@ exports[`UniversitySearch navigates on key press 'ArrowDown' 1`] = `
           id="university-search-option-2"
           role="option"
         >
+          <b />
           University of Southern Queensland
+          <b />
         </div>
       </div>
     </div>
@@ -228,7 +234,9 @@ exports[`UniversitySearch navigates on key press 'ArrowUp' 1`] = `
           id="university-search-option-0"
           role="option"
         >
+          <b />
           University of Sydney
+          <b />
         </div>
         <div
           aria-selected="false"
@@ -399,7 +407,11 @@ exports[`UniversitySearch valid query triggers result query 1`] = `
           id="university-search-option-0"
           role="option"
         >
-          University of Sydney
+          <b />
+          University of
+          <b>
+             Sydney
+          </b>
         </div>
         <div
           aria-selected="false"
@@ -407,7 +419,11 @@ exports[`UniversitySearch valid query triggers result query 1`] = `
           id="university-search-option-1"
           role="option"
         >
-          University of South Australia
+          <b />
+          University of
+          <b>
+             South Australia
+          </b>
         </div>
         <div
           aria-selected="false"
@@ -415,7 +431,11 @@ exports[`UniversitySearch valid query triggers result query 1`] = `
           id="university-search-option-2"
           role="option"
         >
-          University of Southern Queensland
+          <b />
+          University of
+          <b>
+             Southern Queensland
+          </b>
         </div>
       </div>
     </div>
