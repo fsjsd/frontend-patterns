@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react'
 import styled from 'styled-components';
 
-import { TypeAheadInput, TypeAheadResultsWrapper, TypeAheadResultItem, TypeAheadWrapper } from './TypeAheadStyles'
+import { TypeAheadResultsWrapper, TypeAheadResultItem, TypeAheadWrapper } from './TypeAheadStyles'
 import TypeAhead from './TypeAhead';
 import InputText from '../../ux/designsystem/InputText';
 import Label from '../../ux/designsystem/Label';
@@ -50,7 +50,7 @@ const NoResults = () => {
   return <TypeAheadResultItem>No results</TypeAheadResultItem>
 }
 
-const UniversitySearchDemo = () => {
+const UniversitySearchDemo = ({ onSelect }: { onSelect?: (item: UniversitySearchResult) => void }) => {
   // straight forward fetch for University Search
   const handleGetResults = useCallback((query: string) => {
     return new Promise<UniversitySearchResult[]>((resolve) => {
@@ -61,6 +61,10 @@ const UniversitySearchDemo = () => {
       })();
     })
   }, []);
+
+  const handleOnSelect = (item: UniversitySearchResult) => {
+    onSelect && onSelect(item);
+  };
 
   return (
     <FieldSet>
@@ -74,6 +78,7 @@ const UniversitySearchDemo = () => {
         resultComponent={UniversityResultItem}
         getResults={handleGetResults}
         getResultText={(datum) => (datum as UniversitySearchResult).name}
+        onSelect={handleOnSelect}
       />
     </FieldSet>
   )

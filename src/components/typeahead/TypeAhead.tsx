@@ -28,6 +28,7 @@ interface TypeAheadProps<T> {
   getResults: (query: string) => Promise<T[]>;
   /** delegate to retrieve text node from result datum */
   getResultText?: (datum: T) => string;
+  onSelect: (datum: T) => void;
 }
 
 /**
@@ -35,7 +36,15 @@ interface TypeAheadProps<T> {
  * @param param0 props
  * @returns JSX
  */
-const TypeAhead = <T,>({ id, initialQuery, getResults, getResultText, minimumQueryLength, ...props }: TypeAheadProps<T>) => {
+const TypeAhead = <T,>({
+  id,
+  minimumQueryLength,
+  initialQuery,
+  getResults,
+  getResultText,
+  onSelect,
+  ...props
+}: TypeAheadProps<T>) => {
   // React components must be capitalized to use in JSX
   const Wrapper = props.wrapperComponent;
   const Input = props.inputComponent;
@@ -110,6 +119,7 @@ const TypeAhead = <T,>({ id, initialQuery, getResults, getResultText, minimumQue
     setResultsVisible(false);
     // set selected result text to input.
     setQuery(resultItemText(datum));
+    onSelect(datum);
   };
 
   const handleInputFocus = () => {
@@ -147,6 +157,12 @@ const TypeAhead = <T,>({ id, initialQuery, getResults, getResultText, minimumQue
       setActiveResult(resultIndex);
       setQuery(resultItemText(results[resultIndex]))
     }
+    if (e.key === 'Enter') {
+      if (activeResult !== undefined) {
+        onSelect(results[activeResult]);
+      }
+    }
+
   };
 
   const expanded = resultsVisible && !ftu;

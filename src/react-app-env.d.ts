@@ -1,5 +1,7 @@
 /// <reference types="react-scripts" />
 
+import 'jest-fetch-mock'
+
 // allow markdown import
 declare module '*.md'
 
