@@ -1,5 +1,131 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`UniversitySearch arrow down has no effect at end 1`] = `
+<div>
+  <fieldset
+    class="sc-gKXOVf flrEIL"
+  >
+    <label
+      class="sc-jSMfEi IYesW"
+      for="university-search"
+    >
+      Search Australian Universities
+    </label>
+    <div
+      aria-expanded="true"
+      aria-haspopup="listbox"
+      aria-owns="university-search-list"
+      class="sc-bczRLJ hKJesX"
+      role="combobox"
+    >
+      <input
+        aria-activedescendant="university-search-option-2"
+        aria-autocomplete="list"
+        aria-controls="typeahead-list"
+        class="sc-eCYdqJ sc-iBkjds kQhIGu"
+        id="university-search"
+        placeholder="Search..."
+        role="textbox"
+        value="University of Southern Queensland"
+      />
+      <div
+        class="sc-dkzDqf kXXWxR"
+        id="university-search-list"
+        role="listbox"
+      >
+        <div
+          aria-selected="false"
+          class="sc-hKMtZM cisxoG"
+          id="university-search-option-0"
+          role="option"
+        >
+          University of Sydney
+        </div>
+        <div
+          aria-selected="false"
+          class="sc-hKMtZM cisxoG"
+          id="university-search-option-1"
+          role="option"
+        >
+          University of South Australia
+        </div>
+        <div
+          aria-selected="true"
+          class="sc-hKMtZM cisxoG"
+          id="university-search-option-2"
+          role="option"
+        >
+          University of Southern Queensland
+        </div>
+      </div>
+    </div>
+  </fieldset>
+</div>
+`;
+
+exports[`UniversitySearch arrow up selects first result 1`] = `
+<div>
+  <fieldset
+    class="sc-gKXOVf flrEIL"
+  >
+    <label
+      class="sc-jSMfEi IYesW"
+      for="university-search"
+    >
+      Search Australian Universities
+    </label>
+    <div
+      aria-expanded="true"
+      aria-haspopup="listbox"
+      aria-owns="university-search-list"
+      class="sc-bczRLJ hKJesX"
+      role="combobox"
+    >
+      <input
+        aria-activedescendant="university-search-option-0"
+        aria-autocomplete="list"
+        aria-controls="typeahead-list"
+        class="sc-eCYdqJ sc-iBkjds kQhIGu"
+        id="university-search"
+        placeholder="Search..."
+        role="textbox"
+        value="University of Sydney"
+      />
+      <div
+        class="sc-dkzDqf kXXWxR"
+        id="university-search-list"
+        role="listbox"
+      >
+        <div
+          aria-selected="true"
+          class="sc-hKMtZM cisxoG"
+          id="university-search-option-0"
+          role="option"
+        >
+          University of Sydney
+        </div>
+        <div
+          aria-selected="false"
+          class="sc-hKMtZM cisxoG"
+          id="university-search-option-1"
+          role="option"
+        >
+          University of South Australia
+        </div>
+        <div
+          aria-selected="false"
+          class="sc-hKMtZM cisxoG"
+          id="university-search-option-2"
+          role="option"
+        >
+          University of Southern Queensland
+        </div>
+      </div>
+    </div>
+  </fieldset>
+</div>
+`;
+
 exports[`UniversitySearch navigates on key press 'ArrowDown' 1`] = `
 <div>
   <fieldset

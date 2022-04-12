@@ -1,6 +1,8 @@
 import React, { useCallback, useEffect, useRef } from 'react'
 import debounce from '../../utils/debounce';
 
+const TEXT_DEBOUNCE_MS = 200;
+
 /**
  * Typeahead props
  */
@@ -18,7 +20,7 @@ interface TypeAheadProps<T> {
   /** React component for results wrapper, can be styled, some HTML props will be managed */
   resultsWrapperComponent: React.ComponentType<React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>>;
   /** 
-   * React Component to render result item. Must accept result item of type T through property datum,, some HTML props will be managed  
+   * React Component to render result item. Must accept result item of type T through property datum, some HTML props will be managed  
    */
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   resultComponent: React.ComponentType<React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement> & { datum: any | T, query: string }, HTMLDivElement>>;
@@ -29,6 +31,7 @@ interface TypeAheadProps<T> {
   /** delegate to retrieve text node from result datum */
   getResultText?: (datum: T) => string;
   onSelect: (datum: T) => void;
+  onError?: (e: unknown) => void;
 }
 
 /**
@@ -43,6 +46,7 @@ const TypeAhead = <T,>({
   getResults,
   getResultText,
   onSelect,
+  onError,
   ...props
 }: TypeAheadProps<T>) => {
   // React components must be capitalized to use in JSX
@@ -92,10 +96,10 @@ const TypeAhead = <T,>({
         setResultsVisible(true);
         setActiveResult(-1);
       } catch (e) {
-        console.error(e);
+        onError && onError(e);
       }
     }
-  }, 200), [getResults]);
+  }, TEXT_DEBOUNCE_MS), [getResults]);
 
   const handleInputChange = (e) => {
     // update query state immediately
@@ -141,7 +145,7 @@ const TypeAhead = <T,>({
       e.preventDefault();
       const resultIndex = (activeResult === undefined)
         ? 0 // first result
-        : (activeResult === results.length + 1)
+        : (activeResult === results.length - 1)
           ? activeResult // last result, stall
           : activeResult + 1; // next result
 
@@ -150,10 +154,9 @@ const TypeAhead = <T,>({
     }
     if (e.key === 'ArrowUp') {
       e.preventDefault();
-      const resultIndex = (activeResult === undefined || activeResult === 0)
+      const resultIndex = (activeResult === undefined || activeResult <= 0)
         ? 0 // first result
         : activeResult - 1; // previous result
-
       setActiveResult(resultIndex);
       setQuery(resultItemText(results[resultIndex]))
     }

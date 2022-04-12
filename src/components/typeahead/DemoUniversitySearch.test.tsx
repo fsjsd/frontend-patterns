@@ -1,6 +1,6 @@
 import React from 'react'
 import { fireEvent, render, waitFor } from '@testing-library/react'
-import UniversitySearchDemo from './UniversitySearchDemo';
+import DemoUniversitySearch from './DemoUniversitySearch';
 import fetchMock from 'jest-fetch-mock'
 
 // fetch mock issues:
@@ -72,13 +72,13 @@ describe('UniversitySearch', () => {
   });
 
   it('renders and matches snapshot', async () => {
-    const { container, queryByLabelText } = render(<UniversitySearchDemo />)
+    const { container, queryByLabelText } = render(<DemoUniversitySearch />)
     await waitFor(() => expect(queryByLabelText("Search Australian Universities")).toBeInTheDocument());
     expect(container).toMatchSnapshot();
   });
 
   it('typing less than 3 chars does nothing', async () => {
-    const { container, getByRole } = render(<UniversitySearchDemo />)
+    const { container, getByRole } = render(<DemoUniversitySearch />)
     const input = await getByRole("textbox");
     fireEvent.change(input, { target: { value: "ab" } });
     expect(container).toMatchSnapshot();
@@ -87,7 +87,7 @@ describe('UniversitySearch', () => {
   it('valid query triggers result query', async () => {
     fetchMock.mockResponseOnce(JSON.stringify(mockResponse));
 
-    const { container, getByRole, queryByRole } = render(<UniversitySearchDemo />)
+    const { container, getByRole, queryByRole } = render(<DemoUniversitySearch />)
     const input = await getByRole("textbox");
     fireEvent.change(input, { target: { value: "University o" } });
     fireEvent.change(input, { target: { value: "University of" } });
@@ -97,8 +97,7 @@ describe('UniversitySearch', () => {
 
   it('no response renders correctly', async () => {
     fetchMock.mockResponseOnce(JSON.stringify([]));
-
-    const { container, getByRole, queryByRole } = render(<UniversitySearchDemo />)
+    const { container, getByRole, queryByRole } = render(<DemoUniversitySearch />)
     const input = await getByRole("textbox");
     fireEvent.change(input, { target: { value: "University o" } });
     await waitFor(() => expect(queryByRole("listbox")).toBeInTheDocument());
@@ -109,7 +108,7 @@ describe('UniversitySearch', () => {
   it('document click closes typeahead', async () => {
     fetchMock.mockResponseOnce(JSON.stringify(mockResponse));
 
-    const { getByRole, queryByRole } = render(<UniversitySearchDemo />)
+    const { getByRole, queryByRole } = render(<DemoUniversitySearch />)
     const input = await getByRole("textbox");
     fireEvent.change(input, { target: { value: "University o" } });
     fireEvent.change(input, { target: { value: "University of" } });
@@ -118,10 +117,21 @@ describe('UniversitySearch', () => {
     await waitFor(() => expect(queryByRole("listbox")).not.toBeInTheDocument());
   });
 
+  it('input blur does not closes typeahead', async () => {
+    fetchMock.mockResponseOnce(JSON.stringify(mockResponse));
+
+    const { getByRole, queryByRole } = render(<DemoUniversitySearch />)
+    const input = await getByRole("textbox");
+    fireEvent.change(input, { target: { value: "University o" } });
+    await waitFor(() => expect(queryByRole("listbox")).toBeInTheDocument());
+    fireEvent.blur(input);
+    await waitFor(() => expect(queryByRole("listbox")).toBeInTheDocument());
+  });
+
   it('input click does not close typeahead', async () => {
     fetchMock.mockResponseOnce(JSON.stringify(mockResponse));
 
-    const { getByRole, queryByRole } = render(<UniversitySearchDemo />)
+    const { getByRole, queryByRole } = render(<DemoUniversitySearch />)
     const input = await getByRole("textbox");
     fireEvent.change(input, { target: { value: "University o" } });
     fireEvent.change(input, { target: { value: "University of" } });
@@ -138,7 +148,7 @@ describe('UniversitySearch', () => {
   )('navigates on key press %o', async (keyCode, index) => {
     fetchMock.mockResponseOnce(JSON.stringify(mockResponse));
 
-    const { container, getByRole, queryByRole } = render(<UniversitySearchDemo />)
+    const { container, getByRole, queryByRole } = render(<DemoUniversitySearch />)
     const input = await getByRole("textbox");
     fireEvent.change(input, { target: { value: "University" } });
     await waitFor(() => expect(queryByRole("listbox")).toBeInTheDocument());
@@ -157,6 +167,38 @@ describe('UniversitySearch', () => {
     expect(container).toMatchSnapshot();
   });
 
+  it('arrow up selects first result', async () => {
+    fetchMock.mockResponseOnce(JSON.stringify(mockResponse));
+
+    const { container, getByRole, queryByRole } = render(<DemoUniversitySearch />)
+    const input = await getByRole("textbox");
+    fireEvent.change(input, { target: { value: "University" } });
+    await waitFor(() => expect(queryByRole("listbox")).toBeInTheDocument());
+    const item = container.querySelector(`#university-search-option-0`);
+    expect(item).toBeInTheDocument();
+    expect(item?.getAttribute("aria-selected")).toBe("false");
+    fireEvent.keyUp(input, { key: 'ArrowUp' });
+    expect(item?.getAttribute("aria-selected")).toBe("true");
+    expect(container).toMatchSnapshot();
+  });
+
+  it('arrow down has no effect at end', async () => {
+    fetchMock.mockResponseOnce(JSON.stringify(mockResponse));
+
+    const { container, getByRole, queryByRole } = render(<DemoUniversitySearch />)
+    const input = await getByRole("textbox");
+    fireEvent.change(input, { target: { value: "University" } });
+    await waitFor(() => expect(queryByRole("listbox")).toBeInTheDocument());
+    const item = container.querySelector(`#university-search-option-${mockResponse.length - 1}`);
+    expect(item).toBeInTheDocument();
+    expect(item?.getAttribute("aria-selected")).toBe("false");
+    new Array(mockResponse.length).fill(null).forEach(() => fireEvent.keyUp(input, { key: 'ArrowDown' }));
+    expect(item?.getAttribute("aria-selected")).toBe("true");
+    fireEvent.keyUp(input, { key: 'ArrowDown' });
+    expect(item?.getAttribute("aria-selected")).toBe("true");
+    expect(container).toMatchSnapshot();
+  });
+
   it.each(
     [
       ['Tab'],
@@ -165,7 +207,7 @@ describe('UniversitySearch', () => {
   )('%o closes typeahead', async (keyCode) => {
     fetchMock.mockResponseOnce(JSON.stringify(mockResponse));
 
-    const { getByRole, queryByRole } = render(<UniversitySearchDemo />)
+    const { getByRole, queryByRole } = render(<DemoUniversitySearch />)
     const input = await getByRole("textbox");
     fireEvent.change(input, { target: { value: "University o" } });
     await waitFor(() => expect(queryByRole("listbox")).toBeInTheDocument());
@@ -179,7 +221,7 @@ describe('UniversitySearch', () => {
     fetchMock.mockResponseOnce(JSON.stringify(mockResponse));
 
     const handleOnSelect = jest.fn();
-    const { getByRole, queryByRole } = render(<UniversitySearchDemo onSelect={handleOnSelect} />)
+    const { getByRole, queryByRole } = render(<DemoUniversitySearch onSelect={handleOnSelect} />)
     const input = await getByRole("textbox");
     fireEvent.change(input, { target: { value: "University o" } });
     await waitFor(() => expect(queryByRole("listbox")).toBeInTheDocument());
@@ -192,7 +234,7 @@ describe('UniversitySearch', () => {
     fetchMock.mockResponseOnce(JSON.stringify(mockResponse));
 
     const handleOnSelect = jest.fn();
-    const { container, getByRole, queryByRole } = render(<UniversitySearchDemo onSelect={handleOnSelect} />)
+    const { container, getByRole, queryByRole } = render(<DemoUniversitySearch onSelect={handleOnSelect} />)
     const input = await getByRole("textbox");
     fireEvent.change(input, { target: { value: "University o" } });
     await waitFor(() => expect(queryByRole("listbox")).toBeInTheDocument());
@@ -204,7 +246,7 @@ describe('UniversitySearch', () => {
 
   it('selecting without result does not raise event', async () => {
     const handleOnSelect = jest.fn();
-    const { getByRole } = render(<UniversitySearchDemo onSelect={handleOnSelect} />)
+    const { getByRole } = render(<DemoUniversitySearch onSelect={handleOnSelect} />)
     const input = await getByRole("textbox");
     fireEvent.keyUp(input, { key: "Enter" });
     expect(handleOnSelect).toHaveBeenCalledTimes(0);

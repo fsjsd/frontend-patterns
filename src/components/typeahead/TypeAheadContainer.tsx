@@ -1,7 +1,11 @@
 import React, { Suspense } from 'react'
 import { ContentWrapper } from '../../ux/ContentWrapper'
+import FieldSet from '../../ux/designsystem/FieldSet'
+import InputText from '../../ux/designsystem/InputText'
+import Label from '../../ux/designsystem/Label'
 import Loading from '../../ux/Loading'
-import UniversitySearchDemo from './UniversitySearchDemo'
+import DemoError from './DemoError'
+import DemoUniversitySearch from './DemoUniversitySearch'
 
 /**
  * Container for the Typeahead component
@@ -17,10 +21,12 @@ const TypeAheadContainer = () => {
     >
       <Suspense fallback={<Loading />}>
         <div role="main">
-          <UniversitySearchDemo />
-          <p>
-            Content under typeahead
-          </p>
+          <DemoUniversitySearch />
+          <DemoError />
+          <FieldSet>
+            <Label htmlFor="error">Tab demo</Label>
+            <InputText placeholder='Press tab' />
+          </FieldSet>
         </div>
       </Suspense>
     </ContentWrapper>

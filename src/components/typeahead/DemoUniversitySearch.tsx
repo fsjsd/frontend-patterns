@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react'
 import styled from 'styled-components';
 
-import { TypeAheadResultsWrapper, TypeAheadResultItem, TypeAheadWrapper } from './TypeAheadStyles'
+import { TypeAheadResultsWrapper, TypeAheadResultItem, TypeAheadWrapper, NoResults } from './TypeAheadStyles'
 import TypeAhead from './TypeAhead';
 import InputText from '../../ux/designsystem/InputText';
 import Label from '../../ux/designsystem/Label';
@@ -42,15 +42,13 @@ const UniversityResultItem = ({ datum, query, ...props }: { datum: UniversitySea
   return <TypeAheadResultItem {...props}>{datum.name}</TypeAheadResultItem>
 }
 
-/**
- * Simple UX component to show when no results are found
- * @returns JSX
- */
-const NoResults = () => {
-  return <TypeAheadResultItem>No results</TypeAheadResultItem>
-}
-
-const UniversitySearchDemo = ({ onSelect }: { onSelect?: (item: UniversitySearchResult) => void }) => {
+const DemoUniversitySearch = ({
+  onSelect,
+  onError
+}: {
+  onSelect?: (item: UniversitySearchResult) => void,
+  onError?: (error: unknown) => void
+}) => {
   // straight forward fetch for University Search
   const handleGetResults = useCallback((query: string) => {
     return new Promise<UniversitySearchResult[]>((resolve) => {
@@ -79,9 +77,10 @@ const UniversitySearchDemo = ({ onSelect }: { onSelect?: (item: UniversitySearch
         getResults={handleGetResults}
         getResultText={(datum) => (datum as UniversitySearchResult).name}
         onSelect={handleOnSelect}
+        onError={onError}
       />
     </FieldSet>
   )
 }
 
-export default UniversitySearchDemo
+export default DemoUniversitySearch

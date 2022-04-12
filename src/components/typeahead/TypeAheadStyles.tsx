@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from "styled-components";
 
 export const TypeAheadWrapper = styled.div`
@@ -44,5 +45,21 @@ export const TypeAheadResultItem = styled.div`
     background-color: #ddd;
   }
 `;
+
+/**
+ * Simple UX component for array of strings
+ * @returns JSX
+ */
+export const TextResultItem = ({ datum, ...props }: { datum: string, query: string }) => {
+  return <div {...props}>{datum}</div>;
+}
+
+/**
+ * Simple UX component to show when no results are found
+ * @returns JSX
+ */
+export const NoResults = () => {
+  return <TypeAheadResultItem>No results</TypeAheadResultItem>
+}
 
 export default {};
