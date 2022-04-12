@@ -141,7 +141,6 @@ const TypeAhead = <T,>({
       setActiveResult(-1);
     }
     if (e.key === 'Tab') {
-      e.preventDefault();
       setResultsVisible(false);
       setActiveResult(-1);
     }
@@ -182,14 +181,13 @@ const TypeAhead = <T,>({
       aria-owns={`${id}-list`}
       aria-haspopup="listbox"
       onFocus={handleInputFocus}
-      onKeyUp={e => handleKeyUp(e)}>
+      onKeyDown={e => handleKeyUp(e)}>
       <Input
         id={id}
         role="textbox"
         ref={inputRef}
         value={query}
         onChange={handleInputChange}
-        onBlur={e => e.preventDefault()}
         aria-autocomplete="list"
         aria-controls="typeahead-list"
         aria-activedescendant={activeResult !== undefined ? `${id}-option-${activeResult}` : undefined}

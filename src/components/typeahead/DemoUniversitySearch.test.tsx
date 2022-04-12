@@ -152,9 +152,9 @@ describe('UniversitySearch', () => {
     const input = await getByRole("textbox");
     fireEvent.change(input, { target: { value: "University" } });
     await waitFor(() => expect(queryByRole("listbox")).toBeInTheDocument());
-    fireEvent.keyUp(input, { key: 'ArrowDown' });
-    fireEvent.keyUp(input, { key: 'ArrowDown' });
-    fireEvent.keyUp(input, { key: keyCode });
+    fireEvent.keyDown(input, { key: 'ArrowDown' });
+    fireEvent.keyDown(input, { key: 'ArrowDown' });
+    fireEvent.keyDown(input, { key: keyCode });
 
     const item = container.querySelector(`#university-search-option-${index}`);
     expect(item).toBeInTheDocument();
@@ -177,7 +177,7 @@ describe('UniversitySearch', () => {
     const item = container.querySelector(`#university-search-option-0`);
     expect(item).toBeInTheDocument();
     expect(item?.getAttribute("aria-selected")).toBe("false");
-    fireEvent.keyUp(input, { key: 'ArrowUp' });
+    fireEvent.keyDown(input, { key: 'ArrowUp' });
     expect(item?.getAttribute("aria-selected")).toBe("true");
     expect(container).toMatchSnapshot();
   });
@@ -192,9 +192,9 @@ describe('UniversitySearch', () => {
     const item = container.querySelector(`#university-search-option-${mockResponse.length - 1}`);
     expect(item).toBeInTheDocument();
     expect(item?.getAttribute("aria-selected")).toBe("false");
-    new Array(mockResponse.length).fill(null).forEach(() => fireEvent.keyUp(input, { key: 'ArrowDown' }));
+    new Array(mockResponse.length).fill(null).forEach(() => fireEvent.keyDown(input, { key: 'ArrowDown' }));
     expect(item?.getAttribute("aria-selected")).toBe("true");
-    fireEvent.keyUp(input, { key: 'ArrowDown' });
+    fireEvent.keyDown(input, { key: 'ArrowDown' });
     expect(item?.getAttribute("aria-selected")).toBe("true");
     expect(container).toMatchSnapshot();
   });
@@ -211,7 +211,7 @@ describe('UniversitySearch', () => {
     const input = await getByRole("textbox");
     fireEvent.change(input, { target: { value: "University o" } });
     await waitFor(() => expect(queryByRole("listbox")).toBeInTheDocument());
-    fireEvent.keyUp(input, { key: keyCode });
+    fireEvent.keyDown(input, { key: keyCode });
     expect(queryByRole("listbox")).not.toBeInTheDocument()
     fireEvent.focus(input);
     expect(queryByRole("listbox")).toBeInTheDocument()
@@ -225,8 +225,8 @@ describe('UniversitySearch', () => {
     const input = await getByRole("textbox");
     fireEvent.change(input, { target: { value: "University o" } });
     await waitFor(() => expect(queryByRole("listbox")).toBeInTheDocument());
-    fireEvent.keyUp(input, { key: "ArrowDown" });
-    fireEvent.keyUp(input, { key: "Enter" });
+    fireEvent.keyDown(input, { key: "ArrowDown" });
+    fireEvent.keyDown(input, { key: "Enter" });
     expect(handleOnSelect).toHaveBeenCalledTimes(1);
   });
 
@@ -248,7 +248,7 @@ describe('UniversitySearch', () => {
     const handleOnSelect = jest.fn();
     const { getByRole } = render(<DemoUniversitySearch onSelect={handleOnSelect} />)
     const input = await getByRole("textbox");
-    fireEvent.keyUp(input, { key: "Enter" });
+    fireEvent.keyDown(input, { key: "Enter" });
     expect(handleOnSelect).toHaveBeenCalledTimes(0);
   });
 
