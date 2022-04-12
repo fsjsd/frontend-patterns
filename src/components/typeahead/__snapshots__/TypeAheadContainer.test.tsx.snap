@@ -7,7 +7,6 @@ exports[`TypeAhead renders and matches snapshot 1`] = `
   >
     <div
       class="sc-gsnTZi hCGKc"
-      role="complementary"
     >
       Type-ahead
     </div>
@@ -95,29 +94,34 @@ exports[`TypeAhead renders and matches snapshot 1`] = `
   >
     <div
       role="main"
-      style=""
     >
-      <label
-        for="university-search"
+      <fieldset
+        class="sc-crXcEl cHfyTH"
       >
-        Search Australian Universities
-      </label>
-      <div
-        aria-expanded="false"
-        aria-haspopup="listbox"
-        aria-owns="university-search-list"
-        class="sc-iBkjds jPEvpV"
-        role="combobox"
-      >
-        <input
-          aria-autocomplete="list"
-          aria-controls="typeahead-list"
-          class="sc-ftvSup sc-kDDrLX ifRdMM"
-          id="university-search"
-          placeholder="Search..."
-          value=""
-        />
-      </div>
+        <label
+          class="sc-iqcoie ionLOU"
+          for="university-search"
+        >
+          Search Australian Universities
+        </label>
+        <div
+          aria-expanded="false"
+          aria-haspopup="listbox"
+          aria-owns="university-search-list"
+          class="sc-iBkjds jPEvpV"
+          role="combobox"
+        >
+          <input
+            aria-autocomplete="list"
+            aria-controls="typeahead-list"
+            class="sc-kDDrLX sc-evZas bgNmOz"
+            id="university-search"
+            placeholder="Search..."
+            role="textbox"
+            value=""
+          />
+        </div>
+      </fieldset>
       <p>
         Content under typeahead
       </p>

@@ -7,7 +7,6 @@ exports[`NewsFeed renders and matches snapshot 1`] = `
   >
     <div
       class="sc-gsnTZi hCGKc"
-      role="complementary"
     >
       News feed
     </div>

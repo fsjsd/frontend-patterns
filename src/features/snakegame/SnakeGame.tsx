@@ -14,7 +14,7 @@ const GameWrapper = styled.div`
 `
 
 const Section = styled.section`
-  padding:10px;
+  padding:10px 0;
 `;
 
 const rows = 21;
@@ -61,7 +61,7 @@ const SnakeGame = ({ viewMode }: { viewMode: ViewMode }) => {
     dispatch({ type: SnakeGameOperation.Reset });
   }
 
-  return (<div style={{ flexGrow: 2, padding: "10px" }}>
+  return (<div style={{ flexGrow: 2 }}>
     <Section role="note">
       Score: {state.score}. High Score: {state.highScore}
     </Section>

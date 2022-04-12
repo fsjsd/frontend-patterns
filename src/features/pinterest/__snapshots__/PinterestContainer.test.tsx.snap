@@ -7,7 +7,6 @@ exports[`Pinterest renders and matches snapshot 1`] = `
   >
     <div
       class="sc-gsnTZi hCGKc"
-      role="complementary"
     >
       Pinterest
     </div>

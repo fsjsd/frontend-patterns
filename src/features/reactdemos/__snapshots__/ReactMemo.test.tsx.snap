@@ -4,7 +4,6 @@ exports[`ReactMemo changes state after increments 1`] = `
 <div>
   <div
     role="main"
-    style="padding: 10px;"
   >
     <div>
       <p>
@@ -68,7 +67,6 @@ exports[`ReactMemo changes state after increments 2`] = `
 <div>
   <div
     role="main"
-    style="padding: 10px;"
   >
     <div>
       <p>
@@ -132,7 +130,6 @@ exports[`ReactMemo changes state after increments 3`] = `
 <div>
   <div
     role="main"
-    style="padding: 10px;"
   >
     <div>
       <p>
@@ -196,7 +193,6 @@ exports[`ReactMemo changes state after increments 4`] = `
 <div>
   <div
     role="main"
-    style="padding: 10px;"
   >
     <div>
       <p>
@@ -260,7 +256,6 @@ exports[`ReactMemo renders and matches snapshot 1`] = `
 <div>
   <div
     role="main"
-    style="padding: 10px;"
   >
     <div>
       <p>

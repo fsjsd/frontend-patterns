@@ -3,10 +3,10 @@
 exports[`SnakeGame 'ascii' mode renders and matches snapshot 1`] = `
 <div>
   <div
-    style="flex-grow: 2; padding: 10px;"
+    style="flex-grow: 2;"
   >
     <section
-      class="sc-hKMtZM khkJCp"
+      class="sc-hKMtZM cmgQjl"
       role="note"
     >
       Score: 
@@ -68,7 +68,7 @@ exports[`SnakeGame 'ascii' mode renders and matches snapshot 1`] = `
       </pre>
     </div>
     <section
-      class="sc-hKMtZM khkJCp"
+      class="sc-hKMtZM cmgQjl"
     >
       Press 't' to toggle view modes in game play (current mode: 
       ascii
@@ -81,10 +81,10 @@ exports[`SnakeGame 'ascii' mode renders and matches snapshot 1`] = `
 exports[`SnakeGame 'canvas' mode renders and matches snapshot 1`] = `
 <div>
   <div
-    style="flex-grow: 2; padding: 10px;"
+    style="flex-grow: 2;"
   >
     <section
-      class="sc-hKMtZM khkJCp"
+      class="sc-hKMtZM cmgQjl"
       role="note"
     >
       Score: 
@@ -107,7 +107,7 @@ exports[`SnakeGame 'canvas' mode renders and matches snapshot 1`] = `
       </div>
     </div>
     <section
-      class="sc-hKMtZM khkJCp"
+      class="sc-hKMtZM cmgQjl"
     >
       Press 't' to toggle view modes in game play (current mode: 
       canvas
@@ -120,10 +120,10 @@ exports[`SnakeGame 'canvas' mode renders and matches snapshot 1`] = `
 exports[`SnakeGame 'html' mode renders and matches snapshot 1`] = `
 <div>
   <div
-    style="flex-grow: 2; padding: 10px;"
+    style="flex-grow: 2;"
   >
     <section
-      class="sc-hKMtZM khkJCp"
+      class="sc-hKMtZM cmgQjl"
       role="note"
     >
       Score: 
@@ -2349,7 +2349,7 @@ exports[`SnakeGame 'html' mode renders and matches snapshot 1`] = `
       </div>
     </div>
     <section
-      class="sc-hKMtZM khkJCp"
+      class="sc-hKMtZM cmgQjl"
     >
       Press 't' to toggle view modes in game play (current mode: 
       html
@@ -2362,10 +2362,10 @@ exports[`SnakeGame 'html' mode renders and matches snapshot 1`] = `
 exports[`SnakeGame clicking game resets game 1`] = `
 <div>
   <div
-    style="flex-grow: 2; padding: 10px;"
+    style="flex-grow: 2;"
   >
     <section
-      class="sc-hKMtZM khkJCp"
+      class="sc-hKMtZM cmgQjl"
       role="note"
     >
       Score: 
@@ -4591,7 +4591,7 @@ exports[`SnakeGame clicking game resets game 1`] = `
       </div>
     </div>
     <section
-      class="sc-hKMtZM khkJCp"
+      class="sc-hKMtZM cmgQjl"
     >
       Press 't' to toggle view modes in game play (current mode: 
       html

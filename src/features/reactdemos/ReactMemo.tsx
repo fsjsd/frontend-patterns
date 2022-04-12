@@ -101,7 +101,7 @@ export const ReactMemo = () => {
   }
 
   return (
-    <div role="main" style={{ padding: "10px" }}>
+    <div role="main">
       <CounterAMemo a={countObj.a} render={render('CounterAMemo')} />
       {/* immutable objects re-created through react state will cause full re-render */}
       <CounterABMemo myObj={countObj} render={render('CounterABMemo')} />

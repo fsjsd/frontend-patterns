@@ -7,7 +7,6 @@ exports[`InfiniteScrollContainer render matches snapshot 1`] = `
   >
     <div
       class="sc-gsnTZi hCGKc"
-      role="complementary"
     >
       Infinite Scroll
     </div>

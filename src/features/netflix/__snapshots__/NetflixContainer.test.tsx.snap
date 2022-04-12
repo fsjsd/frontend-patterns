@@ -7,7 +7,6 @@ exports[`Netflix renders and matches snapshot 1`] = `
   >
     <div
       class="sc-gsnTZi hCGKc"
-      role="complementary"
     >
       Netflix
     </div>
