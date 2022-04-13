@@ -1,11 +1,11 @@
 import React, { Suspense } from 'react'
-import { ContentWrapper } from '../../ux/ContentWrapper'
+import { ContentContainer } from '../../ux/ContentContainer'
 import Loading from '../../ux/Loading'
 const Messenger = React.lazy(() => import('./Messenger'))
 
 const MessengerContainer = () => {
   return (<>
-    <ContentWrapper
+    <ContentContainer
       title='Messenger'
       codeLink="/features/messenger"
       markDownPromise={import('./requirements.md')}
@@ -15,7 +15,7 @@ const MessengerContainer = () => {
           <Messenger />
         </div>
       </Suspense>
-    </ContentWrapper>
+    </ContentContainer>
   </>
   )
 }

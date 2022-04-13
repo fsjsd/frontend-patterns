@@ -1,11 +1,11 @@
 import React, { Suspense } from 'react'
-import { ContentWrapper } from '../../ux/ContentWrapper'
+import { ContentContainer } from '../../ux/ContentContainer'
 import Loading from '../../ux/Loading'
 const ToDo = React.lazy(() => import('./ToDo'))
 
 const ToDoContainer = () => {
   return (
-    <ContentWrapper
+    <ContentContainer
       title='To Do'
       codeLink="/features/todo"
       markDownPromise={import('./requirements.md')}
@@ -15,7 +15,7 @@ const ToDoContainer = () => {
           <ToDo />
         </div>
       </Suspense>
-    </ContentWrapper>
+    </ContentContainer>
   )
 }
 

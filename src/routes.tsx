@@ -27,7 +27,7 @@ import PollContainer from './components/poll/PollContainer'
 import TypeAheadContainer from './components/typeahead/TypeAheadContainer'
 import ToDoContainer from './features/todo/ToDoContainer'
 import Home from './Home'
-import Index from './features/reactdemos/Index'
+import ReactDemoContainer from './features/reactdemos/ReactDemoContainer'
 import SnakeGameContainer from './features/snakegame/SnakeGameContainer'
 
 const urlRoot = process.env.REACT_APP_ROOT_URL
@@ -107,7 +107,7 @@ const appRoutes: AppRouteInfo[] = [
   },
   {
     path: `${urlRoot}/reactdemos`,
-    element: <Index />,
+    element: <ReactDemoContainer />,
     icon: <FaReact />,
     title: 'React demos',
     group: NAV_GROUPS.FEATURES,

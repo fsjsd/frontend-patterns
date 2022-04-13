@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react'
-import { ContentWrapper } from '../../ux/ContentWrapper'
+import { ContentContainer } from '../../ux/ContentContainer'
 import FieldSet from '../../ux/designsystem/FieldSet'
 import InputText from '../../ux/designsystem/InputText'
 import Label from '../../ux/designsystem/Label'
@@ -14,7 +14,7 @@ import DemoUniversitySearch from './DemoUniversitySearch'
 const TypeAheadContainer = () => {
 
   return (
-    <ContentWrapper
+    <ContentContainer
       title='Type-ahead'
       codeLink="/features/typeahead"
       markDownPromise={import('./requirements.md')}
@@ -29,7 +29,7 @@ const TypeAheadContainer = () => {
           </FieldSet>
         </div>
       </Suspense>
-    </ContentWrapper>
+    </ContentContainer>
   )
 }
 

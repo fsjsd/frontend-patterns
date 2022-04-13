@@ -1,11 +1,11 @@
 import React, { Suspense } from 'react'
-import { ContentWrapper } from '../../ux/ContentWrapper'
+import { ContentContainer } from '../../ux/ContentContainer'
 import Loading from '../../ux/Loading'
 const NewsFeed = React.lazy(() => import('./NewsFeed'))
 
 const NewsFeedContainer = () => {
   return (
-    <ContentWrapper
+    <ContentContainer
       title='News feed'
       codeLink="/features/newsfeed"
       markDownPromise={import('./requirements.md')}
@@ -15,7 +15,7 @@ const NewsFeedContainer = () => {
           <NewsFeed />
         </div>
       </Suspense>
-    </ContentWrapper>
+    </ContentContainer>
   )
 }
 

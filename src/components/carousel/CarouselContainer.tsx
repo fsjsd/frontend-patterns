@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react'
-import { ContentWrapper } from '../../ux/ContentWrapper'
+import { ContentContainer } from '../../ux/ContentContainer'
 import Loading from '../../ux/Loading'
 import Carousel, { CarouselSlideData } from './Carousel'
 
@@ -25,7 +25,7 @@ const CarouselContainer = () => {
   ]
 
   return (
-    <ContentWrapper
+    <ContentContainer
       title="Carousel"
       codeLink="/features/carousel"
       markDownPromise={import('./requirements.md')}
@@ -33,7 +33,7 @@ const CarouselContainer = () => {
       <Suspense fallback={<Loading />}>
         <Carousel data={data} width={'1200'} />
       </Suspense>
-    </ContentWrapper>
+    </ContentContainer>
   )
 }
 

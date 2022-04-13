@@ -3,23 +3,23 @@ import { MdNotes, MdOutlinePlayCircleOutline } from "react-icons/md";
 import { GoMarkGithub } from "react-icons/go";
 import styled from "styled-components";
 import { GITHUB_ROOT } from "../utils/constants/urls";
-import ContentHeader, { ContentHeaderIcon, ContentHeaderLabel, ContentHeaderRight } from "./styles/ContentHeader";
 import Loading from "./Loading";
-import ContentArticle from "./styles/ContentWrapperArticle";
+import { ContentHeader, ContentHeaderLabel, ContentHeaderRight, ContentHeaderIcon, ContentArticle } from "./ContentContainerStyles";
 const ReactMarkdown = React.lazy(() => import('react-markdown'))
 
 /**
  * Content Wrapper is the central container for all screens, and scrolls within
  * the horseshoe by default.
  */
-export const ContentWrapperStyled = styled.section<{ noPadding: boolean }>`
+export const ContentWrapper = styled.section<{ noPadding: boolean }>`
   ${props => props.noPadding ? '' : 'padding: 15px;'}
   flex-grow: 1;
   overflow-y: auto;
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling:touch;
 `;
 
-interface ContentWrapperProps {
+interface ContentContainerProps {
   /** Screen title */
   title: string;
   /** Optional link to source code on GitHub */
@@ -37,7 +37,7 @@ interface ContentWrapperProps {
  * @param param0 props
  * @returns 
  */
-export const ContentWrapper: React.FC<ContentWrapperProps> = ({ children, title, markDownPromise, codeLink, noPadding }) => {
+export const ContentContainer: React.FC<ContentContainerProps> = ({ children, title, markDownPromise, codeLink, noPadding }) => {
   const [viewNotes, setViewNotes] = useState(false);
   const [markdown, setMarkdown] = useState("");
 
@@ -58,9 +58,15 @@ export const ContentWrapper: React.FC<ContentWrapperProps> = ({ children, title,
         <ContentHeaderIcon role="button" selected={!viewNotes} title="Run demo" onClick={() => setViewNotes(false)}>
           <MdOutlinePlayCircleOutline />
         </ContentHeaderIcon>
-        {markDownPromise !== undefined && <ContentHeaderIcon role="button" selected={viewNotes} title="View notes" onClick={() => setViewNotes(true)}>
-          <MdNotes />
-        </ContentHeaderIcon>}
+        {markDownPromise !== undefined &&
+          <ContentHeaderIcon
+            role="button"
+            selected={viewNotes}
+            title="View notes"
+            onClick={() => setViewNotes(true)}>
+            <MdNotes />
+          </ContentHeaderIcon>
+        }
         {codeLink &&
           <a
             href={`${GITHUB_ROOT}${codeLink}`}
@@ -82,7 +88,7 @@ export const ContentWrapper: React.FC<ContentWrapperProps> = ({ children, title,
           </Suspense>
         </ContentArticle>}
       {!viewNotes &&
-        <ContentWrapperStyled role="document" noPadding={!!noPadding}>{children}</ContentWrapperStyled>}
+        <ContentWrapper role="document" noPadding={!!noPadding}>{children}</ContentWrapper>}
     </>
   </>
 };

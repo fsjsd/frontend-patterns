@@ -1,23 +1,72 @@
 import { Link } from "react-router-dom";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+import { navigationBreakpoint } from "./designsystem/responsive/breakpoints";
 
-export const DrawerNavigation = styled.div`
-  width: 240px;
-  overflow: hidden;
+/**
+ * Container for navigation drawer, applying slide out treatment
+ * on Mobile screens by default, fixed position on larger screens
+ */
+export const NavigationDrawer = styled.section<{ visible: boolean }>`
+  display:flex;
+  flex: 0 0 auto;
+  flex-direction:column;
+  pointer-events:none;
+
+  position:absolute;
+  width:100%;
+  height:100%;
+  z-index:100;
+  transition: transform 0.2s ease-in-out;
+
+  ${props => props.visible
+    ? css`
+      transform: translateX(0);
+    `
+    : css`
+      transform: translateX(-100%);
+    `}
+
+  @media ${navigationBreakpoint} {
+    transform: translateX(0);
+    margin-top:0px;
+    position:inherit;
+    z-index:inherit;
+    width: 240px;
+  }
 `;
 
-export const DrawerWrapper = styled.div<{ isOpen: boolean }>`
+export const NavigationScrollArea = styled.div`
+  width: 100%;
+  flex-grow:1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling:touch;
+  border-left: solid 1px rgb(218, 231, 241);
+  background-color: rgb(246, 250, 253);
+  pointer-events:all;
+  
+  @media ${navigationBreakpoint} { 
+    width: 240px;
+  }
+`;
+
+export const SubMenuWrapper = styled.div<{ isOpen: boolean }>`
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 480px;
   left: 0;
   transition: ease 0.3s left;
   ${props =>
     props.isOpen
-      ? `
-    left: -240px;`
+      ? `left: -240px;`
       : ``}
+
+  width: 100%;
+  @media ${navigationBreakpoint} { 
+    width: 480px;
+  }
+
 `;
 
 export const NavGroup = styled.div`
@@ -44,7 +93,7 @@ export const NavLinks = styled.ul`
  * $wip is a transient prop: https://styled-components.com/docs/api#transient-props
  */
 export const LinkStyled = styled(Link) <{ $wip: boolean }>`
-  width: 240px;
+  width: 100%;
   font-size: 15px;
   ${props => props.$wip
     ? 'color: #949494;'
@@ -56,6 +105,7 @@ export const LinkStyled = styled(Link) <{ $wip: boolean }>`
   cursor: pointer;
   transition: ease 0.5s color, ease 0.2s background-color;
   display: flex;
+
   &.active {
     background-color: rgb(220, 240, 255);
     color: rgb(33, 111, 212);
@@ -86,5 +136,9 @@ export const LinkStyled = styled(Link) <{ $wip: boolean }>`
 
   svg:first-child {
     margin-right: 10px;
+  }
+  
+  @media ${navigationBreakpoint} { 
+    width: 240px;
   }
 `;

@@ -22,6 +22,7 @@ export const TypeAheadResultsWrapper = styled.div`
   width:300px;
   max-height:400px;
   overflow-y:auto;
+  -webkit-overflow-scrolling:touch;
   border:solid 1px #ccc;
   border-radius:3px;
   background-color:white;

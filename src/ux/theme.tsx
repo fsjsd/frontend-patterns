@@ -1,6 +1,7 @@
+
 const theme = {
   fg: "palevioletred",
-  bg: "white"
+  bg: "white",
 };
 
 export default theme
