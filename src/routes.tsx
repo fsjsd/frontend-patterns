@@ -11,7 +11,8 @@ import {
   MdRecentActors,
   MdTableView,
   MdTheaters,
-  MdTask
+  MdTask,
+  MdPhoto
 } from 'react-icons/md'
 import { GiSandSnake } from "react-icons/gi";
 import { FaReact } from "react-icons/fa";
@@ -29,6 +30,7 @@ import ToDoContainer from './features/todo/ToDoContainer'
 import Home from './Home'
 import ReactDemoContainer from './features/reactdemos/ReactDemoContainer'
 import SnakeGameContainer from './features/snakegame/SnakeGameContainer'
+import PhotoEditorContainer from './features/photoeditor/PhotoEditorContainer';
 
 const urlRoot = process.env.REACT_APP_ROOT_URL
 
@@ -110,6 +112,14 @@ const appRoutes: AppRouteInfo[] = [
     element: <ReactDemoContainer />,
     icon: <FaReact />,
     title: 'React demos',
+    group: NAV_GROUPS.FEATURES,
+    isWip: false,
+  },
+  {
+    path: `${urlRoot}/photoeditor`,
+    element: <PhotoEditorContainer />,
+    icon: <MdPhoto />,
+    title: 'Photo Editor',
     group: NAV_GROUPS.FEATURES,
     isWip: false,
   },

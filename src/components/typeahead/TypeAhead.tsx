@@ -161,7 +161,7 @@ const TypeAhead = <T,>({
         ? 0 // first result
         : activeResult - 1; // previous result
       setActiveResult(resultIndex);
-      setQuery(resultItemText(results[resultIndex]))
+      setQuery(resultItemText(results[resultIndex]));
     }
     if (e.key === 'Enter') {
       if (activeResult !== undefined) {
