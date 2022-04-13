@@ -10,6 +10,7 @@ exports[`UniversitySearch arrow down has no effect at end 1`] = `
   width: 300px;
   max-height: 400px;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   border: solid 1px #ccc;
   border-radius: 3px;
   background-color: white;
@@ -156,6 +157,7 @@ exports[`UniversitySearch arrow up selects first result 1`] = `
   width: 300px;
   max-height: 400px;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   border: solid 1px #ccc;
   border-radius: 3px;
   background-color: white;
@@ -302,6 +304,7 @@ exports[`UniversitySearch navigates on key press 'ArrowDown' 1`] = `
   width: 300px;
   max-height: 400px;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   border: solid 1px #ccc;
   border-radius: 3px;
   background-color: white;
@@ -448,6 +451,7 @@ exports[`UniversitySearch navigates on key press 'ArrowUp' 1`] = `
   width: 300px;
   max-height: 400px;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   border: solid 1px #ccc;
   border-radius: 3px;
   background-color: white;
@@ -594,6 +598,7 @@ exports[`UniversitySearch no response renders correctly 1`] = `
   width: 300px;
   max-height: 400px;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   border: solid 1px #ccc;
   border-radius: 3px;
   background-color: white;
@@ -883,6 +888,7 @@ exports[`UniversitySearch valid query triggers result query 1`] = `
   width: 300px;
   max-height: 400px;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   border: solid 1px #ccc;
   border-radius: 3px;
   background-color: white;

@@ -1,26 +1,33 @@
 import React, { Fragment } from 'react'
 import appRoutes from '../routes'
 import {
-  DrawerNavigation,
-  DrawerWrapper,
+  NavigationScrollArea,
+  SubMenuWrapper,
   NavLinks,
   NavGroup,
   LinkStyled,
-} from './styles/LeftNavigationStyles'
+} from './NavigationContainerStyles'
 
+/** Since routes are static, derive unique nav groups in advance */
 const groups = Array.from(
   new Set(appRoutes.filter(route => !!route.group).map(route => route.group)),
 )
 
-const LeftNavigation = ({ onItemClick }) => {
+/**
+ * Displays navigation menu for site
+ * @param param0 props
+ * @returns 
+ */
+export const NavigationMenu = ({ onItemClick }) => {
 
   const handleLinkClick = () => {
     onItemClick();
   }
 
   return (
-    <DrawerNavigation>
-      <DrawerWrapper isOpen={false}>
+    <NavigationScrollArea role="navigation">
+      {/* Filter control for nav */}
+      <SubMenuWrapper isOpen={false}>
         {groups.map(group => (
           <Fragment key={group}>
             <NavGroup>{group}</NavGroup>
@@ -44,9 +51,7 @@ const LeftNavigation = ({ onItemClick }) => {
             </NavLinks>
           </Fragment>
         ))}
-      </DrawerWrapper>
-    </DrawerNavigation>
+      </SubMenuWrapper>
+    </NavigationScrollArea>
   )
 }
-
-export default LeftNavigation

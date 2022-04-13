@@ -1,21 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App tests Loads carousel 1`] = `
-.c15 {
-  background-color: white;
-  border-bottom: solid 1px #e0e0e0;
-  box-shadow: 0 -6px 15px 0px rgb(0 0 0 / 10%);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 0;
-  -webkit-flex-grow: 0;
-  -ms-flex-positive: 0;
-  flex-grow: 0;
-}
-
-.c16 {
+.c17 {
   font-size: 1em;
   font-weight: inherit;
   color: inherit;
@@ -34,7 +20,7 @@ exports[`App tests Loads carousel 1`] = `
   align-items: center;
 }
 
-.c17 {
+.c18 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -44,7 +30,7 @@ exports[`App tests Loads carousel 1`] = `
   display: none;
 }
 
-.c17 a {
+.c18 a {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -58,7 +44,7 @@ exports[`App tests Loads carousel 1`] = `
   transition: opacity 0.2s ease-in-out;
 }
 
-.c18 {
+.c19 {
   cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
@@ -70,12 +56,12 @@ exports[`App tests Loads carousel 1`] = `
   opacity: 0.6;
 }
 
-.c18:hover {
+.c19:hover {
   color: rgb(0,145,255);
   opacity: 1;
 }
 
-.c19 {
+.c20 {
   cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
@@ -86,12 +72,38 @@ exports[`App tests Loads carousel 1`] = `
   opacity: 0.6;
 }
 
-.c19:hover {
+.c20:hover {
   color: rgb(0,145,255);
   opacity: 1;
 }
 
-.c20 {
+.c16 {
+  background-color: white;
+  border-bottom: solid 1px #e0e0e0;
+  box-shadow: 0 -6px 15px 0px rgb(0 0 0 / 10%);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+}
+
+.c31 {
+  border-top: solid 1px #ccc;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 -3px 15px 0px rgb(0 0 0 / 10%);
+  font-size: 12px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c21 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -101,9 +113,10 @@ exports[`App tests Loads carousel 1`] = `
   -moz-scroll-behavior: smooth;
   -ms-scroll-behavior: smooth;
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 
-.c21 {
+.c22 {
   max-width: 1200px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -116,7 +129,7 @@ exports[`App tests Loads carousel 1`] = `
   position: relative;
 }
 
-.c22 {
+.c23 {
   -webkit-scroll-snap-type: x mandatory;
   -moz-scroll-snap-type: x mandatory;
   -ms-scroll-snap-type: x mandatory;
@@ -140,7 +153,7 @@ exports[`App tests Loads carousel 1`] = `
   scroll-behavior: smooth;
 }
 
-.c25 {
+.c26 {
   color: #ffffff;
   background-color: #000000;
   position: absolute;
@@ -151,11 +164,11 @@ exports[`App tests Loads carousel 1`] = `
   left: 10px;
 }
 
-.c25:hover {
+.c26:hover {
   opacity: 1;
 }
 
-.c26 {
+.c27 {
   color: #ffffff;
   background-color: #000000;
   position: absolute;
@@ -166,11 +179,11 @@ exports[`App tests Loads carousel 1`] = `
   right: 10px;
 }
 
-.c26:hover {
+.c27:hover {
   opacity: 1;
 }
 
-.c27 {
+.c28 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -179,33 +192,6 @@ exports[`App tests Loads carousel 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-.c28 {
-  height: 44px;
-  width: 50px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  justify-items: center;
-  cursor: pointer;
-}
-
-.c28:after {
-  content: "";
-  background-color: #878787;
-  height: 10px;
-  margin-top: 10px;
-  width: 40px;
-}
-
-.c28:after {
-  background-color: #000000;
-}
-
-.c28:hover:after {
-  background-color: #000000;
 }
 
 .c29 {
@@ -227,11 +213,38 @@ exports[`App tests Loads carousel 1`] = `
   width: 40px;
 }
 
+.c29:after {
+  background-color: #000000;
+}
+
 .c29:hover:after {
   background-color: #000000;
 }
 
-.c23 {
+.c30 {
+  height: 44px;
+  width: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  cursor: pointer;
+}
+
+.c30:after {
+  content: "";
+  background-color: #878787;
+  height: 10px;
+  margin-top: 10px;
+  width: 40px;
+}
+
+.c30:hover:after {
+  background-color: #000000;
+}
+
+.c24 {
   -webkit-scroll-snap-align: center;
   -moz-scroll-snap-align: center;
   -ms-scroll-snap-align: center;
@@ -241,7 +254,7 @@ exports[`App tests Loads carousel 1`] = `
   padding-top: 50%;
 }
 
-.c23 img {
+.c24 img {
   height: 100%;
   width: auto;
   position: absolute;
@@ -249,7 +262,7 @@ exports[`App tests Loads carousel 1`] = `
   left: 0;
 }
 
-.c24 {
+.c25 {
   background-color: #000000;
   color: #ffffff;
   position: absolute;
@@ -259,12 +272,49 @@ exports[`App tests Loads carousel 1`] = `
   font-size: 2.5vw;
 }
 
-.c4 {
-  overflow: hidden;
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  pointer-events: none;
+  position: absolute;
   width: 100%;
+  height: 100%;
+  z-index: 100;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  -webkit-transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
 }
 
 .c5 {
+  width: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-scroll-behavior: smooth;
+  -moz-scroll-behavior: smooth;
+  -ms-scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  border-left: solid 1px rgb(218,231,241);
+  background-color: rgb(246,250,253);
+  pointer-events: all;
+}
+
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -279,7 +329,7 @@ exports[`App tests Loads carousel 1`] = `
   width: 100%;
 }
 
-.c6 {
+.c7 {
   font-weight: 400;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
@@ -293,76 +343,19 @@ exports[`App tests Loads carousel 1`] = `
   color: rgba(0,0,0,0.66);
 }
 
-.c7 {
+.c8 {
   margin: 0;
   padding: 0;
 }
 
-.c7 li {
+.c8 li {
   list-style: none;
-}
-
-.c8 {
-  width: 100%;
-  font-size: 15px;
-  color: #444;
-  padding: 12px 16px;
-  outline: none;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  cursor: pointer;
-  -webkit-transition: ease 0.5s color,ease 0.2s background-color;
-  transition: ease 0.5s color,ease 0.2s background-color;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c8.active {
-  background-color: rgb(220,240,255);
-  color: rgb(33,111,212);
-}
-
-.c8.active span,
-.c8.active label {
-  color: rgb(33,111,212);
-}
-
-.c8:hover,
-.c8.active:hover {
-  background-color: rgb(242,249,255);
-  color: rgb(33,111,212);
-}
-
-.c8:hover span,
-.c8.active:hover span,
-.c8:hover label,
-.c8.active:hover label {
-  color: rgb(33,111,212);
-}
-
-.c8 label {
-  color: rgba(0,0,0,0.75);
-  -webkit-box-flex: 2;
-  -webkit-flex-grow: 2;
-  -ms-flex-positive: 2;
-  flex-grow: 2;
-  cursor: pointer;
-}
-
-.c8 svg {
-  font-size: 18px;
-}
-
-.c8 svg:first-child {
-  margin-right: 10px;
 }
 
 .c9 {
   width: 100%;
   font-size: 15px;
-  color: #949494;
+  color: #444;
   padding: 12px 16px;
   outline: none;
   -webkit-text-decoration: none;
@@ -416,7 +409,64 @@ exports[`App tests Loads carousel 1`] = `
   margin-right: 10px;
 }
 
-.c31 {
+.c10 {
+  width: 100%;
+  font-size: 15px;
+  color: #949494;
+  padding: 12px 16px;
+  outline: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: ease 0.5s color,ease 0.2s background-color;
+  transition: ease 0.5s color,ease 0.2s background-color;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c10.active {
+  background-color: rgb(220,240,255);
+  color: rgb(33,111,212);
+}
+
+.c10.active span,
+.c10.active label {
+  color: rgb(33,111,212);
+}
+
+.c10:hover,
+.c10.active:hover {
+  background-color: rgb(242,249,255);
+  color: rgb(33,111,212);
+}
+
+.c10:hover span,
+.c10.active:hover span,
+.c10:hover label,
+.c10.active:hover label {
+  color: rgb(33,111,212);
+}
+
+.c10 label {
+  color: rgba(0,0,0,0.75);
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+  cursor: pointer;
+}
+
+.c10 svg {
+  font-size: 18px;
+}
+
+.c10 svg:first-child {
+  margin-right: 10px;
+}
+
+.c32 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -426,7 +476,7 @@ exports[`App tests Loads carousel 1`] = `
   flex-direction: row;
 }
 
-.c31 > div {
+.c32 > div {
   margin-right: 10px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -439,19 +489,7 @@ exports[`App tests Loads carousel 1`] = `
   line-height: normal;
 }
 
-.c30 {
-  border-top: solid 1px #ccc;
-  background-color: white;
-  padding: 10px;
-  box-shadow: 0 -3px 15px 0px rgb(0 0 0 / 10%);
-  font-size: 12px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c11 {
+.c12 {
   padding: 1rem;
   background-color: #0076D1;
   display: -webkit-box;
@@ -464,7 +502,7 @@ exports[`App tests Loads carousel 1`] = `
   color: white;
 }
 
-.c13 {
+.c14 {
   font-weight: 400;
   font-size: 20px;
   -webkit-box-flex: 2;
@@ -475,7 +513,7 @@ exports[`App tests Loads carousel 1`] = `
   margin: 0;
 }
 
-.c14 {
+.c15 {
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -484,7 +522,7 @@ exports[`App tests Loads carousel 1`] = `
   display: none;
 }
 
-.c12 {
+.c13 {
   height: 24px;
   margin-right: 10px;
   cursor: pointer;
@@ -492,6 +530,14 @@ exports[`App tests Loads carousel 1`] = `
 }
 
 .c0 {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.c1 {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -506,34 +552,7 @@ exports[`App tests Loads carousel 1`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c1 {
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  border-left: solid 1px rgb(218,231,241);
-  background-color: rgb(246,250,253);
-  position: absolute;
-  width: 100%;
-  z-index: 100;
-  margin-top: 60px;
-  -webkit-transition: -webkit-transform 0.2s ease-in-out;
-  -webkit-transition: transform 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out;
-  -webkit-transform: translateX(-100%);
-  -ms-transform: translateX(-100%);
-  transform: translateX(-100%);
-}
-
-.c2 {
-  padding: 1rem;
-  background-color: #0091ff;
-  color: #fff;
-  background-color: #007fe0;
-  font-size: 1px;
-  display: none;
-}
-
-.c10 {
+.c11 {
   background-color: #fff;
   display: -webkit-box;
   display: -webkit-flex;
@@ -549,12 +568,22 @@ exports[`App tests Loads carousel 1`] = `
 }
 
 .c3 {
+  padding: 1rem;
+  background-color: #0091ff;
+  color: #fff;
+  background-color: #007fe0;
+  font-size: 1px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.c4 {
   height: 24px;
   width: 100px;
 }
 
 @media (min-width:768px) {
-  .c17 {
+  .c18 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -563,20 +592,26 @@ exports[`App tests Loads carousel 1`] = `
 }
 
 @media (min-width:768px) {
-  .c4 {
+  .c2 {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    margin-top: 0px;
+    position: inherit;
+    z-index: inherit;
     width: 240px;
   }
 }
 
 @media (min-width:768px) {
   .c5 {
-    width: 480px;
+    width: 240px;
   }
 }
 
 @media (min-width:768px) {
-  .c8 {
-    width: 240px;
+  .c6 {
+    width: 480px;
   }
 }
 
@@ -587,33 +622,27 @@ exports[`App tests Loads carousel 1`] = `
 }
 
 @media (min-width:768px) {
-  .c14 {
+  .c10 {
+    width: 240px;
+  }
+}
+
+@media (min-width:768px) {
+  .c15 {
     display: block;
   }
 }
 
 @media (min-width:768px) {
-  .c12 {
+  .c13 {
     display: none;
   }
 }
 
 @media (min-width:768px) {
-  .c1 {
-    -webkit-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0);
-    margin-top: 0px;
-    position: inherit;
-    z-index: inherit;
-    width: 240px;
-    display: block;
-  }
-}
-
-@media (min-width:768px) {
-  .c2 {
-    display: block;
+  .c3 {
+    visibility: visible;
+    pointer-events: all;
   }
 }
 
@@ -621,39 +650,40 @@ exports[`App tests Loads carousel 1`] = `
   <div
     class="c0"
   >
-    <section
+    <div
       class="c1"
     >
-      <header
+      <section
         class="c2"
       >
-        <svg
+        <header
           class="c3"
         >
-          LogoFsjsDev.svg
-        </svg>
-      </header>
-      <div
-        role="navigation"
-      >
+          <svg
+            class="c4"
+          >
+            LogoFsjsDev.svg
+          </svg>
+        </header>
         <div
-          class="c4"
+          class="c5"
+          role="navigation"
         >
           <div
-            class="c5"
+            class="c6"
           >
             <div
-              class="c6"
+              class="c7"
             >
               Components
             </div>
             <ul
-              class="c7"
+              class="c8"
             >
               <li>
                 <a
                   aria-hidden="false"
-                  class="c8"
+                  class="c9"
                   href="/frontend-patterns/carousel"
                   role="link"
                 >
@@ -681,7 +711,7 @@ exports[`App tests Loads carousel 1`] = `
               <li>
                 <a
                   aria-hidden="true"
-                  class="c9"
+                  class="c10"
                   href="/frontend-patterns/infinitescroll"
                   role="link"
                   tabindex="-1"
@@ -713,7 +743,7 @@ exports[`App tests Loads carousel 1`] = `
               <li>
                 <a
                   aria-hidden="false"
-                  class="c8"
+                  class="c9"
                   href="/frontend-patterns/typeahead"
                   role="link"
                 >
@@ -741,7 +771,7 @@ exports[`App tests Loads carousel 1`] = `
               <li>
                 <a
                   aria-hidden="true"
-                  class="c9"
+                  class="c10"
                   href="/frontend-patterns/newsfeed"
                   role="link"
                   tabindex="-1"
@@ -770,7 +800,7 @@ exports[`App tests Loads carousel 1`] = `
               <li>
                 <a
                   aria-hidden="true"
-                  class="c9"
+                  class="c10"
                   href="/frontend-patterns/datatable"
                   role="link"
                   tabindex="-1"
@@ -799,7 +829,7 @@ exports[`App tests Loads carousel 1`] = `
               <li>
                 <a
                   aria-hidden="true"
-                  class="c9"
+                  class="c10"
                   href="/frontend-patterns/poll"
                   role="link"
                   tabindex="-1"
@@ -827,17 +857,17 @@ exports[`App tests Loads carousel 1`] = `
               </li>
             </ul>
             <div
-              class="c6"
+              class="c7"
             >
               Features
             </div>
             <ul
-              class="c7"
+              class="c8"
             >
               <li>
                 <a
                   aria-hidden="false"
-                  class="c8"
+                  class="c9"
                   href="/frontend-patterns/snakegame"
                   role="link"
                 >
@@ -861,7 +891,7 @@ exports[`App tests Loads carousel 1`] = `
               <li>
                 <a
                   aria-hidden="false"
-                  class="c8"
+                  class="c9"
                   href="/frontend-patterns/reactdemos"
                   role="link"
                 >
@@ -885,7 +915,7 @@ exports[`App tests Loads carousel 1`] = `
               <li>
                 <a
                   aria-hidden="true"
-                  class="c9"
+                  class="c10"
                   href="/frontend-patterns/messenger"
                   role="link"
                   tabindex="-1"
@@ -914,7 +944,7 @@ exports[`App tests Loads carousel 1`] = `
               <li>
                 <a
                   aria-hidden="true"
-                  class="c9"
+                  class="c10"
                   href="/frontend-patterns/netflix"
                   role="link"
                   tabindex="-1"
@@ -943,7 +973,7 @@ exports[`App tests Loads carousel 1`] = `
               <li>
                 <a
                   aria-hidden="true"
-                  class="c9"
+                  class="c10"
                   href="/frontend-patterns/pinterest"
                   role="link"
                   tabindex="-1"
@@ -972,7 +1002,7 @@ exports[`App tests Loads carousel 1`] = `
               <li>
                 <a
                   aria-hidden="true"
-                  class="c9"
+                  class="c10"
                   href="/frontend-patterns/todo"
                   role="link"
                   tabindex="-1"
@@ -1001,308 +1031,294 @@ exports[`App tests Loads carousel 1`] = `
             </ul>
           </div>
         </div>
-      </div>
-    </section>
-    <section
-      class="c10"
-    >
-      <header
+      </section>
+      <section
         class="c11"
-        role="banner"
       >
-        <svg
-          aria-label="Site navigation"
+        <header
           class="c12"
-          fill="currentColor"
-          height="1em"
-          role="button"
-          stroke="currentColor"
-          stroke-width="0"
-          viewBox="0 0 512 512"
-          width="1em"
-          xmlns="http://www.w3.org/2000/svg"
+          role="banner"
         >
-          <path
-            d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"
-          />
-        </svg>
-        <h1
-          class="c13"
-        >
-          <b>
-            Front-End
-          </b>
-           
-          Design Patterns
-        </h1>
-        <div
-          class="c14"
-        >
-          <a
-            aria-label="View fsjs.dev on GitHub"
-            href="https://github.com/fsjsd/frontend-patterns"
-            rel="noreferrer"
-            target="_blank"
+          <svg
+            aria-label="Site navigation"
+            class="c13"
+            fill="currentColor"
+            height="1em"
+            role="button"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 512 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <svg
-              style="height: 24px; margin-left: 10px; cursor: pointer;"
-            >
-              Github.svg
-            </svg>
-          </a>
-          <a
-            aria-label="View videos on Youtube"
-            href="https://www.youtube.com/channel/UC6ndgitE_bgJ02nyrrue-1A"
-            rel="noreferrer"
-            target="_blank"
+            <path
+              d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"
+            />
+          </svg>
+          <h1
+            class="c14"
           >
-            <svg
-              style="height: 24px; margin-left: 10px; cursor: pointer;"
+            <b>
+              Front-End
+            </b>
+             
+            Design Patterns
+          </h1>
+          <div
+            class="c15"
+          >
+            <a
+              aria-label="View fsjs.dev on GitHub"
+              href="https://github.com/fsjsd/frontend-patterns"
+              rel="noreferrer"
+              target="_blank"
             >
-              Youtube.svg
-            </svg>
-          </a>
-          <a
-            href="https://fsjs.dev"
-            rel="noreferrer"
-            style="display: block;"
-            target="_blank"
-            title="fsjs.dev - Full Stack Javascript Development"
-          />
-        </div>
-      </header>
-      <header
-        class="c15"
-      >
-        <h2
+              <svg
+                style="height: 24px; margin-left: 10px; cursor: pointer;"
+              >
+                Github.svg
+              </svg>
+            </a>
+            <a
+              aria-label="View videos on Youtube"
+              href="https://www.youtube.com/channel/UC6ndgitE_bgJ02nyrrue-1A"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <svg
+                style="height: 24px; margin-left: 10px; cursor: pointer;"
+              >
+                Youtube.svg
+              </svg>
+            </a>
+            <a
+              href="https://fsjs.dev"
+              rel="noreferrer"
+              style="display: block;"
+              target="_blank"
+              title="fsjs.dev - Full Stack Javascript Development"
+            />
+          </div>
+        </header>
+        <header
           class="c16"
         >
-          Carousel
-        </h2>
-        <div
-          class="c17"
-        >
+          <h2
+            class="c17"
+          >
+            Carousel
+          </h2>
           <div
             class="c18"
-            role="button"
-            title="Run demo"
-          >
-            <svg
-              fill="currentColor"
-              height="1em"
-              stroke="currentColor"
-              stroke-width="0"
-              viewBox="0 0 24 24"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 0h24v24H0V0z"
-                fill="none"
-              />
-              <path
-                d="M10 16.5l6-4.5-6-4.5zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
-              />
-            </svg>
-          </div>
-          <div
-            class="c19"
-            role="button"
-            title="View notes"
-          >
-            <svg
-              fill="currentColor"
-              height="1em"
-              stroke="currentColor"
-              stroke-width="0"
-              viewBox="0 0 24 24"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 0h24v24H0V0z"
-                fill="none"
-              />
-              <path
-                d="M3 18h12v-2H3v2zM3 6v2h18V6H3zm0 7h18v-2H3v2z"
-              />
-            </svg>
-          </div>
-          <a
-            aria-label="View source code on GitHub"
-            href="https://github.com/fsjsd/frontend-patterns/tree/main/src/features/carousel"
-            rel="noopener noreferrer"
-            role="button"
-            target="_blank"
           >
             <div
               class="c19"
-              title="View code on github"
+              role="button"
+              title="Run demo"
             >
               <svg
                 fill="currentColor"
                 height="1em"
                 stroke="currentColor"
                 stroke-width="0"
-                viewBox="0 0 16 16"
+                viewBox="0 0 24 24"
                 width="1em"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"
-                  fill-rule="evenodd"
+                  d="M0 0h24v24H0V0z"
+                  fill="none"
+                />
+                <path
+                  d="M10 16.5l6-4.5-6-4.5zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
                 />
               </svg>
             </div>
-          </a>
-        </div>
-      </header>
-      <section
-        class="c20"
-        role="document"
-      >
-        <div
+            <div
+              class="c20"
+              role="button"
+              title="View notes"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0V0z"
+                  fill="none"
+                />
+                <path
+                  d="M3 18h12v-2H3v2zM3 6v2h18V6H3zm0 7h18v-2H3v2z"
+                />
+              </svg>
+            </div>
+            <a
+              aria-label="View source code on GitHub"
+              href="https://github.com/fsjsd/frontend-patterns/tree/main/src/features/carousel"
+              rel="noopener noreferrer"
+              role="button"
+              target="_blank"
+            >
+              <div
+                class="c20"
+                title="View code on github"
+              >
+                <svg
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </a>
+          </div>
+        </header>
+        <section
           class="c21"
-          width="1200"
+          role="document"
         >
           <div
             class="c22"
-            data-testid="slidecontainer"
+            width="1200"
           >
             <div
-              aria-label="slide"
               class="c23"
-              data-slideindex="0"
-              role="tabpanel"
+              data-testid="slidecontainer"
             >
               <div
+                aria-label="slide"
                 class="c24"
+                data-slideindex="0"
+                role="tabpanel"
               >
-                Tour the Empire State Building! Buy tickets now.
+                <div
+                  class="c25"
+                >
+                  Tour the Empire State Building! Buy tickets now.
+                </div>
+                <img
+                  alt="New York City skyline"
+                  height="600"
+                  src="/frontend-patterns/images/newyork.jpg"
+                  width="1200"
+                />
               </div>
-              <img
-                alt="New York City skyline"
-                height="600"
-                src="/frontend-patterns/images/newyork.jpg"
-                width="1200"
-              />
-            </div>
-            <div
-              aria-label="slide"
-              class="c23"
-              data-slideindex="1"
-              role="tabpanel"
-            >
               <div
+                aria-label="slide"
                 class="c24"
+                data-slideindex="1"
+                role="tabpanel"
               >
-                Ride the Shinkansen!
+                <div
+                  class="c25"
+                >
+                  Ride the Shinkansen!
+                </div>
+                <img
+                  alt="Tokyo skyline"
+                  height="600"
+                  src="/frontend-patterns/images/city.jpg"
+                  width="1200"
+                />
               </div>
-              <img
-                alt="Tokyo skyline"
-                height="600"
-                src="/frontend-patterns/images/city.jpg"
-                width="1200"
-              />
-            </div>
-            <div
-              aria-label="slide"
-              class="c23"
-              data-slideindex="2"
-              role="tabpanel"
-            >
               <div
+                aria-label="slide"
                 class="c24"
+                data-slideindex="2"
+                role="tabpanel"
               >
-                See penguins!
+                <div
+                  class="c25"
+                >
+                  See penguins!
+                </div>
+                <img
+                  alt="Penguins"
+                  height="600"
+                  src="/frontend-patterns/images/penguin.jpg"
+                  width="1200"
+                />
               </div>
-              <img
-                alt="Penguins"
-                height="600"
-                src="/frontend-patterns/images/penguin.jpg"
-                width="1200"
-              />
             </div>
-          </div>
-          <div
-            aria-label="back"
-            class="c25"
-            role="button"
-          >
-            ←
-          </div>
-          <div
-            aria-label="forward"
-            class="c26"
-            role="button"
-          >
-            →
-          </div>
-          <div
-            class="c27"
-            role="tablist"
-          >
             <div
-              aria-label="slide 1"
-              aria-selected="true"
+              aria-label="back"
+              class="c26"
+              role="button"
+            >
+              ←
+            </div>
+            <div
+              aria-label="forward"
+              class="c27"
+              role="button"
+            >
+              →
+            </div>
+            <div
               class="c28"
-              role="tab"
-            />
-            <div
-              aria-label="slide 2"
-              aria-selected="false"
-              class="c29"
-              role="tab"
-            />
-            <div
-              aria-label="slide 3"
-              aria-selected="false"
-              class="c29"
-              role="tab"
-            />
+              role="tablist"
+            >
+              <div
+                aria-label="slide 1"
+                aria-selected="true"
+                class="c29"
+                role="tab"
+              />
+              <div
+                aria-label="slide 2"
+                aria-selected="false"
+                class="c30"
+                role="tab"
+              />
+              <div
+                aria-label="slide 3"
+                aria-selected="false"
+                class="c30"
+                role="tab"
+              />
+            </div>
           </div>
-        </div>
-      </section>
-      <section
-        aria-label="Web vitals information"
-        class="c30"
-        role="contentinfo"
-        title="test"
-      >
-        <div
-          style="flex-grow: 1;"
+        </section>
+        <section
+          aria-label="Web vitals information"
+          class="c31"
+          role="contentinfo"
+          title="test"
         >
           <div
-            class="c31"
-          />
-        </div>
-        <div
-          style="flex-grow: 0;"
-        >
-          <div />
-        </div>
+            style="flex-grow: 1;"
+          >
+            <div
+              class="c32"
+            />
+          </div>
+          <div
+            style="flex-grow: 0;"
+          >
+            <div />
+          </div>
+        </section>
       </section>
-    </section>
+    </div>
   </div>
 </div>
 `;
 
 exports[`App tests render matches snapshot (full screen) 1`] = `
-.c15 {
-  background-color: white;
-  border-bottom: solid 1px #e0e0e0;
-  box-shadow: 0 -6px 15px 0px rgb(0 0 0 / 10%);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 0;
-  -webkit-flex-grow: 0;
-  -ms-flex-positive: 0;
-  flex-grow: 0;
-}
-
-.c16 {
+.c17 {
   font-size: 1em;
   font-weight: inherit;
   color: inherit;
@@ -1321,7 +1337,7 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
   align-items: center;
 }
 
-.c17 {
+.c18 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1331,7 +1347,7 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
   display: none;
 }
 
-.c17 a {
+.c18 a {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1345,7 +1361,7 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
   transition: opacity 0.2s ease-in-out;
 }
 
-.c18 {
+.c19 {
   cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1357,12 +1373,38 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
   opacity: 0.6;
 }
 
-.c18:hover {
+.c19:hover {
   color: rgb(0,145,255);
   opacity: 1;
 }
 
-.c19 {
+.c16 {
+  background-color: white;
+  border-bottom: solid 1px #e0e0e0;
+  box-shadow: 0 -6px 15px 0px rgb(0 0 0 / 10%);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+}
+
+.c21 {
+  border-top: solid 1px #ccc;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 -3px 15px 0px rgb(0 0 0 / 10%);
+  font-size: 12px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c20 {
   padding: 15px;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -1373,14 +1415,52 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
   -moz-scroll-behavior: smooth;
   -ms-scroll-behavior: smooth;
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 
-.c4 {
-  overflow: hidden;
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  pointer-events: none;
+  position: absolute;
   width: 100%;
+  height: 100%;
+  z-index: 100;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  -webkit-transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
 }
 
 .c5 {
+  width: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-scroll-behavior: smooth;
+  -moz-scroll-behavior: smooth;
+  -ms-scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  border-left: solid 1px rgb(218,231,241);
+  background-color: rgb(246,250,253);
+  pointer-events: all;
+}
+
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1395,7 +1475,7 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
   width: 100%;
 }
 
-.c6 {
+.c7 {
   font-weight: 400;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
@@ -1409,76 +1489,19 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
   color: rgba(0,0,0,0.66);
 }
 
-.c7 {
+.c8 {
   margin: 0;
   padding: 0;
 }
 
-.c7 li {
+.c8 li {
   list-style: none;
-}
-
-.c8 {
-  width: 100%;
-  font-size: 15px;
-  color: #444;
-  padding: 12px 16px;
-  outline: none;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  cursor: pointer;
-  -webkit-transition: ease 0.5s color,ease 0.2s background-color;
-  transition: ease 0.5s color,ease 0.2s background-color;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c8.active {
-  background-color: rgb(220,240,255);
-  color: rgb(33,111,212);
-}
-
-.c8.active span,
-.c8.active label {
-  color: rgb(33,111,212);
-}
-
-.c8:hover,
-.c8.active:hover {
-  background-color: rgb(242,249,255);
-  color: rgb(33,111,212);
-}
-
-.c8:hover span,
-.c8.active:hover span,
-.c8:hover label,
-.c8.active:hover label {
-  color: rgb(33,111,212);
-}
-
-.c8 label {
-  color: rgba(0,0,0,0.75);
-  -webkit-box-flex: 2;
-  -webkit-flex-grow: 2;
-  -ms-flex-positive: 2;
-  flex-grow: 2;
-  cursor: pointer;
-}
-
-.c8 svg {
-  font-size: 18px;
-}
-
-.c8 svg:first-child {
-  margin-right: 10px;
 }
 
 .c9 {
   width: 100%;
   font-size: 15px;
-  color: #949494;
+  color: #444;
   padding: 12px 16px;
   outline: none;
   -webkit-text-decoration: none;
@@ -1532,7 +1555,64 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
   margin-right: 10px;
 }
 
-.c21 {
+.c10 {
+  width: 100%;
+  font-size: 15px;
+  color: #949494;
+  padding: 12px 16px;
+  outline: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: ease 0.5s color,ease 0.2s background-color;
+  transition: ease 0.5s color,ease 0.2s background-color;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c10.active {
+  background-color: rgb(220,240,255);
+  color: rgb(33,111,212);
+}
+
+.c10.active span,
+.c10.active label {
+  color: rgb(33,111,212);
+}
+
+.c10:hover,
+.c10.active:hover {
+  background-color: rgb(242,249,255);
+  color: rgb(33,111,212);
+}
+
+.c10:hover span,
+.c10.active:hover span,
+.c10:hover label,
+.c10.active:hover label {
+  color: rgb(33,111,212);
+}
+
+.c10 label {
+  color: rgba(0,0,0,0.75);
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+  cursor: pointer;
+}
+
+.c10 svg {
+  font-size: 18px;
+}
+
+.c10 svg:first-child {
+  margin-right: 10px;
+}
+
+.c22 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1542,7 +1622,7 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
   flex-direction: row;
 }
 
-.c21 > div {
+.c22 > div {
   margin-right: 10px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1555,19 +1635,7 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
   line-height: normal;
 }
 
-.c20 {
-  border-top: solid 1px #ccc;
-  background-color: white;
-  padding: 10px;
-  box-shadow: 0 -3px 15px 0px rgb(0 0 0 / 10%);
-  font-size: 12px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c11 {
+.c12 {
   padding: 1rem;
   background-color: #0076D1;
   display: -webkit-box;
@@ -1580,7 +1648,7 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
   color: white;
 }
 
-.c13 {
+.c14 {
   font-weight: 400;
   font-size: 20px;
   -webkit-box-flex: 2;
@@ -1591,7 +1659,7 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
   margin: 0;
 }
 
-.c14 {
+.c15 {
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -1600,7 +1668,7 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
   display: none;
 }
 
-.c12 {
+.c13 {
   height: 24px;
   margin-right: 10px;
   cursor: pointer;
@@ -1608,6 +1676,14 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
 }
 
 .c0 {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.c1 {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -1622,34 +1698,7 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c1 {
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  border-left: solid 1px rgb(218,231,241);
-  background-color: rgb(246,250,253);
-  position: absolute;
-  width: 100%;
-  z-index: 100;
-  margin-top: 60px;
-  -webkit-transition: -webkit-transform 0.2s ease-in-out;
-  -webkit-transition: transform 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out;
-  -webkit-transform: translateX(-100%);
-  -ms-transform: translateX(-100%);
-  transform: translateX(-100%);
-}
-
-.c2 {
-  padding: 1rem;
-  background-color: #0091ff;
-  color: #fff;
-  background-color: #007fe0;
-  font-size: 1px;
-  display: none;
-}
-
-.c10 {
+.c11 {
   background-color: #fff;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1665,12 +1714,22 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
 }
 
 .c3 {
+  padding: 1rem;
+  background-color: #0091ff;
+  color: #fff;
+  background-color: #007fe0;
+  font-size: 1px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.c4 {
   height: 24px;
   width: 100px;
 }
 
 @media (min-width:768px) {
-  .c17 {
+  .c18 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1679,20 +1738,26 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
 }
 
 @media (min-width:768px) {
-  .c4 {
+  .c2 {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    margin-top: 0px;
+    position: inherit;
+    z-index: inherit;
     width: 240px;
   }
 }
 
 @media (min-width:768px) {
   .c5 {
-    width: 480px;
+    width: 240px;
   }
 }
 
 @media (min-width:768px) {
-  .c8 {
-    width: 240px;
+  .c6 {
+    width: 480px;
   }
 }
 
@@ -1703,33 +1768,27 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
 }
 
 @media (min-width:768px) {
-  .c14 {
+  .c10 {
+    width: 240px;
+  }
+}
+
+@media (min-width:768px) {
+  .c15 {
     display: block;
   }
 }
 
 @media (min-width:768px) {
-  .c12 {
+  .c13 {
     display: none;
   }
 }
 
 @media (min-width:768px) {
-  .c1 {
-    -webkit-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0);
-    margin-top: 0px;
-    position: inherit;
-    z-index: inherit;
-    width: 240px;
-    display: block;
-  }
-}
-
-@media (min-width:768px) {
-  .c2 {
-    display: block;
+  .c3 {
+    visibility: visible;
+    pointer-events: all;
   }
 }
 
@@ -1737,39 +1796,40 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
   <div
     class="c0"
   >
-    <section
+    <div
       class="c1"
     >
-      <header
+      <section
         class="c2"
       >
-        <svg
+        <header
           class="c3"
         >
-          LogoFsjsDev.svg
-        </svg>
-      </header>
-      <div
-        role="navigation"
-      >
+          <svg
+            class="c4"
+          >
+            LogoFsjsDev.svg
+          </svg>
+        </header>
         <div
-          class="c4"
+          class="c5"
+          role="navigation"
         >
           <div
-            class="c5"
+            class="c6"
           >
             <div
-              class="c6"
+              class="c7"
             >
               Components
             </div>
             <ul
-              class="c7"
+              class="c8"
             >
               <li>
                 <a
                   aria-hidden="false"
-                  class="c8"
+                  class="c9"
                   href="/frontend-patterns/carousel"
                   role="link"
                 >
@@ -1797,7 +1857,7 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
               <li>
                 <a
                   aria-hidden="true"
-                  class="c9"
+                  class="c10"
                   href="/frontend-patterns/infinitescroll"
                   role="link"
                   tabindex="-1"
@@ -1829,7 +1889,7 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
               <li>
                 <a
                   aria-hidden="false"
-                  class="c8"
+                  class="c9"
                   href="/frontend-patterns/typeahead"
                   role="link"
                 >
@@ -1857,7 +1917,7 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
               <li>
                 <a
                   aria-hidden="true"
-                  class="c9"
+                  class="c10"
                   href="/frontend-patterns/newsfeed"
                   role="link"
                   tabindex="-1"
@@ -1886,7 +1946,7 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
               <li>
                 <a
                   aria-hidden="true"
-                  class="c9"
+                  class="c10"
                   href="/frontend-patterns/datatable"
                   role="link"
                   tabindex="-1"
@@ -1915,7 +1975,7 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
               <li>
                 <a
                   aria-hidden="true"
-                  class="c9"
+                  class="c10"
                   href="/frontend-patterns/poll"
                   role="link"
                   tabindex="-1"
@@ -1943,17 +2003,17 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
               </li>
             </ul>
             <div
-              class="c6"
+              class="c7"
             >
               Features
             </div>
             <ul
-              class="c7"
+              class="c8"
             >
               <li>
                 <a
                   aria-hidden="false"
-                  class="c8"
+                  class="c9"
                   href="/frontend-patterns/snakegame"
                   role="link"
                 >
@@ -1977,7 +2037,7 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
               <li>
                 <a
                   aria-hidden="false"
-                  class="c8"
+                  class="c9"
                   href="/frontend-patterns/reactdemos"
                   role="link"
                 >
@@ -2001,7 +2061,7 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
               <li>
                 <a
                   aria-hidden="true"
-                  class="c9"
+                  class="c10"
                   href="/frontend-patterns/messenger"
                   role="link"
                   tabindex="-1"
@@ -2030,7 +2090,7 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
               <li>
                 <a
                   aria-hidden="true"
-                  class="c9"
+                  class="c10"
                   href="/frontend-patterns/netflix"
                   role="link"
                   tabindex="-1"
@@ -2059,7 +2119,7 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
               <li>
                 <a
                   aria-hidden="true"
-                  class="c9"
+                  class="c10"
                   href="/frontend-patterns/pinterest"
                   role="link"
                   tabindex="-1"
@@ -2088,7 +2148,7 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
               <li>
                 <a
                   aria-hidden="true"
-                  class="c9"
+                  class="c10"
                   href="/frontend-patterns/todo"
                   role="link"
                   tabindex="-1"
@@ -2117,167 +2177,153 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
             </ul>
           </div>
         </div>
-      </div>
-    </section>
-    <section
-      class="c10"
-    >
-      <header
+      </section>
+      <section
         class="c11"
-        role="banner"
       >
-        <svg
-          aria-label="Site navigation"
+        <header
           class="c12"
-          fill="currentColor"
-          height="1em"
-          role="button"
-          stroke="currentColor"
-          stroke-width="0"
-          viewBox="0 0 512 512"
-          width="1em"
-          xmlns="http://www.w3.org/2000/svg"
+          role="banner"
         >
-          <path
-            d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"
-          />
-        </svg>
-        <h1
-          class="c13"
-        >
-          <b>
-            Front-End
-          </b>
-           
-          Design Patterns
-        </h1>
-        <div
-          class="c14"
-        >
-          <a
-            aria-label="View fsjs.dev on GitHub"
-            href="https://github.com/fsjsd/frontend-patterns"
-            rel="noreferrer"
-            target="_blank"
+          <svg
+            aria-label="Site navigation"
+            class="c13"
+            fill="currentColor"
+            height="1em"
+            role="button"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 512 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <svg
-              style="height: 24px; margin-left: 10px; cursor: pointer;"
-            >
-              Github.svg
-            </svg>
-          </a>
-          <a
-            aria-label="View videos on Youtube"
-            href="https://www.youtube.com/channel/UC6ndgitE_bgJ02nyrrue-1A"
-            rel="noreferrer"
-            target="_blank"
+            <path
+              d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"
+            />
+          </svg>
+          <h1
+            class="c14"
           >
-            <svg
-              style="height: 24px; margin-left: 10px; cursor: pointer;"
+            <b>
+              Front-End
+            </b>
+             
+            Design Patterns
+          </h1>
+          <div
+            class="c15"
+          >
+            <a
+              aria-label="View fsjs.dev on GitHub"
+              href="https://github.com/fsjsd/frontend-patterns"
+              rel="noreferrer"
+              target="_blank"
             >
-              Youtube.svg
-            </svg>
-          </a>
-          <a
-            href="https://fsjs.dev"
-            rel="noreferrer"
-            style="display: block;"
-            target="_blank"
-            title="fsjs.dev - Full Stack Javascript Development"
-          />
-        </div>
-      </header>
-      <header
-        class="c15"
-      >
-        <h2
+              <svg
+                style="height: 24px; margin-left: 10px; cursor: pointer;"
+              >
+                Github.svg
+              </svg>
+            </a>
+            <a
+              aria-label="View videos on Youtube"
+              href="https://www.youtube.com/channel/UC6ndgitE_bgJ02nyrrue-1A"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <svg
+                style="height: 24px; margin-left: 10px; cursor: pointer;"
+              >
+                Youtube.svg
+              </svg>
+            </a>
+            <a
+              href="https://fsjs.dev"
+              rel="noreferrer"
+              style="display: block;"
+              target="_blank"
+              title="fsjs.dev - Full Stack Javascript Development"
+            />
+          </div>
+        </header>
+        <header
           class="c16"
         >
-          Home
-        </h2>
-        <div
-          class="c17"
-        >
+          <h2
+            class="c17"
+          >
+            Home
+          </h2>
           <div
             class="c18"
-            role="button"
-            title="Run demo"
           >
-            <svg
-              fill="currentColor"
-              height="1em"
-              stroke="currentColor"
-              stroke-width="0"
-              viewBox="0 0 24 24"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
+            <div
+              class="c19"
+              role="button"
+              title="Run demo"
             >
-              <path
-                d="M0 0h24v24H0V0z"
-                fill="none"
-              />
-              <path
-                d="M10 16.5l6-4.5-6-4.5zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
-              />
-            </svg>
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0V0z"
+                  fill="none"
+                />
+                <path
+                  d="M10 16.5l6-4.5-6-4.5zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                />
+              </svg>
+            </div>
           </div>
-        </div>
-      </header>
-      <section
-        class="c19"
-        role="document"
-      >
-        <div
-          role="main"
-        >
-          <p>
-            Browse samples in the navigation.
-          </p>
-          <p>
-            Each sample has links to code and design notes
-          </p>
-        </div>
-      </section>
-      <section
-        aria-label="Web vitals information"
-        class="c20"
-        role="contentinfo"
-        title="test"
-      >
-        <div
-          style="flex-grow: 1;"
+        </header>
+        <section
+          class="c20"
+          role="document"
         >
           <div
-            class="c21"
-          />
-        </div>
-        <div
-          style="flex-grow: 0;"
+            role="main"
+          >
+            <p>
+              Browse samples in the navigation.
+            </p>
+            <p>
+              Each sample has links to code and design notes
+            </p>
+          </div>
+        </section>
+        <section
+          aria-label="Web vitals information"
+          class="c21"
+          role="contentinfo"
+          title="test"
         >
-          <div />
-        </div>
+          <div
+            style="flex-grow: 1;"
+          >
+            <div
+              class="c22"
+            />
+          </div>
+          <div
+            style="flex-grow: 0;"
+          >
+            <div />
+          </div>
+        </section>
       </section>
-    </section>
+    </div>
   </div>
 </div>
 `;
 
 exports[`App tests shows menu in mobile mode 1`] = `
-.c15 {
-  background-color: white;
-  border-bottom: solid 1px #e0e0e0;
-  box-shadow: 0 -6px 15px 0px rgb(0 0 0 / 10%);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 0;
-  -webkit-flex-grow: 0;
-  -ms-flex-positive: 0;
-  flex-grow: 0;
-}
-
-.c16 {
+.c17 {
   font-size: 1em;
   font-weight: inherit;
   color: inherit;
@@ -2296,7 +2342,7 @@ exports[`App tests shows menu in mobile mode 1`] = `
   align-items: center;
 }
 
-.c17 {
+.c18 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2306,7 +2352,7 @@ exports[`App tests shows menu in mobile mode 1`] = `
   display: none;
 }
 
-.c17 a {
+.c18 a {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2320,7 +2366,7 @@ exports[`App tests shows menu in mobile mode 1`] = `
   transition: opacity 0.2s ease-in-out;
 }
 
-.c18 {
+.c19 {
   cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2332,205 +2378,26 @@ exports[`App tests shows menu in mobile mode 1`] = `
   opacity: 0.6;
 }
 
-.c18:hover {
+.c19:hover {
   color: rgb(0,145,255);
   opacity: 1;
 }
 
-.c19 {
-  padding: 15px;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  overflow-y: auto;
-  -webkit-scroll-behavior: smooth;
-  -moz-scroll-behavior: smooth;
-  -ms-scroll-behavior: smooth;
-  scroll-behavior: smooth;
-}
-
-.c4 {
-  overflow: hidden;
-  width: 100%;
-}
-
-.c5 {
+.c16 {
+  background-color: white;
+  border-bottom: solid 1px #e0e0e0;
+  box-shadow: 0 -6px 15px 0px rgb(0 0 0 / 10%);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  position: relative;
-  left: 0;
-  -webkit-transition: ease 0.3s left;
-  transition: ease 0.3s left;
-  width: 100%;
-}
-
-.c6 {
-  font-weight: 400;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  line-height: 16px;
-  padding: 0 20px;
-  font-size: 13px;
-  margin: 24px 0 10px;
-  text-transform: uppercase;
-  color: rgba(0,0,0,0.66);
-}
-
-.c7 {
-  margin: 0;
-  padding: 0;
-}
-
-.c7 li {
-  list-style: none;
-}
-
-.c8 {
-  width: 100%;
-  font-size: 15px;
-  color: #444;
-  padding: 12px 16px;
-  outline: none;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  cursor: pointer;
-  -webkit-transition: ease 0.5s color,ease 0.2s background-color;
-  transition: ease 0.5s color,ease 0.2s background-color;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c8.active {
-  background-color: rgb(220,240,255);
-  color: rgb(33,111,212);
-}
-
-.c8.active span,
-.c8.active label {
-  color: rgb(33,111,212);
-}
-
-.c8:hover,
-.c8.active:hover {
-  background-color: rgb(242,249,255);
-  color: rgb(33,111,212);
-}
-
-.c8:hover span,
-.c8.active:hover span,
-.c8:hover label,
-.c8.active:hover label {
-  color: rgb(33,111,212);
-}
-
-.c8 label {
-  color: rgba(0,0,0,0.75);
-  -webkit-box-flex: 2;
-  -webkit-flex-grow: 2;
-  -ms-flex-positive: 2;
-  flex-grow: 2;
-  cursor: pointer;
-}
-
-.c8 svg {
-  font-size: 18px;
-}
-
-.c8 svg:first-child {
-  margin-right: 10px;
-}
-
-.c9 {
-  width: 100%;
-  font-size: 15px;
-  color: #949494;
-  padding: 12px 16px;
-  outline: none;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  cursor: pointer;
-  -webkit-transition: ease 0.5s color,ease 0.2s background-color;
-  transition: ease 0.5s color,ease 0.2s background-color;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c9.active {
-  background-color: rgb(220,240,255);
-  color: rgb(33,111,212);
-}
-
-.c9.active span,
-.c9.active label {
-  color: rgb(33,111,212);
-}
-
-.c9:hover,
-.c9.active:hover {
-  background-color: rgb(242,249,255);
-  color: rgb(33,111,212);
-}
-
-.c9:hover span,
-.c9.active:hover span,
-.c9:hover label,
-.c9.active:hover label {
-  color: rgb(33,111,212);
-}
-
-.c9 label {
-  color: rgba(0,0,0,0.75);
-  -webkit-box-flex: 2;
-  -webkit-flex-grow: 2;
-  -ms-flex-positive: 2;
-  flex-grow: 2;
-  cursor: pointer;
-}
-
-.c9 svg {
-  font-size: 18px;
-}
-
-.c9 svg:first-child {
-  margin-right: 10px;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
 }
 
 .c21 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c21 > div {
-  margin-right: 10px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  line-height: normal;
-}
-
-.c20 {
   border-top: solid 1px #ccc;
   background-color: white;
   padding: 10px;
@@ -2542,71 +2409,36 @@ exports[`App tests shows menu in mobile mode 1`] = `
   display: flex;
 }
 
-.c11 {
-  padding: 1rem;
-  background-color: #0076D1;
+.c20 {
+  padding: 15px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  overflow-y: auto;
+  -webkit-scroll-behavior: smooth;
+  -moz-scroll-behavior: smooth;
+  -ms-scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  color: white;
-}
-
-.c13 {
-  font-weight: 400;
-  font-size: 20px;
-  -webkit-box-flex: 2;
-  -webkit-flex-grow: 2;
-  -ms-flex-positive: 2;
-  flex-grow: 2;
-  color: inherit;
-  margin: 0;
-}
-
-.c14 {
-  -webkit-align-self: flex-end;
-  -ms-flex-item-align: end;
-  align-self: flex-end;
-  font-size: 1px;
-  color: white;
-  display: none;
-}
-
-.c12 {
-  height: 24px;
-  margin-right: 10px;
-  cursor: pointer;
-  display: block;
-}
-
-.c0 {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  font-family: Roboto,Arial,Helvetica;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.c1 {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
-  border-left: solid 1px rgb(218,231,241);
-  background-color: rgb(246,250,253);
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  pointer-events: none;
   position: absolute;
   width: 100%;
+  height: 100%;
   z-index: 100;
-  margin-top: 60px;
   -webkit-transition: -webkit-transform 0.2s ease-in-out;
   -webkit-transition: transform 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out;
@@ -2615,16 +2447,263 @@ exports[`App tests shows menu in mobile mode 1`] = `
   transform: translateX(0);
 }
 
-.c2 {
-  padding: 1rem;
-  background-color: #0091ff;
-  color: #fff;
-  background-color: #007fe0;
-  font-size: 1px;
-  display: none;
+.c5 {
+  width: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-scroll-behavior: smooth;
+  -moz-scroll-behavior: smooth;
+  -ms-scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  border-left: solid 1px rgb(218,231,241);
+  background-color: rgb(246,250,253);
+  pointer-events: all;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  left: 0;
+  -webkit-transition: ease 0.3s left;
+  transition: ease 0.3s left;
+  width: 100%;
+}
+
+.c7 {
+  font-weight: 400;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 16px;
+  padding: 0 20px;
+  font-size: 13px;
+  margin: 24px 0 10px;
+  text-transform: uppercase;
+  color: rgba(0,0,0,0.66);
+}
+
+.c8 {
+  margin: 0;
+  padding: 0;
+}
+
+.c8 li {
+  list-style: none;
+}
+
+.c9 {
+  width: 100%;
+  font-size: 15px;
+  color: #444;
+  padding: 12px 16px;
+  outline: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: ease 0.5s color,ease 0.2s background-color;
+  transition: ease 0.5s color,ease 0.2s background-color;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c9.active {
+  background-color: rgb(220,240,255);
+  color: rgb(33,111,212);
+}
+
+.c9.active span,
+.c9.active label {
+  color: rgb(33,111,212);
+}
+
+.c9:hover,
+.c9.active:hover {
+  background-color: rgb(242,249,255);
+  color: rgb(33,111,212);
+}
+
+.c9:hover span,
+.c9.active:hover span,
+.c9:hover label,
+.c9.active:hover label {
+  color: rgb(33,111,212);
+}
+
+.c9 label {
+  color: rgba(0,0,0,0.75);
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+  cursor: pointer;
+}
+
+.c9 svg {
+  font-size: 18px;
+}
+
+.c9 svg:first-child {
+  margin-right: 10px;
 }
 
 .c10 {
+  width: 100%;
+  font-size: 15px;
+  color: #949494;
+  padding: 12px 16px;
+  outline: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: ease 0.5s color,ease 0.2s background-color;
+  transition: ease 0.5s color,ease 0.2s background-color;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c10.active {
+  background-color: rgb(220,240,255);
+  color: rgb(33,111,212);
+}
+
+.c10.active span,
+.c10.active label {
+  color: rgb(33,111,212);
+}
+
+.c10:hover,
+.c10.active:hover {
+  background-color: rgb(242,249,255);
+  color: rgb(33,111,212);
+}
+
+.c10:hover span,
+.c10.active:hover span,
+.c10:hover label,
+.c10.active:hover label {
+  color: rgb(33,111,212);
+}
+
+.c10 label {
+  color: rgba(0,0,0,0.75);
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+  cursor: pointer;
+}
+
+.c10 svg {
+  font-size: 18px;
+}
+
+.c10 svg:first-child {
+  margin-right: 10px;
+}
+
+.c22 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c22 > div {
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  line-height: normal;
+}
+
+.c12 {
+  padding: 1rem;
+  background-color: #0076D1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  color: white;
+}
+
+.c14 {
+  font-weight: 400;
+  font-size: 20px;
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+  color: inherit;
+  margin: 0;
+}
+
+.c15 {
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  font-size: 1px;
+  color: white;
+  display: none;
+}
+
+.c13 {
+  height: 24px;
+  margin-right: 10px;
+  cursor: pointer;
+  display: block;
+}
+
+.c0 {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.c1 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  font-family: Roboto,Arial,Helvetica;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.c11 {
   background-color: #fff;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2640,12 +2719,22 @@ exports[`App tests shows menu in mobile mode 1`] = `
 }
 
 .c3 {
+  padding: 1rem;
+  background-color: #0091ff;
+  color: #fff;
+  background-color: #007fe0;
+  font-size: 1px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.c4 {
   height: 24px;
   width: 100px;
 }
 
 @media (min-width:768px) {
-  .c17 {
+  .c18 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -2654,20 +2743,30 @@ exports[`App tests shows menu in mobile mode 1`] = `
 }
 
 @media (min-width:768px) {
-  .c4 {
+
+}
+
+@media (min-width:768px) {
+  .c2 {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    margin-top: 0px;
+    position: inherit;
+    z-index: inherit;
     width: 240px;
   }
 }
 
 @media (min-width:768px) {
   .c5 {
-    width: 480px;
+    width: 240px;
   }
 }
 
 @media (min-width:768px) {
-  .c8 {
-    width: 240px;
+  .c6 {
+    width: 480px;
   }
 }
 
@@ -2678,37 +2777,27 @@ exports[`App tests shows menu in mobile mode 1`] = `
 }
 
 @media (min-width:768px) {
-  .c14 {
+  .c10 {
+    width: 240px;
+  }
+}
+
+@media (min-width:768px) {
+  .c15 {
     display: block;
   }
 }
 
 @media (min-width:768px) {
-  .c12 {
+  .c13 {
     display: none;
   }
 }
 
 @media (min-width:768px) {
-
-}
-
-@media (min-width:768px) {
-  .c1 {
-    -webkit-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0);
-    margin-top: 0px;
-    position: inherit;
-    z-index: inherit;
-    width: 240px;
-    display: block;
-  }
-}
-
-@media (min-width:768px) {
-  .c2 {
-    display: block;
+  .c3 {
+    visibility: visible;
+    pointer-events: all;
   }
 }
 
@@ -2716,39 +2805,40 @@ exports[`App tests shows menu in mobile mode 1`] = `
   <div
     class="c0"
   >
-    <section
+    <div
       class="c1"
     >
-      <header
+      <section
         class="c2"
       >
-        <svg
+        <header
           class="c3"
         >
-          LogoFsjsDev.svg
-        </svg>
-      </header>
-      <div
-        role="navigation"
-      >
+          <svg
+            class="c4"
+          >
+            LogoFsjsDev.svg
+          </svg>
+        </header>
         <div
-          class="c4"
+          class="c5"
+          role="navigation"
         >
           <div
-            class="c5"
+            class="c6"
           >
             <div
-              class="c6"
+              class="c7"
             >
               Components
             </div>
             <ul
-              class="c7"
+              class="c8"
             >
               <li>
                 <a
                   aria-hidden="false"
-                  class="c8"
+                  class="c9"
                   href="/frontend-patterns/carousel"
                   role="link"
                 >
@@ -2776,7 +2866,7 @@ exports[`App tests shows menu in mobile mode 1`] = `
               <li>
                 <a
                   aria-hidden="true"
-                  class="c9"
+                  class="c10"
                   href="/frontend-patterns/infinitescroll"
                   role="link"
                   tabindex="-1"
@@ -2808,7 +2898,7 @@ exports[`App tests shows menu in mobile mode 1`] = `
               <li>
                 <a
                   aria-hidden="false"
-                  class="c8"
+                  class="c9"
                   href="/frontend-patterns/typeahead"
                   role="link"
                 >
@@ -2836,7 +2926,7 @@ exports[`App tests shows menu in mobile mode 1`] = `
               <li>
                 <a
                   aria-hidden="true"
-                  class="c9"
+                  class="c10"
                   href="/frontend-patterns/newsfeed"
                   role="link"
                   tabindex="-1"
@@ -2865,7 +2955,7 @@ exports[`App tests shows menu in mobile mode 1`] = `
               <li>
                 <a
                   aria-hidden="true"
-                  class="c9"
+                  class="c10"
                   href="/frontend-patterns/datatable"
                   role="link"
                   tabindex="-1"
@@ -2894,7 +2984,7 @@ exports[`App tests shows menu in mobile mode 1`] = `
               <li>
                 <a
                   aria-hidden="true"
-                  class="c9"
+                  class="c10"
                   href="/frontend-patterns/poll"
                   role="link"
                   tabindex="-1"
@@ -2922,17 +3012,17 @@ exports[`App tests shows menu in mobile mode 1`] = `
               </li>
             </ul>
             <div
-              class="c6"
+              class="c7"
             >
               Features
             </div>
             <ul
-              class="c7"
+              class="c8"
             >
               <li>
                 <a
                   aria-hidden="false"
-                  class="c8"
+                  class="c9"
                   href="/frontend-patterns/snakegame"
                   role="link"
                 >
@@ -2956,7 +3046,7 @@ exports[`App tests shows menu in mobile mode 1`] = `
               <li>
                 <a
                   aria-hidden="false"
-                  class="c8"
+                  class="c9"
                   href="/frontend-patterns/reactdemos"
                   role="link"
                 >
@@ -2980,7 +3070,7 @@ exports[`App tests shows menu in mobile mode 1`] = `
               <li>
                 <a
                   aria-hidden="true"
-                  class="c9"
+                  class="c10"
                   href="/frontend-patterns/messenger"
                   role="link"
                   tabindex="-1"
@@ -3009,7 +3099,7 @@ exports[`App tests shows menu in mobile mode 1`] = `
               <li>
                 <a
                   aria-hidden="true"
-                  class="c9"
+                  class="c10"
                   href="/frontend-patterns/netflix"
                   role="link"
                   tabindex="-1"
@@ -3038,7 +3128,7 @@ exports[`App tests shows menu in mobile mode 1`] = `
               <li>
                 <a
                   aria-hidden="true"
-                  class="c9"
+                  class="c10"
                   href="/frontend-patterns/pinterest"
                   role="link"
                   tabindex="-1"
@@ -3067,7 +3157,7 @@ exports[`App tests shows menu in mobile mode 1`] = `
               <li>
                 <a
                   aria-hidden="true"
-                  class="c9"
+                  class="c10"
                   href="/frontend-patterns/todo"
                   role="link"
                   tabindex="-1"
@@ -3096,147 +3186,147 @@ exports[`App tests shows menu in mobile mode 1`] = `
             </ul>
           </div>
         </div>
-      </div>
-    </section>
-    <section
-      class="c10"
-    >
-      <header
+      </section>
+      <section
         class="c11"
-        role="banner"
       >
-        <svg
-          aria-label="Site navigation"
+        <header
           class="c12"
-          fill="currentColor"
-          height="1em"
-          role="button"
-          stroke="currentColor"
-          stroke-width="0"
-          viewBox="0 0 512 512"
-          width="1em"
-          xmlns="http://www.w3.org/2000/svg"
+          role="banner"
         >
-          <path
-            d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"
-          />
-        </svg>
-        <h1
-          class="c13"
-        >
-          <b>
-            Front-End
-          </b>
-           
-          Design Patterns
-        </h1>
-        <div
-          class="c14"
-        >
-          <a
-            aria-label="View fsjs.dev on GitHub"
-            href="https://github.com/fsjsd/frontend-patterns"
-            rel="noreferrer"
-            target="_blank"
+          <svg
+            aria-label="Site navigation"
+            class="c13"
+            fill="currentColor"
+            height="1em"
+            role="button"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 512 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <svg
-              style="height: 24px; margin-left: 10px; cursor: pointer;"
-            >
-              Github.svg
-            </svg>
-          </a>
-          <a
-            aria-label="View videos on Youtube"
-            href="https://www.youtube.com/channel/UC6ndgitE_bgJ02nyrrue-1A"
-            rel="noreferrer"
-            target="_blank"
+            <path
+              d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"
+            />
+          </svg>
+          <h1
+            class="c14"
           >
-            <svg
-              style="height: 24px; margin-left: 10px; cursor: pointer;"
+            <b>
+              Front-End
+            </b>
+             
+            Design Patterns
+          </h1>
+          <div
+            class="c15"
+          >
+            <a
+              aria-label="View fsjs.dev on GitHub"
+              href="https://github.com/fsjsd/frontend-patterns"
+              rel="noreferrer"
+              target="_blank"
             >
-              Youtube.svg
-            </svg>
-          </a>
-          <a
-            href="https://fsjs.dev"
-            rel="noreferrer"
-            style="display: block;"
-            target="_blank"
-            title="fsjs.dev - Full Stack Javascript Development"
-          />
-        </div>
-      </header>
-      <header
-        class="c15"
-      >
-        <h2
+              <svg
+                style="height: 24px; margin-left: 10px; cursor: pointer;"
+              >
+                Github.svg
+              </svg>
+            </a>
+            <a
+              aria-label="View videos on Youtube"
+              href="https://www.youtube.com/channel/UC6ndgitE_bgJ02nyrrue-1A"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <svg
+                style="height: 24px; margin-left: 10px; cursor: pointer;"
+              >
+                Youtube.svg
+              </svg>
+            </a>
+            <a
+              href="https://fsjs.dev"
+              rel="noreferrer"
+              style="display: block;"
+              target="_blank"
+              title="fsjs.dev - Full Stack Javascript Development"
+            />
+          </div>
+        </header>
+        <header
           class="c16"
         >
-          Home
-        </h2>
-        <div
-          class="c17"
-        >
+          <h2
+            class="c17"
+          >
+            Home
+          </h2>
           <div
             class="c18"
-            role="button"
-            title="Run demo"
           >
-            <svg
-              fill="currentColor"
-              height="1em"
-              stroke="currentColor"
-              stroke-width="0"
-              viewBox="0 0 24 24"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
+            <div
+              class="c19"
+              role="button"
+              title="Run demo"
             >
-              <path
-                d="M0 0h24v24H0V0z"
-                fill="none"
-              />
-              <path
-                d="M10 16.5l6-4.5-6-4.5zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
-              />
-            </svg>
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0V0z"
+                  fill="none"
+                />
+                <path
+                  d="M10 16.5l6-4.5-6-4.5zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                />
+              </svg>
+            </div>
           </div>
-        </div>
-      </header>
-      <section
-        class="c19"
-        role="document"
-      >
-        <div
-          role="main"
-        >
-          <p>
-            Browse samples in the navigation.
-          </p>
-          <p>
-            Each sample has links to code and design notes
-          </p>
-        </div>
-      </section>
-      <section
-        aria-label="Web vitals information"
-        class="c20"
-        role="contentinfo"
-        title="test"
-      >
-        <div
-          style="flex-grow: 1;"
+        </header>
+        <section
+          class="c20"
+          role="document"
         >
           <div
-            class="c21"
-          />
-        </div>
-        <div
-          style="flex-grow: 0;"
+            role="main"
+          >
+            <p>
+              Browse samples in the navigation.
+            </p>
+            <p>
+              Each sample has links to code and design notes
+            </p>
+          </div>
+        </section>
+        <section
+          aria-label="Web vitals information"
+          class="c21"
+          role="contentinfo"
+          title="test"
         >
-          <div />
-        </div>
+          <div
+            style="flex-grow: 1;"
+          >
+            <div
+              class="c22"
+            />
+          </div>
+          <div
+            style="flex-grow: 0;"
+          >
+            <div />
+          </div>
+        </section>
       </section>
-    </section>
+    </div>
   </div>
 </div>
 `;

@@ -1,17 +1,57 @@
 import { Link } from "react-router-dom";
-import styled from "styled-components";
-import { navigationBreakpoint } from "../designsystem/responsive/breakpoints";
+import styled, { css } from "styled-components";
+import { navigationBreakpoint } from "./designsystem/responsive/breakpoints";
 
-export const DrawerNavigation = styled.div`
-  overflow: hidden;
+/**
+ * Container for navigation drawer, applying slide out treatment
+ * on Mobile screens by default, fixed position on larger screens
+ */
+export const NavigationDrawer = styled.section<{ visible: boolean }>`
+  display:flex;
+  flex: 0 0 auto;
+  flex-direction:column;
+  pointer-events:none;
+
+  position:absolute;
+  width:100%;
+  height:100%;
+  z-index:100;
+  transition: transform 0.2s ease-in-out;
+
+  ${props => props.visible
+    ? css`
+      transform: translateX(0);
+    `
+    : css`
+      transform: translateX(-100%);
+    `}
+
+  @media ${navigationBreakpoint} {
+    transform: translateX(0);
+    margin-top:0px;
+    position:inherit;
+    z-index:inherit;
+    width: 240px;
+  }
+`;
+
+export const NavigationScrollArea = styled.div`
   width: 100%;
+  flex-grow:1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling:touch;
+  border-left: solid 1px rgb(218, 231, 241);
+  background-color: rgb(246, 250, 253);
+  pointer-events:all;
   
   @media ${navigationBreakpoint} { 
     width: 240px;
   }
 `;
 
-export const DrawerWrapper = styled.div<{ isOpen: boolean }>`
+export const SubMenuWrapper = styled.div<{ isOpen: boolean }>`
   display: flex;
   flex-direction: column;
   position: relative;
@@ -19,8 +59,7 @@ export const DrawerWrapper = styled.div<{ isOpen: boolean }>`
   transition: ease 0.3s left;
   ${props =>
     props.isOpen
-      ? `
-    left: -240px;`
+      ? `left: -240px;`
       : ``}
 
   width: 100%;

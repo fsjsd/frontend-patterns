@@ -1,12 +1,12 @@
 import React, { Suspense } from 'react'
-import { ContentWrapper } from '../../ux/ContentWrapper'
+import { ContentContainer } from '../../ux/ContentContainer'
 import Loading from '../../ux/Loading'
 const InfiniteScroll = React.lazy(() => import('./InfiniteScroll'))
 
 const InfiniteScrollContainer = () => {
 
   return (
-    <ContentWrapper
+    <ContentContainer
       title="Infinite Scroll"
       codeLink="/features/infinitescroll"
       markDownPromise={import('./requirements.md')}
@@ -16,7 +16,7 @@ const InfiniteScrollContainer = () => {
           <InfiniteScroll />
         </div>
       </Suspense>
-    </ContentWrapper>
+    </ContentContainer>
   )
 }
 
