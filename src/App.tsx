@@ -27,6 +27,10 @@ function App({ hostContext }: { hostContext: string }) {
     setShowMenu(prev => !prev);
   }
 
+  const handleLinkClick = () => {
+    setShowMenu(false);
+  }
+
   return (
     <ThemeProvider theme={theme}>
       <BrowserRouter>
@@ -37,7 +41,7 @@ function App({ hostContext }: { hostContext: string }) {
             </HeaderBrand>
             <div role="navigation">
               {/* Filter control for nav */}
-              <LeftNavigation />
+              <LeftNavigation onItemClick={handleLinkClick} />
             </div>
           </SectionDrawer>
 

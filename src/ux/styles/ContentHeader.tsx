@@ -10,7 +10,10 @@ const Header = styled.header`
   flex-grow:0;
 `;
 
-export const ContentHeaderLabel = styled.div`
+export const ContentHeaderLabel = styled.h2`
+  font-size: 1em;
+  font-weight: inherit;
+  color: inherit;
   padding: 13px;
   flex-grow: 2;
   display:flex;

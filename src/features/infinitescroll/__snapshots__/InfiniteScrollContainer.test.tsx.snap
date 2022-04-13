@@ -1,20 +1,132 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`InfiniteScrollContainer render matches snapshot 1`] = `
+.c0 {
+  background-color: white;
+  border-bottom: solid 1px #e0e0e0;
+  box-shadow: 0 -6px 15px 0px rgb(0 0 0 / 10%);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+}
+
+.c1 {
+  font-size: 1em;
+  font-weight: inherit;
+  color: inherit;
+  padding: 13px;
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.25em;
+  padding: 0;
+  display: none;
+}
+
+.c2 a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  line-height: normal;
+  color: rgb(0 100 176);
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.c3 {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 15px 12px 15px;
+  border-bottom: solid 3px transparent;
+  border-bottom: solid 3px rgb(0,127,224);
+  opacity: 0.6;
+}
+
+.c3:hover {
+  color: rgb(0,145,255);
+  opacity: 1;
+}
+
+.c4 {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 15px 12px 15px;
+  border-bottom: solid 3px transparent;
+  opacity: 0.6;
+}
+
+.c4:hover {
+  color: rgb(0,145,255);
+  opacity: 1;
+}
+
+.c5 {
+  padding: 15px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  overflow-y: auto;
+  -webkit-scroll-behavior: smooth;
+  -moz-scroll-behavior: smooth;
+  -ms-scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+@media (min-width:768px) {
+  .c2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 <div>
   <header
-    class="sc-bczRLJ dmSzxI"
+    class="c0"
   >
-    <div
-      class="sc-gsnTZi hCGKc"
+    <h2
+      class="c1"
     >
       Infinite Scroll
-    </div>
+    </h2>
     <div
-      class="sc-dkzDqf gedmVz"
+      class="c2"
     >
       <div
-        class="sc-hKMtZM dNwpDv"
+        class="c3"
         role="button"
         title="Run demo"
       >
@@ -37,7 +149,7 @@ exports[`InfiniteScrollContainer render matches snapshot 1`] = `
         </svg>
       </div>
       <div
-        class="sc-hKMtZM itnQjY"
+        class="c4"
         role="button"
         title="View notes"
       >
@@ -67,7 +179,7 @@ exports[`InfiniteScrollContainer render matches snapshot 1`] = `
         target="_blank"
       >
         <div
-          class="sc-hKMtZM itnQjY"
+          class="c4"
           title="View code on github"
         >
           <svg
@@ -89,7 +201,7 @@ exports[`InfiniteScrollContainer render matches snapshot 1`] = `
     </div>
   </header>
   <section
-    class="sc-gKXOVf cdoXCR"
+    class="c5"
     role="document"
   >
     <div

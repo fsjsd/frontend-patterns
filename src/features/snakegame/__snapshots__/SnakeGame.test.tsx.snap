@@ -1,12 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SnakeGame 'ascii' mode renders and matches snapshot 1`] = `
+.c1 {
+  outline: none;
+  display: inline-block;
+  border: solid 1px #ccc;
+}
+
+.c0 {
+  padding: 10px 0;
+}
+
 <div>
   <div
     style="flex-grow: 2;"
   >
     <section
-      class="sc-hKMtZM cmgQjl"
+      class="c0"
       role="note"
     >
       Score: 
@@ -15,7 +25,7 @@ exports[`SnakeGame 'ascii' mode renders and matches snapshot 1`] = `
       0
     </section>
     <div
-      class="sc-dkzDqf likSVD"
+      class="c1"
       role="application"
       tabindex="0"
     >
@@ -68,7 +78,7 @@ exports[`SnakeGame 'ascii' mode renders and matches snapshot 1`] = `
       </pre>
     </div>
     <section
-      class="sc-hKMtZM cmgQjl"
+      class="c0"
     >
       Press 't' to toggle view modes in game play (current mode: 
       ascii
@@ -79,12 +89,22 @@ exports[`SnakeGame 'ascii' mode renders and matches snapshot 1`] = `
 `;
 
 exports[`SnakeGame 'canvas' mode renders and matches snapshot 1`] = `
+.c1 {
+  outline: none;
+  display: inline-block;
+  border: solid 1px #ccc;
+}
+
+.c0 {
+  padding: 10px 0;
+}
+
 <div>
   <div
     style="flex-grow: 2;"
   >
     <section
-      class="sc-hKMtZM cmgQjl"
+      class="c0"
       role="note"
     >
       Score: 
@@ -93,7 +113,7 @@ exports[`SnakeGame 'canvas' mode renders and matches snapshot 1`] = `
       0
     </section>
     <div
-      class="sc-dkzDqf likSVD"
+      class="c1"
       role="application"
       tabindex="0"
     >
@@ -107,7 +127,7 @@ exports[`SnakeGame 'canvas' mode renders and matches snapshot 1`] = `
       </div>
     </div>
     <section
-      class="sc-hKMtZM cmgQjl"
+      class="c0"
     >
       Press 't' to toggle view modes in game play (current mode: 
       canvas
@@ -118,12 +138,62 @@ exports[`SnakeGame 'canvas' mode renders and matches snapshot 1`] = `
 `;
 
 exports[`SnakeGame 'html' mode renders and matches snapshot 1`] = `
+.c2 {
+  width: 420px;
+  height: 420px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c3 {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  display: inline-block;
+}
+
+.c4 {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  display: inline-block;
+}
+
+.c5 {
+  width: 20px;
+  height: 20px;
+  background-color: grey;
+  display: inline-block;
+}
+
+.c6 {
+  width: 20px;
+  height: 20px;
+  background-color: darkgrey;
+  display: inline-block;
+}
+
+.c1 {
+  outline: none;
+  display: inline-block;
+  border: solid 1px #ccc;
+}
+
+.c0 {
+  padding: 10px 0;
+}
+
 <div>
   <div
     style="flex-grow: 2;"
   >
     <section
-      class="sc-hKMtZM cmgQjl"
+      class="c0"
       role="note"
     >
       Score: 
@@ -132,2224 +202,2224 @@ exports[`SnakeGame 'html' mode renders and matches snapshot 1`] = `
       0
     </section>
     <div
-      class="sc-dkzDqf likSVD"
+      class="c1"
       role="application"
       tabindex="0"
     >
       <div
-        class="sc-bczRLJ kmCCWW"
+        class="c2"
         height="420"
         width="420"
       >
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="0, 0"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="0, 1"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="0, 2"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="0, 3"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="0, 4"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="0, 5"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="0, 6"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="0, 7"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="0, 8"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="0, 9"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="0, 10"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="0, 11"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="0, 12"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="0, 13"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="0, 14"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="0, 15"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="0, 16"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="0, 17"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="0, 18"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="0, 19"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="0, 20"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="1, 0"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="1, 1"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="1, 2"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="1, 3"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="1, 4"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="1, 5"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="1, 6"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="1, 7"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="1, 8"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="1, 9"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="1, 10"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="1, 11"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="1, 12"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="1, 13"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="1, 14"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="1, 15"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="1, 16"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="1, 17"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="1, 18"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="1, 19"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="1, 20"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="2, 0"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="2, 1"
           size="20"
         />
         <div
-          class="sc-gsnTZi bWIgQa"
+          class="c4"
           data-testid="2, 2"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="2, 3"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="2, 4"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="2, 5"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="2, 6"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="2, 7"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="2, 8"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="2, 9"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="2, 10"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="2, 11"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="2, 12"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="2, 13"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="2, 14"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="2, 15"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="2, 16"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="2, 17"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="2, 18"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="2, 19"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="2, 20"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="3, 0"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="3, 1"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="3, 2"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="3, 3"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="3, 4"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="3, 5"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="3, 6"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="3, 7"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="3, 8"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="3, 9"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="3, 10"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="3, 11"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="3, 12"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="3, 13"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="3, 14"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="3, 15"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="3, 16"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="3, 17"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="3, 18"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="3, 19"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="3, 20"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="4, 0"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="4, 1"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="4, 2"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="4, 3"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="4, 4"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="4, 5"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="4, 6"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="4, 7"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="4, 8"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="4, 9"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="4, 10"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="4, 11"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="4, 12"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="4, 13"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="4, 14"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="4, 15"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="4, 16"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="4, 17"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="4, 18"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="4, 19"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="4, 20"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="5, 0"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="5, 1"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="5, 2"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="5, 3"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="5, 4"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="5, 5"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="5, 6"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="5, 7"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="5, 8"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="5, 9"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="5, 10"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="5, 11"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="5, 12"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="5, 13"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="5, 14"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="5, 15"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="5, 16"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="5, 17"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="5, 18"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="5, 19"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="5, 20"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="6, 0"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="6, 1"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="6, 2"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="6, 3"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="6, 4"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="6, 5"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="6, 6"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="6, 7"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="6, 8"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="6, 9"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="6, 10"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="6, 11"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="6, 12"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="6, 13"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="6, 14"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="6, 15"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="6, 16"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="6, 17"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="6, 18"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="6, 19"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="6, 20"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="7, 0"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="7, 1"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="7, 2"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="7, 3"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="7, 4"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="7, 5"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="7, 6"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="7, 7"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="7, 8"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="7, 9"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="7, 10"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="7, 11"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="7, 12"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="7, 13"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="7, 14"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="7, 15"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="7, 16"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="7, 17"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="7, 18"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="7, 19"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="7, 20"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="8, 0"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="8, 1"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="8, 2"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="8, 3"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="8, 4"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="8, 5"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="8, 6"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="8, 7"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="8, 8"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="8, 9"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="8, 10"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="8, 11"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="8, 12"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="8, 13"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="8, 14"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="8, 15"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="8, 16"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="8, 17"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="8, 18"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="8, 19"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="8, 20"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="9, 0"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="9, 1"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="9, 2"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="9, 3"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="9, 4"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="9, 5"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="9, 6"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="9, 7"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="9, 8"
           size="20"
         />
         <div
-          class="sc-gsnTZi efYVaI"
+          class="c5"
           data-testid="9, 9"
           size="20"
         />
         <div
-          class="sc-gsnTZi fEpnHk"
+          class="c6"
           data-testid="9, 10"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="9, 11"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="9, 12"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="9, 13"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="9, 14"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="9, 15"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="9, 16"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="9, 17"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="9, 18"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="9, 19"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="9, 20"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="10, 0"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="10, 1"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="10, 2"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="10, 3"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="10, 4"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="10, 5"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="10, 6"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="10, 7"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="10, 8"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="10, 9"
           size="20"
         />
         <div
-          class="sc-gsnTZi fEpnHk"
+          class="c6"
           data-testid="10, 10"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="10, 11"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="10, 12"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="10, 13"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="10, 14"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="10, 15"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="10, 16"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="10, 17"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="10, 18"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="10, 19"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="10, 20"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="11, 0"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="11, 1"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="11, 2"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="11, 3"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="11, 4"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="11, 5"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="11, 6"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="11, 7"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="11, 8"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="11, 9"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="11, 10"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="11, 11"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="11, 12"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="11, 13"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="11, 14"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="11, 15"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="11, 16"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="11, 17"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="11, 18"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="11, 19"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="11, 20"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="12, 0"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="12, 1"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="12, 2"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="12, 3"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="12, 4"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="12, 5"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="12, 6"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="12, 7"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="12, 8"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="12, 9"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="12, 10"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="12, 11"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="12, 12"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="12, 13"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="12, 14"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="12, 15"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="12, 16"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="12, 17"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="12, 18"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="12, 19"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="12, 20"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="13, 0"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="13, 1"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="13, 2"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="13, 3"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="13, 4"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="13, 5"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="13, 6"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="13, 7"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="13, 8"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="13, 9"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="13, 10"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="13, 11"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="13, 12"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="13, 13"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="13, 14"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="13, 15"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="13, 16"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="13, 17"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="13, 18"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="13, 19"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="13, 20"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="14, 0"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="14, 1"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="14, 2"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="14, 3"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="14, 4"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="14, 5"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="14, 6"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="14, 7"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="14, 8"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="14, 9"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="14, 10"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="14, 11"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="14, 12"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="14, 13"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="14, 14"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="14, 15"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="14, 16"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="14, 17"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="14, 18"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="14, 19"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="14, 20"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="15, 0"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="15, 1"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="15, 2"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="15, 3"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="15, 4"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="15, 5"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="15, 6"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="15, 7"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="15, 8"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="15, 9"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="15, 10"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="15, 11"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="15, 12"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="15, 13"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="15, 14"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="15, 15"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="15, 16"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="15, 17"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="15, 18"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="15, 19"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="15, 20"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="16, 0"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="16, 1"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="16, 2"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="16, 3"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="16, 4"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="16, 5"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="16, 6"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="16, 7"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="16, 8"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="16, 9"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="16, 10"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="16, 11"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="16, 12"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="16, 13"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="16, 14"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="16, 15"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="16, 16"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="16, 17"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="16, 18"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="16, 19"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="16, 20"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="17, 0"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="17, 1"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="17, 2"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="17, 3"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="17, 4"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="17, 5"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="17, 6"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="17, 7"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="17, 8"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="17, 9"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="17, 10"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="17, 11"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="17, 12"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="17, 13"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="17, 14"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="17, 15"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="17, 16"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="17, 17"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="17, 18"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="17, 19"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="17, 20"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="18, 0"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="18, 1"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="18, 2"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="18, 3"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="18, 4"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="18, 5"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="18, 6"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="18, 7"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="18, 8"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="18, 9"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="18, 10"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="18, 11"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="18, 12"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="18, 13"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="18, 14"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="18, 15"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="18, 16"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="18, 17"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="18, 18"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="18, 19"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="18, 20"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="19, 0"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="19, 1"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="19, 2"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="19, 3"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="19, 4"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="19, 5"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="19, 6"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="19, 7"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="19, 8"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="19, 9"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="19, 10"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="19, 11"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="19, 12"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="19, 13"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="19, 14"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="19, 15"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="19, 16"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="19, 17"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="19, 18"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="19, 19"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="19, 20"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="20, 0"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="20, 1"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="20, 2"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="20, 3"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="20, 4"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="20, 5"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="20, 6"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="20, 7"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="20, 8"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="20, 9"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="20, 10"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="20, 11"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="20, 12"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="20, 13"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="20, 14"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="20, 15"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="20, 16"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="20, 17"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="20, 18"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="20, 19"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="20, 20"
           size="20"
         />
       </div>
     </div>
     <section
-      class="sc-hKMtZM cmgQjl"
+      class="c0"
     >
       Press 't' to toggle view modes in game play (current mode: 
       html
@@ -2360,12 +2430,62 @@ exports[`SnakeGame 'html' mode renders and matches snapshot 1`] = `
 `;
 
 exports[`SnakeGame clicking game resets game 1`] = `
+.c2 {
+  width: 420px;
+  height: 420px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c3 {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  display: inline-block;
+}
+
+.c4 {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  display: inline-block;
+}
+
+.c5 {
+  width: 20px;
+  height: 20px;
+  background-color: grey;
+  display: inline-block;
+}
+
+.c6 {
+  width: 20px;
+  height: 20px;
+  background-color: darkgrey;
+  display: inline-block;
+}
+
+.c1 {
+  outline: none;
+  display: inline-block;
+  border: solid 1px #ccc;
+}
+
+.c0 {
+  padding: 10px 0;
+}
+
 <div>
   <div
     style="flex-grow: 2;"
   >
     <section
-      class="sc-hKMtZM cmgQjl"
+      class="c0"
       role="note"
     >
       Score: 
@@ -2374,2224 +2494,2224 @@ exports[`SnakeGame clicking game resets game 1`] = `
       0
     </section>
     <div
-      class="sc-dkzDqf likSVD"
+      class="c1"
       role="application"
       tabindex="0"
     >
       <div
-        class="sc-bczRLJ kmCCWW"
+        class="c2"
         height="420"
         width="420"
       >
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="0, 0"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="0, 1"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="0, 2"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="0, 3"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="0, 4"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="0, 5"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="0, 6"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="0, 7"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="0, 8"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="0, 9"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="0, 10"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="0, 11"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="0, 12"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="0, 13"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="0, 14"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="0, 15"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="0, 16"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="0, 17"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="0, 18"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="0, 19"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="0, 20"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="1, 0"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="1, 1"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="1, 2"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="1, 3"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="1, 4"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="1, 5"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="1, 6"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="1, 7"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="1, 8"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="1, 9"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="1, 10"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="1, 11"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="1, 12"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="1, 13"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="1, 14"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="1, 15"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="1, 16"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="1, 17"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="1, 18"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="1, 19"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="1, 20"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="2, 0"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="2, 1"
           size="20"
         />
         <div
-          class="sc-gsnTZi bWIgQa"
+          class="c4"
           data-testid="2, 2"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="2, 3"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="2, 4"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="2, 5"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="2, 6"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="2, 7"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="2, 8"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="2, 9"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="2, 10"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="2, 11"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="2, 12"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="2, 13"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="2, 14"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="2, 15"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="2, 16"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="2, 17"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="2, 18"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="2, 19"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="2, 20"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="3, 0"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="3, 1"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="3, 2"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="3, 3"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="3, 4"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="3, 5"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="3, 6"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="3, 7"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="3, 8"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="3, 9"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="3, 10"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="3, 11"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="3, 12"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="3, 13"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="3, 14"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="3, 15"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="3, 16"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="3, 17"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="3, 18"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="3, 19"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="3, 20"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="4, 0"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="4, 1"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="4, 2"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="4, 3"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="4, 4"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="4, 5"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="4, 6"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="4, 7"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="4, 8"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="4, 9"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="4, 10"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="4, 11"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="4, 12"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="4, 13"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="4, 14"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="4, 15"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="4, 16"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="4, 17"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="4, 18"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="4, 19"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="4, 20"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="5, 0"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="5, 1"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="5, 2"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="5, 3"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="5, 4"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="5, 5"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="5, 6"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="5, 7"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="5, 8"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="5, 9"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="5, 10"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="5, 11"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="5, 12"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="5, 13"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="5, 14"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="5, 15"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="5, 16"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="5, 17"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="5, 18"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="5, 19"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="5, 20"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="6, 0"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="6, 1"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="6, 2"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="6, 3"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="6, 4"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="6, 5"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="6, 6"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="6, 7"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="6, 8"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="6, 9"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="6, 10"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="6, 11"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="6, 12"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="6, 13"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="6, 14"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="6, 15"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="6, 16"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="6, 17"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="6, 18"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="6, 19"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="6, 20"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="7, 0"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="7, 1"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="7, 2"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="7, 3"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="7, 4"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="7, 5"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="7, 6"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="7, 7"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="7, 8"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="7, 9"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="7, 10"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="7, 11"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="7, 12"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="7, 13"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="7, 14"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="7, 15"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="7, 16"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="7, 17"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="7, 18"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="7, 19"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="7, 20"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="8, 0"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="8, 1"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="8, 2"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="8, 3"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="8, 4"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="8, 5"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="8, 6"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="8, 7"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="8, 8"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="8, 9"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="8, 10"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="8, 11"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="8, 12"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="8, 13"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="8, 14"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="8, 15"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="8, 16"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="8, 17"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="8, 18"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="8, 19"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="8, 20"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="9, 0"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="9, 1"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="9, 2"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="9, 3"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="9, 4"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="9, 5"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="9, 6"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="9, 7"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="9, 8"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="9, 9"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="9, 10"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="9, 11"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="9, 12"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="9, 13"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="9, 14"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="9, 15"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="9, 16"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="9, 17"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="9, 18"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="9, 19"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="9, 20"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="10, 0"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="10, 1"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="10, 2"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="10, 3"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="10, 4"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="10, 5"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="10, 6"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="10, 7"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="10, 8"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="10, 9"
           size="20"
         />
         <div
-          class="sc-gsnTZi efYVaI"
+          class="c5"
           data-testid="10, 10"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="10, 11"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="10, 12"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="10, 13"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="10, 14"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="10, 15"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="10, 16"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="10, 17"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="10, 18"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="10, 19"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="10, 20"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="11, 0"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="11, 1"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="11, 2"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="11, 3"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="11, 4"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="11, 5"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="11, 6"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="11, 7"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="11, 8"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="11, 9"
           size="20"
         />
         <div
-          class="sc-gsnTZi fEpnHk"
+          class="c6"
           data-testid="11, 10"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="11, 11"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="11, 12"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="11, 13"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="11, 14"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="11, 15"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="11, 16"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="11, 17"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="11, 18"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="11, 19"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="11, 20"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="12, 0"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="12, 1"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="12, 2"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="12, 3"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="12, 4"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="12, 5"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="12, 6"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="12, 7"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="12, 8"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="12, 9"
           size="20"
         />
         <div
-          class="sc-gsnTZi fEpnHk"
+          class="c6"
           data-testid="12, 10"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="12, 11"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="12, 12"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="12, 13"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="12, 14"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="12, 15"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="12, 16"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="12, 17"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="12, 18"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="12, 19"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="12, 20"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="13, 0"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="13, 1"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="13, 2"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="13, 3"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="13, 4"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="13, 5"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="13, 6"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="13, 7"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="13, 8"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="13, 9"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="13, 10"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="13, 11"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="13, 12"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="13, 13"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="13, 14"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="13, 15"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="13, 16"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="13, 17"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="13, 18"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="13, 19"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="13, 20"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="14, 0"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="14, 1"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="14, 2"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="14, 3"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="14, 4"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="14, 5"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="14, 6"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="14, 7"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="14, 8"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="14, 9"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="14, 10"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="14, 11"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="14, 12"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="14, 13"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="14, 14"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="14, 15"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="14, 16"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="14, 17"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="14, 18"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="14, 19"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="14, 20"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="15, 0"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="15, 1"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="15, 2"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="15, 3"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="15, 4"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="15, 5"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="15, 6"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="15, 7"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="15, 8"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="15, 9"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="15, 10"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="15, 11"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="15, 12"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="15, 13"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="15, 14"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="15, 15"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="15, 16"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="15, 17"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="15, 18"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="15, 19"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="15, 20"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="16, 0"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="16, 1"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="16, 2"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="16, 3"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="16, 4"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="16, 5"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="16, 6"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="16, 7"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="16, 8"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="16, 9"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="16, 10"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="16, 11"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="16, 12"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="16, 13"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="16, 14"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="16, 15"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="16, 16"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="16, 17"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="16, 18"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="16, 19"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="16, 20"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="17, 0"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="17, 1"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="17, 2"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="17, 3"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="17, 4"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="17, 5"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="17, 6"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="17, 7"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="17, 8"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="17, 9"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="17, 10"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="17, 11"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="17, 12"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="17, 13"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="17, 14"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="17, 15"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="17, 16"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="17, 17"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="17, 18"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="17, 19"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="17, 20"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="18, 0"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="18, 1"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="18, 2"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="18, 3"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="18, 4"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="18, 5"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="18, 6"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="18, 7"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="18, 8"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="18, 9"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="18, 10"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="18, 11"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="18, 12"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="18, 13"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="18, 14"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="18, 15"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="18, 16"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="18, 17"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="18, 18"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="18, 19"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="18, 20"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="19, 0"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="19, 1"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="19, 2"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="19, 3"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="19, 4"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="19, 5"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="19, 6"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="19, 7"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="19, 8"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="19, 9"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="19, 10"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="19, 11"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="19, 12"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="19, 13"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="19, 14"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="19, 15"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="19, 16"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="19, 17"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="19, 18"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="19, 19"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="19, 20"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="20, 0"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="20, 1"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="20, 2"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="20, 3"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="20, 4"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="20, 5"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="20, 6"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="20, 7"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="20, 8"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="20, 9"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="20, 10"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="20, 11"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="20, 12"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="20, 13"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="20, 14"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="20, 15"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="20, 16"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="20, 17"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="20, 18"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="20, 19"
           size="20"
         />
         <div
-          class="sc-gsnTZi iRPbqm"
+          class="c3"
           data-testid="20, 20"
           size="20"
         />
       </div>
     </div>
     <section
-      class="sc-hKMtZM cmgQjl"
+      class="c0"
     >
       Press 't' to toggle view modes in game play (current mode: 
       html

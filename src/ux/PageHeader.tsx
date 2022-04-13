@@ -55,7 +55,11 @@ export const PageHeader = ({ onMenuClick }) => {
 
   return (
     <Header role="banner">
-      <MenuButton role="button" onClick={handleMenuClick} />
+      <MenuButton
+        role="button"
+        aria-label='Site navigation'
+        onClick={handleMenuClick}
+      />
       <HeaderPageTitle>
         <b>
           Front-End

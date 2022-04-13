@@ -1,9 +1,87 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`WebVitals render matches snapshot 1`] = `
+.c1 {
+  position: absolute;
+  display: none;
+  bottom: 50px;
+  max-width: 300px;
+  color: rgb(31 41 55 / 1);
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: #fff;
+  border: solid #ccc 1px;
+  border-radius: 0.25rem;
+  z-index: 10;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c0 > div {
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  line-height: normal;
+}
+
+.c2 {
+  display: inline-block;
+  color: white;
+  border-radius: 10px;
+  padding: 7px;
+  margin: 0 3px;
+  background-color: #a86323;
+}
+
+.c3 {
+  display: inline-block;
+  color: white;
+  border-radius: 10px;
+  padding: 7px;
+  margin: 0 3px;
+  background-color: #972020;
+}
+
+.c4 {
+  display: none;
+  color: white;
+  border-radius: 10px;
+  padding: 7px;
+  margin: 0 3px;
+  background-color: #aaaaaa;
+}
+
+.c5 {
+  display: inline-block;
+  color: white;
+  border-radius: 10px;
+  padding: 7px;
+  margin: 0 3px;
+  background-color: #2daf2d;
+}
+
 <div>
   <div
-    class="sc-gsnTZi viDgA"
+    class="c0"
   >
     <div
       aria-label="TTFB"
@@ -11,7 +89,7 @@ exports[`WebVitals render matches snapshot 1`] = `
     >
       <div
         aria-hidden="true"
-        class="sc-bczRLJ gCvKGl"
+        class="c1"
         role="tooltip"
       >
         <b>
@@ -47,7 +125,7 @@ exports[`WebVitals render matches snapshot 1`] = `
       </div>
       TTFB 
       <div
-        class="sc-dkzDqf hIlCzH"
+        class="c2"
       />
     </div>
     <div
@@ -56,7 +134,7 @@ exports[`WebVitals render matches snapshot 1`] = `
     >
       <div
         aria-hidden="true"
-        class="sc-bczRLJ gCvKGl"
+        class="c1"
         role="tooltip"
       >
         <b>
@@ -76,7 +154,7 @@ exports[`WebVitals render matches snapshot 1`] = `
       </div>
       FCP 
       <div
-        class="sc-dkzDqf kMUnSg"
+        class="c3"
       />
     </div>
     <div
@@ -85,7 +163,7 @@ exports[`WebVitals render matches snapshot 1`] = `
     >
       <div
         aria-hidden="true"
-        class="sc-bczRLJ gCvKGl"
+        class="c1"
         role="tooltip"
       >
         <b>
@@ -105,7 +183,7 @@ exports[`WebVitals render matches snapshot 1`] = `
       </div>
       LCP 
       <div
-        class="sc-dkzDqf kMUnSg"
+        class="c3"
       />
     </div>
     <div
@@ -114,7 +192,7 @@ exports[`WebVitals render matches snapshot 1`] = `
     >
       <div
         aria-hidden="true"
-        class="sc-bczRLJ gCvKGl"
+        class="c1"
         role="tooltip"
       >
         <b>
@@ -138,7 +216,7 @@ exports[`WebVitals render matches snapshot 1`] = `
       </div>
       FID 
       <div
-        class="sc-dkzDqf bHgFrR"
+        class="c4"
       />
     </div>
     <div
@@ -147,7 +225,7 @@ exports[`WebVitals render matches snapshot 1`] = `
     >
       <div
         aria-hidden="true"
-        class="sc-bczRLJ gCvKGl"
+        class="c1"
         role="tooltip"
       >
         <b>
@@ -166,7 +244,7 @@ exports[`WebVitals render matches snapshot 1`] = `
       </div>
       CLS 
       <div
-        class="sc-dkzDqf cstiIh"
+        class="c5"
       />
     </div>
   </div>
@@ -174,9 +252,28 @@ exports[`WebVitals render matches snapshot 1`] = `
 `;
 
 exports[`WebVitals shows tooltip on mouseover 'CLS' 1`] = `
+.c0 {
+  position: absolute;
+  display: inline-block;
+  bottom: 50px;
+  max-width: 300px;
+  color: rgb(31 41 55 / 1);
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: #fff;
+  border: solid #ccc 1px;
+  border-radius: 0.25rem;
+  z-index: 10;
+}
+
 <div
   aria-hidden="false"
-  class="sc-bczRLJ dSgkou"
+  class="c0"
   role="tooltip"
 >
   <b>
@@ -196,9 +293,28 @@ exports[`WebVitals shows tooltip on mouseover 'CLS' 1`] = `
 `;
 
 exports[`WebVitals shows tooltip on mouseover 'FCP' 1`] = `
+.c0 {
+  position: absolute;
+  display: inline-block;
+  bottom: 50px;
+  max-width: 300px;
+  color: rgb(31 41 55 / 1);
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: #fff;
+  border: solid #ccc 1px;
+  border-radius: 0.25rem;
+  z-index: 10;
+}
+
 <div
   aria-hidden="false"
-  class="sc-bczRLJ dSgkou"
+  class="c0"
   role="tooltip"
 >
   <b>
@@ -219,9 +335,28 @@ exports[`WebVitals shows tooltip on mouseover 'FCP' 1`] = `
 `;
 
 exports[`WebVitals shows tooltip on mouseover 'FID' 1`] = `
+.c0 {
+  position: absolute;
+  display: inline-block;
+  bottom: 50px;
+  max-width: 300px;
+  color: rgb(31 41 55 / 1);
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: #fff;
+  border: solid #ccc 1px;
+  border-radius: 0.25rem;
+  z-index: 10;
+}
+
 <div
   aria-hidden="false"
-  class="sc-bczRLJ dSgkou"
+  class="c0"
   role="tooltip"
 >
   <b>
@@ -246,9 +381,28 @@ exports[`WebVitals shows tooltip on mouseover 'FID' 1`] = `
 `;
 
 exports[`WebVitals shows tooltip on mouseover 'LCP' 1`] = `
+.c0 {
+  position: absolute;
+  display: inline-block;
+  bottom: 50px;
+  max-width: 300px;
+  color: rgb(31 41 55 / 1);
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: #fff;
+  border: solid #ccc 1px;
+  border-radius: 0.25rem;
+  z-index: 10;
+}
+
 <div
   aria-hidden="false"
-  class="sc-bczRLJ dSgkou"
+  class="c0"
   role="tooltip"
 >
   <b>
@@ -269,9 +423,28 @@ exports[`WebVitals shows tooltip on mouseover 'LCP' 1`] = `
 `;
 
 exports[`WebVitals shows tooltip on mouseover 'TTFB' 1`] = `
+.c0 {
+  position: absolute;
+  display: inline-block;
+  bottom: 50px;
+  max-width: 300px;
+  color: rgb(31 41 55 / 1);
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: #fff;
+  border: solid #ccc 1px;
+  border-radius: 0.25rem;
+  z-index: 10;
+}
+
 <div
   aria-hidden="false"
-  class="sc-bczRLJ dSgkou"
+  class="c0"
   role="tooltip"
 >
   <b>

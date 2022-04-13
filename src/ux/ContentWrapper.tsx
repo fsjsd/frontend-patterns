@@ -58,9 +58,15 @@ export const ContentWrapper: React.FC<ContentWrapperProps> = ({ children, title,
         <ContentHeaderIcon role="button" selected={!viewNotes} title="Run demo" onClick={() => setViewNotes(false)}>
           <MdOutlinePlayCircleOutline />
         </ContentHeaderIcon>
-        {markDownPromise !== undefined && <ContentHeaderIcon role="button" selected={viewNotes} title="View notes" onClick={() => setViewNotes(true)}>
-          <MdNotes />
-        </ContentHeaderIcon>}
+        {markDownPromise !== undefined &&
+          <ContentHeaderIcon
+            role="button"
+            selected={viewNotes}
+            title="View notes"
+            onClick={() => setViewNotes(true)}>
+            <MdNotes />
+          </ContentHeaderIcon>
+        }
         {codeLink &&
           <a
             href={`${GITHUB_ROOT}${codeLink}`}

@@ -1,12 +1,93 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`UniversitySearch arrow down has no effect at end 1`] = `
+.c2 {
+  box-sizing: border-box;
+}
+
+.c4 {
+  position: absolute;
+  width: 300px;
+  max-height: 400px;
+  overflow-y: auto;
+  border: solid 1px #ccc;
+  border-radius: 3px;
+  background-color: white;
+  padding: 3px;
+  box-shadow: 0px 3px 5px 0px rgb(0 0 0 / 10%);
+  margin-top: 2px;
+}
+
+.c5 {
+  padding: 0.5rem;
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.c5[aria-selected="true"],
+.c5:active {
+  background-color: #ccc;
+}
+
+.c5:hover {
+  background-color: #ddd;
+}
+
+.c3 {
+  color: inherit;
+  font-size: 0.85rem;
+  font-family: inherit;
+  line-height: 1rem;
+  margin-top: 0.25rem;
+  display: block;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 0.375rem;
+  border-color: rgb(209 213 219 / 1);
+  box-shadow: 0 0 #0000,0 1px 2px 0 rgb(0 0 0 / 0.05);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  border-width: 1px;
+  padding-top: 0.5rem;
+  padding-right: 0.75rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  margin: 0;
+}
+
+.c3:focus {
+  border-color: rgb(99 102 241 / 1);
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  box-shadow: rgb(255,255,255) 0px 0px 0px 0px,rgb(99,102,241) 0px 0px 0px 1px,rgba(0,0,0,0.05) 0px 1px 2px 0px;
+}
+
+.c1 {
+  padding: 4px 0px;
+  display: block;
+  font-size: 0.85rem;
+  line-height: 1rem;
+  font-weight: 500;
+  color: rgb(55 65 81 / 1);
+}
+
+.c0 {
+  padding: 5px 0;
+}
+
 <div>
   <fieldset
-    class="sc-gKXOVf flrEIL"
+    class="c0"
   >
     <label
-      class="sc-jSMfEi IYesW"
+      class="c1"
       for="university-search"
     >
       Search Australian Universities
@@ -15,27 +96,27 @@ exports[`UniversitySearch arrow down has no effect at end 1`] = `
       aria-expanded="true"
       aria-haspopup="listbox"
       aria-owns="university-search-list"
-      class="sc-bczRLJ hKJesX"
+      class="c2"
       role="combobox"
     >
       <input
         aria-activedescendant="university-search-option-2"
         aria-autocomplete="list"
         aria-controls="typeahead-list"
-        class="sc-eCYdqJ sc-iBkjds kQhIGu"
+        class="c3"
         id="university-search"
         placeholder="Search..."
         role="textbox"
         value="University of Southern Queensland"
       />
       <div
-        class="sc-dkzDqf kXXWxR"
+        class="c4"
         id="university-search-list"
         role="listbox"
       >
         <div
           aria-selected="false"
-          class="sc-hKMtZM cisxoG"
+          class="c5"
           id="university-search-option-0"
           role="option"
         >
@@ -43,7 +124,7 @@ exports[`UniversitySearch arrow down has no effect at end 1`] = `
         </div>
         <div
           aria-selected="false"
-          class="sc-hKMtZM cisxoG"
+          class="c5"
           id="university-search-option-1"
           role="option"
         >
@@ -51,7 +132,7 @@ exports[`UniversitySearch arrow down has no effect at end 1`] = `
         </div>
         <div
           aria-selected="true"
-          class="sc-hKMtZM cisxoG"
+          class="c5"
           id="university-search-option-2"
           role="option"
         >
@@ -66,12 +147,93 @@ exports[`UniversitySearch arrow down has no effect at end 1`] = `
 `;
 
 exports[`UniversitySearch arrow up selects first result 1`] = `
+.c2 {
+  box-sizing: border-box;
+}
+
+.c4 {
+  position: absolute;
+  width: 300px;
+  max-height: 400px;
+  overflow-y: auto;
+  border: solid 1px #ccc;
+  border-radius: 3px;
+  background-color: white;
+  padding: 3px;
+  box-shadow: 0px 3px 5px 0px rgb(0 0 0 / 10%);
+  margin-top: 2px;
+}
+
+.c5 {
+  padding: 0.5rem;
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.c5[aria-selected="true"],
+.c5:active {
+  background-color: #ccc;
+}
+
+.c5:hover {
+  background-color: #ddd;
+}
+
+.c3 {
+  color: inherit;
+  font-size: 0.85rem;
+  font-family: inherit;
+  line-height: 1rem;
+  margin-top: 0.25rem;
+  display: block;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 0.375rem;
+  border-color: rgb(209 213 219 / 1);
+  box-shadow: 0 0 #0000,0 1px 2px 0 rgb(0 0 0 / 0.05);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  border-width: 1px;
+  padding-top: 0.5rem;
+  padding-right: 0.75rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  margin: 0;
+}
+
+.c3:focus {
+  border-color: rgb(99 102 241 / 1);
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  box-shadow: rgb(255,255,255) 0px 0px 0px 0px,rgb(99,102,241) 0px 0px 0px 1px,rgba(0,0,0,0.05) 0px 1px 2px 0px;
+}
+
+.c1 {
+  padding: 4px 0px;
+  display: block;
+  font-size: 0.85rem;
+  line-height: 1rem;
+  font-weight: 500;
+  color: rgb(55 65 81 / 1);
+}
+
+.c0 {
+  padding: 5px 0;
+}
+
 <div>
   <fieldset
-    class="sc-gKXOVf flrEIL"
+    class="c0"
   >
     <label
-      class="sc-jSMfEi IYesW"
+      class="c1"
       for="university-search"
     >
       Search Australian Universities
@@ -80,27 +242,27 @@ exports[`UniversitySearch arrow up selects first result 1`] = `
       aria-expanded="true"
       aria-haspopup="listbox"
       aria-owns="university-search-list"
-      class="sc-bczRLJ hKJesX"
+      class="c2"
       role="combobox"
     >
       <input
         aria-activedescendant="university-search-option-0"
         aria-autocomplete="list"
         aria-controls="typeahead-list"
-        class="sc-eCYdqJ sc-iBkjds kQhIGu"
+        class="c3"
         id="university-search"
         placeholder="Search..."
         role="textbox"
         value="University of Sydney"
       />
       <div
-        class="sc-dkzDqf kXXWxR"
+        class="c4"
         id="university-search-list"
         role="listbox"
       >
         <div
           aria-selected="true"
-          class="sc-hKMtZM cisxoG"
+          class="c5"
           id="university-search-option-0"
           role="option"
         >
@@ -110,7 +272,7 @@ exports[`UniversitySearch arrow up selects first result 1`] = `
         </div>
         <div
           aria-selected="false"
-          class="sc-hKMtZM cisxoG"
+          class="c5"
           id="university-search-option-1"
           role="option"
         >
@@ -118,7 +280,7 @@ exports[`UniversitySearch arrow up selects first result 1`] = `
         </div>
         <div
           aria-selected="false"
-          class="sc-hKMtZM cisxoG"
+          class="c5"
           id="university-search-option-2"
           role="option"
         >
@@ -131,12 +293,93 @@ exports[`UniversitySearch arrow up selects first result 1`] = `
 `;
 
 exports[`UniversitySearch navigates on key press 'ArrowDown' 1`] = `
+.c2 {
+  box-sizing: border-box;
+}
+
+.c4 {
+  position: absolute;
+  width: 300px;
+  max-height: 400px;
+  overflow-y: auto;
+  border: solid 1px #ccc;
+  border-radius: 3px;
+  background-color: white;
+  padding: 3px;
+  box-shadow: 0px 3px 5px 0px rgb(0 0 0 / 10%);
+  margin-top: 2px;
+}
+
+.c5 {
+  padding: 0.5rem;
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.c5[aria-selected="true"],
+.c5:active {
+  background-color: #ccc;
+}
+
+.c5:hover {
+  background-color: #ddd;
+}
+
+.c3 {
+  color: inherit;
+  font-size: 0.85rem;
+  font-family: inherit;
+  line-height: 1rem;
+  margin-top: 0.25rem;
+  display: block;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 0.375rem;
+  border-color: rgb(209 213 219 / 1);
+  box-shadow: 0 0 #0000,0 1px 2px 0 rgb(0 0 0 / 0.05);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  border-width: 1px;
+  padding-top: 0.5rem;
+  padding-right: 0.75rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  margin: 0;
+}
+
+.c3:focus {
+  border-color: rgb(99 102 241 / 1);
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  box-shadow: rgb(255,255,255) 0px 0px 0px 0px,rgb(99,102,241) 0px 0px 0px 1px,rgba(0,0,0,0.05) 0px 1px 2px 0px;
+}
+
+.c1 {
+  padding: 4px 0px;
+  display: block;
+  font-size: 0.85rem;
+  line-height: 1rem;
+  font-weight: 500;
+  color: rgb(55 65 81 / 1);
+}
+
+.c0 {
+  padding: 5px 0;
+}
+
 <div>
   <fieldset
-    class="sc-gKXOVf flrEIL"
+    class="c0"
   >
     <label
-      class="sc-jSMfEi IYesW"
+      class="c1"
       for="university-search"
     >
       Search Australian Universities
@@ -145,27 +388,27 @@ exports[`UniversitySearch navigates on key press 'ArrowDown' 1`] = `
       aria-expanded="true"
       aria-haspopup="listbox"
       aria-owns="university-search-list"
-      class="sc-bczRLJ hKJesX"
+      class="c2"
       role="combobox"
     >
       <input
         aria-activedescendant="university-search-option-2"
         aria-autocomplete="list"
         aria-controls="typeahead-list"
-        class="sc-eCYdqJ sc-iBkjds kQhIGu"
+        class="c3"
         id="university-search"
         placeholder="Search..."
         role="textbox"
         value="University of Southern Queensland"
       />
       <div
-        class="sc-dkzDqf kXXWxR"
+        class="c4"
         id="university-search-list"
         role="listbox"
       >
         <div
           aria-selected="false"
-          class="sc-hKMtZM cisxoG"
+          class="c5"
           id="university-search-option-0"
           role="option"
         >
@@ -173,7 +416,7 @@ exports[`UniversitySearch navigates on key press 'ArrowDown' 1`] = `
         </div>
         <div
           aria-selected="false"
-          class="sc-hKMtZM cisxoG"
+          class="c5"
           id="university-search-option-1"
           role="option"
         >
@@ -181,7 +424,7 @@ exports[`UniversitySearch navigates on key press 'ArrowDown' 1`] = `
         </div>
         <div
           aria-selected="true"
-          class="sc-hKMtZM cisxoG"
+          class="c5"
           id="university-search-option-2"
           role="option"
         >
@@ -196,12 +439,93 @@ exports[`UniversitySearch navigates on key press 'ArrowDown' 1`] = `
 `;
 
 exports[`UniversitySearch navigates on key press 'ArrowUp' 1`] = `
+.c2 {
+  box-sizing: border-box;
+}
+
+.c4 {
+  position: absolute;
+  width: 300px;
+  max-height: 400px;
+  overflow-y: auto;
+  border: solid 1px #ccc;
+  border-radius: 3px;
+  background-color: white;
+  padding: 3px;
+  box-shadow: 0px 3px 5px 0px rgb(0 0 0 / 10%);
+  margin-top: 2px;
+}
+
+.c5 {
+  padding: 0.5rem;
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.c5[aria-selected="true"],
+.c5:active {
+  background-color: #ccc;
+}
+
+.c5:hover {
+  background-color: #ddd;
+}
+
+.c3 {
+  color: inherit;
+  font-size: 0.85rem;
+  font-family: inherit;
+  line-height: 1rem;
+  margin-top: 0.25rem;
+  display: block;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 0.375rem;
+  border-color: rgb(209 213 219 / 1);
+  box-shadow: 0 0 #0000,0 1px 2px 0 rgb(0 0 0 / 0.05);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  border-width: 1px;
+  padding-top: 0.5rem;
+  padding-right: 0.75rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  margin: 0;
+}
+
+.c3:focus {
+  border-color: rgb(99 102 241 / 1);
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  box-shadow: rgb(255,255,255) 0px 0px 0px 0px,rgb(99,102,241) 0px 0px 0px 1px,rgba(0,0,0,0.05) 0px 1px 2px 0px;
+}
+
+.c1 {
+  padding: 4px 0px;
+  display: block;
+  font-size: 0.85rem;
+  line-height: 1rem;
+  font-weight: 500;
+  color: rgb(55 65 81 / 1);
+}
+
+.c0 {
+  padding: 5px 0;
+}
+
 <div>
   <fieldset
-    class="sc-gKXOVf flrEIL"
+    class="c0"
   >
     <label
-      class="sc-jSMfEi IYesW"
+      class="c1"
       for="university-search"
     >
       Search Australian Universities
@@ -210,27 +534,27 @@ exports[`UniversitySearch navigates on key press 'ArrowUp' 1`] = `
       aria-expanded="true"
       aria-haspopup="listbox"
       aria-owns="university-search-list"
-      class="sc-bczRLJ hKJesX"
+      class="c2"
       role="combobox"
     >
       <input
         aria-activedescendant="university-search-option-0"
         aria-autocomplete="list"
         aria-controls="typeahead-list"
-        class="sc-eCYdqJ sc-iBkjds kQhIGu"
+        class="c3"
         id="university-search"
         placeholder="Search..."
         role="textbox"
         value="University of Sydney"
       />
       <div
-        class="sc-dkzDqf kXXWxR"
+        class="c4"
         id="university-search-list"
         role="listbox"
       >
         <div
           aria-selected="true"
-          class="sc-hKMtZM cisxoG"
+          class="c5"
           id="university-search-option-0"
           role="option"
         >
@@ -240,7 +564,7 @@ exports[`UniversitySearch navigates on key press 'ArrowUp' 1`] = `
         </div>
         <div
           aria-selected="false"
-          class="sc-hKMtZM cisxoG"
+          class="c5"
           id="university-search-option-1"
           role="option"
         >
@@ -248,7 +572,7 @@ exports[`UniversitySearch navigates on key press 'ArrowUp' 1`] = `
         </div>
         <div
           aria-selected="false"
-          class="sc-hKMtZM cisxoG"
+          class="c5"
           id="university-search-option-2"
           role="option"
         >
@@ -261,12 +585,93 @@ exports[`UniversitySearch navigates on key press 'ArrowUp' 1`] = `
 `;
 
 exports[`UniversitySearch no response renders correctly 1`] = `
+.c2 {
+  box-sizing: border-box;
+}
+
+.c4 {
+  position: absolute;
+  width: 300px;
+  max-height: 400px;
+  overflow-y: auto;
+  border: solid 1px #ccc;
+  border-radius: 3px;
+  background-color: white;
+  padding: 3px;
+  box-shadow: 0px 3px 5px 0px rgb(0 0 0 / 10%);
+  margin-top: 2px;
+}
+
+.c5 {
+  padding: 0.5rem;
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.c5[aria-selected="true"],
+.c5:active {
+  background-color: #ccc;
+}
+
+.c5:hover {
+  background-color: #ddd;
+}
+
+.c3 {
+  color: inherit;
+  font-size: 0.85rem;
+  font-family: inherit;
+  line-height: 1rem;
+  margin-top: 0.25rem;
+  display: block;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 0.375rem;
+  border-color: rgb(209 213 219 / 1);
+  box-shadow: 0 0 #0000,0 1px 2px 0 rgb(0 0 0 / 0.05);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  border-width: 1px;
+  padding-top: 0.5rem;
+  padding-right: 0.75rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  margin: 0;
+}
+
+.c3:focus {
+  border-color: rgb(99 102 241 / 1);
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  box-shadow: rgb(255,255,255) 0px 0px 0px 0px,rgb(99,102,241) 0px 0px 0px 1px,rgba(0,0,0,0.05) 0px 1px 2px 0px;
+}
+
+.c1 {
+  padding: 4px 0px;
+  display: block;
+  font-size: 0.85rem;
+  line-height: 1rem;
+  font-weight: 500;
+  color: rgb(55 65 81 / 1);
+}
+
+.c0 {
+  padding: 5px 0;
+}
+
 <div>
   <fieldset
-    class="sc-gKXOVf flrEIL"
+    class="c0"
   >
     <label
-      class="sc-jSMfEi IYesW"
+      class="c1"
       for="university-search"
     >
       Search Australian Universities
@@ -275,26 +680,26 @@ exports[`UniversitySearch no response renders correctly 1`] = `
       aria-expanded="true"
       aria-haspopup="listbox"
       aria-owns="university-search-list"
-      class="sc-bczRLJ hKJesX"
+      class="c2"
       role="combobox"
     >
       <input
         aria-activedescendant="university-search-option--1"
         aria-autocomplete="list"
         aria-controls="typeahead-list"
-        class="sc-eCYdqJ sc-iBkjds kQhIGu"
+        class="c3"
         id="university-search"
         placeholder="Search..."
         role="textbox"
         value="University o"
       />
       <div
-        class="sc-dkzDqf kXXWxR"
+        class="c4"
         id="university-search-list"
         role="listbox"
       >
         <div
-          class="sc-hKMtZM cisxoG"
+          class="c5"
         >
           No results
         </div>
@@ -305,12 +710,62 @@ exports[`UniversitySearch no response renders correctly 1`] = `
 `;
 
 exports[`UniversitySearch renders and matches snapshot 1`] = `
+.c2 {
+  box-sizing: border-box;
+}
+
+.c3 {
+  color: inherit;
+  font-size: 0.85rem;
+  font-family: inherit;
+  line-height: 1rem;
+  margin-top: 0.25rem;
+  display: block;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 0.375rem;
+  border-color: rgb(209 213 219 / 1);
+  box-shadow: 0 0 #0000,0 1px 2px 0 rgb(0 0 0 / 0.05);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  border-width: 1px;
+  padding-top: 0.5rem;
+  padding-right: 0.75rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  margin: 0;
+}
+
+.c3:focus {
+  border-color: rgb(99 102 241 / 1);
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  box-shadow: rgb(255,255,255) 0px 0px 0px 0px,rgb(99,102,241) 0px 0px 0px 1px,rgba(0,0,0,0.05) 0px 1px 2px 0px;
+}
+
+.c1 {
+  padding: 4px 0px;
+  display: block;
+  font-size: 0.85rem;
+  line-height: 1rem;
+  font-weight: 500;
+  color: rgb(55 65 81 / 1);
+}
+
+.c0 {
+  padding: 5px 0;
+}
+
 <div>
   <fieldset
-    class="sc-gKXOVf flrEIL"
+    class="c0"
   >
     <label
-      class="sc-jSMfEi IYesW"
+      class="c1"
       for="university-search"
     >
       Search Australian Universities
@@ -319,13 +774,13 @@ exports[`UniversitySearch renders and matches snapshot 1`] = `
       aria-expanded="false"
       aria-haspopup="listbox"
       aria-owns="university-search-list"
-      class="sc-bczRLJ hKJesX"
+      class="c2"
       role="combobox"
     >
       <input
         aria-autocomplete="list"
         aria-controls="typeahead-list"
-        class="sc-eCYdqJ sc-iBkjds kQhIGu"
+        class="c3"
         id="university-search"
         placeholder="Search..."
         role="textbox"
@@ -337,12 +792,62 @@ exports[`UniversitySearch renders and matches snapshot 1`] = `
 `;
 
 exports[`UniversitySearch typing less than 3 chars does nothing 1`] = `
+.c2 {
+  box-sizing: border-box;
+}
+
+.c3 {
+  color: inherit;
+  font-size: 0.85rem;
+  font-family: inherit;
+  line-height: 1rem;
+  margin-top: 0.25rem;
+  display: block;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 0.375rem;
+  border-color: rgb(209 213 219 / 1);
+  box-shadow: 0 0 #0000,0 1px 2px 0 rgb(0 0 0 / 0.05);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  border-width: 1px;
+  padding-top: 0.5rem;
+  padding-right: 0.75rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  margin: 0;
+}
+
+.c3:focus {
+  border-color: rgb(99 102 241 / 1);
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  box-shadow: rgb(255,255,255) 0px 0px 0px 0px,rgb(99,102,241) 0px 0px 0px 1px,rgba(0,0,0,0.05) 0px 1px 2px 0px;
+}
+
+.c1 {
+  padding: 4px 0px;
+  display: block;
+  font-size: 0.85rem;
+  line-height: 1rem;
+  font-weight: 500;
+  color: rgb(55 65 81 / 1);
+}
+
+.c0 {
+  padding: 5px 0;
+}
+
 <div>
   <fieldset
-    class="sc-gKXOVf flrEIL"
+    class="c0"
   >
     <label
-      class="sc-jSMfEi IYesW"
+      class="c1"
       for="university-search"
     >
       Search Australian Universities
@@ -351,13 +856,13 @@ exports[`UniversitySearch typing less than 3 chars does nothing 1`] = `
       aria-expanded="false"
       aria-haspopup="listbox"
       aria-owns="university-search-list"
-      class="sc-bczRLJ hKJesX"
+      class="c2"
       role="combobox"
     >
       <input
         aria-autocomplete="list"
         aria-controls="typeahead-list"
-        class="sc-eCYdqJ sc-iBkjds kQhIGu"
+        class="c3"
         id="university-search"
         placeholder="Search..."
         role="textbox"
@@ -369,12 +874,93 @@ exports[`UniversitySearch typing less than 3 chars does nothing 1`] = `
 `;
 
 exports[`UniversitySearch valid query triggers result query 1`] = `
+.c2 {
+  box-sizing: border-box;
+}
+
+.c4 {
+  position: absolute;
+  width: 300px;
+  max-height: 400px;
+  overflow-y: auto;
+  border: solid 1px #ccc;
+  border-radius: 3px;
+  background-color: white;
+  padding: 3px;
+  box-shadow: 0px 3px 5px 0px rgb(0 0 0 / 10%);
+  margin-top: 2px;
+}
+
+.c5 {
+  padding: 0.5rem;
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.c5[aria-selected="true"],
+.c5:active {
+  background-color: #ccc;
+}
+
+.c5:hover {
+  background-color: #ddd;
+}
+
+.c3 {
+  color: inherit;
+  font-size: 0.85rem;
+  font-family: inherit;
+  line-height: 1rem;
+  margin-top: 0.25rem;
+  display: block;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 0.375rem;
+  border-color: rgb(209 213 219 / 1);
+  box-shadow: 0 0 #0000,0 1px 2px 0 rgb(0 0 0 / 0.05);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  border-width: 1px;
+  padding-top: 0.5rem;
+  padding-right: 0.75rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  margin: 0;
+}
+
+.c3:focus {
+  border-color: rgb(99 102 241 / 1);
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  box-shadow: rgb(255,255,255) 0px 0px 0px 0px,rgb(99,102,241) 0px 0px 0px 1px,rgba(0,0,0,0.05) 0px 1px 2px 0px;
+}
+
+.c1 {
+  padding: 4px 0px;
+  display: block;
+  font-size: 0.85rem;
+  line-height: 1rem;
+  font-weight: 500;
+  color: rgb(55 65 81 / 1);
+}
+
+.c0 {
+  padding: 5px 0;
+}
+
 <div>
   <fieldset
-    class="sc-gKXOVf flrEIL"
+    class="c0"
   >
     <label
-      class="sc-jSMfEi IYesW"
+      class="c1"
       for="university-search"
     >
       Search Australian Universities
@@ -383,27 +969,27 @@ exports[`UniversitySearch valid query triggers result query 1`] = `
       aria-expanded="true"
       aria-haspopup="listbox"
       aria-owns="university-search-list"
-      class="sc-bczRLJ hKJesX"
+      class="c2"
       role="combobox"
     >
       <input
         aria-activedescendant="university-search-option--1"
         aria-autocomplete="list"
         aria-controls="typeahead-list"
-        class="sc-eCYdqJ sc-iBkjds kQhIGu"
+        class="c3"
         id="university-search"
         placeholder="Search..."
         role="textbox"
         value="University of"
       />
       <div
-        class="sc-dkzDqf kXXWxR"
+        class="c4"
         id="university-search-list"
         role="listbox"
       >
         <div
           aria-selected="false"
-          class="sc-hKMtZM cisxoG"
+          class="c5"
           id="university-search-option-0"
           role="option"
         >
@@ -415,7 +1001,7 @@ exports[`UniversitySearch valid query triggers result query 1`] = `
         </div>
         <div
           aria-selected="false"
-          class="sc-hKMtZM cisxoG"
+          class="c5"
           id="university-search-option-1"
           role="option"
         >
@@ -427,7 +1013,7 @@ exports[`UniversitySearch valid query triggers result query 1`] = `
         </div>
         <div
           aria-selected="false"
-          class="sc-hKMtZM cisxoG"
+          class="c5"
           id="university-search-option-2"
           role="option"
         >

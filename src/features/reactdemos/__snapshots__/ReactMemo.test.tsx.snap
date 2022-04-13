@@ -1,6 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ReactMemo changes state after increments 1`] = `
+.c1 {
+  border-radius: 6px;
+  border: none;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: rgb(0,127,224);
+  padding: 10px 14px;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+  outline: none;
+  cursor: pointer;
+}
+
+.c1:hover {
+  background-color: rgb(13,150,255);
+}
+
+.c1:active,
+.c1:hover:active {
+  background-color: rgb(0,98,173);
+}
+
+.c0 button + button {
+  margin-left: 10px;
+}
+
 <div>
   <div
     role="main"
@@ -41,20 +68,20 @@ exports[`ReactMemo changes state after increments 1`] = `
       0
     </p>
     <div
-      class="sc-gsnTZi jwMZeR"
+      class="c0"
     >
       <button
-        class="sc-bczRLJ daJtMB bg-gray"
+        class="c1 bg-gray"
       >
         Inc A
       </button>
       <button
-        class="sc-bczRLJ daJtMB bg-gray"
+        class="c1 bg-gray"
       >
         Inc B
       </button>
       <button
-        class="sc-bczRLJ daJtMB bg-gray"
+        class="c1 bg-gray"
       >
         Null state change
       </button>
@@ -64,6 +91,33 @@ exports[`ReactMemo changes state after increments 1`] = `
 `;
 
 exports[`ReactMemo changes state after increments 2`] = `
+.c1 {
+  border-radius: 6px;
+  border: none;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: rgb(0,127,224);
+  padding: 10px 14px;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+  outline: none;
+  cursor: pointer;
+}
+
+.c1:hover {
+  background-color: rgb(13,150,255);
+}
+
+.c1:active,
+.c1:hover:active {
+  background-color: rgb(0,98,173);
+}
+
+.c0 button + button {
+  margin-left: 10px;
+}
+
 <div>
   <div
     role="main"
@@ -104,20 +158,20 @@ exports[`ReactMemo changes state after increments 2`] = `
       1
     </p>
     <div
-      class="sc-gsnTZi jwMZeR"
+      class="c0"
     >
       <button
-        class="sc-bczRLJ daJtMB bg-gray"
+        class="c1 bg-gray"
       >
         Inc A
       </button>
       <button
-        class="sc-bczRLJ daJtMB bg-gray"
+        class="c1 bg-gray"
       >
         Inc B
       </button>
       <button
-        class="sc-bczRLJ daJtMB bg-gray"
+        class="c1 bg-gray"
       >
         Null state change
       </button>
@@ -127,6 +181,33 @@ exports[`ReactMemo changes state after increments 2`] = `
 `;
 
 exports[`ReactMemo changes state after increments 3`] = `
+.c1 {
+  border-radius: 6px;
+  border: none;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: rgb(0,127,224);
+  padding: 10px 14px;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+  outline: none;
+  cursor: pointer;
+}
+
+.c1:hover {
+  background-color: rgb(13,150,255);
+}
+
+.c1:active,
+.c1:hover:active {
+  background-color: rgb(0,98,173);
+}
+
+.c0 button + button {
+  margin-left: 10px;
+}
+
 <div>
   <div
     role="main"
@@ -167,20 +248,20 @@ exports[`ReactMemo changes state after increments 3`] = `
       1
     </p>
     <div
-      class="sc-gsnTZi jwMZeR"
+      class="c0"
     >
       <button
-        class="sc-bczRLJ daJtMB bg-gray"
+        class="c1 bg-gray"
       >
         Inc A
       </button>
       <button
-        class="sc-bczRLJ daJtMB bg-gray"
+        class="c1 bg-gray"
       >
         Inc B
       </button>
       <button
-        class="sc-bczRLJ daJtMB bg-gray"
+        class="c1 bg-gray"
       >
         Null state change
       </button>
@@ -190,6 +271,33 @@ exports[`ReactMemo changes state after increments 3`] = `
 `;
 
 exports[`ReactMemo changes state after increments 4`] = `
+.c1 {
+  border-radius: 6px;
+  border: none;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: rgb(0,127,224);
+  padding: 10px 14px;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+  outline: none;
+  cursor: pointer;
+}
+
+.c1:hover {
+  background-color: rgb(13,150,255);
+}
+
+.c1:active,
+.c1:hover:active {
+  background-color: rgb(0,98,173);
+}
+
+.c0 button + button {
+  margin-left: 10px;
+}
+
 <div>
   <div
     role="main"
@@ -230,20 +338,20 @@ exports[`ReactMemo changes state after increments 4`] = `
       1
     </p>
     <div
-      class="sc-gsnTZi jwMZeR"
+      class="c0"
     >
       <button
-        class="sc-bczRLJ daJtMB bg-gray"
+        class="c1 bg-gray"
       >
         Inc A
       </button>
       <button
-        class="sc-bczRLJ daJtMB bg-gray"
+        class="c1 bg-gray"
       >
         Inc B
       </button>
       <button
-        class="sc-bczRLJ daJtMB bg-gray"
+        class="c1 bg-gray"
       >
         Null state change
       </button>
@@ -253,6 +361,33 @@ exports[`ReactMemo changes state after increments 4`] = `
 `;
 
 exports[`ReactMemo renders and matches snapshot 1`] = `
+.c1 {
+  border-radius: 6px;
+  border: none;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: rgb(0,127,224);
+  padding: 10px 14px;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+  outline: none;
+  cursor: pointer;
+}
+
+.c1:hover {
+  background-color: rgb(13,150,255);
+}
+
+.c1:active,
+.c1:hover:active {
+  background-color: rgb(0,98,173);
+}
+
+.c0 button + button {
+  margin-left: 10px;
+}
+
 <div>
   <div
     role="main"
@@ -293,20 +428,20 @@ exports[`ReactMemo renders and matches snapshot 1`] = `
       0
     </p>
     <div
-      class="sc-gsnTZi jwMZeR"
+      class="c0"
     >
       <button
-        class="sc-bczRLJ daJtMB bg-gray"
+        class="c1 bg-gray"
       >
         Inc A
       </button>
       <button
-        class="sc-bczRLJ daJtMB bg-gray"
+        class="c1 bg-gray"
       >
         Inc B
       </button>
       <button
-        class="sc-bczRLJ daJtMB bg-gray"
+        class="c1 bg-gray"
       >
         Null state change
       </button>

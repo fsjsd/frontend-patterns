@@ -12,7 +12,12 @@ const groups = Array.from(
   new Set(appRoutes.filter(route => !!route.group).map(route => route.group)),
 )
 
-const LeftNavigation = () => {
+const LeftNavigation = ({ onItemClick }) => {
+
+  const handleLinkClick = () => {
+    onItemClick();
+  }
+
   return (
     <DrawerNavigation>
       <DrawerWrapper isOpen={false}>
@@ -29,6 +34,8 @@ const LeftNavigation = () => {
                       to={routeDefinition.path}
                       $wip={routeDefinition.isWip}
                       aria-hidden={routeDefinition.isWip}
+                      tabIndex={routeDefinition.isWip ? -1 : undefined}
+                      onClick={handleLinkClick}
                     >
                       {routeDefinition.icon} {routeDefinition.title}
                     </LinkStyled>
