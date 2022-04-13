@@ -24,7 +24,12 @@ const LeftNavigation = () => {
                 .filter(r => r.title && r.icon && r.group === group)
                 .map(routeDefinition => (
                   <li key={routeDefinition.path}>
-                    <LinkStyled role="link" to={routeDefinition.path} $wip={routeDefinition.isWip}>
+                    <LinkStyled
+                      role="link"
+                      to={routeDefinition.path}
+                      $wip={routeDefinition.isWip}
+                      aria-hidden={routeDefinition.isWip}
+                    >
                       {routeDefinition.icon} {routeDefinition.title}
                     </LinkStyled>
                   </li>

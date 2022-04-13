@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { navigationBreakpoint } from '../designsystem/responsive/breakpoints';
 
 const Header = styled.header`
   background-color: white;
@@ -16,10 +17,10 @@ export const ContentHeaderLabel = styled.div`
   align-items:center;
 `
 export const ContentHeaderRight = styled.div`
-  display: flex;
   align-items: center;
   font-size: 1.25em;
   padding:0;
+
   a {
     display:flex;
     padding:0;
@@ -28,18 +29,24 @@ export const ContentHeaderRight = styled.div`
     text-decoration: underline;
     transition: opacity 0.2s ease-in-out;
   }
+  
+  display: none;
+  @media ${navigationBreakpoint} { 
+    display: flex;
+  }
 `
 export const ContentHeaderIcon = styled.div<{ selected: boolean }>`
   cursor: pointer;
-  display:flex;
-  padding:15px 15px 12px 15px;
+  display: flex;
+  padding: 15px 15px 12px 15px;
   border-bottom: solid 3px transparent;
   ${props => props.selected && 'border-bottom: solid 3px rgb(0, 127, 224);'}
   opacity:0.6;
+
   &:hover{
-      color:rgb(0, 145, 255);
-      opacity:1;
-    }
+    color:rgb(0, 145, 255);
+    opacity:1;
+  }
 `;
 
 const ContentHeader: React.FC = ({ children }) => {

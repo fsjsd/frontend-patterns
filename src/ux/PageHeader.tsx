@@ -1,5 +1,7 @@
 import React from 'react'
+import { GiHamburgerMenu } from 'react-icons/gi';
 import styled from 'styled-components'
+import { navigationBreakpoint } from './designsystem/responsive/breakpoints';
 import { ReactComponent as LogoGithub } from "./icons/Github.svg";
 import { ReactComponent as LogoYoutube } from "./icons/Youtube.svg";
 
@@ -23,6 +25,10 @@ const Links = styled.div`
   align-self: flex-end;
   font-size: 1px;
   color: white;
+  display: none;
+  @media ${navigationBreakpoint} { 
+    display: block;
+  }
 `
 
 const externalLinkIcon = {
@@ -31,9 +37,25 @@ const externalLinkIcon = {
   cursor: "pointer"
 }
 
-export const PageHeader = () => {
+const MenuButton = styled(GiHamburgerMenu)`
+  height: 24px;
+  margin-right: 10px;
+  cursor: pointer;
+  display: block;
+  @media ${navigationBreakpoint} { 
+    display: none;
+  }
+`
+
+export const PageHeader = ({ onMenuClick }) => {
+
+  const handleMenuClick = () => {
+    onMenuClick();
+  }
+
   return (
     <Header role="banner">
+      <MenuButton role="button" onClick={handleMenuClick} />
       <HeaderPageTitle>
         <b>
           Front-End

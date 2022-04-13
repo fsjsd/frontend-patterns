@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import LeftNavigation from './ux/LeftNavigation';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import appRoutes from './routes';
@@ -12,20 +12,28 @@ import { SiteContainer } from './ux/styles/SiteContainer';
 import { SectionDrawer } from './ux/styles/SectionDrawer';
 import { HeaderBrand } from './ux/styles/HeaderBrand';
 import { SectionMain } from './ux/styles/SectionMain';
-import { ThemeProvider } from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
 import theme from './ux/theme';
 
+const SiteLogo = styled(LogoFsJsDev)`
+  height: 24px;
+  width: 100px;
+`;
+
 function App({ hostContext }: { hostContext: string }) {
+  const [showMenu, setShowMenu] = useState(false);
+
+  const handleMenuClick = () => {
+    setShowMenu(prev => !prev);
+  }
+
   return (
     <ThemeProvider theme={theme}>
       <BrowserRouter>
         <SiteContainer>
-          <SectionDrawer>
+          <SectionDrawer visible={showMenu}>
             <HeaderBrand>
-              <LogoFsJsDev style={{
-                height: "24px",
-                width: "100px",
-              }} />
+              <SiteLogo />
             </HeaderBrand>
             <div role="navigation">
               {/* Filter control for nav */}
@@ -34,7 +42,7 @@ function App({ hostContext }: { hostContext: string }) {
           </SectionDrawer>
 
           <SectionMain>
-            <PageHeader />
+            <PageHeader onMenuClick={handleMenuClick} />
             <Routes>
               {appRoutes.map(routeDefinition => <Route
                 key={routeDefinition.path}

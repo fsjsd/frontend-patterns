@@ -1,16 +1,20 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { navigationBreakpoint } from "../designsystem/responsive/breakpoints";
 
 export const DrawerNavigation = styled.div`
-  width: 240px;
   overflow: hidden;
+  width: 100%;
+  
+  @media ${navigationBreakpoint} { 
+    width: 240px;
+  }
 `;
 
 export const DrawerWrapper = styled.div<{ isOpen: boolean }>`
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 480px;
   left: 0;
   transition: ease 0.3s left;
   ${props =>
@@ -18,6 +22,12 @@ export const DrawerWrapper = styled.div<{ isOpen: boolean }>`
       ? `
     left: -240px;`
       : ``}
+
+  width: 100%;
+  @media ${navigationBreakpoint} { 
+    width: 480px;
+  }
+
 `;
 
 export const NavGroup = styled.div`
@@ -44,7 +54,7 @@ export const NavLinks = styled.ul`
  * $wip is a transient prop: https://styled-components.com/docs/api#transient-props
  */
 export const LinkStyled = styled(Link) <{ $wip: boolean }>`
-  width: 240px;
+  width: 100%;
   font-size: 15px;
   ${props => props.$wip
     ? 'color: #949494;'
@@ -56,6 +66,7 @@ export const LinkStyled = styled(Link) <{ $wip: boolean }>`
   cursor: pointer;
   transition: ease 0.5s color, ease 0.2s background-color;
   display: flex;
+
   &.active {
     background-color: rgb(220, 240, 255);
     color: rgb(33, 111, 212);
@@ -86,5 +97,9 @@ export const LinkStyled = styled(Link) <{ $wip: boolean }>`
 
   svg:first-child {
     margin-right: 10px;
+  }
+  
+  @media ${navigationBreakpoint} { 
+    width: 240px;
   }
 `;
