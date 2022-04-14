@@ -2,7 +2,7 @@ import React, { PropsWithChildren, Suspense, useState } from 'react';
 import { NavigationMenu } from './ux/NavigationContainer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import appRoutes from './routes';
-import Loading from './ux/Loading';
+import { ScreenTransitionLoading } from './ux/Loading';
 import BrowserStats from './shell/browserstats/BrowserStats';
 import { ReactComponent as LogoFsJsDev } from "./ux/icons/LogoFsjsDev.svg";
 import { PageHeader } from './ux/PageHeader';
@@ -50,7 +50,13 @@ function App({ hostContext }: { hostContext: string }) {
                 {appRoutes.map(routeDefinition => <Route
                   key={routeDefinition.path}
                   path={routeDefinition.path}
-                  element={<React.Suspense fallback={<Loading />}>{routeDefinition.element}</React.Suspense>} />
+                  element={
+                    <React.Suspense
+                      fallback={<ScreenTransitionLoading />}>
+                      {routeDefinition.element}
+                    </React.Suspense>
+                  }
+                />
                 )}
               </Routes>
               <ContentFooter role="contentinfo" aria-label='Web vitals information' title={hostContext}>
