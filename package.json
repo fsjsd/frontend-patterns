@@ -80,6 +80,7 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.16.7",
+    "@storybook/addon-a11y": "^6.4.22",
     "@storybook/addon-actions": "^6.4.22",
     "@storybook/addon-essentials": "^6.4.22",
     "@storybook/addon-interactions": "^6.4.22",
@@ -110,6 +111,8 @@
     "jest-styled-components": "^7.0.8",
     "lint-staged": "^12.3.7",
     "mq-polyfill": "^1.1.8",
+    "msw": "^0.39.2",
+    "msw-storybook-addon": "^1.6.3",
     "postcss": "^8.4.12",
     "prettier": "^2.6.2",
     "rimraf": "^3.0.2",
@@ -128,5 +131,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "msw": {
+    "workerDirectory": "public"
   }
 }

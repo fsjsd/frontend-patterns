@@ -41,7 +41,7 @@ function App({ hostContext }: { hostContext: string }) {
               <NavigationMenu onItemClick={handleLinkClick} />
             </NavigationDrawer>
             <SectionMain>
-              <PageHeader onMenuClick={handleMenuClick} />
+              <PageHeader showLinks={true} onMenuClick={handleMenuClick} />
               <Routes>
                 {appRoutes.map(routeDefinition => <Route
                   key={routeDefinition.path}
