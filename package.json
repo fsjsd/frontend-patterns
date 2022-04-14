@@ -12,7 +12,7 @@
     "serve": "serve -s build",
     "serve:prod": "NODE_ENV=production yarn serve",
     "serve:lhci": "yarn serve:prod",
-    "build": "rimraf build && react-scripts build",
+    "build": "rimraf build && react-scripts build && cp build/index.html build/404.html",
     "predeploy": "rimraf build && react-scripts build",
     "deploy": "gh-pages -d build",
     "test": "react-scripts test --coverage",
