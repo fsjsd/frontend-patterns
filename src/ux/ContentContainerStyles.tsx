@@ -108,4 +108,8 @@ export const ContentFooter = styled.section`
   box-shadow: 0 -3px 15px 0px rgb(0 0 0 / 10%);
   font-size: 12px;
   display: flex;  
+  // brittle. relies on divs being nested
+  &> div {
+    padding-bottom: env(safe-inset-area-bottom);
+  }
 `;

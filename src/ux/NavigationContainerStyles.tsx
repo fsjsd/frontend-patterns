@@ -45,6 +45,7 @@ export const NavigationScrollArea = styled.div`
   border-left: solid 1px rgb(218, 231, 241);
   background-color: rgb(246, 250, 253);
   pointer-events:all;
+  padding-bottom: env(safe-inset-area-bottom);
   
   @media ${navigationBreakpoint} { 
     width: 240px;
