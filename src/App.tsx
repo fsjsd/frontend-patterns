@@ -28,9 +28,9 @@ function App({ hostContext }: { hostContext: string }) {
   const handleLinkClick = () => {
     setShowMenu(false);
   }
-
+  //ThemeProvider theme={theme}
   return (
-    <ThemeProvider theme={theme}>
+    <>
       <BrowserRouter>
         <FixedApp>
           <SiteContainer>
@@ -60,8 +60,8 @@ function App({ hostContext }: { hostContext: string }) {
             </SectionMain>
           </SiteContainer>
         </FixedApp>
-      </BrowserRouter >
-    </ThemeProvider>
+      </BrowserRouter>
+    </>
   );
 }
 

@@ -28,9 +28,9 @@ function AppShell() {
   const handleMenuClick = () => {
     // no op
   }
-
+  //ThemeProvider theme={theme}
   return (
-    <ThemeProvider theme={theme}>
+    <>
       <FixedApp>
         <SiteContainer>
           <NavigationDrawer visible={false}>
@@ -49,7 +49,7 @@ function AppShell() {
           </SectionMain>
         </SiteContainer>
       </FixedApp>
-    </ThemeProvider >
+    </ >
   );
 }
 

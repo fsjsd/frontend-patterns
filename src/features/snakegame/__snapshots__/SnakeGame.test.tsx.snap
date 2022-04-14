@@ -51,11 +51,11 @@ exports[`SnakeGame 'ascii' mode renders and matches snapshot 1`] = `
 
                              
 
-                 o.          
+                  o          
 
                   .          
 
-                             
+                  .          
 
                              
 
@@ -1202,12 +1202,12 @@ exports[`SnakeGame 'html' mode renders and matches snapshot 1`] = `
           size="20"
         />
         <div
-          class="c5"
+          class="c3"
           data-testid="9, 9"
           size="20"
         />
         <div
-          class="c6"
+          class="c5"
           data-testid="9, 10"
           size="20"
         />
@@ -1417,7 +1417,7 @@ exports[`SnakeGame 'html' mode renders and matches snapshot 1`] = `
           size="20"
         />
         <div
-          class="c3"
+          class="c6"
           data-testid="11, 10"
           size="20"
         />

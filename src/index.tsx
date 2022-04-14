@@ -1,6 +1,6 @@
 /* istanbul ignore file */
 import React, { Suspense } from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from 'react-dom/client';
 // Note: Uncomment these to edit and alter index.html with AppShell.tsx
 // import "./reset.css";
 // import "./index.css";
@@ -11,12 +11,13 @@ const shellMode = false;
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 (window as any).fsjsdevboot = ({ hostContext }: { hostContext: string }) => {
-  ReactDOM.render(
+  // looks like React 18's typedefs are wrong for createRoot - should be null not undefined
+  // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+  const root = createRoot(document.getElementById("root")!);
+  root.render(
     <React.StrictMode>
       {shellMode
         ? <Suspense fallback={<></>}><AppShell /></Suspense>
         : <App hostContext={hostContext} />}
-    </React.StrictMode>,
-    document.getElementById("root")
-  );
+    </React.StrictMode>);
 }
