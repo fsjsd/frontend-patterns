@@ -1,4 +1,4 @@
-import React, { useLayoutEffect } from 'react';
+import React, { PropsWithChildren, useLayoutEffect } from 'react';
 import { PageHeader } from './ux/PageHeader';
 import { ThemeProvider } from 'styled-components';
 import theme from './ux/theme';
@@ -6,7 +6,11 @@ import { SectionMain, SiteContainer, FixedApp, HeaderBrand } from './AppStyles';
 import { NavigationDrawer, NavigationScrollArea } from './ux/NavigationContainerStyles';
 import { TombStoneContent } from './ux/designsystem/TombStones';
 
-function AppShell() {
+// see: https://github.com/DefinitelyTyped/DefinitelyTyped/issues/59765
+const ThemeProviderFixed = ThemeProvider as unknown as React.FC<PropsWithChildren<{ theme: typeof theme }>>;
+
+
+function AppPreload() {
 
   useLayoutEffect(() => {
     const documentContent = document.querySelector("#root")?.innerHTML;
@@ -22,7 +26,6 @@ function AppShell() {
       // console.log(cssRules)
     });
     console.log(css);
-    //document.styleSheets[0].cssRules['0']
   }, []);
 
   const handleMenuClick = () => {
@@ -30,16 +33,12 @@ function AppShell() {
   }
 
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProviderFixed theme={theme}>
       <FixedApp>
         <SiteContainer>
           <NavigationDrawer visible={false}>
-            <HeaderBrand>
-
-            </HeaderBrand>
-            <NavigationScrollArea role="navigation">
-
-            </NavigationScrollArea>
+            <HeaderBrand />
+            <NavigationScrollArea role="navigation" />
           </NavigationDrawer>
           <SectionMain>
             <PageHeader showLinks={false} onMenuClick={handleMenuClick} />
@@ -49,8 +48,8 @@ function AppShell() {
           </SectionMain>
         </SiteContainer>
       </FixedApp>
-    </ThemeProvider >
+    </ThemeProviderFixed>
   );
 }
 
-export default AppShell;
+export default AppPreload;

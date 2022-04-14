@@ -694,29 +694,6 @@ exports[`App tests Loads carousel 1`] = `
   margin-right: 10px;
 }
 
-.c32 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c32 > div {
-  margin-right: 10px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  line-height: normal;
-}
-
 .c12 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -822,6 +799,29 @@ exports[`App tests Loads carousel 1`] = `
 .c4 {
   height: 24px;
   width: 100px;
+}
+
+.c32 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c32 > div {
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  line-height: normal;
 }
 
 @media (min-width:768px) {
@@ -1858,29 +1858,6 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
   margin-right: 10px;
 }
 
-.c22 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c22 > div {
-  margin-right: 10px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  line-height: normal;
-}
-
 .c12 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2569,11 +2546,7 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
         >
           <div
             style="flex-grow: 1;"
-          >
-            <div
-              class="c22"
-            />
-          </div>
+          />
           <div
             style="flex-grow: 0;"
           >
@@ -2881,29 +2854,6 @@ exports[`App tests shows menu in mobile mode 1`] = `
   margin-right: 10px;
 }
 
-.c22 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c22 > div {
-  margin-right: 10px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  line-height: normal;
-}
-
 .c12 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3009,6 +2959,29 @@ exports[`App tests shows menu in mobile mode 1`] = `
 .c4 {
   height: 24px;
   width: 100px;
+}
+
+.c22 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c22 > div {
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  line-height: normal;
 }
 
 @media (min-width:768px) {

@@ -207,7 +207,6 @@ exports[`Netflix renders and matches snapshot 1`] = `
   >
     <div
       role="main"
-      style=""
     >
       <div
         class=""

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { PropsWithChildren } from 'react'
 import styled from 'styled-components';
 
 const ToolTipStyled = styled.div<{ isVisible: boolean }>`
@@ -20,7 +20,7 @@ const ToolTipStyled = styled.div<{ isVisible: boolean }>`
   z-index: 10;
 `;
 
-const ToolTip: React.FC<{ isVisible: boolean }> = ({ isVisible, children }) => {
+const ToolTip: React.FC<PropsWithChildren<{ isVisible: boolean }>> = ({ isVisible, children }) => {
   return (
     <ToolTipStyled
       role="tooltip"

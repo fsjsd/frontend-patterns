@@ -207,7 +207,6 @@ exports[`InfiniteScrollContainer render matches snapshot 1`] = `
   >
     <div
       role="main"
-      style=""
     >
       <div>
         Infinite scroll Coming soon

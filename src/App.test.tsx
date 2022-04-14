@@ -1,7 +1,7 @@
 import React from 'react';
 import { fireEvent, render, screen } from '@testing-library/react';
 import App from './App';
-import AppShell from './AppShell';
+import AppPreload from './AppPreload';
 import { axe, toHaveNoViolations } from 'jest-axe';
 
 expect.extend(toHaveNoViolations);
@@ -15,7 +15,7 @@ describe('App tests', () => {
     expect(container).toMatchSnapshot();
   });
   test('AppShell render matches snapshot (full screen)', () => {
-    const { container } = render(<AppShell />);
+    const { container } = render(<AppPreload />);
     expect(container).toMatchSnapshot();
   });
   test('shows menu in mobile mode', () => {

@@ -1,4 +1,4 @@
-import React, { Suspense, useEffect, useState } from "react";
+import React, { PropsWithChildren, Suspense, useEffect, useState } from "react";
 import { MdNotes, MdOutlinePlayCircleOutline } from "react-icons/md";
 import { GoMarkGithub } from "react-icons/go";
 import styled from "styled-components";
@@ -37,7 +37,7 @@ interface ContentContainerProps {
  * @param param0 props
  * @returns 
  */
-export const ContentContainer: React.FC<ContentContainerProps> = ({ children, title, markDownPromise, codeLink, noPadding }) => {
+export const ContentContainer: React.FC<PropsWithChildren<ContentContainerProps>> = ({ children, title, markDownPromise, codeLink, noPadding }) => {
   const [viewNotes, setViewNotes] = useState(false);
   const [markdown, setMarkdown] = useState("");
 

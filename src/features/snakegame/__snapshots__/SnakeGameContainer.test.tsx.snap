@@ -217,7 +217,6 @@ exports[`SnakeGameContainer renders and matches snapshot 1`] = `
   >
     <div
       role="main"
-      style=""
     >
       <div
         style="flex-grow: 2;"
