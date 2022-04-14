@@ -32,6 +32,7 @@ export const HeaderBrand = styled.header`
   display:flex;
   align-items: center;
   height: 3.5rem;
+  min-height: 3.5rem;
   padding: 0rem 1rem;
   background-color: #007fe0;
   color: #fff;

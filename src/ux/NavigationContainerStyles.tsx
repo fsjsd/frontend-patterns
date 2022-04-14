@@ -94,7 +94,7 @@ export const NavLinks = styled.ul`
  */
 export const LinkStyled = styled(Link) <{ $wip: boolean }>`
   width: 100%;
-  font-size: 15px;
+  font-size: 0.85rem;
   ${props => props.$wip
     ? 'color: #949494;'
     : 'color: #444;'}

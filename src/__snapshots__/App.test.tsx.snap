@@ -354,7 +354,7 @@ exports[`App tests Loads carousel 1`] = `
 
 .c9 {
   width: 100%;
-  font-size: 15px;
+  font-size: 0.85rem;
   color: #444;
   padding: 12px 16px;
   outline: none;
@@ -411,7 +411,7 @@ exports[`App tests Loads carousel 1`] = `
 
 .c10 {
   width: 100%;
-  font-size: 15px;
+  font-size: 0.85rem;
   color: #949494;
   padding: 12px 16px;
   outline: none;
@@ -510,7 +510,7 @@ exports[`App tests Loads carousel 1`] = `
 
 .c14 {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.25rem;
   line-height: inherit;
   -webkit-box-flex: 2;
   -webkit-flex-grow: 2;
@@ -582,6 +582,7 @@ exports[`App tests Loads carousel 1`] = `
   -ms-flex-align: center;
   align-items: center;
   height: 3.5rem;
+  min-height: 3.5rem;
   padding: 0rem 1rem;
   background-color: #007fe0;
   color: #fff;
@@ -1517,7 +1518,7 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
 
 .c9 {
   width: 100%;
-  font-size: 15px;
+  font-size: 0.85rem;
   color: #444;
   padding: 12px 16px;
   outline: none;
@@ -1574,7 +1575,7 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
 
 .c10 {
   width: 100%;
-  font-size: 15px;
+  font-size: 0.85rem;
   color: #949494;
   padding: 12px 16px;
   outline: none;
@@ -1673,7 +1674,7 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
 
 .c14 {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.25rem;
   line-height: inherit;
   -webkit-box-flex: 2;
   -webkit-flex-grow: 2;
@@ -1745,6 +1746,7 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
   -ms-flex-align: center;
   align-items: center;
   height: 3.5rem;
+  min-height: 3.5rem;
   padding: 0rem 1rem;
   background-color: #007fe0;
   color: #fff;
@@ -2539,7 +2541,7 @@ exports[`App tests shows menu in mobile mode 1`] = `
 
 .c9 {
   width: 100%;
-  font-size: 15px;
+  font-size: 0.85rem;
   color: #444;
   padding: 12px 16px;
   outline: none;
@@ -2596,7 +2598,7 @@ exports[`App tests shows menu in mobile mode 1`] = `
 
 .c10 {
   width: 100%;
-  font-size: 15px;
+  font-size: 0.85rem;
   color: #949494;
   padding: 12px 16px;
   outline: none;
@@ -2695,7 +2697,7 @@ exports[`App tests shows menu in mobile mode 1`] = `
 
 .c14 {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.25rem;
   line-height: inherit;
   -webkit-box-flex: 2;
   -webkit-flex-grow: 2;
@@ -2767,6 +2769,7 @@ exports[`App tests shows menu in mobile mode 1`] = `
   -ms-flex-align: center;
   align-items: center;
   height: 3.5rem;
+  min-height: 3.5rem;
   padding: 0rem 1rem;
   background-color: #007fe0;
   color: #fff;

@@ -16,7 +16,7 @@ export const Header = styled.header`
 
 export const HeaderPageTitle = styled.h1`
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.25rem;
   line-height:inherit;
   flex-grow: 2;
   color:inherit;

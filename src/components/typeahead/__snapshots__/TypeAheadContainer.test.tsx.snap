@@ -106,12 +106,12 @@ exports[`TypeAhead renders and matches snapshot 1`] = `
 }
 
 .c6 {
-  padding: 5px 0;
+  padding: 0 0 1rem 0;
 }
 
 .c9 {
   color: inherit;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   font-family: inherit;
   line-height: 1rem;
   margin-top: 0.25rem;
@@ -145,9 +145,19 @@ exports[`TypeAhead renders and matches snapshot 1`] = `
 .c7 {
   padding: 4px 0px;
   display: block;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   line-height: 1rem;
   font-weight: 500;
+  color: rgb(55 65 81 / 1);
+}
+
+.c10 {
+  display: block;
+  float: left;
+  padding: 4px 0px;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 400;
   color: rgb(55 65 81 / 1);
 }
 
@@ -284,6 +294,11 @@ exports[`TypeAhead renders and matches snapshot 1`] = `
             value=""
           />
         </div>
+        <legend
+          class="c10"
+        >
+          Run code on local to bypass hipolabs.com CORS policy
+        </legend>
       </fieldset>
       <fieldset
         class="c6"
@@ -310,6 +325,11 @@ exports[`TypeAhead renders and matches snapshot 1`] = `
             value=""
           />
         </div>
+        <legend
+          class="c10"
+        >
+          Demos graceful failure of suggestions if getResults fails
+        </legend>
       </fieldset>
       <fieldset
         class="c6"
@@ -318,12 +338,17 @@ exports[`TypeAhead renders and matches snapshot 1`] = `
           class="c7"
           for="error"
         >
-          Tab demo
+          Normal text box
         </label>
         <input
           class="c9"
           placeholder="Press tab"
         />
+        <legend
+          class="c10"
+        >
+          Just on screen to test tab key press
+        </legend>
       </fieldset>
     </div>
   </section>

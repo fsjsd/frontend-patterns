@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const InputText = styled.input`
   color: inherit;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   font-family: inherit;
   line-height: 1rem;
   margin-top: 0.25rem;

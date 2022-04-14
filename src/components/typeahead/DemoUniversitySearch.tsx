@@ -6,6 +6,7 @@ import TypeAhead from './TypeAhead';
 import InputText from '../../ux/designsystem/InputText';
 import Label from '../../ux/designsystem/Label';
 import FieldSet from '../../ux/designsystem/FieldSet';
+import Legend from '../../ux/designsystem/Legend';
 
 /**
  * UniversitySearchResult, based on types from the University Search API
@@ -78,6 +79,7 @@ const DemoUniversitySearch = ({
         onSelect={handleOnSelect}
         onError={onError}
       />
+      <Legend>Run code on local to bypass hipolabs.com CORS policy</Legend>
     </FieldSet>
   )
 }

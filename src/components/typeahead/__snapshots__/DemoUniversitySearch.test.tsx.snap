@@ -39,7 +39,7 @@ exports[`UniversitySearch arrow down has no effect at end 1`] = `
 
 .c3 {
   color: inherit;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   font-family: inherit;
   line-height: 1rem;
   margin-top: 0.25rem;
@@ -73,14 +73,24 @@ exports[`UniversitySearch arrow down has no effect at end 1`] = `
 .c1 {
   padding: 4px 0px;
   display: block;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   line-height: 1rem;
   font-weight: 500;
   color: rgb(55 65 81 / 1);
 }
 
 .c0 {
-  padding: 5px 0;
+  padding: 0 0 1rem 0;
+}
+
+.c6 {
+  display: block;
+  float: left;
+  padding: 4px 0px;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 400;
+  color: rgb(55 65 81 / 1);
 }
 
 <div>
@@ -143,6 +153,11 @@ exports[`UniversitySearch arrow down has no effect at end 1`] = `
         </div>
       </div>
     </div>
+    <legend
+      class="c6"
+    >
+      Run code on local to bypass hipolabs.com CORS policy
+    </legend>
   </fieldset>
 </div>
 `;
@@ -186,7 +201,7 @@ exports[`UniversitySearch arrow up selects first result 1`] = `
 
 .c3 {
   color: inherit;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   font-family: inherit;
   line-height: 1rem;
   margin-top: 0.25rem;
@@ -220,14 +235,24 @@ exports[`UniversitySearch arrow up selects first result 1`] = `
 .c1 {
   padding: 4px 0px;
   display: block;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   line-height: 1rem;
   font-weight: 500;
   color: rgb(55 65 81 / 1);
 }
 
 .c0 {
-  padding: 5px 0;
+  padding: 0 0 1rem 0;
+}
+
+.c6 {
+  display: block;
+  float: left;
+  padding: 4px 0px;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 400;
+  color: rgb(55 65 81 / 1);
 }
 
 <div>
@@ -290,6 +315,11 @@ exports[`UniversitySearch arrow up selects first result 1`] = `
         </div>
       </div>
     </div>
+    <legend
+      class="c6"
+    >
+      Run code on local to bypass hipolabs.com CORS policy
+    </legend>
   </fieldset>
 </div>
 `;
@@ -333,7 +363,7 @@ exports[`UniversitySearch navigates on key press 'ArrowDown' 1`] = `
 
 .c3 {
   color: inherit;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   font-family: inherit;
   line-height: 1rem;
   margin-top: 0.25rem;
@@ -367,14 +397,24 @@ exports[`UniversitySearch navigates on key press 'ArrowDown' 1`] = `
 .c1 {
   padding: 4px 0px;
   display: block;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   line-height: 1rem;
   font-weight: 500;
   color: rgb(55 65 81 / 1);
 }
 
 .c0 {
-  padding: 5px 0;
+  padding: 0 0 1rem 0;
+}
+
+.c6 {
+  display: block;
+  float: left;
+  padding: 4px 0px;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 400;
+  color: rgb(55 65 81 / 1);
 }
 
 <div>
@@ -437,6 +477,11 @@ exports[`UniversitySearch navigates on key press 'ArrowDown' 1`] = `
         </div>
       </div>
     </div>
+    <legend
+      class="c6"
+    >
+      Run code on local to bypass hipolabs.com CORS policy
+    </legend>
   </fieldset>
 </div>
 `;
@@ -480,7 +525,7 @@ exports[`UniversitySearch navigates on key press 'ArrowUp' 1`] = `
 
 .c3 {
   color: inherit;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   font-family: inherit;
   line-height: 1rem;
   margin-top: 0.25rem;
@@ -514,14 +559,24 @@ exports[`UniversitySearch navigates on key press 'ArrowUp' 1`] = `
 .c1 {
   padding: 4px 0px;
   display: block;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   line-height: 1rem;
   font-weight: 500;
   color: rgb(55 65 81 / 1);
 }
 
 .c0 {
-  padding: 5px 0;
+  padding: 0 0 1rem 0;
+}
+
+.c6 {
+  display: block;
+  float: left;
+  padding: 4px 0px;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 400;
+  color: rgb(55 65 81 / 1);
 }
 
 <div>
@@ -584,6 +639,11 @@ exports[`UniversitySearch navigates on key press 'ArrowUp' 1`] = `
         </div>
       </div>
     </div>
+    <legend
+      class="c6"
+    >
+      Run code on local to bypass hipolabs.com CORS policy
+    </legend>
   </fieldset>
 </div>
 `;
@@ -627,7 +687,7 @@ exports[`UniversitySearch no response renders correctly 1`] = `
 
 .c3 {
   color: inherit;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   font-family: inherit;
   line-height: 1rem;
   margin-top: 0.25rem;
@@ -661,14 +721,24 @@ exports[`UniversitySearch no response renders correctly 1`] = `
 .c1 {
   padding: 4px 0px;
   display: block;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   line-height: 1rem;
   font-weight: 500;
   color: rgb(55 65 81 / 1);
 }
 
 .c0 {
-  padding: 5px 0;
+  padding: 0 0 1rem 0;
+}
+
+.c6 {
+  display: block;
+  float: left;
+  padding: 4px 0px;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 400;
+  color: rgb(55 65 81 / 1);
 }
 
 <div>
@@ -710,6 +780,11 @@ exports[`UniversitySearch no response renders correctly 1`] = `
         </div>
       </div>
     </div>
+    <legend
+      class="c6"
+    >
+      Run code on local to bypass hipolabs.com CORS policy
+    </legend>
   </fieldset>
 </div>
 `;
@@ -721,7 +796,7 @@ exports[`UniversitySearch renders and matches snapshot 1`] = `
 
 .c3 {
   color: inherit;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   font-family: inherit;
   line-height: 1rem;
   margin-top: 0.25rem;
@@ -755,14 +830,24 @@ exports[`UniversitySearch renders and matches snapshot 1`] = `
 .c1 {
   padding: 4px 0px;
   display: block;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   line-height: 1rem;
   font-weight: 500;
   color: rgb(55 65 81 / 1);
 }
 
 .c0 {
-  padding: 5px 0;
+  padding: 0 0 1rem 0;
+}
+
+.c4 {
+  display: block;
+  float: left;
+  padding: 4px 0px;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 400;
+  color: rgb(55 65 81 / 1);
 }
 
 <div>
@@ -792,6 +877,11 @@ exports[`UniversitySearch renders and matches snapshot 1`] = `
         value=""
       />
     </div>
+    <legend
+      class="c4"
+    >
+      Run code on local to bypass hipolabs.com CORS policy
+    </legend>
   </fieldset>
 </div>
 `;
@@ -803,7 +893,7 @@ exports[`UniversitySearch typing less than 3 chars does nothing 1`] = `
 
 .c3 {
   color: inherit;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   font-family: inherit;
   line-height: 1rem;
   margin-top: 0.25rem;
@@ -837,14 +927,24 @@ exports[`UniversitySearch typing less than 3 chars does nothing 1`] = `
 .c1 {
   padding: 4px 0px;
   display: block;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   line-height: 1rem;
   font-weight: 500;
   color: rgb(55 65 81 / 1);
 }
 
 .c0 {
-  padding: 5px 0;
+  padding: 0 0 1rem 0;
+}
+
+.c4 {
+  display: block;
+  float: left;
+  padding: 4px 0px;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 400;
+  color: rgb(55 65 81 / 1);
 }
 
 <div>
@@ -874,6 +974,11 @@ exports[`UniversitySearch typing less than 3 chars does nothing 1`] = `
         value="ab"
       />
     </div>
+    <legend
+      class="c4"
+    >
+      Run code on local to bypass hipolabs.com CORS policy
+    </legend>
   </fieldset>
 </div>
 `;
@@ -917,7 +1022,7 @@ exports[`UniversitySearch valid query triggers result query 1`] = `
 
 .c3 {
   color: inherit;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   font-family: inherit;
   line-height: 1rem;
   margin-top: 0.25rem;
@@ -951,14 +1056,24 @@ exports[`UniversitySearch valid query triggers result query 1`] = `
 .c1 {
   padding: 4px 0px;
   display: block;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   line-height: 1rem;
   font-weight: 500;
   color: rgb(55 65 81 / 1);
 }
 
 .c0 {
-  padding: 5px 0;
+  padding: 0 0 1rem 0;
+}
+
+.c6 {
+  display: block;
+  float: left;
+  padding: 4px 0px;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 400;
+  color: rgb(55 65 81 / 1);
 }
 
 <div>
@@ -1031,6 +1146,11 @@ exports[`UniversitySearch valid query triggers result query 1`] = `
         </div>
       </div>
     </div>
+    <legend
+      class="c6"
+    >
+      Run code on local to bypass hipolabs.com CORS policy
+    </legend>
   </fieldset>
 </div>
 `;
