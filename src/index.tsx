@@ -5,7 +5,7 @@ import { createRoot } from 'react-dom/client';
 // import "./reset.css";
 // import "./index.css";
 import App from "./App";
-const AppShell = React.lazy(() => import("./AppShell")); // do this lazy since most of the time we won't use it
+const AppShell = React.lazy(() => import("./AppPreload")); // do this lazy since most of the time we won't use it
 
 const shellMode = false;
 
