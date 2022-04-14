@@ -29,10 +29,12 @@ export const SectionMain = styled.section`
 `
 
 export const HeaderBrand = styled.header`
-  padding: 1rem;
-  background-color: #0091ff;
-  color: #fff;
+  display:flex;
+  align-items: center;
+  height: 3.5rem;
+  padding: 0rem 1rem;
   background-color: #007fe0;
+  color: #fff;
   font-size: 1px;
   visibility: hidden;
   pointer-events: none;

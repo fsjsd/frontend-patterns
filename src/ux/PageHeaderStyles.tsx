@@ -3,28 +3,34 @@ import styled from 'styled-components'
 import { navigationBreakpoint } from './designsystem/responsive/breakpoints';
 
 export const Header = styled.header`
-  padding: 1rem;
-  background-color: #0076D1;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  min-height: 3.5rem;
+
+  height: 3.5rem;
+  padding: 0rem 1rem;
+  background-color: #0076D1;
   color: white;
 `;
 
 export const HeaderPageTitle = styled.h1`
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
+  line-height:inherit;
   flex-grow: 2;
   color:inherit;
   margin:0;
+  padding:0;
 `;
 
 export const Links = styled.div`
-  align-self: flex-end;
   font-size: 1px;
   color: white;
   display: none;
   @media ${navigationBreakpoint} { 
     display: block;
+    align-items: center;
   }
 `
 export const MenuButton = styled(GiHamburgerMenu)`

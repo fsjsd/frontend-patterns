@@ -11,6 +11,9 @@ const Button = styled.button`
   transition: background-color 0.3s ease;
   outline: none;
   cursor: pointer;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 
   &:hover {
     background-color: rgb(13, 150, 255);

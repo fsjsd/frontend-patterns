@@ -13,6 +13,12 @@ exports[`ReactMemo changes state after increments 1`] = `
   transition: background-color 0.3s ease;
   outline: none;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 
 .c1:hover {
@@ -103,6 +109,12 @@ exports[`ReactMemo changes state after increments 2`] = `
   transition: background-color 0.3s ease;
   outline: none;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 
 .c1:hover {
@@ -193,6 +205,12 @@ exports[`ReactMemo changes state after increments 3`] = `
   transition: background-color 0.3s ease;
   outline: none;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 
 .c1:hover {
@@ -283,6 +301,12 @@ exports[`ReactMemo changes state after increments 4`] = `
   transition: background-color 0.3s ease;
   outline: none;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 
 .c1:hover {
@@ -373,6 +397,12 @@ exports[`ReactMemo renders and matches snapshot 1`] = `
   transition: background-color 0.3s ease;
   outline: none;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 
 .c1:hover {

@@ -490,8 +490,6 @@ exports[`App tests Loads carousel 1`] = `
 }
 
 .c12 {
-  padding: 1rem;
-  background-color: #0076D1;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -499,24 +497,31 @@ exports[`App tests Loads carousel 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 3.5rem;
+  height: 3.5rem;
+  padding: 0rem 1rem;
+  background-color: #0076D1;
   color: white;
 }
 
 .c14 {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
+  line-height: inherit;
   -webkit-box-flex: 2;
   -webkit-flex-grow: 2;
   -ms-flex-positive: 2;
   flex-grow: 2;
   color: inherit;
   margin: 0;
+  padding: 0;
 }
 
 .c15 {
-  -webkit-align-self: flex-end;
-  -ms-flex-item-align: end;
-  align-self: flex-end;
   font-size: 1px;
   color: white;
   display: none;
@@ -568,10 +573,18 @@ exports[`App tests Loads carousel 1`] = `
 }
 
 .c3 {
-  padding: 1rem;
-  background-color: #0091ff;
-  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 3.5rem;
+  padding: 0rem 1rem;
   background-color: #007fe0;
+  color: #fff;
   font-size: 1px;
   visibility: hidden;
   pointer-events: none;
@@ -630,6 +643,10 @@ exports[`App tests Loads carousel 1`] = `
 @media (min-width:768px) {
   .c15 {
     display: block;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 }
 
@@ -1636,8 +1653,6 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
 }
 
 .c12 {
-  padding: 1rem;
-  background-color: #0076D1;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1645,24 +1660,31 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 3.5rem;
+  height: 3.5rem;
+  padding: 0rem 1rem;
+  background-color: #0076D1;
   color: white;
 }
 
 .c14 {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
+  line-height: inherit;
   -webkit-box-flex: 2;
   -webkit-flex-grow: 2;
   -ms-flex-positive: 2;
   flex-grow: 2;
   color: inherit;
   margin: 0;
+  padding: 0;
 }
 
 .c15 {
-  -webkit-align-self: flex-end;
-  -ms-flex-item-align: end;
-  align-self: flex-end;
   font-size: 1px;
   color: white;
   display: none;
@@ -1714,10 +1736,18 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
 }
 
 .c3 {
-  padding: 1rem;
-  background-color: #0091ff;
-  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 3.5rem;
+  padding: 0rem 1rem;
   background-color: #007fe0;
+  color: #fff;
   font-size: 1px;
   visibility: hidden;
   pointer-events: none;
@@ -1776,6 +1806,10 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
 @media (min-width:768px) {
   .c15 {
     display: block;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 }
 
@@ -2641,8 +2675,6 @@ exports[`App tests shows menu in mobile mode 1`] = `
 }
 
 .c12 {
-  padding: 1rem;
-  background-color: #0076D1;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2650,24 +2682,31 @@ exports[`App tests shows menu in mobile mode 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 3.5rem;
+  height: 3.5rem;
+  padding: 0rem 1rem;
+  background-color: #0076D1;
   color: white;
 }
 
 .c14 {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
+  line-height: inherit;
   -webkit-box-flex: 2;
   -webkit-flex-grow: 2;
   -ms-flex-positive: 2;
   flex-grow: 2;
   color: inherit;
   margin: 0;
+  padding: 0;
 }
 
 .c15 {
-  -webkit-align-self: flex-end;
-  -ms-flex-item-align: end;
-  align-self: flex-end;
   font-size: 1px;
   color: white;
   display: none;
@@ -2719,10 +2758,18 @@ exports[`App tests shows menu in mobile mode 1`] = `
 }
 
 .c3 {
-  padding: 1rem;
-  background-color: #0091ff;
-  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 3.5rem;
+  padding: 0rem 1rem;
   background-color: #007fe0;
+  color: #fff;
   font-size: 1px;
   visibility: hidden;
   pointer-events: none;
@@ -2785,6 +2832,10 @@ exports[`App tests shows menu in mobile mode 1`] = `
 @media (min-width:768px) {
   .c15 {
     display: block;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 }
 
