@@ -65,11 +65,11 @@ export const ContentArticle = styled.div`
   
   h1{
     font-weight:700;
-    font-size:1.25em;
+    font-size:1.25rem;
   }
   h2{
     font-weight:700;
-    font-size:1em;
+    font-size:1rem;
   }
   h3,h4{
     font-weight:700;
@@ -83,6 +83,21 @@ export const ContentArticle = styled.div`
   }
   li{
     list-style:disc;
+  }
+
+  code {
+    color: #272822;
+    background-color: #f8f8f2;
+    padding:0.75rem;
+    display:block;
+    margin-bottom:0.75em;
+    border-radius:3px;
+  }
+  p > code, li > code  {
+    display:inline-block;
+    margin-bottom:inherit;
+    padding:0.15rem 0.25rem ;
+    border-radius:3px;
   }
 `;
 

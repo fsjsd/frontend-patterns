@@ -3,7 +3,7 @@ import { MdNotes, MdOutlinePlayCircleOutline } from "react-icons/md";
 import { GoMarkGithub } from "react-icons/go";
 import styled from "styled-components";
 import { GITHUB_ROOT } from "../utils/constants/urls";
-import Loading from "./Loading";
+import { ScreenTransitionLoading } from './Loading';
 import { ContentHeader, ContentHeaderLabel, ContentHeaderRight, ContentHeaderIcon, ContentArticle } from "./ContentContainerStyles";
 const ReactMarkdown = React.lazy(() => import('react-markdown'))
 
@@ -83,7 +83,7 @@ export const ContentContainer: React.FC<PropsWithChildren<ContentContainerProps>
     <>
       {viewNotes &&
         <ContentArticle role="article">
-          <Suspense fallback={<Loading />}>
+          <Suspense fallback={<ScreenTransitionLoading />}>
             <ReactMarkdown>{markdown}</ReactMarkdown>
           </Suspense>
         </ContentArticle>}

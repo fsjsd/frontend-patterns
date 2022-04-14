@@ -1,6 +1,6 @@
 # Type-ahead
 
-https://bigfrontend.dev/design/Design-a-Typeahead-Widget
+[https://bigfrontend.dev/design/Design-a-Typeahead-Widget](https://bigfrontend.dev/design/Design-a-Typeahead-Widget)
 
 We see Typeahead everywhere, either in Google Search or Twitter Search, when we type something, a suggestion layer gives us the possible result we want.
 
