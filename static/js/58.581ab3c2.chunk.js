@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkfrontend_patterns=self.webpackChunkfrontend_patterns||[]).push([[58],{4058:function(n,e,t){t.r(e);t(8381);var r=t(9343);e.default=function(){return(0,r.jsx)("div",{children:"Infinite scroll Coming soon"})}}}]);
+//# sourceMappingURL=58.581ab3c2.chunk.js.map

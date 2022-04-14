@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/754.9105c35a.chunk.js","mappings":"uJASA,UAPuB,WAErB,OACE","sources":["features/infinitescroll/InfiniteScroll.tsx"],"sourcesContent":["import React from 'react'\r\n\r\nconst InfiniteScroll = () => {\r\n\r\n  return (\r\n    <div>Infinite scroll Coming soon</div>\r\n  )\r\n}\r\n\r\nexport default InfiniteScroll"],"names":[],"sourceRoot":""}
