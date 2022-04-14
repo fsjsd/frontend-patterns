@@ -1,85 +1,58 @@
 import React, { useLayoutEffect, useRef } from 'react'
+import { MdHdrStrong, MdHdrWeak, MdIso, MdLightbulb, MdLightbulbOutline } from 'react-icons/md';
+import { applyHslDataTransform, applyImageDataTransform } from '../../utils/canvas';
+import { HSLColor } from '../../utils/color';
+import { imagePromise } from '../../utils/imagePromise';
+import { Toolbar, ToolbarButton, ToolbarLabel, ToolbarSpacer } from '../../ux/designsystem/Toolbar';
 import { PhotoEditorWrapper as PhotoEditorWrapper } from './PhotoEditorStyles'
 
-// input: h as an angle in [0,360] and s,l in [0,1] - output: r,g,b in [0,1]
-function hsl2rgb(h: number, s: number, l: number) {
-  const a = s * Math.min(l, 1 - l);
-  const f = (n, k = (n + h / 30) % 12) => l - a * Math.max(Math.min(k - 3, 9 - k, 1), -1);
-  return [f(0), f(8), f(4)];
-}
-
-// in: r,g,b in [0,1], out: h in [0,360) and s,l in [0,1]
-function rgb2hsl(r: number, g: number, b: number) {
-  const v = Math.max(r, g, b), c = v - Math.min(r, g, b), f = (1 - Math.abs(v + v - c - 1));
-  const h = c && ((v == r) ? (g - b) / c : ((v == g) ? 2 + (b - r) / c : 4 + (r - g) / c));
-  return [60 * (h < 0 ? h + 6 : h), f ? c / f : 0, (v + v - c) / 2];
-}
-
-
-const imagePromise = (src: string) => {
-  return new Promise<HTMLImageElement>((resolve, reject) => {
-    const img = new Image();
-    img.crossOrigin = "Anonymous";
-    img.onload = function () {
-      resolve(img);
-    };
-    img.onerror = function (e) {
-      reject(e);
-    };
-    img.src = src;
-  });
-}
-
-const applyCommand = (fn) => {
-  return (canvas: HTMLCanvasElement, width: number, height: number) => {
-    const ctx = canvas.getContext('2d');
-    if (!ctx) {
-      return;
-    }
-    const imageData = ctx.getImageData(0, 0, width, height);
-    fn(imageData.data);
-    ctx.putImageData(imageData, 0, 0);
-  }
-}
-const applyHslCommand = (fn) => {
-  return applyCommand((myImageData) => {
-    for (let i = 0; i < myImageData.length; i += 4) {
-      const [h, s, l] = rgb2hsl(myImageData[i] / 255, myImageData[i + 1] / 255, myImageData[i + 2] / 255);
-      const [h1, s1, l1] = fn(h, s, l);
-      const [r, g, b] = hsl2rgb(h1, s1, l1);
-      myImageData[i] = r * 255;
-      myImageData[i + 1] = g * 255;
-      myImageData[i + 2] = b * 255;
-    }
-  });
-}
-
 const commands = {
-  invert: (canvas: HTMLCanvasElement, width: number, height: number) => {
-    const ctx = canvas.getContext('2d');
-    if (!ctx) {
-      return;
-    }
-    const myImageData = ctx.getImageData(0, 0, width, height);
-    console.log(myImageData);
+  invert: applyImageDataTransform((myImageData: ImageData) => {
     for (let i = 0; i < myImageData.data.length; i += 4) {
       myImageData.data[i] = 255 - myImageData.data[i];
       myImageData.data[i + 1] = 255 - myImageData.data[i + 1];
       myImageData.data[i + 2] = 255 - myImageData.data[i + 2];
     }
-    ctx.putImageData(myImageData, 0, 0);
-  },
-  saturate: applyHslCommand((h, s, l) => {
-    return [h, s * 1.1, l];
   }),
-  desaturate: applyHslCommand((h, s, l) => {
-    return [h, s * 0.9, l];
+  saturate: applyImageDataTransform((myImageData: ImageData) => {
+    for (let i = 0; i < myImageData.data.length; i += 4) {
+      myImageData.data[i] = 255 - myImageData.data[i];
+      myImageData.data[i + 1] = 255 - myImageData.data[i + 1];
+      myImageData.data[i + 2] = 255 - myImageData.data[i + 2];
+    }
   }),
-  lighten: applyHslCommand((h, s, l) => {
-    return [h, s, l * 1.05];
+  saturateSlow: applyHslDataTransform((hsl: HSLColor) => {
+    return [hsl[0], hsl[1] * 1.5, hsl[2]];
   }),
-  darken: applyHslCommand((h, s, l) => {
-    return [h, s, l * 0.95];
+  desaturate: applyImageDataTransform((myImageData: ImageData) => {
+    for (let i = 0; i < myImageData.data.length; i += 4) {
+      myImageData.data[i] = 255 - myImageData.data[i];
+      myImageData.data[i + 1] = 255 - myImageData.data[i + 1];
+      myImageData.data[i + 2] = 255 - myImageData.data[i + 2];
+    }
+  }),
+  desaturateSlow: applyHslDataTransform((hsl: HSLColor) => {
+    return [hsl[0], hsl[1] * 0.9, hsl[2]];
+  }),
+  lighten: applyImageDataTransform((myImageData: ImageData) => {
+    for (let i = 0; i < myImageData.data.length; i += 4) {
+      myImageData.data[i] = 255 - myImageData.data[i];
+      myImageData.data[i + 1] = 255 - myImageData.data[i + 1];
+      myImageData.data[i + 2] = 255 - myImageData.data[i + 2];
+    }
+  }),
+  darken: applyImageDataTransform((myImageData: ImageData) => {
+    for (let i = 0; i < myImageData.data.length; i += 4) {
+      myImageData.data[i] = 255 - myImageData.data[i];
+      myImageData.data[i + 1] = 255 - myImageData.data[i + 1];
+      myImageData.data[i + 2] = 255 - myImageData.data[i + 2];
+    }
+  }),
+  lightenSlow: applyHslDataTransform((hsl: HSLColor) => {
+    return [hsl[0], hsl[1], hsl[2] * 1.05];
+  }),
+  darkenSlow: applyHslDataTransform((hsl: HSLColor) => {
+    return [hsl[0], hsl[1], hsl[2] * 0.95];
   }),
 }
 
@@ -95,9 +68,12 @@ const draw = async (canvas: HTMLCanvasElement, width: number, height: number) =>
 
 const PhotoEditor = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const [processingInfo, setProcessingInfo] = React.useState("");
 
   const width = 800;
   const height = 600;
+
+  const pixelCount = width * height;
 
   useLayoutEffect(() => {
     if (canvasRef.current) {
@@ -107,19 +83,46 @@ const PhotoEditor = () => {
 
   const handleCommand = (command: string) => {
     if (canvasRef.current) {
-      commands[command](canvasRef.current, width, height);
+      requestAnimationFrame(() => {
+        let time = performance.now();
+        commands[command](canvasRef.current, width, height);
+        time = (performance.now() - time) * 1000;
+        const rate = pixelCount / time;
+        // const pps = (1000000 * rate | 0).toLocaleString();
+        const rateInfo = (rate < 1) ? "less than 1" : rate.toLocaleString();
+        // const debug = command + ". Time to process " + pixelCount.toLocaleString() + " pixels: " + (time | 0).toLocaleString() + "µs. " + rateInfo + "pix per µs. " + pps + " pixel per second";
+        setProcessingInfo(`${rateInfo} pixels per µs`);
+
+        // For HD pictures need a rate of about 125 pix per µs
+        // 1. Code Start
+        // saturate: 1.175 pix per µs
+        // 2. color type array conversion
+        // saturate: 1.325 pix per µs
+        // invert is 68.571 pix per µs
+      })
     }
   }
 
   return (
     <PhotoEditorWrapper>
-      <div role="toolbar">
-        <button onClick={() => handleCommand('invert')}>Invert</button>
-        <button onClick={() => handleCommand('saturate')}>Saturate</button>
-        <button onClick={() => handleCommand('desaturate')}>Desaturate</button>
-        <button onClick={() => handleCommand('lighten')}>Lighten</button>
-        <button onClick={() => handleCommand('darken')}>Darken</button>
-      </div>
+      <Toolbar>
+        <ToolbarButton onClick={() => handleCommand('invert')}>
+          <MdIso /> Invert</ToolbarButton>
+        <ToolbarButton onClick={() => handleCommand('saturate')}>
+          <MdHdrStrong /> Saturate</ToolbarButton>
+        <ToolbarButton onClick={() => handleCommand('desaturate')}>
+          <MdHdrWeak /> Desaturate</ToolbarButton>
+        <ToolbarButton onClick={() => handleCommand('lighten')}>
+          <MdLightbulbOutline /> Lighten
+        </ToolbarButton>
+        <ToolbarButton onClick={() => handleCommand('darken')}>
+          <MdLightbulb /> Darken
+        </ToolbarButton>
+        <ToolbarSpacer />
+        <ToolbarLabel>
+          {processingInfo}
+        </ToolbarLabel>
+      </Toolbar>
       <canvas
         ref={canvasRef}
         width={width}
