@@ -20,7 +20,6 @@ const DemoError = ({ onError }: { onError?: (error: unknown) => void }) => {
         resultsWrapperComponent={TypeAheadResultsWrapper}
         resultComponent={TextResultItem}
         getResults={() => Promise.reject(new Error('Something went wrong'))}
-        getResultText={(datum) => datum as string}
         onSelect={() => {
           // no op
         }}

@@ -1,6 +1,7 @@
 import React from 'react';
 import { fireEvent, render, screen } from '@testing-library/react';
 import App from './App';
+import AppShell from './AppShell';
 import { axe, toHaveNoViolations } from 'jest-axe';
 
 expect.extend(toHaveNoViolations);
@@ -11,6 +12,10 @@ describe('App tests', () => {
     const { container } = render(<App hostContext={hostContext} />);
     const linkElement = screen.getByText(/Carousel/i);
     expect(linkElement).toBeInTheDocument();
+    expect(container).toMatchSnapshot();
+  });
+  test('AppShell render matches snapshot (full screen)', () => {
+    const { container } = render(<AppShell />);
     expect(container).toMatchSnapshot();
   });
   test('shows menu in mobile mode', () => {

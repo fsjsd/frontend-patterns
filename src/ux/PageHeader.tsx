@@ -14,7 +14,7 @@ const externalLinkIcon = {
  * @param param0
  * @returns 
  */
-export const PageHeader = ({ onMenuClick }) => {
+export const PageHeader = ({ onMenuClick, showLinks }) => {
 
   const handleMenuClick = () => {
     onMenuClick();
@@ -22,11 +22,11 @@ export const PageHeader = ({ onMenuClick }) => {
 
   return (
     <Header role="banner">
-      <MenuButton
+      {showLinks && <MenuButton
         role="button"
         aria-label='Site navigation'
         onClick={handleMenuClick}
-      />
+      />}
       <HeaderPageTitle>
         <b>
           Front-End
@@ -34,7 +34,7 @@ export const PageHeader = ({ onMenuClick }) => {
         {" "}
         Design Patterns
       </HeaderPageTitle>
-      <Links>
+      {showLinks && <Links>
         <a
           href="https://github.com/fsjsd/frontend-patterns"
           aria-label="View fsjs.dev on GitHub"
@@ -58,7 +58,7 @@ export const PageHeader = ({ onMenuClick }) => {
           title="fsjs.dev - Full Stack Javascript Development"
         >
         </a>
-      </Links>
+      </Links>}
     </Header>
   )
 }
