@@ -12,7 +12,6 @@ import { SectionMain, SiteContainer, FixedApp, HeaderBrand } from './AppStyles';
 import { ContentFooter } from './ux/ContentContainerStyles';
 import { NavigationDrawer } from './ux/NavigationContainerStyles';
 const WebVitals = React.lazy(() => import('./shell/webvitals/WebVitals'));
-// import WebVitals from './shell/webvitals/WebVitals';
 
 // see: https://github.com/DefinitelyTyped/DefinitelyTyped/issues/59765
 const ThemeProviderFixed = ThemeProvider as unknown as React.FC<PropsWithChildren<{ theme: typeof theme }>>;
@@ -32,7 +31,7 @@ function App({ hostContext }: { hostContext: string }) {
   const handleLinkClick = () => {
     setShowMenu(false);
   }
-  //ThemeProvider theme={theme}
+
   return (
     <ThemeProviderFixed theme={theme}>
       <BrowserRouter>
