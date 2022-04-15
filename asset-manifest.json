@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/frontend-patterns/static/js/main.96b2557a.js",
-    "static/js/647.2fc75ddd.chunk.js": "/frontend-patterns/static/js/647.2fc75ddd.chunk.js",
+    "main.css": "/frontend-patterns/static/css/main.da9119d9.css",
+    "main.js": "/frontend-patterns/static/js/main.bd041b89.js",
     "static/js/73.ece3a6df.chunk.js": "/frontend-patterns/static/js/73.ece3a6df.chunk.js",
     "static/js/279.4869f510.chunk.js": "/frontend-patterns/static/js/279.4869f510.chunk.js",
     "static/js/572.06b522c4.chunk.js": "/frontend-patterns/static/js/572.06b522c4.chunk.js",
@@ -24,13 +24,14 @@
     "static/js/309.e604add0.chunk.js": "/frontend-patterns/static/js/309.e604add0.chunk.js",
     "static/js/604.6414b2b9.chunk.js": "/frontend-patterns/static/js/604.6414b2b9.chunk.js",
     "static/js/1.9b46e458.chunk.js": "/frontend-patterns/static/js/1.9b46e458.chunk.js",
-    "index.html": "/frontend-patterns/index.html",
+    "static/js/747.6427bf68.chunk.js": "/frontend-patterns/static/js/747.6427bf68.chunk.js",
     "static/media/LogoFsjsDev.svg": "/frontend-patterns/static/media/LogoFsjsDev.b34203088461f6d2b97ed74badb85b02.svg",
+    "index.html": "/frontend-patterns/index.html",
     "static/media/requirements.md": "/frontend-patterns/static/media/requirements.31d6cfe0d16ae931b73c.md",
     "static/media/Github.svg": "/frontend-patterns/static/media/Github.9b5c84d6b5df57037ad75ff8161d27c0.svg",
     "static/media/Youtube.svg": "/frontend-patterns/static/media/Youtube.5acb0872756358576a1b671414354d36.svg",
-    "main.96b2557a.js.map": "/frontend-patterns/static/js/main.96b2557a.js.map",
-    "647.2fc75ddd.chunk.js.map": "/frontend-patterns/static/js/647.2fc75ddd.chunk.js.map",
+    "main.da9119d9.css.map": "/frontend-patterns/static/css/main.da9119d9.css.map",
+    "main.bd041b89.js.map": "/frontend-patterns/static/js/main.bd041b89.js.map",
     "73.ece3a6df.chunk.js.map": "/frontend-patterns/static/js/73.ece3a6df.chunk.js.map",
     "572.06b522c4.chunk.js.map": "/frontend-patterns/static/js/572.06b522c4.chunk.js.map",
     "78.d7368950.chunk.js.map": "/frontend-patterns/static/js/78.d7368950.chunk.js.map",
@@ -44,6 +45,7 @@
     "604.6414b2b9.chunk.js.map": "/frontend-patterns/static/js/604.6414b2b9.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.96b2557a.js"
+    "static/css/main.da9119d9.css",
+    "static/js/main.bd041b89.js"
   ]
 }
