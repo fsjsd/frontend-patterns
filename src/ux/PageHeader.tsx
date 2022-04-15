@@ -14,10 +14,10 @@ const externalLinkIcon = {
  * @param param0
  * @returns 
  */
-export const PageHeader = ({ onMenuClick, showLinks }) => {
+export const PageHeader = ({ onMenuClick, showLinks }: { onMenuClick?: () => void, showLinks: boolean }) => {
 
   const handleMenuClick = () => {
-    onMenuClick();
+    onMenuClick && onMenuClick();
   }
 
   return (

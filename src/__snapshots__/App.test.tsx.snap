@@ -174,6 +174,7 @@ exports[`App tests AppShell render matches snapshot (full screen) 1`] = `
 <div>
   <div
     class="c0"
+    id="root"
   >
     <div
       class="c1"
