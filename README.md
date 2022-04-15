@@ -10,15 +10,21 @@ Enterprise-grade repo of modern front end design patterns, implemented in React.
 
 # Tech
 
-* 🌐 ***Create React App*** w/ ***TypeScript*** throughout 
+* 🌐 ***Create React App*** w/ ***TypeScript*** throughout
+  * 💄 Custom CSS via styled-components throughout
+  * 📱 Mobile Optimised / responsive
+  * 👂 a11y HTML
+* 🚀 ***High Performance*** React
+  * ✨ ***60fps*** on most demos, on mobile. 
+  * 🔥 Near 100% ***Lighthouse*** rating
+  * ✔️ ***Web vitals*** reported on screen
 * 💪 ***>95%*** Unit Test coverage via ***Jest***
- * 👩‍🦯 ***a11y*** test automation via ***jest-axe***
-* 🔥 Near 100% ***Lighthouse*** rating
+  * 👩‍🦯 ***a11y*** test automation via ***jest-axe***rating
 * 🏭 CI pipeline (GitHub Actions)
   * 💂 High coverage thresholds
   * 🔒 Automated ***Synk, CodeQL*** & ***LGTM*** checks
   * ❤️ E2E tests via ***Cypress*** (basic)
-  * 🌎 ***Lighthouse***
+  * 🌎 ***Lighthouse*** testing
   * 📄 ***GitHub Pages*** deployment on master merge
 * ✋ local ***husky/lint-staged*** to enforce lint / test coverage standards
 
