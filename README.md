@@ -13,13 +13,13 @@ Enterprise-grade repo of modern front end design patterns, implemented in React.
 * 🌐 ***Create React App*** w/ ***TypeScript*** throughout
   * 💄 Custom CSS via styled-components throughout
   * 📱 Mobile Optimised / responsive
-  * 👂 a11y HTML
+  * 👂 Accessible, Semantic HTML
 * 🚀 ***High Performance*** React
   * ✨ ***60fps*** on most demos, on mobile. 
   * 🔥 Near 100% ***Lighthouse*** rating
   * ✔️ ***Web vitals*** reported on screen
 * 💪 ***>95%*** Unit Test coverage via ***Jest***
-  * 👩‍🦯 ***a11y*** test automation via ***jest-axe***rating
+  * 👩‍🦯 ***a11y*** test automation via ***jest-axe***
 * 🏭 CI pipeline (GitHub Actions)
   * 💂 High coverage thresholds
   * 🔒 Automated ***Synk, CodeQL*** & ***LGTM*** checks
@@ -38,12 +38,17 @@ Enterprise-grade repo of modern front end design patterns, implemented in React.
 
 ## Components
 
+### [Typeahead](src/features/typeahead/)
+
+Fully styleable, accessible Typeahead component pattern (bring your own UI components).
+
+![typeahead](https://user-images.githubusercontent.com/30638950/163543928-f9e40895-495a-446a-a791-4de5b92350bf.gif)
+
 ### [Carousel](src/features/carousel/)
 
 React implementation of web.dev's performant [Carousel demo](https://web.dev/patterns/web-vitals-patterns/)
 
 ![carousel](https://user-images.githubusercontent.com/30638950/162620275-5eb59fca-fed7-455b-8e83-6f8de411ccdf.gif)
-
 
 # Features
 
@@ -53,16 +58,8 @@ React based Snake game with three different view implementations (HTML, Canvas a
 
 ![snake](https://user-images.githubusercontent.com/30638950/162620411-7b697099-0088-468f-a5b5-9f68d756f187.gif)
 
-
 # References
 
 Refer to [this gist](https://gist.github.com/fsjsd/149bdb13fb644849a519ad779a1e0e60) for a list of articles 
 and resources
-
-# Tips
-
-lint-staged deleting your work? Run this to recover the stash it creates:
-
-`gitk --all $( git fsck --no-reflog | awk '/dangling commit/ {print $3}' )`
-
 
