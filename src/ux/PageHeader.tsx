@@ -36,7 +36,7 @@ export const PageHeader = ({ onMenuClick, showLinks }: { onMenuClick?: () => voi
       </HeaderPageTitle>
       {showLinks && <Links>
         <a
-          href="https://www.youtube.com/channel/UC6ndgitE_bgJ02nyrrue-1A"
+          href="https://www.youtube.com/c/fsjsd"
           aria-label="View videos on Youtube"
           target="_blank"
           rel="noreferrer"
