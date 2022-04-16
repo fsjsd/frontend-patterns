@@ -2,8 +2,12 @@
 
 exports[`Messenger renders and matches snapshot 1`] = `
 .c1 {
-  font-size: 1em;
-  font-weight: inherit;
+  font-size: 1.15em;
+  font-weight: 500;
+  -webkit-letter-spacing: -0.05em;
+  -moz-letter-spacing: -0.05em;
+  -ms-letter-spacing: -0.05em;
+  letter-spacing: -0.05em;
   color: inherit;
   padding: 13px;
   -webkit-box-flex: 2;

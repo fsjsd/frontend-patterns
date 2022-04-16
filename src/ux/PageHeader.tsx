@@ -36,20 +36,20 @@ export const PageHeader = ({ onMenuClick, showLinks }: { onMenuClick?: () => voi
       </HeaderPageTitle>
       {showLinks && <Links>
         <a
-          href="https://github.com/fsjsd/frontend-patterns"
-          aria-label="View fsjs.dev on GitHub"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <LogoGithub style={externalLinkIcon} />
-        </a>
-        <a
           href="https://www.youtube.com/channel/UC6ndgitE_bgJ02nyrrue-1A"
           aria-label="View videos on Youtube"
           target="_blank"
           rel="noreferrer"
         >
           <LogoYoutube style={externalLinkIcon} />
+        </a>
+        <a
+          href="https://github.com/fsjsd/frontend-patterns"
+          aria-label="View fsjs.dev on GitHub"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <LogoGithub style={externalLinkIcon} />
         </a>
         <a
           href="https://fsjs.dev"

@@ -11,7 +11,8 @@ import {
   MdRecentActors,
   MdTableView,
   MdTheaters,
-  MdTask
+  MdTask,
+  MdOutlineImage
 } from 'react-icons/md'
 import { GiSandSnake } from "react-icons/gi";
 import { FaReact } from "react-icons/fa";
@@ -29,6 +30,7 @@ import ToDoContainer from './features/todo/ToDoContainer'
 import Home from './Home'
 import ReactDemoContainer from './features/reactdemos/ReactDemoContainer'
 import SnakeGameContainer from './features/snakegame/SnakeGameContainer'
+import ImgDynamicContainer from './components/imgdynamic/ImgDynamicContainer';
 
 const urlRoot = process.env.REACT_APP_ROOT_URL
 
@@ -54,6 +56,14 @@ const appRoutes: AppRouteInfo[] = [
     element: <CarouselContainer />,
     icon: <MdRecentActors />,
     title: 'Carousel',
+    group: NAV_GROUPS.COMPONENTS,
+    isWip: false,
+  },
+  {
+    path: `${urlRoot}/imgdynamic`,
+    element: <ImgDynamicContainer imageCount={90} />,
+    icon: <MdOutlineImage />,
+    title: 'Dynamic Image',
     group: NAV_GROUPS.COMPONENTS,
     isWip: false,
   },

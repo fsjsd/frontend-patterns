@@ -39,8 +39,9 @@ exports[`UniversitySearch arrow down has no effect at end 1`] = `
 
 .c3 {
   color: inherit;
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-family: inherit;
+  font-weight: 400;
   line-height: 1rem;
   margin-top: 0.25rem;
   display: block;
@@ -73,7 +74,8 @@ exports[`UniversitySearch arrow down has no effect at end 1`] = `
 .c1 {
   padding: 4px 0px;
   display: block;
-  font-size: 0.95rem;
+  font-size: 1rem;
+  font-weight: 300;
   line-height: 1rem;
   font-weight: 500;
   color: rgb(55 65 81 / 1);
@@ -201,8 +203,9 @@ exports[`UniversitySearch arrow up selects first result 1`] = `
 
 .c3 {
   color: inherit;
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-family: inherit;
+  font-weight: 400;
   line-height: 1rem;
   margin-top: 0.25rem;
   display: block;
@@ -235,7 +238,8 @@ exports[`UniversitySearch arrow up selects first result 1`] = `
 .c1 {
   padding: 4px 0px;
   display: block;
-  font-size: 0.95rem;
+  font-size: 1rem;
+  font-weight: 300;
   line-height: 1rem;
   font-weight: 500;
   color: rgb(55 65 81 / 1);
@@ -363,8 +367,9 @@ exports[`UniversitySearch navigates on key press 'ArrowDown' 1`] = `
 
 .c3 {
   color: inherit;
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-family: inherit;
+  font-weight: 400;
   line-height: 1rem;
   margin-top: 0.25rem;
   display: block;
@@ -397,7 +402,8 @@ exports[`UniversitySearch navigates on key press 'ArrowDown' 1`] = `
 .c1 {
   padding: 4px 0px;
   display: block;
-  font-size: 0.95rem;
+  font-size: 1rem;
+  font-weight: 300;
   line-height: 1rem;
   font-weight: 500;
   color: rgb(55 65 81 / 1);
@@ -525,8 +531,9 @@ exports[`UniversitySearch navigates on key press 'ArrowUp' 1`] = `
 
 .c3 {
   color: inherit;
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-family: inherit;
+  font-weight: 400;
   line-height: 1rem;
   margin-top: 0.25rem;
   display: block;
@@ -559,7 +566,8 @@ exports[`UniversitySearch navigates on key press 'ArrowUp' 1`] = `
 .c1 {
   padding: 4px 0px;
   display: block;
-  font-size: 0.95rem;
+  font-size: 1rem;
+  font-weight: 300;
   line-height: 1rem;
   font-weight: 500;
   color: rgb(55 65 81 / 1);
@@ -687,8 +695,9 @@ exports[`UniversitySearch no response renders correctly 1`] = `
 
 .c3 {
   color: inherit;
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-family: inherit;
+  font-weight: 400;
   line-height: 1rem;
   margin-top: 0.25rem;
   display: block;
@@ -721,7 +730,8 @@ exports[`UniversitySearch no response renders correctly 1`] = `
 .c1 {
   padding: 4px 0px;
   display: block;
-  font-size: 0.95rem;
+  font-size: 1rem;
+  font-weight: 300;
   line-height: 1rem;
   font-weight: 500;
   color: rgb(55 65 81 / 1);
@@ -796,8 +806,9 @@ exports[`UniversitySearch renders and matches snapshot 1`] = `
 
 .c3 {
   color: inherit;
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-family: inherit;
+  font-weight: 400;
   line-height: 1rem;
   margin-top: 0.25rem;
   display: block;
@@ -830,7 +841,8 @@ exports[`UniversitySearch renders and matches snapshot 1`] = `
 .c1 {
   padding: 4px 0px;
   display: block;
-  font-size: 0.95rem;
+  font-size: 1rem;
+  font-weight: 300;
   line-height: 1rem;
   font-weight: 500;
   color: rgb(55 65 81 / 1);
@@ -893,8 +905,9 @@ exports[`UniversitySearch typing less than 3 chars does nothing 1`] = `
 
 .c3 {
   color: inherit;
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-family: inherit;
+  font-weight: 400;
   line-height: 1rem;
   margin-top: 0.25rem;
   display: block;
@@ -927,7 +940,8 @@ exports[`UniversitySearch typing less than 3 chars does nothing 1`] = `
 .c1 {
   padding: 4px 0px;
   display: block;
-  font-size: 0.95rem;
+  font-size: 1rem;
+  font-weight: 300;
   line-height: 1rem;
   font-weight: 500;
   color: rgb(55 65 81 / 1);
@@ -1022,8 +1036,9 @@ exports[`UniversitySearch valid query triggers result query 1`] = `
 
 .c3 {
   color: inherit;
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-family: inherit;
+  font-weight: 400;
   line-height: 1rem;
   margin-top: 0.25rem;
   display: block;
@@ -1056,7 +1071,8 @@ exports[`UniversitySearch valid query triggers result query 1`] = `
 .c1 {
   padding: 4px 0px;
   display: block;
-  font-size: 0.95rem;
+  font-size: 1rem;
+  font-weight: 300;
   line-height: 1rem;
   font-weight: 500;
   color: rgb(55 65 81 / 1);

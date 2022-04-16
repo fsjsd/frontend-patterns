@@ -2,8 +2,9 @@ import styled from "styled-components";
 import { navigationBreakpoint } from './designsystem/responsive/breakpoints';
 
 export const ContentHeaderLabel = styled.h2`
-  font-size: 1em;
-  font-weight: inherit;
+  font-size: 1.15em;
+  font-weight: 500;
+  letter-spacing: -0.05em;
   color: inherit;
   padding: 13px;
   flex-grow: 2;
@@ -84,7 +85,9 @@ export const ContentArticle = styled.div`
   li{
     list-style:disc;
   }
-
+  pre {
+    white-space: pre-wrap;
+  }
   code {
     color: #272822;
     background-color: #f8f8f2;
@@ -110,6 +113,6 @@ export const ContentFooter = styled.section`
   display: flex;  
   // brittle. relies on divs being nested
   &> div {
-    padding-bottom: env(safe-inset-area-bottom);
+    padding-bottom: env(safe-area-inset-bottom);
   }
 `;
