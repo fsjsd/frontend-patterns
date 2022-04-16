@@ -29,15 +29,23 @@ export const Links = styled.div`
   color: white;
   display: none;
   @media ${navigationBreakpoint} { 
-    display: block;
+    display: flex;
+    gap:12px;
     align-items: center;
+  }
+  a {
+    opacity:0.8;
+    transition:opacity 0.2s ease-in-out;
+    :hover{
+      opacity:1;
+    }
   }
 `
 export const MenuButton = styled(GiHamburgerMenu)`
   height: 24px;
-  margin-right: 10px;
   cursor: pointer;
   display: block;
+  margin-right: 15px;
   @media ${navigationBreakpoint} { 
     display: none;
   }

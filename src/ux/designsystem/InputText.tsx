@@ -3,8 +3,9 @@ import styled from "styled-components";
 
 const InputText = styled.input`
   color: inherit;
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-family: inherit;
+  font-weight: 400;
   line-height: 1rem;
   margin-top: 0.25rem;
   display: block;

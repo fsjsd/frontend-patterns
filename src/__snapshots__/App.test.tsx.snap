@@ -41,7 +41,7 @@ exports[`App tests AppShell render matches snapshot (full screen) 1`] = `
   border-left: solid 1px rgb(218,231,241);
   background-color: rgb(246,250,253);
   pointer-events: all;
-  padding-bottom: env(safe-inset-area-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
 }
 
 .c6 {
@@ -232,8 +232,12 @@ exports[`App tests AppShell render matches snapshot (full screen) 1`] = `
 
 exports[`App tests Loads carousel 1`] = `
 .c17 {
-  font-size: 1em;
-  font-weight: inherit;
+  font-size: 1.15em;
+  font-weight: 500;
+  -webkit-letter-spacing: -0.05em;
+  -moz-letter-spacing: -0.05em;
+  -ms-letter-spacing: -0.05em;
+  letter-spacing: -0.05em;
   color: inherit;
   padding: 13px;
   -webkit-box-flex: 2;
@@ -334,7 +338,7 @@ exports[`App tests Loads carousel 1`] = `
 }
 
 .c31> div {
-  padding-bottom: env(safe-inset-area-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
 }
 
 .c21 {
@@ -546,7 +550,7 @@ exports[`App tests Loads carousel 1`] = `
   border-left: solid 1px rgb(218,231,241);
   background-color: rgb(246,250,253);
   pointer-events: all;
-  padding-bottom: env(safe-inset-area-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
 }
 
 .c6 {
@@ -739,11 +743,21 @@ exports[`App tests Loads carousel 1`] = `
   display: none;
 }
 
+.c15 a {
+  opacity: 0.8;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.c15 a:hover {
+  opacity: 1;
+}
+
 .c13 {
   height: 24px;
-  margin-right: 10px;
   cursor: pointer;
   display: block;
+  margin-right: 15px;
 }
 
 .c0 {
@@ -878,7 +892,11 @@ exports[`App tests Loads carousel 1`] = `
 
 @media (min-width:768px) {
   .c15 {
-    display: block;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 12px;
     -webkit-align-items: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -959,6 +977,34 @@ exports[`App tests Loads carousel 1`] = `
                   </svg>
                    
                   Carousel
+                </a>
+              </li>
+              <li>
+                <a
+                  aria-hidden="false"
+                  class="c9"
+                  href="/frontend-patterns/imgdynamic"
+                  role="link"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0V0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                    />
+                  </svg>
+                   
+                  Dynamic Image
                 </a>
               </li>
               <li>
@@ -1321,18 +1367,6 @@ exports[`App tests Loads carousel 1`] = `
             class="c15"
           >
             <a
-              aria-label="View fsjs.dev on GitHub"
-              href="https://github.com/fsjsd/frontend-patterns"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <svg
-                style="height: 24px; margin-left: 10px; cursor: pointer;"
-              >
-                Github.svg
-              </svg>
-            </a>
-            <a
               aria-label="View videos on Youtube"
               href="https://www.youtube.com/channel/UC6ndgitE_bgJ02nyrrue-1A"
               rel="noreferrer"
@@ -1342,6 +1376,18 @@ exports[`App tests Loads carousel 1`] = `
                 style="height: 24px; margin-left: 10px; cursor: pointer;"
               >
                 Youtube.svg
+              </svg>
+            </a>
+            <a
+              aria-label="View fsjs.dev on GitHub"
+              href="https://github.com/fsjsd/frontend-patterns"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <svg
+                style="height: 24px; margin-left: 10px; cursor: pointer;"
+              >
+                Github.svg
               </svg>
             </a>
             <a
@@ -1572,8 +1618,12 @@ exports[`App tests Loads carousel 1`] = `
 
 exports[`App tests render matches snapshot (full screen) 1`] = `
 .c17 {
-  font-size: 1em;
-  font-weight: inherit;
+  font-size: 1.15em;
+  font-weight: 500;
+  -webkit-letter-spacing: -0.05em;
+  -moz-letter-spacing: -0.05em;
+  -ms-letter-spacing: -0.05em;
+  letter-spacing: -0.05em;
   color: inherit;
   padding: 13px;
   -webkit-box-flex: 2;
@@ -1658,7 +1708,7 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
 }
 
 .c21> div {
-  padding-bottom: env(safe-inset-area-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
 }
 
 .c20 {
@@ -1715,7 +1765,7 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
   border-left: solid 1px rgb(218,231,241);
   background-color: rgb(246,250,253);
   pointer-events: all;
-  padding-bottom: env(safe-inset-area-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
 }
 
 .c6 {
@@ -1908,11 +1958,21 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
   display: none;
 }
 
+.c15 a {
+  opacity: 0.8;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.c15 a:hover {
+  opacity: 1;
+}
+
 .c13 {
   height: 24px;
-  margin-right: 10px;
   cursor: pointer;
   display: block;
+  margin-right: 15px;
 }
 
 .c0 {
@@ -2024,7 +2084,11 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
 
 @media (min-width:768px) {
   .c15 {
-    display: block;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 12px;
     -webkit-align-items: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -2105,6 +2169,34 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
                   </svg>
                    
                   Carousel
+                </a>
+              </li>
+              <li>
+                <a
+                  aria-hidden="false"
+                  class="c9"
+                  href="/frontend-patterns/imgdynamic"
+                  role="link"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0V0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                    />
+                  </svg>
+                   
+                  Dynamic Image
                 </a>
               </li>
               <li>
@@ -2467,18 +2559,6 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
             class="c15"
           >
             <a
-              aria-label="View fsjs.dev on GitHub"
-              href="https://github.com/fsjsd/frontend-patterns"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <svg
-                style="height: 24px; margin-left: 10px; cursor: pointer;"
-              >
-                Github.svg
-              </svg>
-            </a>
-            <a
               aria-label="View videos on Youtube"
               href="https://www.youtube.com/channel/UC6ndgitE_bgJ02nyrrue-1A"
               rel="noreferrer"
@@ -2488,6 +2568,18 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
                 style="height: 24px; margin-left: 10px; cursor: pointer;"
               >
                 Youtube.svg
+              </svg>
+            </a>
+            <a
+              aria-label="View fsjs.dev on GitHub"
+              href="https://github.com/fsjsd/frontend-patterns"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <svg
+                style="height: 24px; margin-left: 10px; cursor: pointer;"
+              >
+                Github.svg
               </svg>
             </a>
             <a
@@ -2573,8 +2665,12 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
 
 exports[`App tests shows menu in mobile mode 1`] = `
 .c17 {
-  font-size: 1em;
-  font-weight: inherit;
+  font-size: 1.15em;
+  font-weight: 500;
+  -webkit-letter-spacing: -0.05em;
+  -moz-letter-spacing: -0.05em;
+  -ms-letter-spacing: -0.05em;
+  letter-spacing: -0.05em;
   color: inherit;
   padding: 13px;
   -webkit-box-flex: 2;
@@ -2659,7 +2755,7 @@ exports[`App tests shows menu in mobile mode 1`] = `
 }
 
 .c21> div {
-  padding-bottom: env(safe-inset-area-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
 }
 
 .c20 {
@@ -2716,7 +2812,7 @@ exports[`App tests shows menu in mobile mode 1`] = `
   border-left: solid 1px rgb(218,231,241);
   background-color: rgb(246,250,253);
   pointer-events: all;
-  padding-bottom: env(safe-inset-area-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
 }
 
 .c6 {
@@ -2909,11 +3005,21 @@ exports[`App tests shows menu in mobile mode 1`] = `
   display: none;
 }
 
+.c15 a {
+  opacity: 0.8;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.c15 a:hover {
+  opacity: 1;
+}
+
 .c13 {
   height: 24px;
-  margin-right: 10px;
   cursor: pointer;
   display: block;
+  margin-right: 15px;
 }
 
 .c0 {
@@ -3052,7 +3158,11 @@ exports[`App tests shows menu in mobile mode 1`] = `
 
 @media (min-width:768px) {
   .c15 {
-    display: block;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 12px;
     -webkit-align-items: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -3133,6 +3243,34 @@ exports[`App tests shows menu in mobile mode 1`] = `
                   </svg>
                    
                   Carousel
+                </a>
+              </li>
+              <li>
+                <a
+                  aria-hidden="false"
+                  class="c9"
+                  href="/frontend-patterns/imgdynamic"
+                  role="link"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0V0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                    />
+                  </svg>
+                   
+                  Dynamic Image
                 </a>
               </li>
               <li>
@@ -3495,18 +3633,6 @@ exports[`App tests shows menu in mobile mode 1`] = `
             class="c15"
           >
             <a
-              aria-label="View fsjs.dev on GitHub"
-              href="https://github.com/fsjsd/frontend-patterns"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <svg
-                style="height: 24px; margin-left: 10px; cursor: pointer;"
-              >
-                Github.svg
-              </svg>
-            </a>
-            <a
               aria-label="View videos on Youtube"
               href="https://www.youtube.com/channel/UC6ndgitE_bgJ02nyrrue-1A"
               rel="noreferrer"
@@ -3516,6 +3642,18 @@ exports[`App tests shows menu in mobile mode 1`] = `
                 style="height: 24px; margin-left: 10px; cursor: pointer;"
               >
                 Youtube.svg
+              </svg>
+            </a>
+            <a
+              aria-label="View fsjs.dev on GitHub"
+              href="https://github.com/fsjsd/frontend-patterns"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <svg
+                style="height: 24px; margin-left: 10px; cursor: pointer;"
+              >
+                Github.svg
               </svg>
             </a>
             <a
