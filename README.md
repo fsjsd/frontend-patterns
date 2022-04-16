@@ -44,6 +44,12 @@ Fully styleable, accessible Typeahead component pattern (bring your own UI compo
 
 ![typeahead](https://user-images.githubusercontent.com/30638950/163543928-f9e40895-495a-446a-a791-4de5b92350bf.gif)
 
+### [Dynamic Image](src/features/dynamicimage/)
+
+Drop-in replacement for native HTML image component. Does not load image until visible in viewport, provides props to display custom loading component while image downloading, and error component if image load fails
+
+![dynamicimage2](https://user-images.githubusercontent.com/30638950/163666382-82eee954-c14d-4b51-9ded-767d20cbb8b4.gif)
+
 ### [Carousel](src/features/carousel/)
 
 React implementation of web.dev's performant [Carousel demo](https://web.dev/patterns/web-vitals-patterns/)
