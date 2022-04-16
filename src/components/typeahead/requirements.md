@@ -1,6 +1,6 @@
 # Type-ahead
 
-https://bigfrontend.dev/design/Design-a-Typeahead-Widget
+[https://bigfrontend.dev/design/Design-a-Typeahead-Widget](https://bigfrontend.dev/design/Design-a-Typeahead-Widget)
 
 We see Typeahead everywhere, either in Google Search or Twitter Search, when we type something, a suggestion layer gives us the possible result we want.
 
@@ -72,6 +72,7 @@ interface TypeAheadState<T> {
 }
 ```
 
+
 ### Optimization
 
 Network
@@ -105,12 +106,8 @@ Keyboard navigation
   - close
   - Tabable results
 
-Visual Optimisation
-
-- apply rem's
-- aria-live on appearance
-- aria roles
-
+Based on WAI recommendation:
+https://www.w3.org/TR/wai-aria-practices-1.1/examples/combobox/aria1.1pattern/listbox-combo.html
 ## References
 
 https://www.youtube.com/watch?v=us0qySiUsGU

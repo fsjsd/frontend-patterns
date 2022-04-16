@@ -6,7 +6,7 @@ import ButtonGroup from '../../ux/designsystem/ButtonGroup';
 
 
 // eslint-disable-next-line react/display-name
-export const CounterAMemo: React.VFC<{ a: number, render: () => void }> = React.memo(({ a, render }) => {
+export const CounterAMemo: React.FC<{ a: number, render: () => void }> = React.memo(({ a, render }) => {
   // console.count("CounterAMemo")
   // console.log("CounterAMemo", { a })
   render();
@@ -17,7 +17,7 @@ export const CounterAMemo: React.VFC<{ a: number, render: () => void }> = React.
   )
 })
 
-export const CounterABMemo: React.VFC<{ myObj: { a: number, b: number }, render: () => void }> = React.memo(({ myObj, render }) => {
+export const CounterABMemo: React.FC<{ myObj: { a: number, b: number }, render: () => void }> = React.memo(({ myObj, render }) => {
   // console.count("CounterABMemo")
   // console.log("CounterABMemo", { ...myObj });
   render();
@@ -28,7 +28,7 @@ export const CounterABMemo: React.VFC<{ myObj: { a: number, b: number }, render:
   )
 });
 
-export const CounterABUseMemo: React.VFC<{ myObj: { a: number, b: number }, render: () => void }> = ({ myObj, render }) => {
+export const CounterABUseMemo: React.FC<{ myObj: { a: number, b: number }, render: () => void }> = ({ myObj, render }) => {
   // this is neat but still executes js in component
   return useMemo(() => {
     // console.count("CounterABUseMemo")
@@ -65,7 +65,7 @@ const shallowMemoComparator = <T,>(prev: Readonly<React.PropsWithChildren<T>>, n
 }
 */
 
-export const CounterABDeepMemo: React.FC<{ myObj: { a: number, b: number }, render: () => void }> = React.memo(({ myObj, render, children }) => {
+export const CounterABDeepMemo: React.FC<React.PropsWithChildren<{ myObj: { a: number, b: number }, render: () => void }>> = React.memo(({ myObj, render, children }) => {
   // console.count("CounterABShallowMemo")
   // console.log("CounterABShallowMemo", { ...myObj });
   render();
@@ -101,7 +101,7 @@ export const ReactMemo = () => {
   }
 
   return (
-    <div role="main" style={{ padding: "10px" }}>
+    <div role="main">
       <CounterAMemo a={countObj.a} render={render('CounterAMemo')} />
       {/* immutable objects re-created through react state will cause full re-render */}
       <CounterABMemo myObj={countObj} render={render('CounterABMemo')} />

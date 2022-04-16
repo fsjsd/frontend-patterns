@@ -11,7 +11,8 @@ import {
   MdRecentActors,
   MdTableView,
   MdTheaters,
-  MdTask
+  MdTask,
+  MdOutlineImage
 } from 'react-icons/md'
 import { GiSandSnake } from "react-icons/gi";
 import { FaReact } from "react-icons/fa";
@@ -27,8 +28,9 @@ import PollContainer from './components/poll/PollContainer'
 import TypeAheadContainer from './components/typeahead/TypeAheadContainer'
 import ToDoContainer from './features/todo/ToDoContainer'
 import Home from './Home'
-import Index from './features/reactdemos/Index'
+import ReactDemoContainer from './features/reactdemos/ReactDemoContainer'
 import SnakeGameContainer from './features/snakegame/SnakeGameContainer'
+import ImgDynamicContainer from './components/imgdynamic/ImgDynamicContainer';
 
 const urlRoot = process.env.REACT_APP_ROOT_URL
 
@@ -58,6 +60,14 @@ const appRoutes: AppRouteInfo[] = [
     isWip: false,
   },
   {
+    path: `${urlRoot}/imgdynamic`,
+    element: <ImgDynamicContainer imageCount={90} />,
+    icon: <MdOutlineImage />,
+    title: 'Dynamic Image',
+    group: NAV_GROUPS.COMPONENTS,
+    isWip: false,
+  },
+  {
     path: `${urlRoot}/infinitescroll`,
     element: <InfiniteScrollContainer />,
     icon: <MdReceiptLong />,
@@ -71,7 +81,7 @@ const appRoutes: AppRouteInfo[] = [
     icon: <MdFlip />,
     title: 'Typeahead',
     group: NAV_GROUPS.COMPONENTS,
-    isWip: true,
+    isWip: false,
   },
   {
     path: `${urlRoot}/newsfeed`,
@@ -107,7 +117,7 @@ const appRoutes: AppRouteInfo[] = [
   },
   {
     path: `${urlRoot}/reactdemos`,
-    element: <Index />,
+    element: <ReactDemoContainer />,
     icon: <FaReact />,
     title: 'React demos',
     group: NAV_GROUPS.FEATURES,

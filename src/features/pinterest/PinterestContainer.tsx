@@ -1,11 +1,11 @@
 import React, { Suspense } from 'react'
-import { ContentWrapper } from '../../ux/ContentWrapper'
+import { ContentContainer } from '../../ux/ContentContainer'
 import Loading from '../../ux/Loading'
 const Pinterest = React.lazy(() => import('./Pinterest'))
 
 const PinterestContainer = () => {
   return (
-    <ContentWrapper
+    <ContentContainer
       title='Pinterest'
       codeLink="/features/pinterest"
       markDownPromise={import('./requirements.md')}
@@ -15,7 +15,7 @@ const PinterestContainer = () => {
           <Pinterest />
         </div>
       </Suspense>
-    </ContentWrapper>
+    </ContentContainer>
   )
 }
 

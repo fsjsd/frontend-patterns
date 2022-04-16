@@ -7,6 +7,5 @@ describe("TypeAhead", () => {
     const { container, queryByRole } = render(<TypeAheadContainer />)
     await waitFor(() => expect(queryByRole("main")).toBeInTheDocument());
     expect(container).toMatchSnapshot();
-
   })
 })

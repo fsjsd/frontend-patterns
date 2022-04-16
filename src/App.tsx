@@ -1,63 +1,78 @@
-import React from 'react';
-import LeftNavigation from './ux/LeftNavigation';
+import React, { PropsWithChildren, Suspense, useState } from 'react';
+import { NavigationMenu } from './ux/NavigationContainer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import appRoutes from './routes';
-import Loading from './ux/Loading';
-import WebVitals from './shell/webvitals/WebVitals';
-import ContentFooter from './ux/styles/ContentFooter';
+import { ScreenTransitionLoading } from './ux/Loading';
 import BrowserStats from './shell/browserstats/BrowserStats';
 import { ReactComponent as LogoFsJsDev } from "./ux/icons/LogoFsjsDev.svg";
 import { PageHeader } from './ux/PageHeader';
-import styled from 'styled-components';
-import { SiteContainer } from './ux/styles/SiteContainer';
-import { SectionDrawer } from './ux/styles/SectionDrawer';
-import { HeaderBrand } from './ux/styles/HeaderBrand';
-import { SectionMain } from './ux/styles/SectionMain';
+import styled, { ThemeProvider } from 'styled-components';
+import theme from './ux/theme';
+import { SectionMain, SiteContainer, FixedApp, HeaderBrand } from './AppStyles';
+import { ContentFooter } from './ux/ContentContainerStyles';
+import { NavigationDrawer } from './ux/NavigationContainerStyles';
+const WebVitals = React.lazy(() => import('./shell/webvitals/WebVitals'));
 
-const PageContent = styled.div`
-  flex-grow: 1;
-  overflow-y: "auto";
+// see: https://github.com/DefinitelyTyped/DefinitelyTyped/issues/59765
+const ThemeProviderFixed = ThemeProvider as unknown as React.FC<PropsWithChildren<{ theme: typeof theme }>>;
+
+const SiteLogo = styled(LogoFsJsDev)`
+  height: 24px;
+  width: 100px;
 `;
 
 function App({ hostContext }: { hostContext: string }) {
-  return (
-    <BrowserRouter>
-      <SiteContainer>
-        <SectionDrawer>
-          <HeaderBrand>
-            <LogoFsJsDev style={{
-              height: "24px",
-              width: "100px",
-            }} />
-          </HeaderBrand>
-          <div role="navigation">
-            {/* Filter control for nav */}
-            <LeftNavigation />
-          </div>
-        </SectionDrawer>
+  const [showMenu, setShowMenu] = useState(false);
 
-        <SectionMain>
-          <PageHeader />
-          <PageContent>
-            <Routes>
-              {appRoutes.map(routeDefinition => <Route
-                key={routeDefinition.path}
-                path={routeDefinition.path}
-                element={<React.Suspense fallback={<Loading />}>{routeDefinition.element}</React.Suspense>} />
-              )}
-            </Routes>
-          </PageContent>
-          <ContentFooter role="contentinfo" aria-label='Web vitals information' title={hostContext}>
-            <div style={{ flexGrow: 1 }}>
-              <WebVitals />
-            </div>
-            <div style={{ flexGrow: 0 }}>
-              <BrowserStats />
-            </div>
-          </ContentFooter>
-        </SectionMain>
-      </SiteContainer>
-    </BrowserRouter >
+  const handleMenuClick = () => {
+    setShowMenu(prev => !prev);
+  }
+
+  const handleLinkClick = () => {
+    setShowMenu(false);
+  }
+
+  return (
+    <ThemeProviderFixed theme={theme}>
+      <BrowserRouter>
+        <FixedApp>
+          <SiteContainer>
+            <NavigationDrawer visible={showMenu}>
+              <HeaderBrand>
+                <SiteLogo />
+              </HeaderBrand>
+              <NavigationMenu onItemClick={handleLinkClick} />
+            </NavigationDrawer>
+            <SectionMain>
+              <PageHeader showLinks={true} onMenuClick={handleMenuClick} />
+              <Routes>
+                {appRoutes.map(routeDefinition => <Route
+                  key={routeDefinition.path}
+                  path={routeDefinition.path}
+                  element={
+                    <React.Suspense
+                      fallback={<ScreenTransitionLoading />}>
+                      {routeDefinition.element}
+                    </React.Suspense>
+                  }
+                />
+                )}
+              </Routes>
+              <ContentFooter role="contentinfo" aria-label='Web vitals information' title={hostContext}>
+                <div style={{ flexGrow: 1 }}>
+                  <Suspense fallback={<></>}>
+                    <WebVitals />
+                  </Suspense>
+                </div>
+                <div style={{ flexGrow: 0 }}>
+                  <BrowserStats />
+                </div>
+              </ContentFooter>
+            </SectionMain>
+          </SiteContainer>
+        </FixedApp>
+      </BrowserRouter>
+    </ThemeProviderFixed>
   );
 }
 

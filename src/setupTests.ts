@@ -3,6 +3,7 @@
 // expect(element).toHaveTextContent(/react/i)
 // learn more: https://github.com/testing-library/jest-dom
 import '@testing-library/jest-dom';
+import 'jest-styled-components';
 
 // Mock IntersectionObserver
 class IntersectionObserver {
@@ -22,3 +23,5 @@ Object.defineProperty(global, 'IntersectionObserver', {
   configurable: true,
   value: IntersectionObserver,
 })
+
+window.HTMLElement.prototype.scrollIntoView = jest.fn()

@@ -1,9 +1,9 @@
 import React from 'react'
-import { ContentWrapper } from './ux/ContentWrapper'
+import { ContentContainer } from './ux/ContentContainer'
 
 const Home = () => {
   return (
-    <ContentWrapper
+    <ContentContainer
       title='Home'
     >
       <div role="main">
@@ -14,7 +14,7 @@ const Home = () => {
           Each sample has links to code and design notes
         </p>
       </div>
-    </ContentWrapper>
+    </ContentContainer>
   )
 }
 

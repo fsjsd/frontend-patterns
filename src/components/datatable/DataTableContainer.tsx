@@ -1,11 +1,11 @@
 import React, { Suspense } from 'react'
-import { ContentWrapper } from '../../ux/ContentWrapper'
+import { ContentContainer } from '../../ux/ContentContainer'
 import Loading from '../../ux/Loading'
 const DataTable = React.lazy(() => import('./DataTable'))
 
 const DataTableContainer = () => {
   return (
-    <ContentWrapper
+    <ContentContainer
       title="Data Table"
       codeLink="/features/datatable"
       markDownPromise={import('./requirements.md')}
@@ -15,7 +15,7 @@ const DataTableContainer = () => {
           <DataTable />
         </div>
       </Suspense>
-    </ContentWrapper>
+    </ContentContainer>
   )
 }
 

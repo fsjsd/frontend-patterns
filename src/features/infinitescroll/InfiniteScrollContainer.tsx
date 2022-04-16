@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react'
-import { ContentWrapper } from '../../ux/ContentWrapper'
+import { ContentContainer } from '../../ux/ContentContainer'
 import Loading from '../../ux/Loading'
 import { FeedItem, getItem } from './utils/data';
 import { db } from "./utils/db";
@@ -13,7 +13,7 @@ const DB = db(1000, 1000, getItem);
 const InfiniteScrollContainer = () => {
 
   return (
-    <ContentWrapper
+    <ContentContainer
       title="Infinite Scroll"
       codeLink="/features/infinitescroll"
       markDownPromise={import('./requirements.md')}
@@ -27,7 +27,7 @@ const InfiniteScrollContainer = () => {
           />
         </div>
       </Suspense>
-    </ContentWrapper>
+    </ContentContainer>
   )
 }
 

@@ -1,32 +1,44 @@
 module.exports = {
   settings: {
     react: {
-      version: '999.9.9',
-    },
+      version: '999.9.9'
+    }
   },
   env: {
     browser: true,
     es2021: true,
-    node: true,
+    node: true
   },
   extends: [
     'eslint:recommended',
     'plugin:jsx-a11y/recommended',
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
-    "plugin:cypress/recommended"
+    'plugin:cypress/recommended',
+    'plugin:storybook/recommended'
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
-      jsx: true,
+      jsx: true
     },
     ecmaVersion: 'latest',
-    sourceType: 'module',
+    sourceType: 'module'
   },
-  plugins: ['react', '@typescript-eslint',],
+  plugins: ['react', '@typescript-eslint'],
   rules: {
     "no-debugger": "off",
-    "react/prop-types": "off", // use TypeScript
+    "react/prop-types": "off" // use TypeScript
   },
-}
+  ignorePatterns: ["!.storybook"],
+  overrides: [
+    {
+      files: [
+        "**/*.stories.*"
+      ],
+      rules: {
+        "import/no-anonymous-default-export": "off"
+      }
+    }
+  ]
+};
