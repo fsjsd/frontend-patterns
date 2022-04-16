@@ -12,7 +12,8 @@ import {
   MdTableView,
   MdTheaters,
   MdTask,
-  MdOutlineImage
+  MdOutlineImage,
+  MdAttachMoney
 } from 'react-icons/md'
 import { GiSandSnake } from "react-icons/gi";
 import { FaReact } from "react-icons/fa";
@@ -21,6 +22,7 @@ import CarouselContainer from './components/carousel/CarouselContainer'
 import DataTableContainer from './components/datatable/DataTableContainer'
 import InfiniteScrollContainer from './features/infinitescroll/InfiniteScrollContainer'
 import MessengerContainer from './features/messenger/MessengerContainer'
+import TradingContainer from './features/trading/TradingContainer'
 import NetflixContainer from './features/netflix/NetflixContainer'
 import NewsFeedContainer from './features/newsfeed/NewsFeedContainer'
 import PinterestContainer from './features/pinterest/PinterestContainer'
@@ -106,6 +108,14 @@ const appRoutes: AppRouteInfo[] = [
     title: 'Poll',
     group: NAV_GROUPS.COMPONENTS,
     isWip: true,
+  },
+  {
+    path: `${urlRoot}/trading`,
+    element: <TradingContainer />,
+    icon: <MdAttachMoney />,
+    title: 'Trading App',
+    group: NAV_GROUPS.FEATURES,
+    isWip: false,
   },
   {
     path: `${urlRoot}/snakegame`,
