@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 
-const InputText = styled.input`
+const InputText = styled.input<{ error?: boolean }>`
   color: inherit;
   font-size: 1rem;
   font-family: inherit;
@@ -23,11 +23,25 @@ const InputText = styled.input`
   padding-left: 0.75rem;
   margin: 0;
   &:focus{
+    outline-style: none;
     border-color: rgb(99 102 241 / 1);
     outline: 2px solid transparent;
     outline-offset: 2px;
-    box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px, rgb(99, 102, 241) 0px 0px 0px 1px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    box-shadow: none;
   }
+  ${({ error }) => error && `
+  outline-style: none;
+  box-shadow: none;
+  border-color: transparent;
+  border-color: red;
+  &:focus{
+    outline-style: none;
+    border-color: red;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    box-shadow: none;
+  }
+  `}
 `;
 
 

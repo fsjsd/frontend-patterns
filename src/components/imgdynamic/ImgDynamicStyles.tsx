@@ -14,6 +14,9 @@ export const ImageWrapper = styled.div<{ width?: string, height?: string }>`
   background-color:#ddd;
   width:${({ width }) => width ?? "100%"};
   height:${({ height }) => height ?? "100%"};
+  img {
+    border-radius:inherit;
+  }
 `;
 
 export const ImageLoading = styled.div<{ width?: string, height?: string }>`

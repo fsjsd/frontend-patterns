@@ -22,6 +22,7 @@ const fadeInAnimation = keyframes`
 `;
 
 const Wrap = styled.div`
+  z-index: 0;
   &> img {
     animation: ${fadeInAnimation} ease 2s;
     animation-iteration-count: 1;
