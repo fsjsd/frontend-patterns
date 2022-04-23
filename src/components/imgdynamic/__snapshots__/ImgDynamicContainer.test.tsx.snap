@@ -1,14 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ImgDynamic renders and matches snapshot 1`] = `
-.c2> img {
-  -webkit-animation: cJoqxJ ease 2s;
-  animation: cJoqxJ ease 2s;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  z-index: -1;
+.c2 {
+  position: relative;
+}
+
+.c2> * {
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 .c0 {
@@ -25,14 +25,17 @@ exports[`ImgDynamic renders and matches snapshot 1`] = `
 .c1 {
   border: solid 0px transparent;
   border-radius: 8px;
+  -webkit-clip-path: inset(0 0 0 0 round 8px);
+  clip-path: inset(0 0 0 0 round 8px);
   overflow: hidden;
   background-color: #ddd;
   width: 200px;
   height: 200px;
 }
 
-.c1 img {
+.c1> img {
   border-radius: inherit;
+  position: absolute;
 }
 
 .c3 {
@@ -200,14 +203,17 @@ exports[`ImgDynamic renders error image without dimenstions 2`] = `
 .c0 {
   border: solid 0px transparent;
   border-radius: 8px;
+  -webkit-clip-path: inset(0 0 0 0 round 8px);
+  clip-path: inset(0 0 0 0 round 8px);
   overflow: hidden;
   background-color: #ddd;
   width: 100%;
   height: 100%;
 }
 
-.c0 img {
+.c0> img {
   border-radius: inherit;
+  position: absolute;
 }
 
 <div>

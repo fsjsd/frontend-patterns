@@ -6,3 +6,5 @@
 test('Storyshots', () => {
   expect(true).toBe(true);
 });
+
+export {}

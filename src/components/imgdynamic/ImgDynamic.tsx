@@ -1,9 +1,10 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React, { useRef } from 'react'
-import styled, { keyframes } from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
 import { useEffectAsync } from '../../utils/hooks/useEffectAsync';
 import { useIsOnScreen } from '../../utils/hooks/useIsOnScreen';
 import { imagePromise } from '../../utils/imagePromise';
+import { NATIVE_LAZYLOAD_SUPPORTED } from './utils';
 
 interface ImgDynamic extends React.DetailedHTMLProps<React.ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement> {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -21,12 +22,19 @@ const fadeInAnimation = keyframes`
   }
 `;
 
-const Wrap = styled.div`
-  &> img {
-    animation: ${fadeInAnimation} ease 2s;
+const Wrap = styled.div<{ triggerAnimation: boolean }>`
+  position: relative;
+  &> * {
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+  & img {
+    ${({ triggerAnimation }) => triggerAnimation &&
+    css`animation: ${fadeInAnimation} ease 0.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    z-index: -1;
+    `}
   }
 `;
 
@@ -38,20 +46,23 @@ const Wrap = styled.div`
  * @returns 
  */
 const ImgDynamic = ({ loadingComp, errorComp, ...props }: ImgDynamic) => {
-
-  const [loadState, setLoadState] = React.useState<boolean | undefined>(undefined);
+  console.log(`NATIVE_LAZYLOAD_SUPPORTED = ${NATIVE_LAZYLOAD_SUPPORTED}`);
+  const [loadingState, setLoadingState] = React.useState<boolean | undefined>(undefined);
   const wrapperRef = useRef(null);
-  const isOnScreen = useIsOnScreen(wrapperRef);
+  const isOnScreen = useIsOnScreen(wrapperRef, NATIVE_LAZYLOAD_SUPPORTED);
 
   useEffectAsync(async () => {
     if (!props.src || !isOnScreen)
       return;
 
+    if (NATIVE_LAZYLOAD_SUPPORTED) {
+      return;
+    }
     try {
       await imagePromise(props.src);
-      setLoadState(true);
+      setLoadingState(true);
     } catch (e) {
-      setLoadState(false);
+      setLoadingState(false);
     }
   }, [props.src, isOnScreen])
 
@@ -59,10 +70,19 @@ const ImgDynamic = ({ loadingComp, errorComp, ...props }: ImgDynamic) => {
   // then face in once on screen. Could potentially use a ref and mount the imagePromise
   // response element to the dom.
 
-  return (<Wrap ref={wrapperRef}>
-    {loadState === undefined && loadingComp}
-    {loadState === false && errorComp}
-    {loadState === true && <img {...props} />}
+  return (<Wrap ref={wrapperRef} triggerAnimation={!!loadingState}>
+    {loadingComp}
+    {loadingState === false && errorComp}
+    {!NATIVE_LAZYLOAD_SUPPORTED && loadingState === true && <img {...props} />}
+    {NATIVE_LAZYLOAD_SUPPORTED &&
+      <img
+        {...props}
+        style={{ visibility: loadingState === true ? 'visible' : 'hidden' }}
+        loading="lazy"
+        onLoad={() => setLoadingState(true)}
+        onError={() => setLoadingState(false)}
+      />
+    }
   </Wrap>
   )
 }
