@@ -10,8 +10,8 @@ Enterprise-grade repo of modern front end design patterns, implemented in React.
 
 # Tech
 
-* 🌐 ***Create React App*** w/ ***TypeScript*** throughout
-  * 💄 Custom CSS via styled-components throughout
+* 🌐 ***React v18 (Create React App)*** w/ ***TypeScript*** throughout
+  * 💄 Custom CSS via styled-components
   * 📱 Mobile Optimised / responsive
   * 👂 Accessible, Semantic HTML
 * 🚀 ***High Performance*** React
