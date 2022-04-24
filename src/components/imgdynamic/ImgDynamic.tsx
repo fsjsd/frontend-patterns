@@ -4,7 +4,7 @@ import styled, { css, keyframes } from 'styled-components';
 import { useEffectAsync } from '../../utils/hooks/useEffectAsync';
 import { useIsOnScreen } from '../../utils/hooks/useIsOnScreen';
 import { imagePromise } from '../../utils/imagePromise';
-import { NATIVE_LAZYLOAD_SUPPORTED } from './utils';
+import { isNativeLazyLoadSupported } from './utils';
 
 interface ImgDynamic extends React.DetailedHTMLProps<React.ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement> {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -46,16 +46,17 @@ const Wrap = styled.div<{ triggerAnimation: boolean }>`
  * @returns 
  */
 const ImgDynamic = ({ loadingComp, errorComp, ...props }: ImgDynamic) => {
-  console.log(`NATIVE_LAZYLOAD_SUPPORTED = ${NATIVE_LAZYLOAD_SUPPORTED}`);
+  const supportsLazyLoad = isNativeLazyLoadSupported();
+  console.log(`NATIVE_LAZYLOAD_SUPPORTED = ${supportsLazyLoad}`);
   const [loadingState, setLoadingState] = React.useState<boolean | undefined>(undefined);
   const wrapperRef = useRef(null);
-  const isOnScreen = useIsOnScreen(wrapperRef, NATIVE_LAZYLOAD_SUPPORTED);
+  const isOnScreen = useIsOnScreen(wrapperRef, supportsLazyLoad);
 
   useEffectAsync(async () => {
     if (!props.src || !isOnScreen)
       return;
 
-    if (NATIVE_LAZYLOAD_SUPPORTED) {
+    if (supportsLazyLoad) {
       return;
     }
     try {
@@ -73,8 +74,8 @@ const ImgDynamic = ({ loadingComp, errorComp, ...props }: ImgDynamic) => {
   return (<Wrap ref={wrapperRef} triggerAnimation={!!loadingState}>
     {loadingComp}
     {loadingState === false && errorComp}
-    {!NATIVE_LAZYLOAD_SUPPORTED && loadingState === true && <img {...props} />}
-    {NATIVE_LAZYLOAD_SUPPORTED &&
+    {!supportsLazyLoad && loadingState === true && <img {...props} />}
+    {supportsLazyLoad &&
       <img
         {...props}
         style={{ visibility: loadingState === true ? 'visible' : 'hidden' }}

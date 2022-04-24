@@ -9,10 +9,9 @@ const imageSize = 200;
 
 const testImg = "data:image/gif;base64,R0lGODlhEAAQAMQAAORHHOVSKudfOulrSOp3WOyDZu6QdvCchPGolfO0o/XBs/fNwfjZ0frl3/zy7////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAkAABAALAAAAAAQABAAAAVVICSOZGlCQAosJ6mu7fiyZeKqNKToQGDsM8hBADgUXoGAiqhSvp5QAnQKGIgUhwFUYLCVDFCrKUE1lBavAViFIDlTImbKC5Gm2hB0SlBCBMQiB0UjIQA7";
 
-const mockNativeLazyLoadSupportedGetter = jest.fn();
 jest.mock('./utils', () => ({
-  get NATIVE_LAZYLOAD_SUPPORTED() {
-    return mockNativeLazyLoadSupportedGetter();
+  isNativeLazyLoadSupported: () => {
+    return false;
   },
 }));
 
@@ -91,8 +90,13 @@ describe("ImgDynamic", () => {
     expect(container).toMatchSnapshot();
   })
 
-  it.skip("renders image correctly", async () => {
-    mockNativeLazyLoadSupportedGetter.mockReturnValue(true);
+  it("renders image correctly", async () => {
+    jest.mock('./utils', () => ({
+      isNativeLazyLoadSupported: () => {
+        return true;
+      },
+    }));
+
     setupImageMock(true, false);
 
     const { container, queryByText } = render(<ImgDynamic
@@ -117,7 +121,6 @@ describe("ImgDynamic", () => {
 
   it("does not render image off screen", async () => {
     setupImageMock(true, false);
-    mockNativeLazyLoadSupportedGetter.mockReturnValue(false);
 
     const { container, queryByText } = render(<ImgDynamic
       id={`imgId`}
@@ -141,7 +144,6 @@ describe("ImgDynamic", () => {
 
   it("bad image renders error", async () => {
     setupImageMock(false, true);
-    mockNativeLazyLoadSupportedGetter.mockReturnValue(false);
 
     const { queryByText } = render(<ImgDynamic
       id={`imgId`}
