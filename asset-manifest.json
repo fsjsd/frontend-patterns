@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/frontend-patterns/static/css/main.cb9fe575.css",
-    "main.js": "/frontend-patterns/static/js/main.afe33d9d.js",
+    "main.js": "/frontend-patterns/static/js/main.7279e5e8.js",
     "static/js/73.ece3a6df.chunk.js": "/frontend-patterns/static/js/73.ece3a6df.chunk.js",
     "static/js/279.4869f510.chunk.js": "/frontend-patterns/static/js/279.4869f510.chunk.js",
     "static/js/572.06b522c4.chunk.js": "/frontend-patterns/static/js/572.06b522c4.chunk.js",
@@ -31,7 +31,7 @@
     "static/media/Github.svg": "/frontend-patterns/static/media/Github.9b5c84d6b5df57037ad75ff8161d27c0.svg",
     "static/media/Youtube.svg": "/frontend-patterns/static/media/Youtube.5acb0872756358576a1b671414354d36.svg",
     "main.cb9fe575.css.map": "/frontend-patterns/static/css/main.cb9fe575.css.map",
-    "main.afe33d9d.js.map": "/frontend-patterns/static/js/main.afe33d9d.js.map",
+    "main.7279e5e8.js.map": "/frontend-patterns/static/js/main.7279e5e8.js.map",
     "73.ece3a6df.chunk.js.map": "/frontend-patterns/static/js/73.ece3a6df.chunk.js.map",
     "572.06b522c4.chunk.js.map": "/frontend-patterns/static/js/572.06b522c4.chunk.js.map",
     "78.d7368950.chunk.js.map": "/frontend-patterns/static/js/78.d7368950.chunk.js.map",
@@ -46,6 +46,6 @@
   },
   "entrypoints": [
     "static/css/main.cb9fe575.css",
-    "static/js/main.afe33d9d.js"
+    "static/js/main.7279e5e8.js"
   ]
 }
