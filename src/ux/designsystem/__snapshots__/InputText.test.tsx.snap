@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputText renders error 1`] = `
+.c0 {
+  color: inherit;
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: 400;
+  line-height: 1rem;
+  margin-top: 0.25rem;
+  display: block;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 0.375rem;
+  border-color: rgb(209 213 219 / 1);
+  box-shadow: 0 0 #0000,0 1px 2px 0 rgb(0 0 0 / 0.05);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  border-width: 1px;
+  padding-top: 0.5rem;
+  padding-right: 0.75rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  margin: 0;
+  outline-style: none;
+  box-shadow: none;
+  border-color: transparent;
+  border-color: red;
+}
+
+.c0:focus {
+  outline-style: none;
+  border-color: rgb(99 102 241 / 1);
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  box-shadow: none;
+}
+
+.c0:focus {
+  outline-style: none;
+  border-color: red;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  box-shadow: none;
+}
+
+<input
+  class="c0"
+/>
+`;
+
+exports[`InputText renders without crashing 1`] = `
+.c0 {
+  color: inherit;
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: 400;
+  line-height: 1rem;
+  margin-top: 0.25rem;
+  display: block;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 0.375rem;
+  border-color: rgb(209 213 219 / 1);
+  box-shadow: 0 0 #0000,0 1px 2px 0 rgb(0 0 0 / 0.05);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  border-width: 1px;
+  padding-top: 0.5rem;
+  padding-right: 0.75rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  margin: 0;
+}
+
+.c0:focus {
+  outline-style: none;
+  border-color: rgb(99 102 241 / 1);
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  box-shadow: none;
+}
+
+<input
+  class="c0"
+/>
+`;

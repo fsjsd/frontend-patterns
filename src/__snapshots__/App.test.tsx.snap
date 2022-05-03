@@ -822,29 +822,6 @@ exports[`App tests Loads carousel 1`] = `
   width: 100px;
 }
 
-.c32 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c32 > div {
-  margin-right: 10px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  line-height: normal;
-}
-
 @media (min-width:768px) {
   .c18 {
     display: -webkit-box;
@@ -955,34 +932,6 @@ exports[`App tests Loads carousel 1`] = `
                 <a
                   aria-hidden="false"
                   class="c9"
-                  href="/frontend-patterns/carousel"
-                  role="link"
-                >
-                  <svg
-                    fill="currentColor"
-                    height="1em"
-                    stroke="currentColor"
-                    stroke-width="0"
-                    viewBox="0 0 24 24"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="M21 5v14h2V5h-2zm-4 14h2V5h-2v14zM14 5H2c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM8 7.75c1.24 0 2.25 1.01 2.25 2.25S9.24 12.25 8 12.25 5.75 11.24 5.75 10 6.76 7.75 8 7.75zM12.5 17h-9v-.75c0-1.5 3-2.25 4.5-2.25s4.5.75 4.5 2.25V17z"
-                    />
-                  </svg>
-                   
-                  Carousel
-                </a>
-              </li>
-              <li>
-                <a
-                  aria-hidden="false"
-                  class="c9"
                   href="/frontend-patterns/imgdynamic"
                   role="link"
                 >
@@ -1005,6 +954,90 @@ exports[`App tests Loads carousel 1`] = `
                   </svg>
                    
                   Dynamic Image
+                </a>
+              </li>
+              <li>
+                <a
+                  aria-hidden="false"
+                  class="c9"
+                  href="/frontend-patterns/typeahead"
+                  role="link"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M15 21h2v-2h-2v2zm4-12h2V7h-2v2zM3 5v14c0 1.1.9 2 2 2h4v-2H5V5h4V3H5c-1.1 0-2 .9-2 2zm16-2v2h2c0-1.1-.9-2-2-2zm-8 20h2V1h-2v22zm8-6h2v-2h-2v2zM15 5h2V3h-2v2zm4 8h2v-2h-2v2zm0 8c1.1 0 2-.9 2-2h-2v2z"
+                    />
+                  </svg>
+                   
+                  Typeahead
+                </a>
+              </li>
+              <li>
+                <a
+                  aria-hidden="false"
+                  class="c9"
+                  href="/frontend-patterns/prpl"
+                  role="link"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M20.38 8.57l-1.23 1.85a8 8 0 01-.22 7.58H5.07A8 8 0 0115.58 6.85l1.85-1.23A10 10 0 003.35 19a2 2 0 001.72 1h13.85a2 2 0 001.74-1 10 10 0 00-.27-10.44zm-9.79 6.84a2 2 0 002.83 0l5.66-8.49-8.49 5.66a2 2 0 000 2.83z"
+                    />
+                  </svg>
+                   
+                  PRPL
+                </a>
+              </li>
+              <li>
+                <a
+                  aria-hidden="false"
+                  class="c9"
+                  href="/frontend-patterns/carousel"
+                  role="link"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M21 5v14h2V5h-2zm-4 14h2V5h-2v14zM14 5H2c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM8 7.75c1.24 0 2.25 1.01 2.25 2.25S9.24 12.25 8 12.25 5.75 11.24 5.75 10 6.76 7.75 8 7.75zM12.5 17h-9v-.75c0-1.5 3-2.25 4.5-2.25s4.5.75 4.5 2.25V17z"
+                    />
+                  </svg>
+                   
+                  Carousel
                 </a>
               </li>
               <li>
@@ -1037,34 +1070,6 @@ exports[`App tests Loads carousel 1`] = `
                   </svg>
                    
                   Infinite Scroll
-                </a>
-              </li>
-              <li>
-                <a
-                  aria-hidden="false"
-                  class="c9"
-                  href="/frontend-patterns/typeahead"
-                  role="link"
-                >
-                  <svg
-                    fill="currentColor"
-                    height="1em"
-                    stroke="currentColor"
-                    stroke-width="0"
-                    viewBox="0 0 24 24"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="M15 21h2v-2h-2v2zm4-12h2V7h-2v2zM3 5v14c0 1.1.9 2 2 2h4v-2H5V5h4V3H5c-1.1 0-2 .9-2 2zm16-2v2h2c0-1.1-.9-2-2-2zm-8 20h2V1h-2v22zm8-6h2v-2h-2v2zM15 5h2V3h-2v2zm4 8h2v-2h-2v2zm0 8c1.1 0 2-.9 2-2h-2v2z"
-                    />
-                  </svg>
-                   
-                  Typeahead
                 </a>
               </li>
               <li>
@@ -1368,7 +1373,7 @@ exports[`App tests Loads carousel 1`] = `
           >
             <a
               aria-label="View videos on Youtube"
-              href="https://www.youtube.com/channel/UC6ndgitE_bgJ02nyrrue-1A"
+              href="https://www.youtube.com/c/fsjsd"
               rel="noreferrer"
               target="_blank"
             >
@@ -1600,14 +1605,16 @@ exports[`App tests Loads carousel 1`] = `
           <div
             style="flex-grow: 1;"
           >
-            <div
-              class="c32"
-            />
+            <div>
+              WebVitals Mock
+            </div>
           </div>
           <div
             style="flex-grow: 0;"
           >
-            <div />
+            <div>
+              BrowserStats Mock
+            </div>
           </div>
         </section>
       </section>
@@ -2147,34 +2154,6 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
                 <a
                   aria-hidden="false"
                   class="c9"
-                  href="/frontend-patterns/carousel"
-                  role="link"
-                >
-                  <svg
-                    fill="currentColor"
-                    height="1em"
-                    stroke="currentColor"
-                    stroke-width="0"
-                    viewBox="0 0 24 24"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="M21 5v14h2V5h-2zm-4 14h2V5h-2v14zM14 5H2c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM8 7.75c1.24 0 2.25 1.01 2.25 2.25S9.24 12.25 8 12.25 5.75 11.24 5.75 10 6.76 7.75 8 7.75zM12.5 17h-9v-.75c0-1.5 3-2.25 4.5-2.25s4.5.75 4.5 2.25V17z"
-                    />
-                  </svg>
-                   
-                  Carousel
-                </a>
-              </li>
-              <li>
-                <a
-                  aria-hidden="false"
-                  class="c9"
                   href="/frontend-patterns/imgdynamic"
                   role="link"
                 >
@@ -2197,6 +2176,90 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
                   </svg>
                    
                   Dynamic Image
+                </a>
+              </li>
+              <li>
+                <a
+                  aria-hidden="false"
+                  class="c9"
+                  href="/frontend-patterns/typeahead"
+                  role="link"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M15 21h2v-2h-2v2zm4-12h2V7h-2v2zM3 5v14c0 1.1.9 2 2 2h4v-2H5V5h4V3H5c-1.1 0-2 .9-2 2zm16-2v2h2c0-1.1-.9-2-2-2zm-8 20h2V1h-2v22zm8-6h2v-2h-2v2zM15 5h2V3h-2v2zm4 8h2v-2h-2v2zm0 8c1.1 0 2-.9 2-2h-2v2z"
+                    />
+                  </svg>
+                   
+                  Typeahead
+                </a>
+              </li>
+              <li>
+                <a
+                  aria-hidden="false"
+                  class="c9"
+                  href="/frontend-patterns/prpl"
+                  role="link"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M20.38 8.57l-1.23 1.85a8 8 0 01-.22 7.58H5.07A8 8 0 0115.58 6.85l1.85-1.23A10 10 0 003.35 19a2 2 0 001.72 1h13.85a2 2 0 001.74-1 10 10 0 00-.27-10.44zm-9.79 6.84a2 2 0 002.83 0l5.66-8.49-8.49 5.66a2 2 0 000 2.83z"
+                    />
+                  </svg>
+                   
+                  PRPL
+                </a>
+              </li>
+              <li>
+                <a
+                  aria-hidden="false"
+                  class="c9"
+                  href="/frontend-patterns/carousel"
+                  role="link"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M21 5v14h2V5h-2zm-4 14h2V5h-2v14zM14 5H2c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM8 7.75c1.24 0 2.25 1.01 2.25 2.25S9.24 12.25 8 12.25 5.75 11.24 5.75 10 6.76 7.75 8 7.75zM12.5 17h-9v-.75c0-1.5 3-2.25 4.5-2.25s4.5.75 4.5 2.25V17z"
+                    />
+                  </svg>
+                   
+                  Carousel
                 </a>
               </li>
               <li>
@@ -2229,34 +2292,6 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
                   </svg>
                    
                   Infinite Scroll
-                </a>
-              </li>
-              <li>
-                <a
-                  aria-hidden="false"
-                  class="c9"
-                  href="/frontend-patterns/typeahead"
-                  role="link"
-                >
-                  <svg
-                    fill="currentColor"
-                    height="1em"
-                    stroke="currentColor"
-                    stroke-width="0"
-                    viewBox="0 0 24 24"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="M15 21h2v-2h-2v2zm4-12h2V7h-2v2zM3 5v14c0 1.1.9 2 2 2h4v-2H5V5h4V3H5c-1.1 0-2 .9-2 2zm16-2v2h2c0-1.1-.9-2-2-2zm-8 20h2V1h-2v22zm8-6h2v-2h-2v2zM15 5h2V3h-2v2zm4 8h2v-2h-2v2zm0 8c1.1 0 2-.9 2-2h-2v2z"
-                    />
-                  </svg>
-                   
-                  Typeahead
                 </a>
               </li>
               <li>
@@ -2560,7 +2595,7 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
           >
             <a
               aria-label="View videos on Youtube"
-              href="https://www.youtube.com/channel/UC6ndgitE_bgJ02nyrrue-1A"
+              href="https://www.youtube.com/c/fsjsd"
               rel="noreferrer"
               target="_blank"
             >
@@ -2654,7 +2689,9 @@ exports[`App tests render matches snapshot (full screen) 1`] = `
           <div
             style="flex-grow: 0;"
           >
-            <div />
+            <div>
+              BrowserStats Mock
+            </div>
           </div>
         </section>
       </section>
@@ -3084,29 +3121,6 @@ exports[`App tests shows menu in mobile mode 1`] = `
   width: 100px;
 }
 
-.c22 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c22 > div {
-  margin-right: 10px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  line-height: normal;
-}
-
 @media (min-width:768px) {
   .c18 {
     display: -webkit-box;
@@ -3221,34 +3235,6 @@ exports[`App tests shows menu in mobile mode 1`] = `
                 <a
                   aria-hidden="false"
                   class="c9"
-                  href="/frontend-patterns/carousel"
-                  role="link"
-                >
-                  <svg
-                    fill="currentColor"
-                    height="1em"
-                    stroke="currentColor"
-                    stroke-width="0"
-                    viewBox="0 0 24 24"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="M21 5v14h2V5h-2zm-4 14h2V5h-2v14zM14 5H2c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM8 7.75c1.24 0 2.25 1.01 2.25 2.25S9.24 12.25 8 12.25 5.75 11.24 5.75 10 6.76 7.75 8 7.75zM12.5 17h-9v-.75c0-1.5 3-2.25 4.5-2.25s4.5.75 4.5 2.25V17z"
-                    />
-                  </svg>
-                   
-                  Carousel
-                </a>
-              </li>
-              <li>
-                <a
-                  aria-hidden="false"
-                  class="c9"
                   href="/frontend-patterns/imgdynamic"
                   role="link"
                 >
@@ -3271,6 +3257,90 @@ exports[`App tests shows menu in mobile mode 1`] = `
                   </svg>
                    
                   Dynamic Image
+                </a>
+              </li>
+              <li>
+                <a
+                  aria-hidden="false"
+                  class="c9"
+                  href="/frontend-patterns/typeahead"
+                  role="link"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M15 21h2v-2h-2v2zm4-12h2V7h-2v2zM3 5v14c0 1.1.9 2 2 2h4v-2H5V5h4V3H5c-1.1 0-2 .9-2 2zm16-2v2h2c0-1.1-.9-2-2-2zm-8 20h2V1h-2v22zm8-6h2v-2h-2v2zM15 5h2V3h-2v2zm4 8h2v-2h-2v2zm0 8c1.1 0 2-.9 2-2h-2v2z"
+                    />
+                  </svg>
+                   
+                  Typeahead
+                </a>
+              </li>
+              <li>
+                <a
+                  aria-hidden="false"
+                  class="c9"
+                  href="/frontend-patterns/prpl"
+                  role="link"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M20.38 8.57l-1.23 1.85a8 8 0 01-.22 7.58H5.07A8 8 0 0115.58 6.85l1.85-1.23A10 10 0 003.35 19a2 2 0 001.72 1h13.85a2 2 0 001.74-1 10 10 0 00-.27-10.44zm-9.79 6.84a2 2 0 002.83 0l5.66-8.49-8.49 5.66a2 2 0 000 2.83z"
+                    />
+                  </svg>
+                   
+                  PRPL
+                </a>
+              </li>
+              <li>
+                <a
+                  aria-hidden="false"
+                  class="c9"
+                  href="/frontend-patterns/carousel"
+                  role="link"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M21 5v14h2V5h-2zm-4 14h2V5h-2v14zM14 5H2c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM8 7.75c1.24 0 2.25 1.01 2.25 2.25S9.24 12.25 8 12.25 5.75 11.24 5.75 10 6.76 7.75 8 7.75zM12.5 17h-9v-.75c0-1.5 3-2.25 4.5-2.25s4.5.75 4.5 2.25V17z"
+                    />
+                  </svg>
+                   
+                  Carousel
                 </a>
               </li>
               <li>
@@ -3303,34 +3373,6 @@ exports[`App tests shows menu in mobile mode 1`] = `
                   </svg>
                    
                   Infinite Scroll
-                </a>
-              </li>
-              <li>
-                <a
-                  aria-hidden="false"
-                  class="c9"
-                  href="/frontend-patterns/typeahead"
-                  role="link"
-                >
-                  <svg
-                    fill="currentColor"
-                    height="1em"
-                    stroke="currentColor"
-                    stroke-width="0"
-                    viewBox="0 0 24 24"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="M15 21h2v-2h-2v2zm4-12h2V7h-2v2zM3 5v14c0 1.1.9 2 2 2h4v-2H5V5h4V3H5c-1.1 0-2 .9-2 2zm16-2v2h2c0-1.1-.9-2-2-2zm-8 20h2V1h-2v22zm8-6h2v-2h-2v2zM15 5h2V3h-2v2zm4 8h2v-2h-2v2zm0 8c1.1 0 2-.9 2-2h-2v2z"
-                    />
-                  </svg>
-                   
-                  Typeahead
                 </a>
               </li>
               <li>
@@ -3634,7 +3676,7 @@ exports[`App tests shows menu in mobile mode 1`] = `
           >
             <a
               aria-label="View videos on Youtube"
-              href="https://www.youtube.com/channel/UC6ndgitE_bgJ02nyrrue-1A"
+              href="https://www.youtube.com/c/fsjsd"
               rel="noreferrer"
               target="_blank"
             >
@@ -3725,14 +3767,16 @@ exports[`App tests shows menu in mobile mode 1`] = `
           <div
             style="flex-grow: 1;"
           >
-            <div
-              class="c22"
-            />
+            <div>
+              WebVitals Mock
+            </div>
           </div>
           <div
             style="flex-grow: 0;"
           >
-            <div />
+            <div>
+              BrowserStats Mock
+            </div>
           </div>
         </section>
       </section>

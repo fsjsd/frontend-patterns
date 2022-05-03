@@ -69,7 +69,7 @@ export const ContentContainer: React.FC<PropsWithChildren<ContentContainerProps>
         }
         {codeLink &&
           <a
-            href={`${GITHUB_ROOT}${codeLink}`}
+            href={deriveCodeLink(codeLink)}
             role="button"
             aria-label="View source code on GitHub"
             target="_blank"
@@ -92,3 +92,7 @@ export const ContentContainer: React.FC<PropsWithChildren<ContentContainerProps>
     </>
   </>
 };
+
+function deriveCodeLink(codeLink: string): string {
+  return codeLink.startsWith("/") ? `${GITHUB_ROOT}${codeLink}` : codeLink;
+}
