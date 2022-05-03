@@ -1,14 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ImgDynamic does not render image off screen 1`] = `
-.c0> img {
-  -webkit-animation: cJoqxJ ease 2s;
-  animation: cJoqxJ ease 2s;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  z-index: -1;
+exports[`ImgDynamic - legacy browsers does not render image off screen 1`] = `
+.c0 {
+  position: relative;
+}
+
+.c0> * {
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 <div>
@@ -22,25 +22,109 @@ exports[`ImgDynamic does not render image off screen 1`] = `
 </div>
 `;
 
-exports[`ImgDynamic renders image correctly 1`] = `
-.c0> img {
-  -webkit-animation: cJoqxJ ease 2s;
-  animation: cJoqxJ ease 2s;
+exports[`ImgDynamic - legacy browsers renders image correctly on legacy browsers 1`] = `
+.c0 {
+  position: relative;
+}
+
+.c0> * {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.c0 img {
+  -webkit-animation: cJoqxJ ease 0.5s;
+  animation: cJoqxJ ease 0.5s;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  z-index: -1;
 }
 
 <div>
   <div
     class="c0"
   >
+    <div>
+      loading
+    </div>
     <img
       height="200"
       id="imgId"
       src="data:image/gif;base64,R0lGODlhEAAQAMQAAORHHOVSKudfOulrSOp3WOyDZu6QdvCchPGolfO0o/XBs/fNwfjZ0frl3/zy7////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAkAABAALAAAAAAQABAAAAVVICSOZGlCQAosJ6mu7fiyZeKqNKToQGDsM8hBADgUXoGAiqhSvp5QAnQKGIgUhwFUYLCVDFCrKUE1lBavAViFIDlTImbKC5Gm2hB0SlBCBMQiB0UjIQA7"
+      width="200"
+    />
+  </div>
+</div>
+`;
+
+exports[`ImgDynamic - native browser support image error displays correctly 1`] = `
+.c0 {
+  position: relative;
+}
+
+.c0> * {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div>
+      loading
+    </div>
+    <div>
+      error
+    </div>
+    <img
+      height="200"
+      id="imgId"
+      loading="lazy"
+      src="data:image/gif;base64,R0lGODlhEAAQAMQAAORHHOVSKudfOulrSOp3WOyDZu6QdvCchPGolfO0o/XBs/fNwfjZ0frl3/zy7////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAkAABAALAAAAAAQABAAAAVVICSOZGlCQAosJ6mu7fiyZeKqNKToQGDsM8hBADgUXoGAiqhSvp5QAnQKGIgUhwFUYLCVDFCrKUE1lBavAViFIDlTImbKC5Gm2hB0SlBCBMQiB0UjIQA7"
+      style="visibility: hidden;"
+      width="200"
+    />
+  </div>
+</div>
+`;
+
+exports[`ImgDynamic - native browser support renders image correctly 1`] = `
+.c0 {
+  position: relative;
+}
+
+.c0> * {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.c0 img {
+  -webkit-animation: cJoqxJ ease 0.5s;
+  animation: cJoqxJ ease 0.5s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div>
+      loading
+    </div>
+    <img
+      height="200"
+      id="imgId"
+      loading="lazy"
+      src="data:image/gif;base64,R0lGODlhEAAQAMQAAORHHOVSKudfOulrSOp3WOyDZu6QdvCchPGolfO0o/XBs/fNwfjZ0frl3/zy7////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAkAABAALAAAAAAQABAAAAVVICSOZGlCQAosJ6mu7fiyZeKqNKToQGDsM8hBADgUXoGAiqhSvp5QAnQKGIgUhwFUYLCVDFCrKUE1lBavAViFIDlTImbKC5Gm2hB0SlBCBMQiB0UjIQA7"
+      style="visibility: visible;"
       width="200"
     />
   </div>

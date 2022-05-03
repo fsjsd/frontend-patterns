@@ -65,10 +65,11 @@ exports[`UniversitySearch arrow down has no effect at end 1`] = `
 }
 
 .c3:focus {
+  outline-style: none;
   border-color: rgb(99 102 241 / 1);
   outline: 2px solid transparent;
   outline-offset: 2px;
-  box-shadow: rgb(255,255,255) 0px 0px 0px 0px,rgb(99,102,241) 0px 0px 0px 1px,rgba(0,0,0,0.05) 0px 1px 2px 0px;
+  box-shadow: none;
 }
 
 .c1 {
@@ -229,10 +230,11 @@ exports[`UniversitySearch arrow up selects first result 1`] = `
 }
 
 .c3:focus {
+  outline-style: none;
   border-color: rgb(99 102 241 / 1);
   outline: 2px solid transparent;
   outline-offset: 2px;
-  box-shadow: rgb(255,255,255) 0px 0px 0px 0px,rgb(99,102,241) 0px 0px 0px 1px,rgba(0,0,0,0.05) 0px 1px 2px 0px;
+  box-shadow: none;
 }
 
 .c1 {
@@ -393,10 +395,11 @@ exports[`UniversitySearch navigates on key press 'ArrowDown' 1`] = `
 }
 
 .c3:focus {
+  outline-style: none;
   border-color: rgb(99 102 241 / 1);
   outline: 2px solid transparent;
   outline-offset: 2px;
-  box-shadow: rgb(255,255,255) 0px 0px 0px 0px,rgb(99,102,241) 0px 0px 0px 1px,rgba(0,0,0,0.05) 0px 1px 2px 0px;
+  box-shadow: none;
 }
 
 .c1 {
@@ -557,10 +560,11 @@ exports[`UniversitySearch navigates on key press 'ArrowUp' 1`] = `
 }
 
 .c3:focus {
+  outline-style: none;
   border-color: rgb(99 102 241 / 1);
   outline: 2px solid transparent;
   outline-offset: 2px;
-  box-shadow: rgb(255,255,255) 0px 0px 0px 0px,rgb(99,102,241) 0px 0px 0px 1px,rgba(0,0,0,0.05) 0px 1px 2px 0px;
+  box-shadow: none;
 }
 
 .c1 {
@@ -721,10 +725,11 @@ exports[`UniversitySearch no response renders correctly 1`] = `
 }
 
 .c3:focus {
+  outline-style: none;
   border-color: rgb(99 102 241 / 1);
   outline: 2px solid transparent;
   outline-offset: 2px;
-  box-shadow: rgb(255,255,255) 0px 0px 0px 0px,rgb(99,102,241) 0px 0px 0px 1px,rgba(0,0,0,0.05) 0px 1px 2px 0px;
+  box-shadow: none;
 }
 
 .c1 {
@@ -832,10 +837,11 @@ exports[`UniversitySearch renders and matches snapshot 1`] = `
 }
 
 .c3:focus {
+  outline-style: none;
   border-color: rgb(99 102 241 / 1);
   outline: 2px solid transparent;
   outline-offset: 2px;
-  box-shadow: rgb(255,255,255) 0px 0px 0px 0px,rgb(99,102,241) 0px 0px 0px 1px,rgba(0,0,0,0.05) 0px 1px 2px 0px;
+  box-shadow: none;
 }
 
 .c1 {
@@ -931,10 +937,11 @@ exports[`UniversitySearch typing less than 3 chars does nothing 1`] = `
 }
 
 .c3:focus {
+  outline-style: none;
   border-color: rgb(99 102 241 / 1);
   outline: 2px solid transparent;
   outline-offset: 2px;
-  box-shadow: rgb(255,255,255) 0px 0px 0px 0px,rgb(99,102,241) 0px 0px 0px 1px,rgba(0,0,0,0.05) 0px 1px 2px 0px;
+  box-shadow: none;
 }
 
 .c1 {
@@ -1062,10 +1069,11 @@ exports[`UniversitySearch valid query triggers result query 1`] = `
 }
 
 .c3:focus {
+  outline-style: none;
   border-color: rgb(99 102 241 / 1);
   outline: 2px solid transparent;
   outline-offset: 2px;
-  box-shadow: rgb(255,255,255) 0px 0px 0px 0px,rgb(99,102,241) 0px 0px 0px 1px,rgba(0,0,0,0.05) 0px 1px 2px 0px;
+  box-shadow: none;
 }
 
 .c1 {

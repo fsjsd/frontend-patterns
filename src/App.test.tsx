@@ -4,6 +4,9 @@ import App from './App';
 import AppPreload from './AppPreload';
 import { axe, toHaveNoViolations } from 'jest-axe';
 
+jest.mock("./shell/webvitals/WebVitals");
+jest.mock("./shell/browserstats/BrowserStats");
+
 expect.extend(toHaveNoViolations);
 
 describe('App tests', () => {

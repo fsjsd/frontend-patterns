@@ -10,10 +10,15 @@ export const ImageList = styled.div`
 export const ImageWrapper = styled.div<{ width?: string, height?: string }>`
   border:solid 0px transparent;
   border-radius:8px;
+  clip-path: inset(0 0 0 0 round 8px);
   overflow:hidden;
   background-color:#ddd;
   width:${({ width }) => width ?? "100%"};
   height:${({ height }) => height ?? "100%"};
+  &> img {
+    border-radius:inherit;
+    position:absolute;
+  }
 `;
 
 export const ImageLoading = styled.div<{ width?: string, height?: string }>`
