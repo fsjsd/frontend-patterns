@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react'
-import { render, waitFor } from '@testing-library/react'
+import { fireEvent, render, waitFor } from '@testing-library/react'
 import ImgDynamic from './ImgDynamic';
 import { isNativeLazyLoadSupported } from './utils'
 
@@ -65,12 +65,41 @@ describe("ImgDynamic - native browser support", () => {
     expect(mockIntersectionObserver).not.toHaveBeenCalled();
 
     await waitFor(() => expect(queryByText("error")).not.toBeInTheDocument());
-    // img element will be hidden until native browser implementation loads image.
-    // setupImageMock() does not appear to trigger onload for lazy loaded images.
+    const img = container.querySelector('#imgId');
+    expect(img).not.toBeNull();
+    expect(img).toHaveStyle("visibility: hidden")
+
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+    fireEvent.load(img!);
     await waitFor(() =>
-      expect(container.querySelector('#imgId')).toHaveStyle("visibility: hidden")
+      expect(img).toHaveStyle("visibility: visible")
     );
 
+    expect(container).toMatchSnapshot();
+  })
+  it("image error displays correctly", async () => {
+    setupImageMock(true, false);
+    (isNativeLazyLoadSupported as jest.Mock).mockImplementation(() => true);
+
+    const { container, queryByText } = render(<ImgDynamic
+      id={`imgId`}
+      loadingComp={loading}
+      errorComp={error}
+      width={imageSize}
+      height={imageSize}
+      src={testImg}
+    />)
+
+    expect(mockIntersectionObserver).not.toHaveBeenCalled();
+
+    await waitFor(() => expect(queryByText("error")).not.toBeInTheDocument());
+    const img = container.querySelector('#imgId');
+    expect(img).not.toBeNull();
+    expect(img).toHaveStyle("visibility: hidden");
+
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+    fireEvent.error(img!);
+    await waitFor(() => expect(queryByText("error")).toBeInTheDocument());
     expect(container).toMatchSnapshot();
   })
 });
