@@ -9,11 +9,6 @@ header {
   line-height: normal;
 }
 
-h1 {
-  margin-top: 0;
-  color: rgb(33 83 122);
-}
-
 a svg {
   display: inline-block;
 }
@@ -29,10 +24,21 @@ code {
 
 section[role="document"] {
   font-size: 0.85rem;
-  line-height: 1rem;
+
   font-weight: 400;
 }
 
-p {
+h1 {
+  margin-top: 0;
+  color: rgb(33 83 122);
+}
+
+div[role="main"] h2,
+div[role="main"] h3,
+div[role="main"] h4,
+div[role="main"] h5,
+div[role="main"] p,
+div[role="main"] ul,
+div[role="main"] ol {
   margin-bottom: 1rem;
 }
