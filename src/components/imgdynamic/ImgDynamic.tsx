@@ -47,7 +47,6 @@ const Wrap = styled.div<{ triggerAnimation: boolean }>`
  */
 const ImgDynamic = ({ loadingComp, errorComp, ...props }: ImgDynamic) => {
   const supportsLazyLoad = isNativeLazyLoadSupported();
-  console.log(`NATIVE_LAZYLOAD_SUPPORTED = ${supportsLazyLoad}`);
   const [loadingState, setLoadingState] = React.useState<boolean | undefined>(undefined);
   const wrapperRef = useRef(null);
   const isOnScreen = useIsOnScreen(wrapperRef, supportsLazyLoad);

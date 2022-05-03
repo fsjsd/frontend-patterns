@@ -7,7 +7,7 @@ import { useEffect, useState, useRef } from 'react';
  * @param false optional flag to bypass hook if set
  * @returns flag indicates where ref is on screen
  */
-export function useIsOnScreen(ref, bypass = false) {
+export function useIsOnScreen(ref, bypass) {
   if (bypass) {
     return true;
   }

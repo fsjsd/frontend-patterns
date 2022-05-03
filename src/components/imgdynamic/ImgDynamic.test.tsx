@@ -2,18 +2,15 @@
 import React from 'react'
 import { render, waitFor } from '@testing-library/react'
 import ImgDynamic from './ImgDynamic';
+import { isNativeLazyLoadSupported } from './utils'
+
+jest.mock('./utils');
 
 const loading = <div>loading</div>
 const error = <div>error</div>
 const imageSize = 200;
 
 const testImg = "data:image/gif;base64,R0lGODlhEAAQAMQAAORHHOVSKudfOulrSOp3WOyDZu6QdvCchPGolfO0o/XBs/fNwfjZ0frl3/zy7////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAkAABAALAAAAAAQABAAAAVVICSOZGlCQAosJ6mu7fiyZeKqNKToQGDsM8hBADgUXoGAiqhSvp5QAnQKGIgUhwFUYLCVDFCrKUE1lBavAViFIDlTImbKC5Gm2hB0SlBCBMQiB0UjIQA7";
-
-jest.mock('./utils', () => ({
-  isNativeLazyLoadSupported: () => {
-    return false;
-  },
-}));
 
 function setupImageMock(raiseOnLoadEvent: boolean, raiseOnErrorEvent: boolean) {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -38,11 +35,50 @@ function setupImageMock(raiseOnLoadEvent: boolean, raiseOnErrorEvent: boolean) {
   }
 }
 
-describe("ImgDynamic", () => {
 
+describe("ImgDynamic - native browser support", () => {
   let mockIntersectionObserver;
   beforeEach(() => {
-    jest.resetAllMocks();
+    (isNativeLazyLoadSupported as jest.Mock).mockImplementation(() => true);
+    mockIntersectionObserver = jest.fn();
+    mockIntersectionObserver.mockReturnValue({
+      observe: () => null,
+      unobserve: () => null,
+      disconnect: () => null
+    });
+    window.IntersectionObserver = mockIntersectionObserver;
+  })
+
+  it("renders image correctly", async () => {
+    setupImageMock(true, false);
+    (isNativeLazyLoadSupported as jest.Mock).mockImplementation(() => true);
+
+    const { container, queryByText } = render(<ImgDynamic
+      id={`imgId`}
+      loadingComp={loading}
+      errorComp={error}
+      width={imageSize}
+      height={imageSize}
+      src={testImg}
+    />)
+
+    expect(mockIntersectionObserver).not.toHaveBeenCalled();
+
+    await waitFor(() => expect(queryByText("error")).not.toBeInTheDocument());
+    // img element will be hidden until native browser implementation loads image.
+    // setupImageMock() does not appear to trigger onload for lazy loaded images.
+    await waitFor(() =>
+      expect(container.querySelector('#imgId')).toHaveStyle("visibility: hidden")
+    );
+
+    expect(container).toMatchSnapshot();
+  })
+});
+
+describe("ImgDynamic - legacy browsers", () => {
+  let mockIntersectionObserver;
+  beforeEach(() => {
+    (isNativeLazyLoadSupported as jest.Mock).mockImplementation(() => false);
     mockIntersectionObserver = jest.fn();
     mockIntersectionObserver.mockReturnValue({
       observe: () => null,
@@ -83,35 +119,6 @@ describe("ImgDynamic", () => {
 
     await waitFor(() => expect(queryByText("error")).not.toBeInTheDocument());
 
-    await waitFor(() =>
-      expect(container.querySelector('#imgId')).toHaveStyle("visibility: visible")
-    );
-
-    expect(container).toMatchSnapshot();
-  })
-
-  it("renders image correctly", async () => {
-    jest.mock('./utils', () => ({
-      isNativeLazyLoadSupported: () => {
-        return true;
-      },
-    }));
-
-    setupImageMock(true, false);
-
-    const { container, queryByText } = render(<ImgDynamic
-      id={`imgId`}
-      loadingComp={loading}
-      errorComp={error}
-      width={imageSize}
-      height={imageSize}
-      src={testImg}
-    />)
-
-    expect(mockIntersectionObserver).not.toHaveBeenCalled();
-
-    await waitFor(() => expect(queryByText("error")).not.toBeInTheDocument());
-    await waitFor(() => expect(queryByText("loading")).not.toBeInTheDocument(), { timeout: 100 });
     await waitFor(() =>
       expect(container.querySelector('#imgId')).toHaveStyle("visibility: visible")
     );
