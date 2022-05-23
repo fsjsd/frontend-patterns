@@ -64,8 +64,3 @@ React based Snake game with three different view implementations (HTML, Canvas a
 
 ![snake](https://user-images.githubusercontent.com/30638950/162620411-7b697099-0088-468f-a5b5-9f68d756f187.gif)
 
-# References
-
-Refer to [this gist](https://gist.github.com/fsjsd/149bdb13fb644849a519ad779a1e0e60) for a list of articles 
-and resources
-
