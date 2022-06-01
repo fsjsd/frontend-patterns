@@ -213,7 +213,14 @@ exports[`InfiniteScrollContainer render matches snapshot 1`] = `
       role="main"
     >
       <div>
-        Infinite scroll Coming soon
+        <div
+          aria-hidden="true"
+          class="sc-iBkjds egZOMt"
+        />
+        <div
+          aria-hidden="true"
+          class="sc-iBkjds egZOMt"
+        />
       </div>
     </div>
   </section>
