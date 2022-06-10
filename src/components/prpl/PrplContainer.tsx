@@ -66,11 +66,11 @@ const PrplContainer = () => {
         </p>
         <h2>Don&apos;t repeat yourself (DRY)</h2>
         <p>
-          The HTML &amp; CSS React apps produce is heavily governed by code and dependency choices (e.g. styled components), and
-          of in the SPA/CRA scenario, constructed directly in the DOM.
+          The HTML &amp; CSS code that React apps produce is heavily governed by code and dependency choices (e.g. styled components), and
+          in a Single Page Application framework (like Create React App), constructed dynamically and loaded in the browser DOM.
         </p>
         <p>
-          So how can we maintain preload HTML/CSS in React but load it statically?
+          So how can we maintain HTML/CSS for a preload state in React but still load it statically?
         </p>
         <p>
           A little bit of a hack, but here&apos;s how to do it -
@@ -83,7 +83,7 @@ const PrplContainer = () => {
         </p>
         <p>
           Without worrying about <i>what</i> individual components do in the code, understand most of the components
-          at here simply setup the layout and navigation of the page here, ultimately loading actual functionality
+          here simply setup the layout and navigation of the page here, ultimately loading actual functionality
           from the leaf JSX nodes (e.g. React router, content components like NavigationMenu).
         </p>
         <p>
@@ -116,7 +116,7 @@ const PrplContainer = () => {
           How do we send the preload version without using React?
         </p>
         <p>
-          There are actually two options -
+          Two options -
         </p>
         <ol>
           <li>Render and capture HTML / CSS through Jest snapshot tests</li>
@@ -126,7 +126,7 @@ const PrplContainer = () => {
           Before going into the <i>how</i> of each of these options, understand both techniques
           are utilising React to render the preload version to HTML / CSS, then I need to manually
           copy that output into the static index.html root file (in my CRA app) to achieve the inlining
-          effect. This could probably be automated, but is easy and infrequent enough to manage
+          effect. This could probably be automated, but it is easy and infrequent enough to manage
           manually without accidentally affecting other static HTML element declarations in the
           index.html file.
         </p>
@@ -180,7 +180,7 @@ const PrplContainer = () => {
         </p>
         <p>
           With both approaches, because they&apos;re still run through CRA&apos;s build process before release, I don&apos;t
-          care about all the white space which gets taken care of by that. You&apos;ll need to clone the repo locally and run
+          care about all the white space which gets taken care of during CRA build. You&apos;ll need to clone the repo locally and run
           the build to see that (or <a href="https://fsjsd.github.io/frontend-patterns/">view source</a> on the live site).
         </p>
         <h3>Summary</h3>
