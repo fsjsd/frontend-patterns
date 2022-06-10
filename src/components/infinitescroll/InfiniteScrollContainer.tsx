@@ -1,6 +1,7 @@
 import React, { Suspense } from 'react'
 import { ContentContainer } from '../../ux/ContentContainer'
 import Loading from '../../ux/Loading'
+import InfiniteScroll from './InfiniteScroll';
 import { FeedItem, getItem } from './utils/data';
 import { db } from "./utils/db";
 
@@ -19,12 +20,16 @@ const InfiniteScrollContainer = () => {
       markDownPromise={import('./requirements.md')}
     >
       <Suspense fallback={<Loading />}>
-        <div role="main" style={{ width: 300, height: 500, overflowY: "scroll" }}>
-          <RecyclingVirtualList
+        <div role="main" style={{ width: 300, height: 500, border: "solid 1px red", overflowY: "scroll" }}>
+
+          <InfiniteScroll />
+
+          {false && <RecyclingVirtualList
             pageSize={10}
             load={(start, limit) => DB.load(start, limit).then((cursor) => cursor.chunk) as Promise<FeedItem[]>}
             itemFullComponent={(item: FeedItem) => <div>{item.name}</div>}
-          />
+          />}
+
         </div>
       </Suspense>
     </ContentContainer>

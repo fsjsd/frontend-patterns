@@ -20,7 +20,7 @@ import { FaReact } from "react-icons/fa";
 
 import CarouselContainer from './components/carousel/CarouselContainer'
 import DataTableContainer from './components/datatable/DataTableContainer'
-import InfiniteScrollContainer from './features/infinitescroll/InfiniteScrollContainer'
+import InfiniteScrollContainer from './components/infinitescroll/InfiniteScrollContainer'
 import MessengerContainer from './features/messenger/MessengerContainer'
 import NetflixContainer from './features/netflix/NetflixContainer'
 import NewsFeedContainer from './features/newsfeed/NewsFeedContainer'
@@ -91,7 +91,7 @@ const appRoutes: AppRouteInfo[] = [
     icon: <MdReceiptLong />,
     title: 'Infinite Scroll',
     group: NAV_GROUPS.COMPONENTS,
-    isWip: true,
+    isWip: false,
   },
   {
     path: `${urlRoot}/newsfeed`,
